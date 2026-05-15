@@ -1,15 +1,19 @@
 "use client";
 
 import { useEffect, useState, use, useRef } from "react";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { Game, Category, Question } from "@/types";
+import PasswordModal, { isAuthed } from "@/components/PasswordModal";
 
 const VALUES = [100, 200, 300, 400, 500];
 type MediaField = "clueImage" | "clueAudio" | "answerImage" | "answerAudio";
 
 export default function AdminPage({ params }: { params: Promise<{ gameId: string }> }) {
   const { gameId } = use(params);
+  const router = useRouter();
+  const [authed, setAuthed] = useState(false);
   const [game, setGame] = useState<Game | null>(null);
   const [saving, setSaving] = useState(false);
   const [saved, setSaved] = useState(false);
@@ -23,8 +27,14 @@ export default function AdminPage({ params }: { params: Promise<{ gameId: string
   };
 
   useEffect(() => {
-    fetch(`/api/games/${gameId}`).then((r) => r.json()).then(setGame);
-  }, [gameId]);
+    setAuthed(isAuthed());
+  }, []);
+
+  useEffect(() => {
+    if (authed) {
+      fetch(`/api/games/${gameId}`).then((r) => r.json()).then(setGame);
+    }
+  }, [authed, gameId]);
 
   async function save(updated: Game) {
     setSaving(true);
@@ -92,6 +102,18 @@ export default function AdminPage({ params }: { params: Promise<{ gameId: string
   function removeCategory(catId: string) {
     if (!game) return;
     setGame({ ...game, categories: game.categories.filter((c) => c.id !== catId) });
+  }
+
+  if (!authed) {
+    return (
+      <div className="min-h-screen flex items-center justify-center" style={{ background: "var(--bg-deep)" }}>
+        <PasswordModal
+          action="edit this game"
+          onSuccess={() => setAuthed(true)}
+          onCancel={() => router.push("/")}
+        />
+      </div>
+    );
   }
 
   if (!game) {
