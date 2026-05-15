@@ -82,7 +82,7 @@
             "value": 300,
             "answered": false,
             "isDailyDouble": false,
-            "clue": "\"Гоёлын даашинз\" киноны гол эрэгтэй дүрийг тоглосон жүжигчны нэр?",
+            "clue": "\"Гоёлын даашинз\" киноны эрэгтэй гол дүрд тоглосон жүжигчны нэр?",
             "answer": "Одбаяр",
             "clueImage": "https://cms.kinosan.mn/uploads/person/671a027e258d3043232015.jpg",
             "answerImage": "https://cms.kinosan.mn/uploads/person/671a027e258d3043232015.jpg"
@@ -92,7 +92,7 @@
             "value": 400,
             "answered": false,
             "isDailyDouble": false,
-            "clue": "Oscar-ийн түүхэнд хамгийн олон удаа Best Actor авсан жүжигчин хэн бэ?",
+            "clue": "Oscar-ийн түүхэнд хамгийн олон удаа Best Actor \"Эрэгтэй жүжигчин \"авсан жүжигчин хэн бэ?",
             "answer": "Daniel Day-Lewis \" 3 \"",
             "answerImage": "https://i.redd.it/j6vgcozlcfv61.jpg",
             "clueImage": "https://www.lafilm.edu/wp-content/uploads/2025/02/2025-Oscars.jpg"
@@ -117,7 +117,7 @@
             "value": 100,
             "answered": false,
             "isDailyDouble": false,
-            "clue": "2015–2016 NBA Championship-ийг хэн авсан бэ?",
+            "clue": "2015–2016 NBA-ийн улиралд аль баг аварга авсан бэ?",
             "answer": "Cleveland Cavaliers (Cavs)",
             "answerImage": "https://cdn.nba.com/manage/2021/07/lebron-title-2016-cavs.jpg"
           },
@@ -187,7 +187,7 @@
             "value": 300,
             "answered": false,
             "isDailyDouble": false,
-            "clue": "Queen хамтлагын дуучин Freddie Mercury-ийн жинхэнэ нэр юу вэ?",
+            "clue": "Queen хамтлагын дуучин Freddie Mercury-ийн жинхэнэ нэр хэн бэ?",
             "answer": "Farrokh Bulsara",
             "clueImage": "https://i8.amplience.net/i/naras/gettyimages-481006633.jpg.jpg"
           },
@@ -196,7 +196,7 @@
             "value": 400,
             "answered": false,
             "isDailyDouble": false,
-            "clue": "7 тивд тоглолт хийсэн хамгийн анхны хамтлаг аль нь вэ?",
+            "clue": "7 тивд тоглолтоо хийсэн хамгийн анхны хамтлаг юу вэ?",
             "answer": "Metallica",
             "answerImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnMHV7rahjkmPHkKUUpjz73zrO0mC_z_qscg&s"
           },
@@ -231,7 +231,7 @@
             "value": 200,
             "answered": false,
             "isDailyDouble": false,
-            "clue": "\"No Rules 3\" кинон дээр жүжигчин Болд-Эрдэнэ бүтээсэн дүрийн нэр юу вэ?",
+            "clue": "\"No Rules 3\" кинон дээр жүжигчин Болд-Эрдэнэ-ий бүтээсэн дүрийн нэр юу вэ?",
             "answer": "Цэгц",
             "clueImage": "/uploads/0a433283-9320-473e-9c45-92d1d2a1e14f.png"
           },
@@ -304,7 +304,10 @@
             "answered": false,
             "isDailyDouble": false,
             "clue": "Португалийн нийслэл юу вэ?",
-            "answer": "Lisbon (Лиссабон)"
+            "answer": "Lisbon (Лиссабон)",
+            "answerImages": [
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi5-tNFK-IB-jA0ruZQ8Wy008G9mTnGx4rxA&s"
+            ]
           },
           {
             "id": "g5",
@@ -319,7 +322,7 @@
       }
     ],
     "createdAt": "2026-05-15T03:55:39.425Z",
-    "updatedAt": "2026-05-15T06:32:41.191Z"
+    "updatedAt": "2026-05-15T08:22:15.136Z"
   },
   {
     "id": "3db72ff0-824a-43b2-a994-4f9e7479b138",
@@ -471,7 +474,7 @@
             "value": 200,
             "answered": false,
             "isDailyDouble": false,
-            "clue": "Мөнх-Эрдэнэ аль намынх вэ?",
+            "clue": "Мөнх-Эрдэнэ аль намын гишүүн вэ?",
             "answer": "Ардчилсан нам",
             "clueImages": [
               "https://www.zindaa.mn/images/news/origin/17/a5_20210112145209.jpg"
@@ -694,6 +697,6 @@
       }
     ],
     "createdAt": "2026-05-15T06:19:02.100Z",
-    "updatedAt": "2026-05-15T07:39:19.552Z"
+    "updatedAt": "2026-05-15T08:23:40.047Z"
   }
 ]
