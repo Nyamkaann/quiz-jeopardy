@@ -1,65 +1,188 @@
-import Image from "next/image";
+"use client";
 
-export default function Home() {
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { Game } from "@/types";
+
+export default function HomePage() {
+  const [games, setGames] = useState<Game[]>([]);
+  const [title, setTitle] = useState("");
+  const [creating, setCreating] = useState(false);
+  const [showNew, setShowNew] = useState(false);
+
+  useEffect(() => {
+    fetch("/api/games").then((r) => r.json()).then(setGames);
+  }, []);
+
+  async function createGame() {
+    if (!title.trim()) return;
+    setCreating(true);
+    const res = await fetch("/api/games", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        title: title.trim(),
+        categories: Array.from({ length: 6 }, (_, ci) => ({
+          id: crypto.randomUUID(),
+          name: `Category ${ci + 1}`,
+          questions: [100, 200, 300, 400, 500].map((v) => ({
+            id: crypto.randomUUID(),
+            value: v,
+            clue: "",
+            answer: "",
+            isDailyDouble: false,
+            answered: false,
+          })),
+        })),
+      }),
+    });
+    const game: Game = await res.json();
+    setGames((prev) => [...prev, game]);
+    setTitle("");
+    setShowNew(false);
+    setCreating(false);
+  }
+
+  async function deleteGame(id: string) {
+    await fetch(`/api/games/${id}`, { method: "DELETE" });
+    setGames((prev) => prev.filter((g) => g.id !== id));
+  }
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <div className="min-h-screen" style={{ background: "var(--bg-deep)" }}>
+      {/* ── HEADER ── */}
+      <header className="relative overflow-hidden" style={{ background: "linear-gradient(180deg,#060d3a 0%,#04051a 100%)", borderBottom: "3px solid var(--sp-blue)", boxShadow: "0 0 40px rgba(0,84,255,0.4)" }}>
+        {/* corner stars */}
+        <div className="absolute top-3 left-4 opacity-30">
+          <Image src="/sp-logo.svg" width={28} height={28} alt="" />
+        </div>
+        <div className="absolute top-3 right-4 opacity-30">
+          <Image src="/sp-logo.svg" width={28} height={28} alt="" />
+        </div>
+
+        <div className="flex flex-col items-center py-8 gap-4">
+          <Image src="/sp-logo.svg" width={72} height={72} alt="StorePay" />
+          <h1 className="retro-title text-7xl text-[var(--gold)]">STOREPAY</h1>
+          <div className="star-divider w-64 mb-1" />
+          <h2 className="retro-title text-4xl sp-glow text-white tracking-widest">JEOPARDY!</h2>
+          <p style={{ fontFamily: "'Share Tech Mono',monospace", color: "rgba(180,200,255,0.7)", fontSize: "0.75rem", letterSpacing: "0.15em" }}>
+            THE ULTIMATE QUIZ CHALLENGE
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+
+        {/* bottom stripe */}
+        <div className="star-divider w-full" />
+      </header>
+
+      <main className="max-w-4xl mx-auto px-6 py-10">
+        {/* toolbar */}
+        <div className="flex items-center justify-between mb-6">
+          <h2 className="retro-title text-3xl text-white tracking-wider" style={{ textShadow: "0 0 10px rgba(0,84,255,0.5)" }}>
+            GAME LIBRARY
+          </h2>
+          <button
+            onClick={() => setShowNew(true)}
+            className="btn-gold px-6 py-2 rounded text-lg"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+            + NEW GAME
+          </button>
         </div>
+
+        {/* new game form */}
+        {showNew && (
+          <div className="retro-panel rounded-xl p-6 mb-6">
+            <h3 className="retro-title text-2xl text-[var(--gold)] mb-4 tracking-wider">CREATE NEW GAME</h3>
+            <div className="flex gap-3">
+              <input
+                autoFocus
+                type="text"
+                placeholder="Enter game title..."
+                value={title}
+                onChange={(e) => setTitle(e.target.value)}
+                onKeyDown={(e) => e.key === "Enter" && createGame()}
+                className="flex-1 rounded px-4 py-2 text-white placeholder-blue-400 text-lg focus:outline-none"
+                style={{ background: "#07102a", border: "2px solid var(--sp-blue)", fontFamily: "'Oswald',sans-serif" }}
+              />
+              <button
+                onClick={createGame}
+                disabled={creating || !title.trim()}
+                className="btn-gold px-6 py-2 rounded text-lg disabled:opacity-40"
+              >
+                {creating ? "CREATING..." : "CREATE"}
+              </button>
+              <button
+                onClick={() => setShowNew(false)}
+                className="btn-blue px-5 py-2 rounded text-lg text-white"
+              >
+                CANCEL
+              </button>
+            </div>
+          </div>
+        )}
+
+        {/* game list */}
+        {games.length === 0 ? (
+          <div className="text-center py-20">
+            <Image src="/sp-logo.svg" width={64} height={64} alt="" className="mx-auto mb-6 opacity-20" />
+            <p className="retro-title text-2xl text-blue-400 tracking-wider">NO GAMES YET</p>
+            <p style={{ color: "rgba(150,170,255,0.5)", fontFamily: "'Share Tech Mono',monospace", fontSize: "0.8rem", marginTop: "0.5rem" }}>
+              CREATE A GAME TO GET STARTED
+            </p>
+          </div>
+        ) : (
+          <div className="flex flex-col gap-3">
+            {games.map((game, i) => (
+              <div
+                key={game.id}
+                className="retro-panel rounded-xl px-6 py-4 flex items-center gap-4 transition-all hover:shadow-[0_0_24px_rgba(0,84,255,0.3)]"
+              >
+                {/* index badge */}
+                <div className="w-10 h-10 rounded flex items-center justify-center text-lg font-black shrink-0"
+                  style={{ background: "var(--sp-blue)", fontFamily: "'Bebas Neue',sans-serif", color: "var(--gold)", boxShadow: "0 0 8px rgba(0,84,255,0.6)" }}>
+                  {i + 1}
+                </div>
+
+                <div className="flex-1 min-w-0">
+                  <p className="retro-title text-xl text-white truncate tracking-wide">{game.title}</p>
+                  <p style={{ fontFamily: "'Share Tech Mono',monospace", color: "rgba(120,160,255,0.7)", fontSize: "0.7rem", letterSpacing: "0.1em" }}>
+                    {game.categories.length} CATEGORIES · {new Date(game.createdAt).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }).toUpperCase()}
+                  </p>
+                </div>
+
+                <div className="flex gap-2 shrink-0">
+                  <Link href={`/play/${game.id}`}
+                    className="btn-gold px-5 py-2 rounded text-base" style={{ textDecoration: "none" }}>
+                    PLAY
+                  </Link>
+                  <Link href={`/admin/${game.id}`}
+                    className="btn-blue px-5 py-2 rounded text-base text-white" style={{ textDecoration: "none" }}>
+                    EDIT
+                  </Link>
+                  <button
+                    onClick={() => confirm(`Delete "${game.title}"?`) && deleteGame(game.id)}
+                    className="px-4 py-2 rounded text-base font-black tracking-wider transition-colors"
+                    style={{ fontFamily: "'Bebas Neue',sans-serif", background: "linear-gradient(180deg,#cc2200,#880000)", border: "2px solid #ff4422", boxShadow: "0 3px 0 #440000", color: "white" }}
+                  >
+                    DEL
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
       </main>
+
+      {/* footer */}
+      <footer className="text-center py-6" style={{ borderTop: "1px solid rgba(0,84,255,0.2)" }}>
+        <div className="flex items-center justify-center gap-3">
+          <Image src="/sp-logo.svg" width={16} height={16} alt="" className="opacity-40" />
+          <span style={{ fontFamily: "'Share Tech Mono',monospace", color: "rgba(100,130,255,0.4)", fontSize: "0.65rem", letterSpacing: "0.2em" }}>
+            STOREPAY JEOPARDY © {new Date().getFullYear()}
+          </span>
+          <Image src="/sp-logo.svg" width={16} height={16} alt="" className="opacity-40" />
+        </div>
+      </footer>
     </div>
   );
 }

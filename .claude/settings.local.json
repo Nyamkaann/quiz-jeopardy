@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --no-src-dir --import-alias \"@/*\" --yes)",
+      "Read(//Users/nyamdorjmunkh/Desktop/**)",
+      "Bash(npx create-next-app@latest jeopardy-quiz --typescript --tailwind --eslint --app --no-src-dir --import-alias \"@/*\" --yes)",
+      "Bash(cp -r jeopardy-quiz/. Quiz/)",
+      "Bash(rm -rf jeopardy-quiz)",
+      "Bash(npm install *)",
+      "Bash(mkdir -p /Users/nyamdorjmunkh/Desktop/Quiz/app/api/games/\\\\[id\\\\])",
+      "Bash(npm run *)",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(curl -s http://localhost:3000/api/games)",
+      "Bash(python3 -m json.tool)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/play/demo-game-1)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/admin/demo-game-1)",
+      "Bash(cp \"/Users/nyamdorjmunkh/Desktop/Workspace/02 SP logo Vertical Original Blue V.svg\" /Users/nyamdorjmunkh/Desktop/Quiz/public/sp-logo.svg)",
+      "Bash(curl -s -X POST http://localhost:3000/api/games -H 'Content-Type: application/json' -d '{ *)",
+      "Bash(curl -s http://localhost:3000/api/games/cf66d08a-f883-4631-a699-2de92618adad)",
+      "Bash(python3 -c ' *)"
+    ]
+  }
+}

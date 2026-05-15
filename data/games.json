@@ -1,0 +1,288 @@
+[
+  {
+    "id": "cf66d08a-f883-4631-a699-2de92618adad",
+    "title": "Storepay Jeopardy Quiz Round 1",
+    "categories": [
+      {
+        "id": "cat-history",
+        "name": "History",
+        "questions": [
+          {
+            "id": "h1",
+            "value": 100,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Аль улс цаасыг зохиосон бэ?",
+            "answer": "Хятад"
+          },
+          {
+            "id": "h2",
+            "value": 200,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Дэлхийн 1-р дайн хэдэн онд эхэлсэн бэ?",
+            "answer": "1914"
+          },
+          {
+            "id": "h3",
+            "value": 300,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Индианчуудын өвөг дээдэс болох 3 том улс байсан ба эхний 2 нь Maya, Aztec бол 3 дахь нь юу вэ?",
+            "answer": "Inca"
+          },
+          {
+            "id": "h4",
+            "value": 400,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Чингисийн 4 нохойн нэрийг хэлнэ үү? (4-ийг зөв хариулсан тохиолдолд оноо авна)",
+            "answer": "Хубилай, Зэлмэ, Зэв, Сүбээдэй"
+          },
+          {
+            "id": "h5",
+            "value": 500,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Rome-ийн эзэнт гүрний хамгийн анхны хаан болох зурагт харагдаж буй хүн хэн бэ?",
+            "answer": "Augustus"
+          }
+        ]
+      },
+      {
+        "id": "cat-movies",
+        "name": "Movies",
+        "questions": [
+          {
+            "id": "m1",
+            "value": 100,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Pixar Studio-ийн анхны animation юу вэ?",
+            "answer": "Toy Story (1995)"
+          },
+          {
+            "id": "m2",
+            "value": 200,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Micheal Jackson-ий энэ онд гарсан кинон дээр хэн Michael-ийн дүрийг бүтээсэн бэ?",
+            "answer": "Jaafar Jackson"
+          },
+          {
+            "id": "m3",
+            "value": 300,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "\"Гоёлын даашинз\" киноны гол эрэгтэй дүрийг тоглосон жүжигчны нэр?",
+            "answer": "Одбаяр"
+          },
+          {
+            "id": "m4",
+            "value": 400,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Oscar-ийн түүхэнд хамгийн олон удаа Best Actor авсан жүжигчин хэн бэ?",
+            "answer": "Daniel Day-Lewis"
+          },
+          {
+            "id": "m5",
+            "value": 500,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Энэ ямар киноны хөгжим вэ? 🎵 ",
+            "answer": "Бүлээн нурам",
+            "clueAudio": "/uploads/45076c1d-09e9-4d36-b857-f168ab4cb2f6.mp3"
+          }
+        ]
+      },
+      {
+        "id": "cat-sports",
+        "name": "Sports",
+        "questions": [
+          {
+            "id": "s1",
+            "value": 100,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "2015–2016 NBA Championship-ийг хэн авсан бэ?",
+            "answer": "Cleveland Cavaliers (Cavs)"
+          },
+          {
+            "id": "s2",
+            "value": 200,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Зурагт харагдаж буй бөхийн нэр хэн бэ?",
+            "answer": "Бат-Өлзий"
+          },
+          {
+            "id": "s3",
+            "value": 300,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Хаккухо сумо хэд дэх их аварга вэ?",
+            "answer": "69"
+          },
+          {
+            "id": "s4",
+            "value": 400,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Euro 2004-ийн аварга улс аль нь вэ?",
+            "answer": "Greece (Грек)"
+          },
+          {
+            "id": "s5",
+            "value": 500,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Монгол улсын хамгийн анхны олимпын медалтан хэн бэ?",
+            "answer": "Дамдиншарав"
+          }
+        ]
+      },
+      {
+        "id": "cat-songs",
+        "name": "Songs",
+        "questions": [
+          {
+            "id": "so1",
+            "value": 100,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Colors хамтлагын гоцлол дуучны нэр хэн бэ?",
+            "answer": "Тогтуун"
+          },
+          {
+            "id": "so2",
+            "value": 200,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Хамгийн олон удаа Grammy авсан дуучин хэн бэ?",
+            "answer": "Beyoncé"
+          },
+          {
+            "id": "so3",
+            "value": 300,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Queen хамтлагын дуучин Freddie Mercury-ийн жинхэнэ нэр юу вэ?",
+            "answer": "Farrokh Bulsara"
+          },
+          {
+            "id": "so4",
+            "value": 400,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "7 тивд тоглолт хийсэн хамгийн анхны хамтлаг аль нь вэ?",
+            "answer": "Metallica"
+          },
+          {
+            "id": "so5",
+            "value": 500,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Зурагт харагдаж буй дуучны нэр хэн бэ?",
+            "answer": "Neil Diamond"
+          }
+        ]
+      },
+      {
+        "id": "cat-meme",
+        "name": "Meme",
+        "questions": [
+          {
+            "id": "me1",
+            "value": 100,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Зурагт харагдаж буй Meme-ний нэр юу вэ?",
+            "answer": "Chill Guy",
+            "clueImage": "/uploads/23541df3-0f2c-4b00-a757-913ab905b6ac.webp"
+          },
+          {
+            "id": "me2",
+            "value": 200,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "\"No Rules 3\" кинон дээр жүжигчин Болд-Эрдэнэ бүтээсэн дүрийн нэр юу вэ?",
+            "answer": "Цэгц"
+          },
+          {
+            "id": "me3",
+            "value": 300,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Таны сонсож буй meme дээр \"Directed By ….\" гэж хэний нэр байдаг вэ?",
+            "answer": "Michael Bay"
+          },
+          {
+            "id": "me4",
+            "value": 400,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Уг meme дууны Artist-ийн нэр хэн бэ?",
+            "answer": "Pika Taro"
+          },
+          {
+            "id": "me5",
+            "value": 500,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Сонсож буй meme Rapper-ийн нэр хэн бэ?",
+            "answer": "Supa Hot Fire"
+          }
+        ]
+      },
+      {
+        "id": "cat-geography",
+        "name": "Geography",
+        "questions": [
+          {
+            "id": "g1",
+            "value": 100,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Америк тивийг хэн нээсэн бэ?",
+            "answer": "Christopher Columbus"
+          },
+          {
+            "id": "g2",
+            "value": 200,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Далайд гарцгүй хамгийн том газар нутагтай улс юу вэ?",
+            "answer": "Казахстан (Kazakhstan)"
+          },
+          {
+            "id": "g3",
+            "value": 300,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Youtuber Мөнхцэлмэг хамгийн сүүлд ямар улсаар аялсан бичлэгээ YouTube-д хийсэн бэ?",
+            "answer": "Burkina Faso"
+          },
+          {
+            "id": "g4",
+            "value": 400,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Португалийн нийслэл юу вэ?",
+            "answer": "Lisbon (Лиссабон)"
+          },
+          {
+            "id": "g5",
+            "value": 500,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Дэлхийн түүхэнд хамгийн баян хүн болох Mansa Musa нь аль улсынх вэ?",
+            "answer": "Mali (Мали)"
+          }
+        ]
+      }
+    ],
+    "createdAt": "2026-05-15T03:55:39.425Z",
+    "updatedAt": "2026-05-15T04:01:18.944Z"
+  }
+]
