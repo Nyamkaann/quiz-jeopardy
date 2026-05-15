@@ -12,12 +12,73 @@ type PendingAction =
   | { type: "edit"; gameId: string }
   | { type: "delete"; game: Game };
 
+const RULES = [
+  { icon: "🎯", title: "Асуулт сонгох", body: "Ангилал болон оноогоо сонгоод асуултыг нь харна." },
+  { icon: "✅", title: "Зөв хариулт", body: "Зөв хариулсан баг сонгосон онооны дүнг авна." },
+  { icon: "❌", title: "Буруу хариулт", body: "Буруу хариулсан баг онооны ТАЛЫГ алдана. Бусад баг дахин хариулах боломжтой." },
+  { icon: "👥", title: "Олон баг", body: "Нэг асуултад хэд хэдэн баг буруу хариулж болно — асуулт нээлттэй хэвээр байна." },
+  { icon: "🏁", title: "Эцсийн Jeopardy", body: "Бүх асуулт дууссаны дараа эцсийн шат эхэлнэ. Баг бүр хамгийн ихдээ өөрийн оноотой тэнцүү дүн тавьж хариулна." },
+  { icon: "🏆", title: "Хожигч", body: "Эцсийн шатны дараа хамгийн өндөр оноотой баг хожино!" },
+];
+
+function RulesModal({ onClose }: { onClose: () => void }) {
+  return (
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center p-4"
+      style={{ background: "rgba(4,5,26,0.93)" }}
+      onClick={(e) => e.target === e.currentTarget && onClose()}
+    >
+      <div className="retro-frame rounded-2xl w-full max-w-lg overflow-hidden" style={{ background: "var(--bg-card)" }}>
+        {/* header */}
+        <div className="flex items-center justify-between px-6 py-4"
+          style={{ background: "linear-gradient(90deg,#060d3a,#04051a)", borderBottom: "2px solid var(--sp-blue)" }}>
+          <div className="flex items-center gap-3">
+            <Image src="/sp-logo.svg" width={24} height={24} alt="" />
+            <h2 className="retro-title text-xl text-[var(--gold)] tracking-wider">ТОГЛООМЫН ДҮРЭМ</h2>
+          </div>
+          <button onClick={onClose} className="text-blue-400 hover:text-white text-2xl leading-none transition-colors">×</button>
+        </div>
+
+        {/* rules list */}
+        <div className="p-6 space-y-4 overflow-y-auto" style={{ maxHeight: "70vh" }}>
+          {RULES.map((r, i) => (
+            <div key={i} className="flex gap-4 rounded-xl px-4 py-3"
+              style={{ background: "#07102a", border: "1px solid rgba(0,84,255,0.25)" }}>
+              <span className="text-2xl shrink-0 mt-0.5">{r.icon}</span>
+              <div>
+                <p className="retro-title text-base text-[var(--gold)] tracking-wide mb-1">{r.title}</p>
+                <p style={{ fontFamily: "'Oswald',sans-serif", color: "rgba(180,210,255,0.85)", fontSize: "0.95rem", lineHeight: "1.5" }}>
+                  {r.body}
+                </p>
+              </div>
+            </div>
+          ))}
+
+          <div className="mt-2 rounded-xl px-4 py-3 text-center"
+            style={{ background: "linear-gradient(90deg,rgba(0,84,255,0.1),rgba(255,215,0,0.08))", border: "1px solid rgba(255,215,0,0.2)" }}>
+            <p style={{ fontFamily: "'Share Tech Mono',monospace", color: "rgba(180,210,255,0.5)", fontSize: "0.7rem", letterSpacing: "0.15em" }}>
+              STOREPAY JEOPARDY — ШИЛДЭГ БАГИЙГ ТОДРУУЛЪЯ!
+            </p>
+          </div>
+        </div>
+
+        <div className="px-6 pb-5">
+          <button onClick={onClose} className="btn-gold w-full py-3 rounded text-xl">
+            ОЙЛГОСОн!
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function HomePage() {
   const router = useRouter();
   const [games, setGames] = useState<Game[]>([]);
   const [title, setTitle] = useState("");
   const [creating, setCreating] = useState(false);
   const [showNew, setShowNew] = useState(false);
+  const [showRules, setShowRules] = useState(false);
   const [pending, setPending] = useState<PendingAction | null>(null);
 
   useEffect(() => {
@@ -81,6 +142,9 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen" style={{ background: "var(--bg-deep)" }}>
+      {/* rules modal */}
+      {showRules && <RulesModal onClose={() => setShowRules(false)} />}
+
       {/* password modal */}
       {pending && (
         <PasswordModal
@@ -107,6 +171,12 @@ export default function HomePage() {
           <p style={{ fontFamily: "'Share Tech Mono',monospace", color: "rgba(180,200,255,0.7)", fontSize: "0.75rem", letterSpacing: "0.15em" }}>
             THE ULTIMATE QUIZ CHALLENGE
           </p>
+          <button
+            onClick={() => setShowRules(true)}
+            className="px-5 py-1.5 rounded-full text-sm tracking-widest transition-all hover:opacity-80"
+            style={{ fontFamily: "'Share Tech Mono',monospace", border: "1px solid rgba(0,84,255,0.5)", color: "rgba(120,160,255,0.8)", background: "rgba(0,84,255,0.08)", letterSpacing: "0.15em", fontSize: "0.7rem" }}>
+            📋 ДҮРЭМТЭЙ ТАНИЛЦАХ
+          </button>
         </div>
         <div className="star-divider w-full" />
       </header>

@@ -1,12 +1,105 @@
 "use client";
 
-import { useEffect, useState, use } from "react";
+import { useEffect, useState, use, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Game, Question, Player } from "@/types";
+import { getClueImages, getAnswerImages } from "@/lib/media";
 
-const VALUES = [100, 200, 300, 400, 500];
 type Phase = "setup" | "board" | "clue" | "final";
+
+const RULES = [
+  { icon: "🎯", title: "Асуулт сонгох", body: "Ангилал болон оноогоо сонгоод асуултыг нь харна." },
+  { icon: "✅", title: "Зөв хариулт", body: "Зөв хариулсан баг сонгосон онооны дүнг авна." },
+  { icon: "❌", title: "Буруу хариулт", body: "Буруу хариулсан баг онооны ТАЛЫГ алдана. Бусад баг дахин хариулах боломжтой." },
+  { icon: "👥", title: "Олон баг", body: "Нэг асуултад хэд хэдэн баг буруу хариулж болно — асуулт нээлттэй хэвээр байна." },
+  { icon: "🏁", title: "Эцсийн Jeopardy", body: "Бүх асуулт дууссаны дараа эцсийн шат эхэлнэ. Баг бүр хамгийн ихдээ өөрийн оноотой тэнцүү дүн тавьж хариулна." },
+  { icon: "🏆", title: "Хожигч", body: "Эцсийн шатны дараа хамгийн өндөр оноотой баг хожино!" },
+];
+
+function PrizeModal({ onClose }: { onClose: () => void }) {
+  return (
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center p-4"
+      style={{ background: "rgba(4,5,26,0.93)" }}
+      onClick={(e) => e.target === e.currentTarget && onClose()}
+    >
+      <div className="retro-frame rounded-2xl w-full max-w-2xl overflow-hidden" style={{ background: "var(--bg-card)" }}>
+        <div className="flex items-center justify-between px-6 py-4"
+          style={{ background: "linear-gradient(90deg,#060d3a,#04051a)", borderBottom: "2px solid var(--gold)" }}>
+          <div className="flex items-center gap-3">
+            <span className="text-2xl">🎁</span>
+            <h2 className="retro-title text-xl text-[var(--gold)] tracking-wider">ТОГЛООМЫН ШАГНАЛ</h2>
+          </div>
+          <button onClick={onClose} className="text-blue-400 hover:text-white text-2xl leading-none transition-colors">×</button>
+        </div>
+        <div className="p-4">
+          <div className="rounded-xl overflow-hidden"
+            style={{ border: "2px solid var(--gold)", boxShadow: "0 0 32px rgba(255,215,0,0.2)" }}>
+            <Image
+              src="/prize-coupon.png"
+              alt="La Maison Lunch Coupon"
+              width={1320}
+              height={880}
+              className="w-full h-auto"
+              unoptimized
+            />
+          </div>
+          <p className="text-center mt-3"
+            style={{ fontFamily: "'Share Tech Mono',monospace", color: "rgba(255,215,0,0.6)", fontSize: "0.7rem", letterSpacing: "0.12em" }}>
+            ХОЖИГЧ БАГ ЭНЭ ШАГНАЛЫГ ХҮРТНЭ!
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function RulesModal({ onClose }: { onClose: () => void }) {
+  return (
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center p-4"
+      style={{ background: "rgba(4,5,26,0.93)" }}
+      onClick={(e) => e.target === e.currentTarget && onClose()}
+    >
+      <div className="retro-frame rounded-2xl w-full max-w-lg overflow-hidden" style={{ background: "var(--bg-card)" }}>
+        <div className="flex items-center justify-between px-6 py-4"
+          style={{ background: "linear-gradient(90deg,#060d3a,#04051a)", borderBottom: "2px solid var(--sp-blue)" }}>
+          <div className="flex items-center gap-3">
+            <Image src="/sp-logo.svg" width={24} height={24} alt="" />
+            <h2 className="retro-title text-xl text-[var(--gold)] tracking-wider">ТОГЛООМЫН ДҮРЭМ</h2>
+          </div>
+          <button onClick={onClose} className="text-blue-400 hover:text-white text-2xl leading-none transition-colors">×</button>
+        </div>
+        <div className="p-6 space-y-4 overflow-y-auto" style={{ maxHeight: "70vh" }}>
+          {RULES.map((r, i) => (
+            <div key={i} className="flex gap-4 rounded-xl px-4 py-3"
+              style={{ background: "#07102a", border: "1px solid rgba(0,84,255,0.25)" }}>
+              <span className="text-2xl shrink-0 mt-0.5">{r.icon}</span>
+              <div>
+                <p className="retro-title text-base text-[var(--gold)] tracking-wide mb-1">{r.title}</p>
+                <p style={{ fontFamily: "'Oswald',sans-serif", color: "rgba(180,210,255,0.85)", fontSize: "0.95rem", lineHeight: "1.5" }}>
+                  {r.body}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="px-6 pb-5">
+          <button onClick={onClose} className="btn-gold w-full py-3 rounded text-xl">ОЙЛГОСОН!</button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function storageKey(gameId: string) {
+  return `sp_session_${gameId}`;
+}
+
+function clearSession(gameId: string) {
+  sessionStorage.removeItem(storageKey(gameId));
+}
 
 export default function PlayPage({ params }: { params: Promise<{ gameId: string }> }) {
   const { gameId } = use(params);
@@ -24,10 +117,52 @@ export default function PlayPage({ params }: { params: Promise<{ gameId: string 
   const [finalAnswer, setFinalAnswer] = useState("");
   const [finalPhase, setFinalPhase] = useState<"wager" | "clue" | "answer" | "results">("wager");
   const [finalCorrect, setFinalCorrect] = useState<Record<string, boolean>>({});
+  const [showRules, setShowRules] = useState(false);
+  const [showPrize, setShowPrize] = useState(false);
+  const hydrated = useRef(false);
 
+  /* ── restore session on mount ── */
   useEffect(() => {
-    fetch(`/api/games/${gameId}`).then((r) => r.json()).then(setGame);
+    const key = storageKey(gameId);
+    const saved = sessionStorage.getItem(key);
+    if (saved) {
+      try {
+        const s = JSON.parse(saved);
+        if (s.game)        setGame(s.game);
+        if (s.players)     setPlayers(s.players);
+        if (s.phase)       setPhase(s.phase);
+        if (s.activeQ)     setActiveQ(s.activeQ);
+        if (s.showAnswer)  setShowAnswer(s.showAnswer);
+        if (s.activePlayer) setActivePlayer(s.activePlayer);
+        if (s.buzzed)      setBuzzed(s.buzzed);
+        if (s.wrongPlayers) setWrongPlayers(new Set(s.wrongPlayers));
+        if (s.finalWagers)  setFinalWagers(s.finalWagers);
+        if (s.finalClue)    setFinalClue(s.finalClue);
+        if (s.finalAnswer)  setFinalAnswer(s.finalAnswer);
+        if (s.finalPhase)   setFinalPhase(s.finalPhase);
+        if (s.finalCorrect) setFinalCorrect(s.finalCorrect);
+        hydrated.current = true;
+        return;
+      } catch { /* corrupt — fall through to fresh fetch */ }
+    }
+    fetch(`/api/games/${gameId}`).then((r) => r.json()).then((g) => {
+      setGame(g);
+      hydrated.current = true;
+    });
   }, [gameId]);
+
+  /* ── persist every state change ── */
+  useEffect(() => {
+    if (!hydrated.current || !game) return;
+    const snapshot = {
+      game, players, phase,
+      activeQ, showAnswer, activePlayer, buzzed,
+      wrongPlayers: [...wrongPlayers],
+      finalWagers, finalClue, finalAnswer, finalPhase, finalCorrect,
+    };
+    sessionStorage.setItem(storageKey(gameId), JSON.stringify(snapshot));
+  }, [game, players, phase, activeQ, showAnswer, activePlayer, buzzed,
+      wrongPlayers, finalWagers, finalClue, finalAnswer, finalPhase, finalCorrect, gameId]);
 
   const allAnswered = game?.categories.every((cat) => cat.questions.every((q) => q.answered)) ?? false;
 
@@ -115,6 +250,7 @@ export default function PlayPage({ params }: { params: Promise<{ gameId: string 
   if (phase === "setup") {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center px-6" style={{ background: "var(--bg-deep)" }}>
+        {showRules && <RulesModal onClose={() => setShowRules(false)} />}
         <Image src="/sp-logo.svg" width={64} height={64} alt="StorePay" className="mb-4" />
         <h1 className="retro-title text-5xl text-[var(--gold)] mb-1">{game.title}</h1>
         <div className="star-divider w-80 mb-2" />
@@ -164,7 +300,14 @@ export default function PlayPage({ params }: { params: Promise<{ gameId: string 
             START GAME!
           </button>
 
-          <Link href="/" className="block text-center mt-4"
+          <button
+            onClick={() => setShowRules(true)}
+            className="w-full mt-3 py-2 rounded-full text-sm tracking-widest transition-all hover:opacity-80"
+            style={{ fontFamily: "'Share Tech Mono',monospace", border: "1px solid rgba(0,84,255,0.4)", color: "rgba(120,160,255,0.7)", background: "rgba(0,84,255,0.06)", letterSpacing: "0.15em", fontSize: "0.7rem" }}>
+            📋 ДҮРЭМТЭЙ ТАНИЛЦАХ
+          </button>
+
+          <Link href="/" className="block text-center mt-3"
             style={{ fontFamily: "'Share Tech Mono',monospace", color: "rgba(100,130,255,0.5)", fontSize: "0.7rem", letterSpacing: "0.15em", textDecoration: "none" }}>
             ← BACK TO HOME
           </Link>
@@ -177,6 +320,8 @@ export default function PlayPage({ params }: { params: Promise<{ gameId: string 
   if (phase === "board") {
     return (
       <div className="min-h-screen flex flex-col" style={{ background: "var(--bg-deep)" }}>
+        {showPrize && <PrizeModal onClose={() => setShowPrize(false)} />}
+
         {/* top nav */}
         <div className="flex items-center justify-between px-4 py-3 shrink-0"
           style={{ background: "linear-gradient(180deg,#060d3a,#04051a)", borderBottom: "2px solid var(--sp-blue)", boxShadow: "0 0 16px rgba(0,84,255,0.3)" }}>
@@ -188,10 +333,26 @@ export default function PlayPage({ params }: { params: Promise<{ gameId: string 
           <h1 className="retro-title text-xl text-[var(--gold)] tracking-wider">{game.title}</h1>
 
           <div className="flex gap-2 items-center">
+            <button
+              onClick={() => setShowPrize(true)}
+              className="px-3 py-1 rounded transition-all hover:opacity-80"
+              style={{ fontFamily: "'Bebas Neue',sans-serif", letterSpacing: "0.08em", fontSize: "0.8rem", background: "linear-gradient(180deg,rgba(255,215,0,0.15),rgba(255,215,0,0.05))", border: "1px solid rgba(255,215,0,0.5)", color: "var(--gold)" }}>
+              🎁 ШАГНАЛ
+            </button>
             <Link href={`/admin/${game.id}`}
               style={{ fontFamily: "'Share Tech Mono',monospace", color: "rgba(120,160,255,0.6)", fontSize: "0.65rem", letterSpacing: "0.15em", textDecoration: "none" }}>
               EDIT
             </Link>
+            <button
+              onClick={() => {
+                if (confirm("Restart the game? All scores and progress will be reset.")) {
+                  clearSession(gameId);
+                  window.location.reload();
+                }
+              }}
+              style={{ fontFamily: "'Share Tech Mono',monospace", color: "rgba(255,80,60,0.5)", fontSize: "0.65rem", letterSpacing: "0.15em" }}>
+              RESET
+            </button>
             {allAnswered && (
               <button onClick={() => { setFinalPhase("wager"); setPhase("final"); }}
                 className="btn-gold px-4 py-1 rounded text-sm ml-2">
@@ -225,19 +386,20 @@ export default function PlayPage({ params }: { params: Promise<{ gameId: string 
               </div>
             ))}
 
-            {VALUES.map((val) =>
+            {Array.from({ length: Math.max(...game.categories.map((c) => c.questions.length), 1) }).map((_, rowIdx) =>
               game.categories.map((cat) => {
-                const q = cat.questions.find((q) => q.value === val);
-                if (!q) return <div key={`${cat.id}-${val}`} />;
+                const sorted = [...cat.questions].sort((a, b) => a.value - b.value);
+                const q = sorted[rowIdx];
+                if (!q) return <div key={`${cat.id}-r${rowIdx}`} />;
                 return (
                   <button
-                    key={`${cat.id}-${val}`}
+                    key={`${cat.id}-${q.id}`}
                     onClick={() => openQuestion(cat.id, q)}
                     disabled={q.answered}
                     className="board-tile rounded min-h-16 flex items-center justify-center"
                   >
                     <span className="retro-title text-3xl" style={{ color: q.answered ? "transparent" : "var(--gold)" }}>
-                      ${val}
+                      ${q.value}
                     </span>
                   </button>
                 );
@@ -277,19 +439,14 @@ export default function PlayPage({ params }: { params: Promise<{ gameId: string 
                   {q.clue}
                 </p>
               )}
-              {q.clueImage && (
-                <div className="relative w-full max-w-2xl rounded-xl overflow-hidden flip-in"
-                  style={{ height: "min(50vh,380px)", border: "3px solid var(--sp-blue)", boxShadow: "0 0 24px rgba(0,84,255,0.4)" }}>
-                  <Image src={q.clueImage} alt="clue" fill className="object-contain" />
-                </div>
-              )}
+              <ImageRow images={getClueImages(q)} borderColor="var(--sp-blue)" glowColor="rgba(0,84,255,0.4)" />
               {q.clueAudio && (
                 <div className="w-full max-w-sm">
                   <audio key={q.clueAudio} autoPlay controls src={q.clueAudio}
                     className="w-full" style={{ filter: "hue-rotate(220deg)" }} />
                 </div>
               )}
-              {!q.clue && !q.clueImage && !q.clueAudio && (
+              {!q.clue && getClueImages(q).length === 0 && !q.clueAudio && (
                 <p className="retro-title text-3xl text-blue-800 tracking-widest">(NO CLUE SET)</p>
               )}
             </>
@@ -301,18 +458,13 @@ export default function PlayPage({ params }: { params: Promise<{ gameId: string 
                   {q.answer}
                 </p>
               )}
-              {q.answerImage && (
-                <div className="relative w-full max-w-2xl rounded-xl overflow-hidden flip-in"
-                  style={{ height: "min(50vh,380px)", border: "3px solid var(--gold)", boxShadow: "0 0 24px rgba(255,215,0,0.3)" }}>
-                  <Image src={q.answerImage} alt="answer" fill className="object-contain" />
-                </div>
-              )}
+              <ImageRow images={getAnswerImages(q)} borderColor="var(--gold)" glowColor="rgba(255,215,0,0.3)" />
               {q.answerAudio && (
                 <div className="w-full max-w-sm">
                   <audio key={q.answerAudio} autoPlay controls src={q.answerAudio} className="w-full" />
                 </div>
               )}
-              {!q.answer && !q.answerImage && !q.answerAudio && (
+              {!q.answer && getAnswerImages(q).length === 0 && !q.answerAudio && (
                 <p className="retro-title text-3xl tracking-widest" style={{ color: "rgba(255,215,0,0.3)" }}>(NO ANSWER SET)</p>
               )}
             </>
@@ -528,7 +680,7 @@ export default function PlayPage({ params }: { params: Promise<{ gameId: string 
         <h1 className="retro-title text-6xl text-[var(--gold)] mb-1">FINAL SCORES</h1>
         <div className="star-divider w-80 mb-8" />
 
-        <div className="w-full max-w-md space-y-3 mb-10">
+        <div className="w-full max-w-md space-y-3 mb-8">
           {sorted.map((p, i) => (
             <div key={p.id} className="flex items-center gap-4 rounded-xl px-6 py-4"
               style={{
@@ -549,7 +701,8 @@ export default function PlayPage({ params }: { params: Promise<{ gameId: string 
           ))}
         </div>
 
-        <Link href="/" className="btn-blue px-10 py-3 rounded text-xl text-white" style={{ textDecoration: "none" }}>
+        <Link href="/" onClick={() => clearSession(gameId)}
+          className="btn-blue px-10 py-3 rounded text-xl text-white" style={{ textDecoration: "none" }}>
           PLAY AGAIN
         </Link>
       </div>
@@ -557,4 +710,37 @@ export default function PlayPage({ params }: { params: Promise<{ gameId: string 
   }
 
   return null;
+}
+
+/* ── renders 1 image large, 2+ side-by-side in a row ── */
+function ImageRow({ images, borderColor, glowColor }: {
+  images: string[];
+  borderColor: string;
+  glowColor: string;
+}) {
+  if (images.length === 0) return null;
+
+  const single = images.length === 1;
+
+  return (
+    <div className={`flip-in w-full flex gap-3 justify-center ${single ? "max-w-2xl" : "max-w-4xl"} mx-auto`}>
+      {images.map((src, i) => (
+        <div key={i} className="relative flex-1 rounded-xl overflow-hidden"
+          style={{
+            height: single ? "min(50vh,400px)" : "min(42vh,300px)",
+            maxWidth: single ? undefined : `${Math.min(100 / images.length, 50)}vw`,
+            border: `3px solid ${borderColor}`,
+            boxShadow: `0 0 24px ${glowColor}`,
+          }}>
+          <Image src={src} alt={`img-${i + 1}`} fill className="object-contain" unoptimized />
+          {images.length > 1 && (
+            <span className="absolute bottom-1 right-2 retro-title text-sm"
+              style={{ color: borderColor, textShadow: `0 0 8px ${glowColor}` }}>
+              {i + 1}
+            </span>
+          )}
+        </div>
+      ))}
+    </div>
+  );
 }

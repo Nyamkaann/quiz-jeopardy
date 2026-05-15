@@ -13,7 +13,8 @@
             "answered": false,
             "isDailyDouble": false,
             "clue": "Аль улс цаасыг зохиосон бэ?",
-            "answer": "Хятад"
+            "answer": "Хятад",
+            "clueImage": "https://theazb.com/wp-content/uploads/2018/08/paper.jpg"
           },
           {
             "id": "h2",
@@ -21,15 +22,17 @@
             "answered": false,
             "isDailyDouble": false,
             "clue": "Дэлхийн 1-р дайн хэдэн онд эхэлсэн бэ?",
-            "answer": "1914"
+            "answer": "1914",
+            "answerImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Bataille_de_Verdun_1916.jpg/250px-Bataille_de_Verdun_1916.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"
           },
           {
             "id": "h3",
             "value": 300,
             "answered": false,
             "isDailyDouble": false,
-            "clue": "Индианчуудын өвөг дээдэс болох 3 том улс байсан ба эхний 2 нь Maya, Aztec бол 3 дахь нь юу вэ?",
-            "answer": "Inca"
+            "clue": "Индианчуудын өвөг дээдэс болох 3 том эзэнт гүрэн байсан. Та тэдгээрийн 2 нь Aztec, Maya бол Гурав дахь нь юу вэ?",
+            "answer": "Inca",
+            "answerImage": "https://www.urosexpeditions.com/wp-content/uploads/Inca-Culture-scaled.webp"
           },
           {
             "id": "h4",
@@ -45,7 +48,8 @@
             "answered": false,
             "isDailyDouble": false,
             "clue": "Rome-ийн эзэнт гүрний хамгийн анхны хаан болох зурагт харагдаж буй хүн хэн бэ?",
-            "answer": "Augustus"
+            "answer": "Augustus",
+            "clueImage": "/uploads/c2d7404d-c4c8-40c0-8f8e-d44b0779939a.jpg"
           }
         ]
       },
@@ -59,7 +63,9 @@
             "answered": false,
             "isDailyDouble": false,
             "clue": "Pixar Studio-ийн анхны animation юу вэ?",
-            "answer": "Toy Story (1995)"
+            "answer": "Toy Story (1995)",
+            "clueImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToeqTVrbqxE5_nUztAsW_Wk8eqr_fJLX-aPw&s",
+            "answerImage": "https://m.media-amazon.com/images/M/MV5BZTA3OWVjOWItNjE1NS00NzZiLWE1MjgtZDZhMWI1ZTlkNzYwXkEyXkFqcGc@._V1_.jpg"
           },
           {
             "id": "m2",
@@ -67,7 +73,9 @@
             "answered": false,
             "isDailyDouble": false,
             "clue": "Micheal Jackson-ий энэ онд гарсан кинон дээр хэн Michael-ийн дүрийг бүтээсэн бэ?",
-            "answer": "Jaafar Jackson"
+            "answer": "Jaafar Jackson",
+            "answerImage": "https://www.mensjournal.com/.image/NDI6MDAwMDAwMDAxMTY3NDk4/premiere-of-lionsgates-michael-arrivals.jpg?io=1&profile=w2560&ar=16-9",
+            "clueImage": "https://scopecinemas-v2.s3.amazonaws.com/images/1774508333338_1500x425.jpg"
           },
           {
             "id": "m3",
@@ -75,7 +83,9 @@
             "answered": false,
             "isDailyDouble": false,
             "clue": "\"Гоёлын даашинз\" киноны гол эрэгтэй дүрийг тоглосон жүжигчны нэр?",
-            "answer": "Одбаяр"
+            "answer": "Одбаяр",
+            "clueImage": "https://cms.kinosan.mn/uploads/person/671a027e258d3043232015.jpg",
+            "answerImage": "https://cms.kinosan.mn/uploads/person/671a027e258d3043232015.jpg"
           },
           {
             "id": "m4",
@@ -83,7 +93,9 @@
             "answered": false,
             "isDailyDouble": false,
             "clue": "Oscar-ийн түүхэнд хамгийн олон удаа Best Actor авсан жүжигчин хэн бэ?",
-            "answer": "Daniel Day-Lewis"
+            "answer": "Daniel Day-Lewis \" 3 \"",
+            "answerImage": "https://i.redd.it/j6vgcozlcfv61.jpg",
+            "clueImage": "https://www.lafilm.edu/wp-content/uploads/2025/02/2025-Oscars.jpg"
           },
           {
             "id": "m5",
@@ -106,7 +118,8 @@
             "answered": false,
             "isDailyDouble": false,
             "clue": "2015–2016 NBA Championship-ийг хэн авсан бэ?",
-            "answer": "Cleveland Cavaliers (Cavs)"
+            "answer": "Cleveland Cavaliers (Cavs)",
+            "answerImage": "https://cdn.nba.com/manage/2021/07/lebron-title-2016-cavs.jpg"
           },
           {
             "id": "s2",
@@ -114,15 +127,19 @@
             "answered": false,
             "isDailyDouble": false,
             "clue": "Зурагт харагдаж буй бөхийн нэр хэн бэ?",
-            "answer": "Бат-Өлзий"
+            "answer": "Бат-Өлзий",
+            "clueImage": "https://resource4.sodonsolution.org/polit/image/2022/10/03/6qi8352qy5qv1byl/%D0%91.%D0%91%D0%B0%D1%82-%D3%A8%D0%BB%D0%B7%D0%B8%D0%B9%20%D0%91%D1%8F%D1%80%20%D0%B1%D0%BE%D0%BB%20%D1%81%D1%8D%D1%82%D0%B3%D1%8D%D0%BB%D1%8D%D1%8D%D1%81%20%D0%B3%D0%B0%D1%80%D0%B0%D1%85%20%D1%85%D2%AF%D1%87.jpg"
           },
           {
             "id": "s3",
             "value": 300,
             "answered": false,
             "isDailyDouble": false,
-            "clue": "Хаккухо сумо хэд дэх их аварга вэ?",
-            "answer": "69"
+            "clue": "Энэ хэн бэ ?",
+            "answer": "Novak Djokovic",
+            "clueImages": [
+              "https://e0.365dm.com/24/07/2048x1152/skysports-novak-djokovic-tennis_6625017.jpg?20250203073302"
+            ]
           },
           {
             "id": "s4",
@@ -138,7 +155,8 @@
             "answered": false,
             "isDailyDouble": false,
             "clue": "Монгол улсын хамгийн анхны олимпын медалтан хэн бэ?",
-            "answer": "Дамдиншарав"
+            "answer": "Дамдиншарав",
+            "answerImage": "https://media.mass.mn/ckeditor_assets/pictures/60257/content_527-1343959059527-1340069897damdinsharav.jpg"
           }
         ]
       },
@@ -151,8 +169,9 @@
             "value": 100,
             "answered": false,
             "isDailyDouble": false,
-            "clue": "Colors хамтлагын гоцлол дуучны нэр хэн бэ?",
-            "answer": "Тогтуун"
+            "clue": "Ямар хамтлагын цомог вэ ?",
+            "answer": "Lemons",
+            "clueImage": "/uploads/0b42d572-a86c-441c-8f42-712891035a8c.jpg"
           },
           {
             "id": "so2",
@@ -160,7 +179,8 @@
             "answered": false,
             "isDailyDouble": false,
             "clue": "Хамгийн олон удаа Grammy авсан дуучин хэн бэ?",
-            "answer": "Beyoncé"
+            "answer": "Beyoncé 35 удаа",
+            "answerImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGOXLnf91O-1D9Zhuw2kfW-oNry8u_cWhbGg&s"
           },
           {
             "id": "so3",
@@ -168,7 +188,8 @@
             "answered": false,
             "isDailyDouble": false,
             "clue": "Queen хамтлагын дуучин Freddie Mercury-ийн жинхэнэ нэр юу вэ?",
-            "answer": "Farrokh Bulsara"
+            "answer": "Farrokh Bulsara",
+            "clueImage": "https://i8.amplience.net/i/naras/gettyimages-481006633.jpg.jpg"
           },
           {
             "id": "so4",
@@ -176,15 +197,18 @@
             "answered": false,
             "isDailyDouble": false,
             "clue": "7 тивд тоглолт хийсэн хамгийн анхны хамтлаг аль нь вэ?",
-            "answer": "Metallica"
+            "answer": "Metallica",
+            "answerImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnMHV7rahjkmPHkKUUpjz73zrO0mC_z_qscg&s"
           },
           {
             "id": "so5",
             "value": 500,
             "answered": false,
             "isDailyDouble": false,
-            "clue": "Зурагт харагдаж буй дуучны нэр хэн бэ?",
-            "answer": "Neil Diamond"
+            "clue": "Зурагт харагдаж буй бөмбөр аль хамтлагынх вэ ?",
+            "answer": "White Stripes",
+            "clueImage": "https://cdn.hibid.com/img.axd?id=6115900239&wid=&rwl=false&p=&ext=&w=0&h=0&t=&lp=&c=true&wt=false&sz=MAX&checksum=i6ZfY%2BU96IEmWdBkDrV9rubNxWvU%2BIgP",
+            "answerImage": "https://live-production.wcms.abc-cdn.net.au/10fd3ae83d177076817a9b1a6112cd37?impolicy=wcms_crop_resize&cropH=1688&cropW=3000&xPos=0&yPos=322&width=862&height=485"
           }
         ]
       },
@@ -199,7 +223,8 @@
             "isDailyDouble": false,
             "clue": "Зурагт харагдаж буй Meme-ний нэр юу вэ?",
             "answer": "Chill Guy",
-            "clueImage": "/uploads/23541df3-0f2c-4b00-a757-913ab905b6ac.webp"
+            "clueImage": "/uploads/23541df3-0f2c-4b00-a757-913ab905b6ac.webp",
+            "clueAudio": "/uploads/180a83ce-8b81-4415-948f-671c6f2fbfd2.mp3"
           },
           {
             "id": "me2",
@@ -207,7 +232,8 @@
             "answered": false,
             "isDailyDouble": false,
             "clue": "\"No Rules 3\" кинон дээр жүжигчин Болд-Эрдэнэ бүтээсэн дүрийн нэр юу вэ?",
-            "answer": "Цэгц"
+            "answer": "Цэгц",
+            "clueImage": "/uploads/0a433283-9320-473e-9c45-92d1d2a1e14f.png"
           },
           {
             "id": "me3",
@@ -215,15 +241,18 @@
             "answered": false,
             "isDailyDouble": false,
             "clue": "Таны сонсож буй meme дээр \"Directed By ….\" гэж хэний нэр байдаг вэ?",
-            "answer": "Michael Bay"
+            "answer": "Michael Bay",
+            "clueAudio": "/uploads/68c97570-db8d-4978-af91-ade3e2ab7a89.mp3"
           },
           {
             "id": "me4",
             "value": 400,
             "answered": false,
             "isDailyDouble": false,
-            "clue": "Уг meme дууны Artist-ийн нэр хэн бэ?",
-            "answer": "Pika Taro"
+            "clue": "Intro-г сонсоод дууны нэрийг зөв таана уу ",
+            "answer": "Pika Taro - PPAP",
+            "clueAudio": "/uploads/f2eadd13-7386-4852-96c9-11de8c82be70.mp3",
+            "answerImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd-ps7RWTXYzVE_gD4882kxX64g6IIFkAPMg&s"
           },
           {
             "id": "me5",
@@ -231,7 +260,9 @@
             "answered": false,
             "isDailyDouble": false,
             "clue": "Сонсож буй meme Rapper-ийн нэр хэн бэ?",
-            "answer": "Supa Hot Fire"
+            "answer": "Supa Hot Fire",
+            "clueAudio": "/uploads/e98d25cb-d8f3-4fba-9812-a9df85bb46ae.mp3",
+            "answerImage": "https://pbs.twimg.com/profile_images/378800000336649879/99a74c22aea77c0e30e4c003d50f2549_400x400.jpeg"
           }
         ]
       },
@@ -245,7 +276,8 @@
             "answered": false,
             "isDailyDouble": false,
             "clue": "Америк тивийг хэн нээсэн бэ?",
-            "answer": "Christopher Columbus"
+            "answer": "Christopher Columbus",
+            "answerImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr_-8OiexjJYrClrOBYHAwh5TnJwe0tuwA7A&s"
           },
           {
             "id": "g2",
@@ -253,7 +285,8 @@
             "answered": false,
             "isDailyDouble": false,
             "clue": "Далайд гарцгүй хамгийн том газар нутагтай улс юу вэ?",
-            "answer": "Казахстан (Kazakhstan)"
+            "answer": "Казахстан (Kazakhstan)",
+            "answerImage": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Kazakhstan.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original"
           },
           {
             "id": "g3",
@@ -261,7 +294,9 @@
             "answered": false,
             "isDailyDouble": false,
             "clue": "Youtuber Мөнхцэлмэг хамгийн сүүлд ямар улсаар аялсан бичлэгээ YouTube-д хийсэн бэ?",
-            "answer": "Burkina Faso"
+            "answer": "Sierra leone",
+            "clueImage": "https://isee.mn/uploads/news/4x3/2025/09/15/548271332_3986995314873240_283081100409487391_n.jpg",
+            "answerImage": "/uploads/916ba195-2b5a-4aa3-8861-70a681b2033a.png"
           },
           {
             "id": "g4",
@@ -277,12 +312,388 @@
             "answered": false,
             "isDailyDouble": false,
             "clue": "Дэлхийн түүхэнд хамгийн баян хүн болох Mansa Musa нь аль улсынх вэ?",
-            "answer": "Mali (Мали)"
+            "answer": "Mali (Мали)",
+            "clueImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD7Ir33LOYTAKDiWEFWGijGoA06xF7jck1jw&s"
           }
         ]
       }
     ],
     "createdAt": "2026-05-15T03:55:39.425Z",
-    "updatedAt": "2026-05-15T04:01:18.944Z"
+    "updatedAt": "2026-05-15T06:32:41.191Z"
+  },
+  {
+    "id": "3db72ff0-824a-43b2-a994-4f9e7479b138",
+    "title": "Storepay Jeopardy Quiz Round 2",
+    "categories": [
+      {
+        "id": "cat-finance",
+        "name": "Finance",
+        "questions": [
+          {
+            "id": "f1",
+            "value": 100,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Монголын системийн нөлөө бүхий 5 банкийг нэрлэнэ үү?",
+            "answer": "Khan Bank, TDB, Golomt, XacBank, State Bank",
+            "answerImages": [
+              "https://www.khanbank.com/uploaded/images/2024/Apr/20240403105610972471-logo_1.png",
+              "https://play-lh.googleusercontent.com/oLKxnYGEgAyoxZ4rG6ogqzoLQMIUC7wrAuE7tca9PKWZubIev1t3CvvnJvpvj7KhKL4",
+              "https://mtn-prod-bucket.s3.amazonaws.com/photos/company/70602919988776/78169603265517_%D0%9B%D0%BE%D0%B3%D0%BE%20%D0%B4%D0%B0%D0%BD.jpg",
+              "https://play-lh.googleusercontent.com/vHTV4z9QgeW9tPT2uIQtFIFA1Y_i2se3mrc98h4XvUJFhvQGgLRlCdl4oHF3YZXI4qcG",
+              "https://play-lh.googleusercontent.com/QCG5vwYkrmGXMipDBA24LgTYldrtBpS-2A5BQLv9IudF55MnNhx7zJBlHK9ruQVZK9RX"
+            ]
+          },
+          {
+            "id": "f2",
+            "value": 200,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "New York-ийн хөрөнгийн биржийн гол төлөөлөгчдийн нэг нь New York Stock Exchange бол 2 дахь нь юу вэ?",
+            "answer": "NASDAQ",
+            "answerImages": [
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHbgq6ksUmlgQ8mg1LU1NxQcXXsV4tV7YRLg&s"
+            ]
+          },
+          {
+            "id": "f3",
+            "value": 300,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "FRC гэж юу гэсэн үгний товчлол вэ?",
+            "answer": "Financial Regulatory Commission"
+          },
+          {
+            "id": "f4",
+            "value": 400,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Nvidia-ийн CEO хэн бэ?",
+            "answer": "Jensen Huang",
+            "clueImages": [
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQulMB8iEIULhGjfyDd1VzwNcERv4z4Bdgnug&s"
+            ]
+          },
+          {
+            "id": "f5",
+            "value": 500,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Зурагт харагдаж буй хүн ямар номны нүүрэн дээр байдаг вэ?",
+            "answer": "Rich Dad Poor Dad",
+            "clueImages": [
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg_aPoQYlZsWja5CHBOIlJ1qFZsjLePCEe9g&s"
+            ],
+            "answerImages": [
+              "https://img.perlego.com/book-covers/2669721/9781365502033.jpg"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cat-seppuku",
+        "name": "Random",
+        "questions": [
+          {
+            "id": "se1",
+            "value": 500,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Shonen сэтгүүлийн Top 3 anime юу вэ?",
+            "answer": "Naruto, Bleach, One Piece",
+            "answerImages": [
+              "https://m.media-amazon.com/images/M/MV5BZTNjOWI0ZTAtOGY1OS00ZGU0LWEyOWYtMjhkYjdlYmVjMDk2XkEyXkFqcGc@._V1_.jpg",
+              "/uploads/1a550fd0-fc9d-4bb1-8cb2-8372dd49abcd.png",
+              "/uploads/ffe25ddd-d77d-49f9-b9be-15f07a576e5b.png"
+            ]
+          },
+          {
+            "id": "se2",
+            "value": 500,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Ононгийн \"Тайвшрал\" дууны клип дээр ямар брэндийн машин гардаг вэ?",
+            "answer": "Ford-Mustang",
+            "clueAudio": "/uploads/e64d5aab-fbf3-4df1-9aaf-ad5ed9bbf030.mp3"
+          },
+          {
+            "id": "se3",
+            "value": 500,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "MF-TV ийн дүрийн нэр?",
+            "answer": "Crown Tulgaa",
+            "clueImages": [
+              "/uploads/fc05e5f3-2add-4288-b0a9-83a9c9a012bb.png"
+            ]
+          },
+          {
+            "id": "se4",
+            "value": 500,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Зурагт харагдаж буй хүний бүтэн нэр хэн бэ?",
+            "answer": "\"Amin-Erdene\"",
+            "clueImages": [
+              "/uploads/38fcc917-61d8-4288-8aa7-86f4022a8bca.png"
+            ]
+          },
+          {
+            "id": "se5",
+            "value": 500,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Хамгийн анхны сансарт гарсан хөлөг онгоцны нэр юу вэ?",
+            "answer": "Восток-1 (Vostok 1)",
+            "answerImages": [
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTcfhnGs01j-yWNjCi8yhKDER-0pkoj9j5nQ&s"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cat-politics",
+        "name": "Mongolian Politics",
+        "questions": [
+          {
+            "id": "p1",
+            "value": 100,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Зурагт харагдаж буй хүний нэр хэн бэ?",
+            "answer": "Лувсанжамц",
+            "clueImages": [
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIh4Q-foug0NyXWb68x3YHagIAR1hIP4h4LQ&s"
+            ]
+          },
+          {
+            "id": "p2",
+            "value": 200,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Мөнх-Эрдэнэ аль намынх вэ?",
+            "answer": "Ардчилсан нам",
+            "clueImages": [
+              "https://www.zindaa.mn/images/news/origin/17/a5_20210112145209.jpg"
+            ]
+          },
+          {
+            "id": "p3",
+            "value": 300,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "ХҮН нам гэдэг нь ямар үгний товчлол вэ?",
+            "answer": "Хөдөлмөрийн Үндэсний Нам",
+            "clueImages": [
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGyMhfei1IYLqYwCMPrYzAn2T15fBzLQAt2A&s"
+            ]
+          },
+          {
+            "id": "p4",
+            "value": 400,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Монголын хамгийн анхны Ерөнхий сайд хэн бэ?",
+            "answer": "Намнансүрэн",
+            "answerImages": [
+              "https://mongoltoli.mn/history/img/news/history_1481812725.jpg"
+            ]
+          },
+          {
+            "id": "p5",
+            "value": 500,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Ардчилсан хувьсгал хэдэн оны хэдэн сард эхэлсэн бэ?",
+            "answer": "1989 оны 12 сар",
+            "answerImages": [
+              "https://mongoltoli.mn/history/img/news/history_1482453836.jpg"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cat-sequence",
+        "name": "Sequence →",
+        "questions": [
+          {
+            "id": "sq1",
+            "value": 400,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Дараа нь юу байх вэ ",
+            "answer": "",
+            "clueImages": [
+              "https://www.thesprucepets.com/thmb/DB9mHyQt2myV0WFkaPVlrQ1DGHo=/5600x0/filters:no_upscale():strip_icc()/side-view-of-girl-wearing-riding-hat-galloping-on-horseback-632168831-5ace5d2a6bf069003842c47b.jpg",
+              "https://www.allianzassistance.in/blog/How-To-Drive-Top-10-Driving-Tips-for-Beginners/_jcr_content/root/stage/stageimage.img.jpeg/1643661587942/how-to-drive--top-10-driving-tips-for-beginners.jpeg",
+              "https://plus.unsplash.com/premium_photo-1711391559274-7fa38a89e54f?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmVhZGluZyUyMGJvb2tzfGVufDB8fDB8fHww",
+              "/uploads/d094beed-4b4f-4ab0-8c90-7aab655a4365.png"
+            ],
+            "answerImages": [
+              "https://static.vecteezy.com/system/resources/previews/044/207/628/non_2x/lush-green-tree-isolated-on-a-transparent-background-png.png"
+            ]
+          },
+          {
+            "id": "sq2",
+            "value": 400,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Дэлгэрмөрөн → Хаянаа → Батсүх → ?",
+            "answer": "Хаазаа \"Хангэрэл\""
+          },
+          {
+            "id": "sq3",
+            "value": 400,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Dunkirk → Tenet → Oppenheimer → ?",
+            "answer": "Odyssey",
+            "answerImages": [
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdqaDony1i_DnQ0Wk5QBxWFR0Js7T-o-WlZg&s"
+            ]
+          },
+          {
+            "id": "sq4",
+            "value": 400,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Түшээт хан → Сэцэн хан → Сайн ноён хан → ?",
+            "answer": "Засагт хаан"
+          },
+          {
+            "id": "sq5",
+            "value": 400,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Асуулын тэмдэгийн оронд юу байх вэ ?",
+            "answer": "Сунадаг хүн",
+            "clueImages": [
+              "https://upload.wikimedia.org/wikipedia/commons/3/36/Large_bonfire.jpg",
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4FnRidIGOkEKKD1YrSdPmhrbmsH2-CpLxBQ&s",
+              "/uploads/3cc0ad6a-6d09-422c-a0fb-65144a3e4c40.png",
+              "/uploads/2c721a55-f64b-4e3b-8b5c-a0665ee9c192.png"
+            ],
+            "answerImages": [
+              "https://lumiere-a.akamaihd.net/v1/images/p_studios_fantasticfourfirststeps_pay1sunrise_poster_9d183368.jpeg"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cat-storepay",
+        "name": "Storepay →",
+        "questions": [
+          {
+            "id": "sp1",
+            "value": 100,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Үүдний цаг хэдэн минутаар зөрдөг вэ?",
+            "answer": "8"
+          },
+          {
+            "id": "sp2",
+            "value": 200,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Өнгөрсөн жил зуны зугаалга хэдэн сарын хэднээс хэдний хооронд байсан бэ?",
+            "answer": "6 сарын 26-29"
+          },
+          {
+            "id": "sp3",
+            "value": 300,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Нямаа-ийн охин хэдэн сарын хэдэнд төрсөн бэ?",
+            "answer": "2026 01 03"
+          },
+          {
+            "id": "sp4",
+            "value": 400,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Яаг одоо Storepay Instagram хэдэн дагагчтай байгаа вэ? (±50 дотор хариулбал тооцно)",
+            "answer": "9046",
+            "answerImages": [
+              "/uploads/81357d9b-5779-4cbc-8616-ef35762f2029.png"
+            ]
+          },
+          {
+            "id": "sp5",
+            "value": 500,
+            "answered": false,
+            "isDailyDouble": false,
+            "clue": "Зоригийг чинь үнэлж 500 оноо бэлэглэлээ",
+            "answer": "",
+            "answerImages": []
+          }
+        ]
+      },
+      {
+        "id": "a6209880-28c0-4b74-91ad-03d3b05e96ae",
+        "name": "GuesS The Song",
+        "questions": [
+          {
+            "id": "bbfe87d8-81af-478d-b134-a9b8f76816e2",
+            "value": 100,
+            "clue": "Дууны нэр юу вэ ?",
+            "answer": "Bruno Mars - Just The Way You Are ",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueAudio": "/uploads/0f1b5b79-2051-4fc5-b677-37553f69f185.mp3",
+            "answerImages": [
+              "https://i.ytimg.com/vi/c4OY0QMZygo/maxresdefault.jpg"
+            ]
+          },
+          {
+            "id": "0aebde71-f468-41d8-b4b6-a1041be464e2",
+            "value": 200,
+            "clue": "Дууны нэрийг таана уу ",
+            "answer": "Жавхлан - Хайрлаж болохгүй хайр",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueAudio": "/uploads/fbb9433c-0a0c-464a-b0a7-b0be98214967.mp3",
+            "answerImages": [
+              "https://i.scdn.co/image/ab67616d00001e025100f5b02eefa5d5ed91f319"
+            ]
+          },
+          {
+            "id": "37998ffa-b5c7-4b4f-95d6-63936c6eb69a",
+            "value": 300,
+            "clue": "Ямар хамтлагийн дуу вэ ?",
+            "answer": "Green Day",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueAudio": "/uploads/b5730441-bb56-42ae-a34d-e1f7290dddb1.mp3",
+            "answerImages": [
+              "https://i.scdn.co/image/ab6761610000e5eb6ff0cd5ef2ecf733804984bb"
+            ]
+          },
+          {
+            "id": "de349fd6-5222-4f18-acba-962671fcd40a",
+            "value": 400,
+            "clue": "Дууны эхлэлийг сонсоод таана уу ",
+            "answer": "The Royal Heartaches • Solir Huluglugch",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueAudio": "/uploads/a3612455-2bd2-4528-8935-cd8fd386e750.mp3"
+          },
+          {
+            "id": "e8b9ea29-caf4-4aaf-a046-c138948d857e",
+            "value": 500,
+            "clue": "Хэний ямар нэртэй дуу вэ?",
+            "answer": "Timothée Chalamet - Pure Imagination ",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueAudio": "/uploads/96f41a4b-0b11-421c-ad0e-51a38915e8f5.mp3",
+            "answerImages": [
+              "/uploads/f8995276-0755-4aaa-8298-dd23d21c655f.png"
+            ]
+          }
+        ]
+      }
+    ],
+    "createdAt": "2026-05-15T06:19:02.100Z",
+    "updatedAt": "2026-05-15T07:39:19.552Z"
   }
 ]

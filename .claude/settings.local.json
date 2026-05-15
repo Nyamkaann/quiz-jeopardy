@@ -17,7 +17,13 @@
       "Bash(cp \"/Users/nyamdorjmunkh/Desktop/Workspace/02 SP logo Vertical Original Blue V.svg\" /Users/nyamdorjmunkh/Desktop/Quiz/public/sp-logo.svg)",
       "Bash(curl -s -X POST http://localhost:3000/api/games -H 'Content-Type: application/json' -d '{ *)",
       "Bash(curl -s http://localhost:3000/api/games/cf66d08a-f883-4631-a699-2de92618adad)",
-      "Bash(python3 -c ' *)"
+      "Bash(python3 -c ' *)",
+      "Bash(npx tsc *)",
+      "Bash(find /tmp -name \"*.png\" -o -name \"*.jpg\" -o -name \"*.jpeg\" 2>/dev/null | head -10; find ~/Desktop -name \"*.png\" -o -name \"*.jpg\" -o -name \"*.jpeg\" 2>/dev/null | grep -v Quiz | head -10)",
+      "Bash(sort -t/ -k6)",
+      "Bash(find ~/Desktop ~/Downloads ~/Documents -maxdepth 4 -newer \"/Users/nyamdorjmunkh/Desktop/Screenshot 2026-05-15 at 3.14.43 PM.png\" \\\\\\( -name \"*.jpg\" -o -name \"*.jpeg\" -o -name \"*.png\" -o -name \"*.webp\" \\\\\\) 2>/dev/null)",
+      "Bash(find ~ -maxdepth 5 -name \"*maison*\" -o -name \"*coupon*\" -o -name \"*lunch*\" 2>/dev/null | grep -v \".cache\" | grep -v \"node_modules\")",
+      "Bash(cp ~/Downloads/prize-coupon.jpg /Users/nyamdorjmunkh/Desktop/Quiz/public/prize-coupon.jpg && echo \"OK\")"
     ]
   }
 }

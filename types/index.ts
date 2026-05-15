@@ -5,9 +5,11 @@ export interface Question {
   answer: string;
   isDailyDouble: boolean;
   answered: boolean;
-  clueImage?: string;
+  clueImage?: string;      // legacy single – kept for backward compat
+  clueImages?: string[];   // multi-image support
   clueAudio?: string;
-  answerImage?: string;
+  answerImage?: string;    // legacy single
+  answerImages?: string[]; // multi-image support
   answerAudio?: string;
 }
 
