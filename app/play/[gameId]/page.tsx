@@ -216,6 +216,8 @@ export default function PlayPage({
   const [finalCorrect, setFinalCorrect] = useState<Record<string, boolean>>({});
   const [showRules, setShowRules] = useState(false);
   const [showPrize, setShowPrize] = useState(false);
+  const [timeLeft, setTimeLeft] = useState(60);
+  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const hydrated = useRef(false);
 
   /* ── restore session on mount ── */
@@ -287,6 +289,25 @@ export default function PlayPage({
     finalCorrect,
     gameId,
   ]);
+
+  /* ── countdown timer ── */
+  useEffect(() => {
+    if (phase !== "clue") {
+      if (timerRef.current) clearInterval(timerRef.current);
+      return;
+    }
+    setTimeLeft(60);
+    timerRef.current = setInterval(() => {
+      setTimeLeft((t) => {
+        if (t <= 1) {
+          clearInterval(timerRef.current!);
+          return 0;
+        }
+        return t - 1;
+      });
+    }, 1000);
+    return () => { if (timerRef.current) clearInterval(timerRef.current); };
+  }, [phase, activeQ]);
 
   const allAnswered =
     game?.categories.every((cat) => cat.questions.every((q) => q.answered)) ??
@@ -738,20 +759,41 @@ export default function PlayPage({
           <span className="retro-title text-lg text-[var(--sp-blue-glow)] tracking-wider">
             {catName.toUpperCase()}
           </span>
-          <span className="retro-title text-2xl text-[var(--gold)]">
-            ${q.value}
-          </span>
-          <button
-            onClick={skipQuestion}
-            style={{
-              fontFamily: "'Share Tech Mono',monospace",
-              color: "rgba(100,130,255,0.5)",
-              fontSize: "0.7rem",
-              letterSpacing: "0.15em",
-            }}
-          >
-            SKIP
-          </button>
+
+          {/* circular countdown timer */}
+          <div className="relative flex items-center justify-center" style={{ width: 64, height: 64 }}>
+            <svg width="64" height="64" style={{ position: "absolute", top: 0, left: 0, transform: "rotate(-90deg)" }}>
+              <circle cx="32" cy="32" r="28" fill="none" stroke="rgba(0,84,255,0.2)" strokeWidth="4" />
+              <circle
+                cx="32" cy="32" r="28" fill="none"
+                stroke={timeLeft <= 10 ? "#ff4422" : timeLeft <= 20 ? "#ffaa00" : "var(--sp-blue)"}
+                strokeWidth="4"
+                strokeDasharray={`${2 * Math.PI * 28}`}
+                strokeDashoffset={`${2 * Math.PI * 28 * (1 - timeLeft / 60)}`}
+                strokeLinecap="round"
+                style={{ transition: "stroke-dashoffset 0.9s linear, stroke 0.3s" }}
+              />
+            </svg>
+            <span className="retro-title text-xl z-10"
+              style={{ color: timeLeft <= 10 ? "#ff4422" : timeLeft <= 20 ? "#ffaa00" : "var(--gold)" }}>
+              {timeLeft}
+            </span>
+          </div>
+
+          <div className="flex items-center gap-4">
+            <span className="retro-title text-2xl text-[var(--gold)]">${q.value}</span>
+            <button
+              onClick={skipQuestion}
+              style={{
+                fontFamily: "'Share Tech Mono',monospace",
+                color: "rgba(100,130,255,0.5)",
+                fontSize: "0.7rem",
+                letterSpacing: "0.15em",
+              }}
+            >
+              SKIP
+            </button>
+          </div>
         </div>
 
         {/* clue / answer display */}
