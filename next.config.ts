@@ -6,7 +6,10 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "**" },
       { protocol: "http", hostname: "**" },
     ],
-    localPatterns: [{ pathname: "/uploads/**", search: "" }],
+    localPatterns: [
+      { pathname: "/uploads/**", search: "" },
+      { pathname: "/astro-logo.png", search: "" },
+    ],
   },
 };
 

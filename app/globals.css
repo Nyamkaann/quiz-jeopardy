@@ -2,20 +2,55 @@
 @import "tailwindcss";
 
 :root {
-  --sp-blue: #0054ff;
-  --sp-blue-dark: #0040cc;
-  --sp-blue-glow: #3380ff;
+  --sp-blue: #7c5cff;
+  --sp-blue-dark: #5a3fd6;
+  --sp-blue-glow: #a78bfa;
   --gold: #ffd700;
   --gold-dark: #e6b800;
-  --bg-deep: #04051a;
-  --bg-card: #070b2e;
-  --bg-panel: #0a1040;
+  --bg-deep: #0a0518;
+  --bg-card: #130a30;
+  --bg-panel: #1b0f3d;
+  --nebula-pink: #ff5ec7;
 }
 
 body {
   font-family: "Oswald", sans-serif;
   background-color: var(--bg-deep);
   color: white;
+  position: relative;
+}
+
+/* ── Deep space backdrop: nebula glow + starfield ── */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    radial-gradient(ellipse 900px 600px at 15% -5%, rgba(124,92,255,0.35), transparent 60%),
+    radial-gradient(ellipse 700px 500px at 100% 10%, rgba(255,94,199,0.16), transparent 60%),
+    radial-gradient(ellipse 800px 700px at 50% 100%, rgba(124,92,255,0.2), transparent 60%),
+    radial-gradient(1.5px 1.5px at 10% 20%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 80% 15%, #fff, transparent),
+    radial-gradient(1px 1px at 45% 8%, #fff, transparent),
+    radial-gradient(1px 1px at 65% 35%, rgba(255,255,255,0.8), transparent),
+    radial-gradient(1.5px 1.5px at 25% 45%, #fff, transparent),
+    radial-gradient(1px 1px at 90% 60%, rgba(255,255,255,0.7), transparent),
+    radial-gradient(1.5px 1.5px at 5% 70%, #fff, transparent),
+    radial-gradient(1px 1px at 55% 80%, rgba(255,255,255,0.8), transparent),
+    radial-gradient(1.5px 1.5px at 75% 90%, #fff, transparent),
+    radial-gradient(1px 1px at 35% 95%, rgba(255,255,255,0.6), transparent),
+    radial-gradient(1.5px 1.5px at 95% 40%, #fff, transparent),
+    radial-gradient(1px 1px at 20% 88%, rgba(255,255,255,0.7), transparent);
+  background-repeat: no-repeat;
+  background-color: var(--bg-deep);
+  animation: twinkle 5s ease-in-out infinite alternate;
+  pointer-events: none;
+  z-index: -2;
+}
+
+@keyframes twinkle {
+  0%   { opacity: 0.75; }
+  100% { opacity: 1; }
 }
 
 /* ── Retro scanlines overlay ── */
@@ -49,13 +84,13 @@ body::after {
   text-shadow:
     0 0 8px var(--sp-blue-glow),
     0 0 24px var(--sp-blue),
-    2px 2px 0 #001a66;
+    2px 2px 0 #1a0a4d;
 }
 
 /* ── Board tile ── */
 .board-tile {
   font-family: "Bebas Neue", sans-serif;
-  background: linear-gradient(160deg, #0a1a6e 0%, #04051a 100%);
+  background: linear-gradient(160deg, #241454 0%, #0a0518 100%);
   border: 3px solid var(--sp-blue);
   box-shadow:
     0 0 8px var(--sp-blue),
@@ -66,7 +101,7 @@ body::after {
   transform: scale(1.04);
   box-shadow:
     0 0 18px var(--sp-blue-glow),
-    0 0 40px rgba(0,84,255,0.4),
+    0 0 40px rgba(124,92,255,0.4),
     inset 0 1px 0 rgba(255,255,255,0.08);
 }
 .board-tile:not(:disabled):active {
@@ -82,9 +117,9 @@ body::after {
 .cat-header {
   font-family: "Bebas Neue", sans-serif;
   background: linear-gradient(180deg, var(--sp-blue) 0%, var(--sp-blue-dark) 100%);
-  border: 2px solid #3a7aff;
+  border: 2px solid #9a7aff;
   box-shadow:
-    0 0 12px rgba(0,84,255,0.6),
+    0 0 12px rgba(124,92,255,0.6),
     inset 0 1px 0 rgba(255,255,255,0.15);
   letter-spacing: 0.08em;
 }
@@ -114,22 +149,22 @@ body::after {
 
 .btn-blue {
   font-family: "Bebas Neue", sans-serif;
-  background: linear-gradient(180deg, #1a6aff 0%, var(--sp-blue-dark) 100%);
-  border: 2px solid #5599ff;
+  background: linear-gradient(180deg, #9370ff 0%, var(--sp-blue-dark) 100%);
+  border: 2px solid #b9a3ff;
   box-shadow:
-    0 4px 0 #001a66,
-    0 0 10px rgba(0,84,255,0.4);
+    0 4px 0 #1a0a4d,
+    0 0 10px rgba(124,92,255,0.4);
   letter-spacing: 0.08em;
   transition: transform 0.08s, box-shadow 0.08s;
 }
 .btn-blue:hover {
   box-shadow:
-    0 4px 0 #001a66,
-    0 0 20px rgba(0,84,255,0.6);
+    0 4px 0 #1a0a4d,
+    0 0 20px rgba(124,92,255,0.6);
 }
 .btn-blue:active {
   transform: translateY(3px);
-  box-shadow: 0 1px 0 #001a66;
+  box-shadow: 0 1px 0 #1a0a4d;
 }
 
 /* ── Retro panel/card ── */
@@ -137,16 +172,16 @@ body::after {
   background: var(--bg-card);
   border: 2px solid var(--sp-blue);
   box-shadow:
-    0 0 0 1px #001a66,
-    0 0 20px rgba(0,84,255,0.15),
+    0 0 0 1px #1a0a4d,
+    0 0 20px rgba(124,92,255,0.15),
     inset 0 1px 0 rgba(255,255,255,0.04);
 }
 
 /* ── Score chip ── */
 .score-chip {
-  background: linear-gradient(180deg, #0a1a6e 0%, #04051a 100%);
+  background: linear-gradient(180deg, #241454 0%, #0a0518 100%);
   border: 2px solid var(--sp-blue);
-  box-shadow: 0 0 10px rgba(0,84,255,0.3);
+  box-shadow: 0 0 10px rgba(124,92,255,0.3);
   font-family: "Share Tech Mono", monospace;
 }
 
@@ -160,7 +195,7 @@ body::after {
 /* ── Retro border frame ── */
 .retro-frame {
   border: 4px solid var(--sp-blue);
-  outline: 2px solid rgba(0,84,255,0.3);
+  outline: 2px solid rgba(124,92,255,0.3);
   outline-offset: 4px;
 }
 

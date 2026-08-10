@@ -1,7 +1,7 @@
 [
   {
     "id": "cf66d08a-f883-4631-a699-2de92618adad",
-    "title": "Storepay Jeopardy Quiz Round 1",
+    "title": "Astro Jeopardy Quiz Round 1",
     "categories": [
       {
         "id": "cat-history",
@@ -322,11 +322,11 @@
       }
     ],
     "createdAt": "2026-05-15T03:55:39.425Z",
-    "updatedAt": "2026-05-15T08:22:15.136Z"
+    "updatedAt": "2026-08-10T07:44:09.372Z"
   },
   {
     "id": "3db72ff0-824a-43b2-a994-4f9e7479b138",
-    "title": "Storepay Jeopardy Quiz Round 2",
+    "title": "Astro Jeopardy Quiz Round 2",
     "categories": [
       {
         "id": "cat-finance",
@@ -524,25 +524,18 @@
             "value": 400,
             "answered": false,
             "isDailyDouble": false,
-            "clue": "Дараа нь юу байх вэ ",
-            "answer": "",
-            "clueImages": [
-              "https://www.thesprucepets.com/thmb/DB9mHyQt2myV0WFkaPVlrQ1DGHo=/5600x0/filters:no_upscale():strip_icc()/side-view-of-girl-wearing-riding-hat-galloping-on-horseback-632168831-5ace5d2a6bf069003842c47b.jpg",
-              "https://www.allianzassistance.in/blog/How-To-Drive-Top-10-Driving-Tips-for-Beginners/_jcr_content/root/stage/stageimage.img.jpeg/1643661587942/how-to-drive--top-10-driving-tips-for-beginners.jpeg",
-              "https://plus.unsplash.com/premium_photo-1711391559274-7fa38a89e54f?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmVhZGluZyUyMGJvb2tzfGVufDB8fDB8fHww",
-              "/uploads/d094beed-4b4f-4ab0-8c90-7aab655a4365.png"
-            ],
-            "answerImages": [
-              "https://static.vecteezy.com/system/resources/previews/044/207/628/non_2x/lush-green-tree-isolated-on-a-transparent-background-png.png"
-            ]
+            "clue": "Leonardo da Vinci → Michelangelo → Raphael → ?",
+            "answer": "Donatello",
+            "clueImages": [],
+            "answerImages": []
           },
           {
             "id": "sq2",
             "value": 400,
             "answered": false,
             "isDailyDouble": false,
-            "clue": "Дэлгэрмөрөн → Хаянаа → Батсүх → ?",
-            "answer": "Хаазаа \"Хангэрэл\""
+            "clue": "    Nile → Amazon → Yangtze → ?",
+            "answer": "Mississippi"
           },
           {
             "id": "sq3",
@@ -568,67 +561,56 @@
             "value": 400,
             "answered": false,
             "isDailyDouble": false,
-            "clue": "Асуулын тэмдэгийн оронд юу байх вэ ?",
-            "answer": "Сунадаг хүн",
-            "clueImages": [
-              "https://upload.wikimedia.org/wikipedia/commons/3/36/Large_bonfire.jpg",
-              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4FnRidIGOkEKKD1YrSdPmhrbmsH2-CpLxBQ&s",
-              "/uploads/3cc0ad6a-6d09-422c-a0fb-65144a3e4c40.png",
-              "/uploads/2c721a55-f64b-4e3b-8b5c-a0665ee9c192.png"
-            ],
-            "answerImages": [
-              "https://lumiere-a.akamaihd.net/v1/images/p_studios_fantasticfourfirststeps_pay1sunrise_poster_9d183368.jpeg"
-            ]
+            "clue": "    Iron Man → The Incredible Hulk → Iron Man 2 → ?",
+            "answer": "Thor",
+            "clueImages": [],
+            "answerImages": []
           }
         ]
       },
       {
         "id": "cat-storepay",
-        "name": "Storepay →",
+        "name": "Space",
         "questions": [
           {
             "id": "sp1",
             "value": 100,
             "answered": false,
             "isDailyDouble": false,
-            "clue": "NM Tower ямар нэртэй гудамжинд байдаг вэ ?",
-            "answer": "Махатма Гандийн Гудамж"
+            "clue": "Нарны аймгийн хамгийн том гариг аль вэ?",
+            "answer": "Бархасбадь \"Jupiter\""
           },
           {
             "id": "sp2",
             "value": 200,
             "answered": false,
             "isDailyDouble": false,
-            "clue": "Өнгөрсөн жил зуны зугаалга хэдэн сарын хэднээс хэдний хооронд байсан бэ?",
-            "answer": "6 сарын 26-29"
+            "clue": "Ангараг гаригийн гадаргуугийн улаан өнгийг голчлон ямар бодис үүсгэдэг вэ?",
+            "answer": "Гадаргуу дээрх төмрийн исэл буюу зэв"
           },
           {
             "id": "sp3",
             "value": 300,
             "answered": false,
             "isDailyDouble": false,
-            "clue": "Нямаа-ийн охин хэдэн сарын хэдэнд төрсөн бэ?",
-            "answer": "2026 01 03"
+            "clue": "Гэрлийн жил гэж юуг хэмждэг вэ?",
+            "answer": "Гэрлийн жил нь гэрэл нэг жилд вакуумд туулдаг зайг илэрхийлдэг."
           },
           {
             "id": "sp4",
             "value": 400,
             "answered": false,
             "isDailyDouble": false,
-            "clue": "Яаг одоо Storepay Instagram хэдэн дагагчтай байгаа вэ? (±50 дотор хариулбал тооцно)",
-            "answer": "9046",
-            "answerImages": [
-              "/uploads/81357d9b-5779-4cbc-8616-ef35762f2029.png"
-            ]
+            "clue": "Од өөрийн цөм дэх устөрөгчийг гелий болгон хувиргах үед ямар процесс явагддаг вэ?",
+            "answer": "Устөрөгчийн цөмүүд нэгдэн гелий үүсгэх нь цөмийн нэгдлийн процесс."
           },
           {
             "id": "sp5",
             "value": 500,
             "answered": false,
             "isDailyDouble": false,
-            "clue": "Зоригийг чинь үнэлж 500 оноо бэлэглэлээ",
-            "answer": "",
-            "answerImages": []
+            "clue": "Хэрэв хар нүхний үйл явдлын хаяа (event horizon)-г давсан биетийг гаднаас нь ажиглавал юу ажиглагдах вэ?",
+            "answer": "Гэрэл нь улаан шилжилтэд орж, улам бүдгэрэн харагдана"
           }
         ]
       },
@@ -697,6 +679,6 @@
       }
     ],
     "createdAt": "2026-05-15T06:19:02.100Z",
-    "updatedAt": "2026-05-15T09:13:19.748Z"
+    "updatedAt": "2026-08-10T07:43:51.561Z"
   }
 ]

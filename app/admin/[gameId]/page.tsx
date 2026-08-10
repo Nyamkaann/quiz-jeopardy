@@ -155,7 +155,7 @@ export default function AdminPage({ params }: { params: Promise<{ gameId: string
     return (
       <div className="min-h-screen flex items-center justify-center" style={{ background: "var(--bg-deep)" }}>
         <div className="flex flex-col items-center gap-4">
-          <Image src="/sp-logo.svg" width={48} height={48} alt="" className="animate-pulse opacity-60" />
+          <Image src="/astro-logo.png" width={48} height={48} alt="" className="animate-pulse opacity-60" />
           <p className="retro-title text-2xl text-blue-400 tracking-widest">LOADING...</p>
         </div>
       </div>
@@ -169,16 +169,16 @@ export default function AdminPage({ params }: { params: Promise<{ gameId: string
   return (
     <div className="min-h-screen" style={{ background: "var(--bg-deep)" }}>
       {/* ── HEADER ── */}
-      <header style={{ background: "linear-gradient(180deg,#060d3a 0%,#04051a 100%)", borderBottom: "3px solid var(--sp-blue)", boxShadow: "0 0 24px rgba(0,84,255,0.4)" }}>
+      <header style={{ background: "linear-gradient(180deg,#150a33 0%,#0a0518 100%)", borderBottom: "3px solid var(--sp-blue)", boxShadow: "0 0 24px rgba(124,92,255,0.4)" }}>
         <div className="flex items-center justify-between px-6 py-4">
           <div className="flex items-center gap-4">
             <Link href="/" className="flex items-center gap-2 transition-opacity hover:opacity-70">
-              <Image src="/sp-logo.svg" width={28} height={28} alt="StorePay" />
-              <span style={{ fontFamily: "'Share Tech Mono',monospace", color: "rgba(120,160,255,0.7)", fontSize: "0.75rem", letterSpacing: "0.15em" }}>
+              <Image src="/astro-logo.png" width={28} height={28} alt="Astro" />
+              <span style={{ fontFamily: "'Share Tech Mono',monospace", color: "rgba(167,139,250,0.7)", fontSize: "0.75rem", letterSpacing: "0.15em" }}>
                 ← HOME
               </span>
             </Link>
-            <div style={{ width: 1, height: 24, background: "rgba(0,84,255,0.4)" }} />
+            <div style={{ width: 1, height: 24, background: "rgba(124,92,255,0.4)" }} />
             <h1 className="retro-title text-2xl text-[var(--gold)] tracking-widest">GAME EDITOR</h1>
           </div>
 
@@ -207,7 +207,7 @@ export default function AdminPage({ params }: { params: Promise<{ gameId: string
             value={game.title}
             onChange={(e) => updateTitle(e.target.value)}
             className="text-white text-2xl font-bold w-full max-w-lg px-4 py-3 rounded focus:outline-none retro-title tracking-wider"
-            style={{ background: "#07102a", border: "2px solid var(--sp-blue)", boxShadow: "0 0 10px rgba(0,84,255,0.2)" }}
+            style={{ background: "#170b30", border: "2px solid var(--sp-blue)", boxShadow: "0 0 10px rgba(124,92,255,0.2)" }}
           />
         </div>
 
@@ -249,7 +249,7 @@ export default function AdminPage({ params }: { params: Promise<{ gameId: string
                     className="board-tile h-20 rounded flex flex-col items-center justify-center relative"
                     style={{ opacity: isEmpty ? 0.5 : 1 }}
                   >
-                    <span className="retro-title text-2xl" style={{ color: isEmpty ? "rgba(100,130,255,0.5)" : "var(--gold)" }}>
+                    <span className="retro-title text-2xl" style={{ color: isEmpty ? "rgba(147,112,255,0.5)" : "var(--gold)" }}>
                       {isEmpty ? "?" : `$${q.value}`}
                     </span>
                     {hasMedia && (
@@ -269,7 +269,7 @@ export default function AdminPage({ params }: { params: Promise<{ gameId: string
           <button onClick={addCategory} className="btn-blue px-5 py-2 rounded text-base text-white">
             + ADD CATEGORY
           </button>
-          <p style={{ fontFamily: "'Share Tech Mono',monospace", color: "rgba(100,130,255,0.5)", fontSize: "0.7rem", letterSpacing: "0.1em" }}>
+          <p style={{ fontFamily: "'Share Tech Mono',monospace", color: "rgba(147,112,255,0.5)", fontSize: "0.7rem", letterSpacing: "0.1em" }}>
             CLICK A TILE TO EDIT · ? = EMPTY · 🖼 IMAGE · 🔊 AUDIO
           </p>
         </div>
@@ -284,9 +284,9 @@ export default function AdminPage({ params }: { params: Promise<{ gameId: string
         >
           <div className="retro-frame rounded-2xl w-full max-w-xl my-8" style={{ background: "var(--bg-card)" }}>
             {/* modal header */}
-            <div className="flex items-center justify-between px-6 py-4" style={{ borderBottom: "2px solid var(--sp-blue)", background: "linear-gradient(90deg,#060d3a,#04051a)" }}>
+            <div className="flex items-center justify-between px-6 py-4" style={{ borderBottom: "2px solid var(--sp-blue)", background: "linear-gradient(90deg,#150a33,#0a0518)" }}>
               <div className="flex items-center gap-3">
-                <Image src="/sp-logo.svg" width={24} height={24} alt="" />
+                <Image src="/astro-logo.png" width={24} height={24} alt="" />
                 <h2 className="retro-title text-xl text-[var(--gold)] tracking-wider">
                   ${editingQ.value} — {game.categories.find((c) => c.id === editing.catId)?.name?.toUpperCase()}
                 </h2>
@@ -311,10 +311,10 @@ export default function AdminPage({ params }: { params: Promise<{ gameId: string
                       if (!isNaN(v) && v >= 0) updateQuestion(editing.catId, editing.qId, { value: v });
                     }}
                     className="w-32 px-3 py-2 rounded text-white focus:outline-none retro-title text-xl"
-                    style={{ background: "#07102a", border: "2px solid rgba(255,215,0,0.6)", color: "var(--gold)" }}
+                    style={{ background: "#170b30", border: "2px solid rgba(255,215,0,0.6)", color: "var(--gold)" }}
                   />
                 </div>
-                <p style={{ fontFamily: "'Share Tech Mono',monospace", color: "rgba(120,160,255,0.5)", fontSize: "0.65rem", letterSpacing: "0.1em" }}>
+                <p style={{ fontFamily: "'Share Tech Mono',monospace", color: "rgba(167,139,250,0.5)", fontSize: "0.65rem", letterSpacing: "0.1em" }}>
                   SET ANY AMOUNT
                 </p>
               </div>
@@ -327,14 +327,14 @@ export default function AdminPage({ params }: { params: Promise<{ gameId: string
                   <div className="h-px flex-1" style={{ background: "var(--sp-blue)", opacity: 0.4 }} />
                 </div>
 
-                <label className="block text-xs tracking-widest mb-1" style={{ fontFamily: "'Share Tech Mono',monospace", color: "rgba(120,160,255,0.6)" }}>TEXT</label>
+                <label className="block text-xs tracking-widest mb-1" style={{ fontFamily: "'Share Tech Mono',monospace", color: "rgba(167,139,250,0.6)" }}>TEXT</label>
                 <textarea
                   rows={2}
                   placeholder="Enter the clue..."
                   value={editingQ.clue}
                   onChange={(e) => updateQuestion(editing.catId, editing.qId, { clue: e.target.value })}
                   className="w-full px-4 py-2 rounded text-white placeholder-blue-800 focus:outline-none resize-none mb-3"
-                  style={{ background: "#07102a", border: "2px solid rgba(0,84,255,0.5)", fontFamily: "'Oswald',sans-serif", fontSize: "1rem" }}
+                  style={{ background: "#170b30", border: "2px solid rgba(124,92,255,0.5)", fontFamily: "'Oswald',sans-serif", fontSize: "1rem" }}
                 />
 
                 <MultiImageUpload
@@ -369,14 +369,14 @@ export default function AdminPage({ params }: { params: Promise<{ gameId: string
                   <div className="h-px flex-1" style={{ background: "var(--gold)", opacity: 0.4 }} />
                 </div>
 
-                <label className="block text-xs tracking-widest mb-1" style={{ fontFamily: "'Share Tech Mono',monospace", color: "rgba(120,160,255,0.6)" }}>TEXT</label>
+                <label className="block text-xs tracking-widest mb-1" style={{ fontFamily: "'Share Tech Mono',monospace", color: "rgba(167,139,250,0.6)" }}>TEXT</label>
                 <input
                   type="text"
                   placeholder='e.g. "What is the Sun?"'
                   value={editingQ.answer}
                   onChange={(e) => updateQuestion(editing.catId, editing.qId, { answer: e.target.value })}
                   className="w-full px-4 py-2 rounded text-white placeholder-blue-800 focus:outline-none mb-3"
-                  style={{ background: "#07102a", border: "2px solid rgba(255,215,0,0.4)", fontFamily: "'Oswald',sans-serif", fontSize: "1rem" }}
+                  style={{ background: "#170b30", border: "2px solid rgba(255,215,0,0.4)", fontFamily: "'Oswald',sans-serif", fontSize: "1rem" }}
                 />
 
                 <MultiImageUpload
@@ -442,19 +442,19 @@ function MediaUpload({
 
   return (
     <div>
-      <label className="block text-xs tracking-widest mb-1" style={{ fontFamily: "'Share Tech Mono',monospace", color: "rgba(120,160,255,0.6)" }}>
+      <label className="block text-xs tracking-widest mb-1" style={{ fontFamily: "'Share Tech Mono',monospace", color: "rgba(167,139,250,0.6)" }}>
         {label}
       </label>
 
       {url ? (
         /* ── preview ── */
-        <div className="relative group rounded overflow-hidden" style={{ border: "2px solid rgba(0,84,255,0.4)", minHeight: 80 }}>
+        <div className="relative group rounded overflow-hidden" style={{ border: "2px solid rgba(124,92,255,0.4)", minHeight: 80 }}>
           {isImage ? (
             <div className="relative h-20">
               <Image src={url} alt={label} fill className="object-contain" unoptimized />
             </div>
           ) : (
-            <div className="flex flex-col items-center justify-center gap-1 px-2 py-2" style={{ background: "#07102a" }}>
+            <div className="flex flex-col items-center justify-center gap-1 px-2 py-2" style={{ background: "#170b30" }}>
               <span className="text-xl">🔊</span>
               <audio controls src={url} className="w-full" style={{ height: 28 }} />
             </div>
@@ -467,9 +467,9 @@ function MediaUpload({
         </div>
       ) : (
         /* ── input panel ── */
-        <div className="rounded overflow-hidden" style={{ border: "2px solid rgba(0,84,255,0.3)", background: "#07102a" }}>
+        <div className="rounded overflow-hidden" style={{ border: "2px solid rgba(124,92,255,0.3)", background: "#170b30" }}>
           {/* tab bar */}
-          <div className="flex" style={{ borderBottom: "1px solid rgba(0,84,255,0.2)" }}>
+          <div className="flex" style={{ borderBottom: "1px solid rgba(124,92,255,0.2)" }}>
             {(["upload", "url"] as const).map((t) => (
               <button
                 key={t}
@@ -477,8 +477,8 @@ function MediaUpload({
                 className="flex-1 py-1 text-xs tracking-widest transition-colors"
                 style={{
                   fontFamily: "'Share Tech Mono',monospace",
-                  background: tab === t ? "rgba(0,84,255,0.2)" : "transparent",
-                  color: tab === t ? "rgba(180,210,255,0.9)" : "rgba(100,130,255,0.4)",
+                  background: tab === t ? "rgba(124,92,255,0.2)" : "transparent",
+                  color: tab === t ? "rgba(196,181,253,0.9)" : "rgba(147,112,255,0.4)",
                   borderBottom: tab === t ? "2px solid var(--sp-blue)" : "2px solid transparent",
                 }}
               >
@@ -495,7 +495,7 @@ function MediaUpload({
                 onClick={() => fileRef.current?.click()}
                 disabled={uploading === field}
                 className="w-full py-4 flex flex-col items-center justify-center gap-1 transition-all"
-                style={{ color: "rgba(100,130,255,0.5)" }}
+                style={{ color: "rgba(147,112,255,0.5)" }}
               >
                 <span className="text-xl">{isImage ? "🖼" : "🔊"}</span>
                 <span className="text-xs tracking-widest" style={{ fontFamily: "'Share Tech Mono',monospace" }}>
@@ -512,7 +512,7 @@ function MediaUpload({
                 onChange={(e) => setUrlInput(e.target.value)}
                 onKeyDown={(e) => e.key === "Enter" && applyUrl()}
                 className="flex-1 px-2 py-1 rounded text-white text-xs focus:outline-none"
-                style={{ background: "#04051a", border: "1px solid rgba(0,84,255,0.3)", fontFamily: "'Share Tech Mono',monospace" }}
+                style={{ background: "#0a0518", border: "1px solid rgba(124,92,255,0.3)", fontFamily: "'Share Tech Mono',monospace" }}
               />
               <button
                 onClick={applyUrl}
@@ -555,7 +555,7 @@ function MultiImageUpload({
   return (
     <div>
       <label className="block text-xs tracking-widest mb-2"
-        style={{ fontFamily: "'Share Tech Mono',monospace", color: "rgba(120,160,255,0.6)" }}>
+        style={{ fontFamily: "'Share Tech Mono',monospace", color: "rgba(167,139,250,0.6)" }}>
         {label} {images.length > 0 && <span style={{ color: "var(--gold)" }}>({images.length})</span>}
       </label>
 
@@ -564,7 +564,7 @@ function MultiImageUpload({
         <div className="flex gap-2 flex-wrap mb-2">
           {images.map((url, i) => (
             <div key={i} className="relative group rounded overflow-hidden shrink-0"
-              style={{ width: 72, height: 72, border: "2px solid rgba(0,84,255,0.4)" }}>
+              style={{ width: 72, height: 72, border: "2px solid rgba(124,92,255,0.4)" }}>
               <Image src={url} alt={`img-${i}`} fill className="object-cover" unoptimized />
               <button
                 onClick={() => onRemove(i)}
@@ -580,15 +580,15 @@ function MultiImageUpload({
       )}
 
       {/* add input */}
-      <div className="rounded overflow-hidden" style={{ border: "2px solid rgba(0,84,255,0.3)", background: "#07102a" }}>
-        <div className="flex" style={{ borderBottom: "1px solid rgba(0,84,255,0.2)" }}>
+      <div className="rounded overflow-hidden" style={{ border: "2px solid rgba(124,92,255,0.3)", background: "#170b30" }}>
+        <div className="flex" style={{ borderBottom: "1px solid rgba(124,92,255,0.2)" }}>
           {(["upload", "url"] as const).map((t) => (
             <button key={t} onClick={() => setTab(t)}
               className="flex-1 py-1 text-xs tracking-widest transition-colors"
               style={{
                 fontFamily: "'Share Tech Mono',monospace",
-                background: tab === t ? "rgba(0,84,255,0.2)" : "transparent",
-                color: tab === t ? "rgba(180,210,255,0.9)" : "rgba(100,130,255,0.4)",
+                background: tab === t ? "rgba(124,92,255,0.2)" : "transparent",
+                color: tab === t ? "rgba(196,181,253,0.9)" : "rgba(147,112,255,0.4)",
                 borderBottom: tab === t ? "2px solid var(--sp-blue)" : "2px solid transparent",
               }}>
               {t === "upload" ? "📁 FILE" : "🔗 URL"}
@@ -605,7 +605,7 @@ function MultiImageUpload({
               }} />
             <button onClick={() => fileRef.current?.click()} disabled={uploading}
               className="w-full py-3 flex flex-col items-center justify-center gap-1"
-              style={{ color: "rgba(100,130,255,0.5)" }}>
+              style={{ color: "rgba(147,112,255,0.5)" }}>
               <span className="text-lg">🖼</span>
               <span className="text-xs tracking-widest" style={{ fontFamily: "'Share Tech Mono',monospace" }}>
                 {uploading ? "UPLOADING..." : images.length > 0 ? "+ ADD MORE" : "CHOOSE FILES"}
@@ -619,7 +619,7 @@ function MultiImageUpload({
               onChange={(e) => setUrlInput(e.target.value)}
               onKeyDown={(e) => e.key === "Enter" && applyUrl()}
               className="flex-1 px-2 py-1 rounded text-white text-xs focus:outline-none"
-              style={{ background: "#04051a", border: "1px solid rgba(0,84,255,0.3)", fontFamily: "'Share Tech Mono',monospace" }}
+              style={{ background: "#0a0518", border: "1px solid rgba(124,92,255,0.3)", fontFamily: "'Share Tech Mono',monospace" }}
             />
             <button onClick={applyUrl} disabled={!urlInput.trim()}
               className="px-3 py-1 rounded text-xs font-black disabled:opacity-30"

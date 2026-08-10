@@ -1,29 +1,27 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --no-src-dir --import-alias \"@/*\" --yes)",
-      "Read(//Users/nyamdorjmunkh/Desktop/**)",
-      "Bash(npx create-next-app@latest jeopardy-quiz --typescript --tailwind --eslint --app --no-src-dir --import-alias \"@/*\" --yes)",
-      "Bash(cp -r jeopardy-quiz/. Quiz/)",
-      "Bash(rm -rf jeopardy-quiz)",
+      "Bash(ls -la /Users/nyamdorj/Desktop/quiz-jeopardy 2>&1; echo \"---\"; ls -la /Users/nyamdorj/Desktop 2>&1 | head -20)",
+      "Bash(git clone *)",
+      "Bash(ls -la /tmp/quiz-jeopardy-clone 2>&1)",
+      "Bash(rsync -a /tmp/quiz-jeopardy-clone/ /Users/nyamdorj/Desktop/quiz-jeopardy/)",
+      "Bash(rm -rf /tmp/quiz-jeopardy-clone)",
       "Bash(npm install *)",
-      "Bash(mkdir -p /Users/nyamdorjmunkh/Desktop/Quiz/app/api/games/\\\\[id\\\\])",
-      "Bash(npm run *)",
-      "Bash(curl -s http://localhost:3000)",
-      "Bash(curl -s http://localhost:3000/api/games)",
-      "Bash(python3 -m json.tool)",
-      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/play/demo-game-1)",
-      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/admin/demo-game-1)",
-      "Bash(cp \"/Users/nyamdorjmunkh/Desktop/Workspace/02 SP logo Vertical Original Blue V.svg\" /Users/nyamdorjmunkh/Desktop/Quiz/public/sp-logo.svg)",
-      "Bash(curl -s -X POST http://localhost:3000/api/games -H 'Content-Type: application/json' -d '{ *)",
+      "Bash(find /private/tmp/claude-501 -newer /Users/nyamdorj/Desktop/quiz-jeopardy/package.json -iname \"*.png\" -o -newer /Users/nyamdorj/Desktop/quiz-jeopardy/package.json -iname \"*.jpg\" 2>/dev/null | grep -v node_modules | head -20)",
+      "Bash(cp \"/Users/nyamdorj/Downloads/Astro Logo.png\" /Users/nyamdorj/Desktop/quiz-jeopardy/public/astro-logo.png && ls -la /Users/nyamdorj/Desktop/quiz-jeopardy/public/astro-logo.png)",
+      "Bash(xargs sed -i '' 's#/sp-logo\\\\.svg#/astro-logo.png#g')",
+      "Bash(xargs sed -i '' 's/StorePay/Astro/g')",
+      "Bash(xargs sed -i '' 's/STOREPAY/ASTRO/g')",
+      "Bash(xargs sed -i '' 's/Storepay/Astro/g')",
+      "Bash(sips -g pixelWidth -g pixelHeight /Users/nyamdorj/Desktop/quiz-jeopardy/public/astro-logo.png)",
+      "Bash(grep -rohE \"#[0-9a-fA-F]{6}|rgba\\\\\\(0,\\\\s*84,\\\\s*255,\\\\s*[0-9.]+\\\\\\)|rgba\\\\\\(120,\\\\s*160,\\\\s*255,\\\\s*[0-9.]+\\\\\\)|rgba\\\\\\(180,\\\\s*200,\\\\s*255,\\\\s*[0-9.]+\\\\\\)|rgba\\\\\\(180,\\\\s*210,\\\\s*255,\\\\s*[0-9.]+\\\\\\)|rgba\\\\\\(150,\\\\s*170,\\\\s*255,\\\\s*[0-9.]+\\\\\\)|rgba\\\\\\(100,\\\\s*130,\\\\s*255,\\\\s*[0-9.]+\\\\\\)\" app components --include=\"*.tsx\")",
+      "Bash(xargs sed -i '' -f /tmp/color_map.sed)",
+      "Bash(python3 -c \"import json; json.load\\(open\\('/Users/nyamdorj/Desktop/quiz-jeopardy/data/games.json'\\)\\)\")",
       "Bash(curl -s http://localhost:3000/api/games/cf66d08a-f883-4631-a699-2de92618adad)",
       "Bash(python3 -c ' *)",
-      "Bash(npx tsc *)",
-      "Bash(find /tmp -name \"*.png\" -o -name \"*.jpg\" -o -name \"*.jpeg\" 2>/dev/null | head -10; find ~/Desktop -name \"*.png\" -o -name \"*.jpg\" -o -name \"*.jpeg\" 2>/dev/null | grep -v Quiz | head -10)",
-      "Bash(sort -t/ -k6)",
-      "Bash(find ~/Desktop ~/Downloads ~/Documents -maxdepth 4 -newer \"/Users/nyamdorjmunkh/Desktop/Screenshot 2026-05-15 at 3.14.43 PM.png\" \\\\\\( -name \"*.jpg\" -o -name \"*.jpeg\" -o -name \"*.png\" -o -name \"*.webp\" \\\\\\) 2>/dev/null)",
-      "Bash(find ~ -maxdepth 5 -name \"*maison*\" -o -name \"*coupon*\" -o -name \"*lunch*\" 2>/dev/null | grep -v \".cache\" | grep -v \"node_modules\")",
-      "Bash(cp ~/Downloads/prize-coupon.jpg /Users/nyamdorjmunkh/Desktop/Quiz/public/prize-coupon.jpg && echo \"OK\")"
+      "Bash(curl -s http://localhost:3000/api/games/3db72ff0-824a-43b2-a994-4f9e7479b138)",
+      "Bash(git config *)",
+      "Bash(git add *)"
     ]
   }
 }

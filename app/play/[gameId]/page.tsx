@@ -41,71 +41,6 @@ const RULES = [
   },
 ];
 
-function PrizeModal({ onClose }: { onClose: () => void }) {
-  return (
-    <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-4"
-      style={{ background: "rgba(4,5,26,0.93)" }}
-      onClick={(e) => e.target === e.currentTarget && onClose()}
-    >
-      <div
-        className="retro-frame rounded-2xl w-full max-w-2xl overflow-hidden"
-        style={{ background: "var(--bg-card)" }}
-      >
-        <div
-          className="flex items-center justify-between px-6 py-4"
-          style={{
-            background: "linear-gradient(90deg,#060d3a,#04051a)",
-            borderBottom: "2px solid var(--gold)",
-          }}
-        >
-          <div className="flex items-center gap-3">
-            <span className="text-2xl">🎁</span>
-            <h2 className="retro-title text-xl text-[var(--gold)] tracking-wider">
-              ТОГЛООМЫН ШАГНАЛ
-            </h2>
-          </div>
-          <button
-            onClick={onClose}
-            className="text-blue-400 hover:text-white text-2xl leading-none transition-colors"
-          >
-            ×
-          </button>
-        </div>
-        <div className="p-4">
-          <div
-            className="rounded-xl overflow-hidden"
-            style={{
-              border: "2px solid var(--gold)",
-              boxShadow: "0 0 32px rgba(255,215,0,0.2)",
-            }}
-          >
-            <Image
-              src="/prize-coupon.png"
-              alt="La Maison Lunch Coupon"
-              width={1320}
-              height={880}
-              className="w-full h-auto"
-              unoptimized
-            />
-          </div>
-          <p
-            className="text-center mt-3"
-            style={{
-              fontFamily: "'Share Tech Mono',monospace",
-              color: "rgba(255,215,0,0.6)",
-              fontSize: "0.7rem",
-              letterSpacing: "0.12em",
-            }}
-          >
-            Шагнал Багаараа La Mansion Restaurant Lunch-ний эрх!
-          </p>
-        </div>
-      </div>
-    </div>
-  );
-}
-
 function RulesModal({ onClose }: { onClose: () => void }) {
   return (
     <div
@@ -120,12 +55,12 @@ function RulesModal({ onClose }: { onClose: () => void }) {
         <div
           className="flex items-center justify-between px-6 py-4"
           style={{
-            background: "linear-gradient(90deg,#060d3a,#04051a)",
+            background: "linear-gradient(90deg,#150a33,#0a0518)",
             borderBottom: "2px solid var(--sp-blue)",
           }}
         >
           <div className="flex items-center gap-3">
-            <Image src="/sp-logo.svg" width={24} height={24} alt="" />
+            <Image src="/astro-logo.png" width={24} height={24} alt="" />
             <h2 className="retro-title text-xl text-[var(--gold)] tracking-wider">
               ТОГЛООМЫН ДҮРЭМ
             </h2>
@@ -146,8 +81,8 @@ function RulesModal({ onClose }: { onClose: () => void }) {
               key={i}
               className="flex gap-4 rounded-xl px-4 py-3"
               style={{
-                background: "#07102a",
-                border: "1px solid rgba(0,84,255,0.25)",
+                background: "#170b30",
+                border: "1px solid rgba(124,92,255,0.25)",
               }}
             >
               <span className="text-2xl shrink-0 mt-0.5">{r.icon}</span>
@@ -158,7 +93,7 @@ function RulesModal({ onClose }: { onClose: () => void }) {
                 <p
                   style={{
                     fontFamily: "'Oswald',sans-serif",
-                    color: "rgba(180,210,255,0.85)",
+                    color: "rgba(196,181,253,0.85)",
                     fontSize: "0.95rem",
                     lineHeight: "1.5",
                   }}
@@ -215,7 +150,6 @@ export default function PlayPage({
   >("wager");
   const [finalCorrect, setFinalCorrect] = useState<Record<string, boolean>>({});
   const [showRules, setShowRules] = useState(false);
-  const [showPrize, setShowPrize] = useState(false);
   const [timeLeft, setTimeLeft] = useState(60);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const hydrated = useRef(false);
@@ -402,7 +336,7 @@ export default function PlayPage({
       >
         <div className="flex flex-col items-center gap-4">
           <Image
-            src="/sp-logo.svg"
+            src="/astro-logo.png"
             width={56}
             height={56}
             alt=""
@@ -425,10 +359,10 @@ export default function PlayPage({
       >
         {showRules && <RulesModal onClose={() => setShowRules(false)} />}
         <Image
-          src="/sp-logo.svg"
+          src="/astro-logo.png"
           width={64}
           height={64}
-          alt="StorePay"
+          alt="Astro"
           className="mb-4"
         />
         <h1 className="retro-title text-5xl text-[var(--gold)] mb-1">
@@ -454,7 +388,7 @@ export default function PlayPage({
               onKeyDown={(e) => e.key === "Enter" && addPlayer()}
               className="flex-1 px-4 py-2 rounded text-white placeholder-blue-800 focus:outline-none"
               style={{
-                background: "#07102a",
+                background: "#170b30",
                 border: "2px solid var(--sp-blue)",
                 fontFamily: "'Oswald',sans-serif",
                 fontSize: "1rem",
@@ -475,8 +409,8 @@ export default function PlayPage({
                   key={p.id}
                   className="flex items-center justify-between px-4 py-2 rounded"
                   style={{
-                    background: "#07102a",
-                    border: "1px solid rgba(0,84,255,0.4)",
+                    background: "#170b30",
+                    border: "1px solid rgba(124,92,255,0.4)",
                   }}
                 >
                   <div className="flex items-center gap-3">
@@ -518,9 +452,9 @@ export default function PlayPage({
             className="w-full mt-3 py-2 rounded-full text-sm tracking-widest transition-all hover:opacity-80"
             style={{
               fontFamily: "'Share Tech Mono',monospace",
-              border: "1px solid rgba(0,84,255,0.4)",
-              color: "rgba(120,160,255,0.7)",
-              background: "rgba(0,84,255,0.06)",
+              border: "1px solid rgba(124,92,255,0.4)",
+              color: "rgba(167,139,250,0.7)",
+              background: "rgba(124,92,255,0.06)",
               letterSpacing: "0.15em",
               fontSize: "0.7rem",
             }}
@@ -533,7 +467,7 @@ export default function PlayPage({
             className="block text-center mt-3"
             style={{
               fontFamily: "'Share Tech Mono',monospace",
-              color: "rgba(100,130,255,0.5)",
+              color: "rgba(147,112,255,0.5)",
               fontSize: "0.7rem",
               letterSpacing: "0.15em",
               textDecoration: "none",
@@ -553,15 +487,13 @@ export default function PlayPage({
         className="min-h-screen flex flex-col"
         style={{ background: "var(--bg-deep)" }}
       >
-        {showPrize && <PrizeModal onClose={() => setShowPrize(false)} />}
-
         {/* top nav */}
         <div
           className="flex items-center justify-between px-4 py-3 shrink-0"
           style={{
-            background: "linear-gradient(180deg,#060d3a,#04051a)",
+            background: "linear-gradient(180deg,#150a33,#0a0518)",
             borderBottom: "2px solid var(--sp-blue)",
-            boxShadow: "0 0 16px rgba(0,84,255,0.3)",
+            boxShadow: "0 0 16px rgba(124,92,255,0.3)",
           }}
         >
           <Link
@@ -569,11 +501,11 @@ export default function PlayPage({
             className="flex items-center gap-2 transition-opacity hover:opacity-70"
             style={{ textDecoration: "none" }}
           >
-            <Image src="/sp-logo.svg" width={22} height={22} alt="" />
+            <Image src="/astro-logo.png" width={22} height={22} alt="" />
             <span
               style={{
                 fontFamily: "'Share Tech Mono',monospace",
-                color: "rgba(120,160,255,0.6)",
+                color: "rgba(167,139,250,0.6)",
                 fontSize: "0.65rem",
                 letterSpacing: "0.15em",
               }}
@@ -587,26 +519,11 @@ export default function PlayPage({
           </h1>
 
           <div className="flex gap-2 items-center">
-            <button
-              onClick={() => setShowPrize(true)}
-              className="px-3 py-1 rounded transition-all hover:opacity-80"
-              style={{
-                fontFamily: "'Bebas Neue',sans-serif",
-                letterSpacing: "0.08em",
-                fontSize: "0.8rem",
-                background:
-                  "linear-gradient(180deg,rgba(255,215,0,0.15),rgba(255,215,0,0.05))",
-                border: "1px solid rgba(255,215,0,0.5)",
-                color: "var(--gold)",
-              }}
-            >
-              🎁 ШАГНАЛ
-            </button>
             <Link
               href={`/admin/${game.id}`}
               style={{
                 fontFamily: "'Share Tech Mono',monospace",
-                color: "rgba(120,160,255,0.6)",
+                color: "rgba(167,139,250,0.6)",
                 fontSize: "0.65rem",
                 letterSpacing: "0.15em",
                 textDecoration: "none",
@@ -652,8 +569,8 @@ export default function PlayPage({
         <div
           className="flex gap-2 px-3 py-2 shrink-0"
           style={{
-            background: "#04051a",
-            borderBottom: "1px solid rgba(0,84,255,0.2)",
+            background: "#0a0518",
+            borderBottom: "1px solid rgba(124,92,255,0.2)",
           }}
         >
           {players.map((p) => (
@@ -745,7 +662,7 @@ export default function PlayPage({
       <div
         className="min-h-screen flex flex-col"
         style={{
-          background: "linear-gradient(180deg,#060d3a 0%,var(--bg-deep) 100%)",
+          background: "linear-gradient(180deg,#150a33 0%,var(--bg-deep) 100%)",
         }}
       >
         {/* header */}
@@ -763,7 +680,7 @@ export default function PlayPage({
           {/* circular countdown timer */}
           <div className="relative flex items-center justify-center" style={{ width: 64, height: 64 }}>
             <svg width="64" height="64" style={{ position: "absolute", top: 0, left: 0, transform: "rotate(-90deg)" }}>
-              <circle cx="32" cy="32" r="28" fill="none" stroke="rgba(0,84,255,0.2)" strokeWidth="4" />
+              <circle cx="32" cy="32" r="28" fill="none" stroke="rgba(124,92,255,0.2)" strokeWidth="4" />
               <circle
                 cx="32" cy="32" r="28" fill="none"
                 stroke={timeLeft <= 10 ? "#ff4422" : timeLeft <= 20 ? "#ffaa00" : "var(--sp-blue)"}
@@ -786,7 +703,7 @@ export default function PlayPage({
               onClick={skipQuestion}
               style={{
                 fontFamily: "'Share Tech Mono',monospace",
-                color: "rgba(100,130,255,0.5)",
+                color: "rgba(147,112,255,0.5)",
                 fontSize: "0.7rem",
                 letterSpacing: "0.15em",
               }}
@@ -814,7 +731,7 @@ export default function PlayPage({
               <ImageRow
                 images={getClueImages(q)}
                 borderColor="var(--sp-blue)"
-                glowColor="rgba(0,84,255,0.4)"
+                glowColor="rgba(124,92,255,0.4)"
               />
               {q.clueAudio && (
                 <div className="w-full max-w-sm">
@@ -882,7 +799,7 @@ export default function PlayPage({
         {/* bottom controls */}
         <div
           className="px-6 pb-6 pt-4 space-y-4 shrink-0"
-          style={{ borderTop: "1px solid rgba(0,84,255,0.2)" }}
+          style={{ borderTop: "1px solid rgba(124,92,255,0.2)" }}
         >
           {/* wrong-player badges */}
           {wrongPlayers.size > 0 && (
@@ -916,7 +833,7 @@ export default function PlayPage({
                 className="text-center mb-2"
                 style={{
                   fontFamily: "'Share Tech Mono',monospace",
-                  color: "rgba(120,160,255,0.6)",
+                  color: "rgba(167,139,250,0.6)",
                   fontSize: "0.7rem",
                   letterSpacing: "0.15em",
                 }}
@@ -941,16 +858,16 @@ export default function PlayPage({
                         background:
                           buzzed === p.id
                             ? "var(--gold)"
-                            : "linear-gradient(180deg,#1a6aff,var(--sp-blue-dark))",
+                            : "linear-gradient(180deg,#9370ff,var(--sp-blue-dark))",
                         color: buzzed === p.id ? "#1a0a00" : "white",
                         border:
                           buzzed === p.id
                             ? "2px solid #ffec6e"
-                            : "2px solid #5599ff",
+                            : "2px solid #b9a3ff",
                         boxShadow:
                           buzzed === p.id
                             ? "0 0 16px rgba(255,215,0,0.5)"
-                            : "0 0 8px rgba(0,84,255,0.3)",
+                            : "0 0 8px rgba(124,92,255,0.3)",
                       }}
                     >
                       {p.name}
@@ -1030,7 +947,7 @@ export default function PlayPage({
           style={{ background: "var(--bg-deep)" }}
         >
           <Image
-            src="/sp-logo.svg"
+            src="/astro-logo.png"
             width={56}
             height={56}
             alt=""
@@ -1056,7 +973,7 @@ export default function PlayPage({
                 onChange={(e) => setFinalClue(e.target.value)}
                 className="w-full px-4 py-2 rounded text-white placeholder-blue-800 focus:outline-none resize-none"
                 style={{
-                  background: "#07102a",
+                  background: "#170b30",
                   border: "2px solid var(--sp-blue)",
                   fontFamily: "'Oswald',sans-serif",
                   fontSize: "1rem",
@@ -1074,7 +991,7 @@ export default function PlayPage({
                 onChange={(e) => setFinalAnswer(e.target.value)}
                 className="w-full px-4 py-2 rounded text-white placeholder-blue-800 focus:outline-none"
                 style={{
-                  background: "#07102a",
+                  background: "#170b30",
                   border: "2px solid rgba(255,215,0,0.5)",
                   fontFamily: "'Oswald',sans-serif",
                   fontSize: "1rem",
@@ -1117,8 +1034,8 @@ export default function PlayPage({
                     }
                     className="flex-1 px-3 py-2 rounded text-white focus:outline-none"
                     style={{
-                      background: "#07102a",
-                      border: "2px solid rgba(0,84,255,0.4)",
+                      background: "#170b30",
+                      border: "2px solid rgba(124,92,255,0.4)",
                       fontFamily: "'Share Tech Mono',monospace",
                     }}
                   />
@@ -1143,7 +1060,7 @@ export default function PlayPage({
         <div
           className="min-h-screen flex flex-col items-center justify-center text-center px-8"
           style={{
-            background: "linear-gradient(180deg,#060d3a,var(--bg-deep))",
+            background: "linear-gradient(180deg,#150a33,var(--bg-deep))",
           }}
         >
           <p className="retro-title text-lg text-[var(--sp-blue-glow)] tracking-widest mb-6">
@@ -1174,7 +1091,7 @@ export default function PlayPage({
         <div
           className="min-h-screen flex flex-col items-center justify-center px-8 py-12"
           style={{
-            background: "linear-gradient(180deg,#060d3a,var(--bg-deep))",
+            background: "linear-gradient(180deg,#150a33,var(--bg-deep))",
           }}
         >
           <p
@@ -1278,7 +1195,7 @@ export default function PlayPage({
         style={{ background: "var(--bg-deep)" }}
       >
         <Image
-          src="/sp-logo.svg"
+          src="/astro-logo.png"
           width={64}
           height={64}
           alt=""
@@ -1297,7 +1214,7 @@ export default function PlayPage({
               style={{
                 background:
                   i === 0
-                    ? "linear-gradient(90deg,#0054ff22,#ffd70022)"
+                    ? "linear-gradient(90deg,#7c5cff22,#ffd70022)"
                     : "var(--bg-card)",
                 border:
                   i === 0
@@ -1305,14 +1222,14 @@ export default function PlayPage({
                     : "2px solid var(--sp-blue)",
                 boxShadow:
                   i === 0
-                    ? "0 0 24px rgba(255,215,0,0.2), 0 0 8px rgba(0,84,255,0.3)"
-                    : "0 0 8px rgba(0,84,255,0.15)",
+                    ? "0 0 24px rgba(255,215,0,0.2), 0 0 8px rgba(124,92,255,0.3)"
+                    : "0 0 8px rgba(124,92,255,0.15)",
               }}
             >
               <span
                 className="retro-title text-3xl w-10 text-center"
                 style={{
-                  color: i === 0 ? "var(--gold)" : "rgba(100,130,255,0.6)",
+                  color: i === 0 ? "var(--gold)" : "rgba(147,112,255,0.6)",
                 }}
               >
                 {i + 1}
