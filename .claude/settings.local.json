@@ -24,7 +24,9 @@
       "Bash(git add *)",
       "Bash(git commit -m ' *)",
       "Bash(git push *)",
-      "Bash(npx tsc *)"
+      "Bash(npx tsc *)",
+      "Bash(sips -z 512 512 /Users/nyamdorj/Desktop/quiz-jeopardy/public/astro-logo.png --out /Users/nyamdorj/Desktop/quiz-jeopardy/app/icon.png)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code} %{content_type}\\\\n\" http://localhost:3000/icon.png)"
     ]
   }
 }
