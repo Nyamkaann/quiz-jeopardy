@@ -170,27 +170,27 @@ export default function AdminPage({ params }: { params: Promise<{ gameId: string
     <div className="min-h-screen" style={{ background: "var(--bg-deep)" }}>
       {/* ── HEADER ── */}
       <header style={{ background: "linear-gradient(180deg,#150a33 0%,#0a0518 100%)", borderBottom: "3px solid var(--sp-blue)", boxShadow: "0 0 24px rgba(124,92,255,0.4)" }}>
-        <div className="flex items-center justify-between px-6 py-4">
-          <div className="flex items-center gap-4">
-            <Link href="/" className="flex items-center gap-2 transition-opacity hover:opacity-70">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 px-4 sm:px-6 py-3 sm:py-4">
+          <div className="flex items-center gap-3 sm:gap-4 min-w-0">
+            <Link href="/" className="flex items-center gap-2 transition-opacity hover:opacity-70 shrink-0">
               <Image src="/astro-logo.png" width={28} height={28} alt="Astro" />
               <span style={{ fontFamily: "'Share Tech Mono',monospace", color: "rgba(167,139,250,0.7)", fontSize: "0.75rem", letterSpacing: "0.15em" }}>
                 ← HOME
               </span>
             </Link>
-            <div style={{ width: 1, height: 24, background: "rgba(124,92,255,0.4)" }} />
-            <h1 className="retro-title text-2xl text-[var(--gold)] tracking-widest">GAME EDITOR</h1>
+            <div className="hidden sm:block shrink-0" style={{ width: 1, height: 24, background: "rgba(124,92,255,0.4)" }} />
+            <h1 className="retro-title text-lg sm:text-2xl text-[var(--gold)] tracking-widest truncate">GAME EDITOR</h1>
           </div>
 
           <div className="flex items-center gap-3">
             <Link href={`/play/${game.id}`}
-              className="btn-gold px-5 py-2 rounded text-base" style={{ textDecoration: "none" }}>
+              className="btn-gold px-5 py-2 rounded text-base flex-1 sm:flex-none text-center" style={{ textDecoration: "none" }}>
               ▶ PLAY
             </Link>
             <button
               onClick={() => save(game)}
               disabled={saving}
-              className="btn-blue px-5 py-2 rounded text-base text-white disabled:opacity-50"
+              className="btn-blue px-5 py-2 rounded text-base text-white disabled:opacity-50 flex-1 sm:flex-none"
             >
               {saving ? "SAVING..." : saved ? "✓ SAVED!" : "SAVE"}
             </button>
@@ -198,7 +198,7 @@ export default function AdminPage({ params }: { params: Promise<{ gameId: string
         </div>
       </header>
 
-      <main className="max-w-7xl mx-auto px-6 py-8">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
         {/* Title field */}
         <div className="mb-8">
           <label className="retro-title text-sm tracking-widest text-blue-400 block mb-2">GAME TITLE</label>
@@ -295,11 +295,11 @@ export default function AdminPage({ params }: { params: Promise<{ gameId: string
                 className="text-blue-400 hover:text-white text-2xl leading-none transition-colors">×</button>
             </div>
 
-            <div className="p-6 space-y-6">
+            <div className="p-4 sm:p-6 space-y-6">
               {/* VALUE */}
-              <div className="flex items-center gap-4">
+              <div className="flex flex-wrap items-center gap-3 sm:gap-4">
                 <label className="retro-title text-sm tracking-widest text-[var(--gold)] shrink-0">POINT VALUE</label>
-                <div className="flex items-center gap-2 flex-1">
+                <div className="flex items-center gap-2">
                   <span className="retro-title text-xl text-[var(--gold)]">$</span>
                   <input
                     type="number"

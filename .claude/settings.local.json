@@ -21,7 +21,10 @@
       "Bash(python3 -c ' *)",
       "Bash(curl -s http://localhost:3000/api/games/3db72ff0-824a-43b2-a994-4f9e7479b138)",
       "Bash(git config *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(npx tsc *)"
     ]
   }
 }

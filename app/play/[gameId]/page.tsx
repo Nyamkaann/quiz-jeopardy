@@ -354,7 +354,7 @@ export default function PlayPage({
   if (phase === "setup") {
     return (
       <div
-        className="min-h-screen flex flex-col items-center justify-center px-6"
+        className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 py-8"
         style={{ background: "var(--bg-deep)" }}
       >
         {showRules && <RulesModal onClose={() => setShowRules(false)} />}
@@ -365,15 +365,15 @@ export default function PlayPage({
           alt="Astro"
           className="mb-4"
         />
-        <h1 className="retro-title text-5xl text-[var(--gold)] mb-1">
+        <h1 className="retro-title text-3xl sm:text-5xl text-[var(--gold)] mb-1 text-center">
           {game.title}
         </h1>
-        <div className="star-divider w-80 mb-2" />
+        <div className="star-divider w-80 max-w-full mb-2" />
         <p className="retro-title text-2xl sp-glow text-white tracking-widest mb-8">
           JEOPARDY!
         </p>
 
-        <div className="retro-panel rounded-2xl p-8 w-full max-w-md">
+        <div className="retro-panel rounded-2xl p-5 sm:p-8 w-full max-w-md">
           <h2 className="retro-title text-xl text-[var(--sp-blue-glow)] tracking-widest mb-5 text-center">
             ADD PLAYERS
           </h2>
@@ -489,79 +489,81 @@ export default function PlayPage({
       >
         {/* top nav */}
         <div
-          className="flex items-center justify-between px-4 py-3 shrink-0"
+          className="flex flex-col sm:flex-row sm:items-center sm:justify-between sm:relative gap-2 px-4 py-3 shrink-0"
           style={{
             background: "linear-gradient(180deg,#150a33,#0a0518)",
             borderBottom: "2px solid var(--sp-blue)",
             boxShadow: "0 0 16px rgba(124,92,255,0.3)",
           }}
         >
-          <Link
-            href="/"
-            className="flex items-center gap-2 transition-opacity hover:opacity-70"
-            style={{ textDecoration: "none" }}
-          >
-            <Image src="/astro-logo.png" width={22} height={22} alt="" />
-            <span
-              style={{
-                fontFamily: "'Share Tech Mono',monospace",
-                color: "rgba(167,139,250,0.6)",
-                fontSize: "0.65rem",
-                letterSpacing: "0.15em",
-              }}
-            >
-              HOME
-            </span>
-          </Link>
-
-          <h1 className="retro-title text-xl text-[var(--gold)] tracking-wider">
+          <h1 className="retro-title text-base sm:text-xl text-[var(--gold)] tracking-wider truncate order-first sm:order-none sm:absolute sm:left-1/2 sm:-translate-x-1/2">
             {game.title}
           </h1>
 
-          <div className="flex gap-2 items-center">
+          <div className="flex items-center justify-between gap-2">
             <Link
-              href={`/admin/${game.id}`}
-              style={{
-                fontFamily: "'Share Tech Mono',monospace",
-                color: "rgba(167,139,250,0.6)",
-                fontSize: "0.65rem",
-                letterSpacing: "0.15em",
-                textDecoration: "none",
-              }}
+              href="/"
+              className="flex items-center gap-2 transition-opacity hover:opacity-70"
+              style={{ textDecoration: "none" }}
             >
-              EDIT
+              <Image src="/astro-logo.png" width={22} height={22} alt="" />
+              <span
+                style={{
+                  fontFamily: "'Share Tech Mono',monospace",
+                  color: "rgba(167,139,250,0.6)",
+                  fontSize: "0.65rem",
+                  letterSpacing: "0.15em",
+                }}
+              >
+                HOME
+              </span>
             </Link>
-            <button
-              onClick={() => {
-                if (
-                  confirm(
-                    "Restart the game? All scores and progress will be reset.",
-                  )
-                ) {
-                  clearSession(gameId);
-                  window.location.reload();
-                }
-              }}
-              style={{
-                fontFamily: "'Share Tech Mono',monospace",
-                color: "rgba(255,80,60,0.5)",
-                fontSize: "0.65rem",
-                letterSpacing: "0.15em",
-              }}
-            >
-              RESET
-            </button>
-            {allAnswered && (
+
+            <div className="flex gap-2 items-center">
+              <Link
+                href={`/admin/${game.id}`}
+                style={{
+                  fontFamily: "'Share Tech Mono',monospace",
+                  color: "rgba(167,139,250,0.6)",
+                  fontSize: "0.65rem",
+                  letterSpacing: "0.15em",
+                  textDecoration: "none",
+                }}
+              >
+                EDIT
+              </Link>
               <button
                 onClick={() => {
-                  setFinalPhase("wager");
-                  setPhase("final");
+                  if (
+                    confirm(
+                      "Restart the game? All scores and progress will be reset.",
+                    )
+                  ) {
+                    clearSession(gameId);
+                    window.location.reload();
+                  }
                 }}
-                className="btn-gold px-4 py-1 rounded text-sm ml-2"
+                style={{
+                  fontFamily: "'Share Tech Mono',monospace",
+                  color: "rgba(255,80,60,0.5)",
+                  fontSize: "0.65rem",
+                  letterSpacing: "0.15em",
+                }}
               >
-                FINAL!
+                RESET
               </button>
-            )}
+              {allAnswered && (
+                <button
+                  onClick={() => {
+                    setFinalPhase("wager");
+                    setPhase("final");
+                  }}
+                  className="btn-gold px-4 py-1 rounded text-sm ml-2"
+                >
+                  FINAL!
+                </button>
+              )}
+            </div>
           </div>
         </div>
 
@@ -601,9 +603,9 @@ export default function PlayPage({
         {/* board */}
         <div className="flex-1 p-3 overflow-auto">
           <div
-            className="grid gap-2 h-full"
+            className="grid gap-2 h-full min-w-max sm:min-w-0"
             style={{
-              gridTemplateColumns: `repeat(${game.categories.length}, 1fr)`,
+              gridTemplateColumns: `repeat(${game.categories.length}, minmax(110px, 1fr))`,
             }}
           >
             {game.categories.map((cat) => (
@@ -635,7 +637,7 @@ export default function PlayPage({
                     className="board-tile rounded min-h-16 flex items-center justify-center"
                   >
                     <span
-                      className="retro-title text-3xl"
+                      className="retro-title text-xl sm:text-3xl"
                       style={{
                         color: q.answered ? "transparent" : "var(--gold)",
                       }}
@@ -667,19 +669,19 @@ export default function PlayPage({
       >
         {/* header */}
         <div
-          className="flex items-center justify-between px-6 py-4 shrink-0"
+          className="flex items-center justify-between gap-2 px-3 sm:px-6 py-3 sm:py-4 shrink-0"
           style={{
             borderBottom: "2px solid var(--sp-blue)",
             background: "rgba(6,13,58,0.8)",
           }}
         >
-          <span className="retro-title text-lg text-[var(--sp-blue-glow)] tracking-wider">
+          <span className="retro-title text-sm sm:text-lg text-[var(--sp-blue-glow)] tracking-wider truncate min-w-0">
             {catName.toUpperCase()}
           </span>
 
           {/* circular countdown timer */}
-          <div className="relative flex items-center justify-center" style={{ width: 64, height: 64 }}>
-            <svg width="64" height="64" style={{ position: "absolute", top: 0, left: 0, transform: "rotate(-90deg)" }}>
+          <div className="relative flex items-center justify-center shrink-0" style={{ width: 44, height: 44 }}>
+            <svg width="44" height="44" viewBox="0 0 64 64" style={{ position: "absolute", top: 0, left: 0, transform: "rotate(-90deg)" }}>
               <circle cx="32" cy="32" r="28" fill="none" stroke="rgba(124,92,255,0.2)" strokeWidth="4" />
               <circle
                 cx="32" cy="32" r="28" fill="none"
@@ -691,14 +693,14 @@ export default function PlayPage({
                 style={{ transition: "stroke-dashoffset 0.9s linear, stroke 0.3s" }}
               />
             </svg>
-            <span className="retro-title text-xl z-10"
+            <span className="retro-title text-sm sm:text-xl z-10"
               style={{ color: timeLeft <= 10 ? "#ff4422" : timeLeft <= 20 ? "#ffaa00" : "var(--gold)" }}>
               {timeLeft}
             </span>
           </div>
 
-          <div className="flex items-center gap-4">
-            <span className="retro-title text-2xl text-[var(--gold)]">${q.value}</span>
+          <div className="flex items-center gap-2 sm:gap-4 shrink-0">
+            <span className="retro-title text-lg sm:text-2xl text-[var(--gold)]">${q.value}</span>
             <button
               onClick={skipQuestion}
               style={{
@@ -943,7 +945,7 @@ export default function PlayPage({
     if (finalPhase === "wager") {
       return (
         <div
-          className="min-h-screen flex flex-col items-center justify-center px-6 py-12"
+          className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 py-8 sm:py-12"
           style={{ background: "var(--bg-deep)" }}
         >
           <Image
@@ -953,15 +955,15 @@ export default function PlayPage({
             alt=""
             className="mb-4"
           />
-          <h1 className="retro-title text-6xl text-[var(--gold)] mb-1">
+          <h1 className="retro-title text-4xl sm:text-6xl text-[var(--gold)] mb-1">
             FINAL
           </h1>
-          <h2 className="retro-title text-4xl sp-glow text-white tracking-widest mb-2">
+          <h2 className="retro-title text-2xl sm:text-4xl sp-glow text-white tracking-widest mb-2">
             JEOPARDY!
           </h2>
-          <div className="star-divider w-80 mb-8" />
+          <div className="star-divider w-80 max-w-full mb-8" />
 
-          <div className="retro-panel rounded-2xl p-8 w-full max-w-lg space-y-5">
+          <div className="retro-panel rounded-2xl p-5 sm:p-8 w-full max-w-lg space-y-5">
             <div>
               <label className="retro-title text-sm tracking-widest text-[var(--sp-blue-glow)] block mb-2">
                 FINAL CLUE
@@ -1004,9 +1006,9 @@ export default function PlayPage({
                 PLAYER WAGERS
               </label>
               {players.map((p) => (
-                <div key={p.id} className="flex items-center gap-3 mb-2">
+                <div key={p.id} className="flex flex-wrap items-center gap-2 sm:gap-3 mb-2">
                   <span
-                    className="font-bold text-white w-32 truncate"
+                    className="font-bold text-white w-full sm:w-32 truncate"
                     style={{ fontFamily: "'Oswald',sans-serif" }}
                   >
                     {p.name}
@@ -1032,7 +1034,7 @@ export default function PlayPage({
                         [p.id]: e.target.value,
                       }))
                     }
-                    className="flex-1 px-3 py-2 rounded text-white focus:outline-none"
+                    className="flex-1 min-w-0 px-3 py-2 rounded text-white focus:outline-none"
                     style={{
                       background: "#170b30",
                       border: "2px solid rgba(124,92,255,0.4)",
@@ -1058,7 +1060,7 @@ export default function PlayPage({
     if (finalPhase === "clue") {
       return (
         <div
-          className="min-h-screen flex flex-col items-center justify-center text-center px-8"
+          className="min-h-screen flex flex-col items-center justify-center text-center px-4 sm:px-8"
           style={{
             background: "linear-gradient(180deg,#150a33,var(--bg-deep))",
           }}
@@ -1089,13 +1091,13 @@ export default function PlayPage({
     if (finalPhase === "answer") {
       return (
         <div
-          className="min-h-screen flex flex-col items-center justify-center px-8 py-12"
+          className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-8 py-8 sm:py-12"
           style={{
             background: "linear-gradient(180deg,#150a33,var(--bg-deep))",
           }}
         >
           <p
-            className="flip-in font-bold mb-10"
+            className="flip-in font-bold mb-10 text-center"
             style={{
               fontFamily: "'Oswald',sans-serif",
               fontSize: "clamp(2rem,5vw,4rem)",
@@ -1114,15 +1116,16 @@ export default function PlayPage({
             {players.map((p) => (
               <div
                 key={p.id}
-                className="retro-panel rounded-xl px-5 py-3 flex items-center gap-3"
+                className="retro-panel rounded-xl px-4 sm:px-5 py-3 flex flex-wrap items-center gap-2 sm:gap-3"
               >
                 <span
-                  className="flex-1 font-bold text-white"
+                  className="flex-1 min-w-0 truncate font-bold text-white"
                   style={{ fontFamily: "'Oswald',sans-serif" }}
                 >
                   {p.name}
                 </span>
                 <span
+                  className="shrink-0"
                   style={{
                     fontFamily: "'Share Tech Mono',monospace",
                     color: "var(--gold)",
@@ -1191,7 +1194,7 @@ export default function PlayPage({
     const sorted = [...players].sort((a, b) => b.score - a.score);
     return (
       <div
-        className="min-h-screen flex flex-col items-center justify-center px-6 py-12"
+        className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 py-8 sm:py-12"
         style={{ background: "var(--bg-deep)" }}
       >
         <Image
@@ -1201,10 +1204,10 @@ export default function PlayPage({
           alt=""
           className="mb-4"
         />
-        <h1 className="retro-title text-6xl text-[var(--gold)] mb-1">
+        <h1 className="retro-title text-4xl sm:text-6xl text-[var(--gold)] mb-1 text-center">
           FINAL SCORES
         </h1>
-        <div className="star-divider w-80 mb-8" />
+        <div className="star-divider w-80 max-w-full mb-8" />
 
         <div className="w-full max-w-md space-y-3 mb-8">
           {sorted.map((p, i) => (

@@ -163,11 +163,11 @@ export default function HomePage() {
         <div className="absolute top-3 right-4 opacity-30">
           <Image src="/astro-logo.png" width={28} height={28} alt="" />
         </div>
-        <div className="flex flex-col items-center py-8 gap-4">
-          <Image src="/astro-logo.png" width={72} height={72} alt="Astro" />
-          <h1 className="retro-title text-7xl text-[var(--gold)]">ASTRO</h1>
-          <div className="star-divider w-64 mb-1" />
-          <h2 className="retro-title text-4xl sp-glow text-white tracking-widest">JEOPARDY!</h2>
+        <div className="flex flex-col items-center py-8 px-4 gap-4 text-center">
+          <Image src="/astro-logo.png" width={72} height={72} alt="Astro" className="w-14 h-14 sm:w-[72px] sm:h-[72px]" />
+          <h1 className="retro-title text-5xl sm:text-7xl text-[var(--gold)]">ASTRO</h1>
+          <div className="star-divider w-64 max-w-full mb-1" />
+          <h2 className="retro-title text-2xl sm:text-4xl sp-glow text-white tracking-widest">JEOPARDY!</h2>
           <p style={{ fontFamily: "'Share Tech Mono',monospace", color: "rgba(196,181,253,0.7)", fontSize: "0.75rem", letterSpacing: "0.15em" }}>
             THE ULTIMATE QUIZ CHALLENGE
           </p>
@@ -181,22 +181,22 @@ export default function HomePage() {
         <div className="star-divider w-full" />
       </header>
 
-      <main className="max-w-4xl mx-auto px-6 py-10">
-        <div className="flex items-center justify-between mb-6">
-          <h2 className="retro-title text-3xl text-white tracking-wider"
+      <main className="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-10">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
+          <h2 className="retro-title text-2xl sm:text-3xl text-white tracking-wider"
             style={{ textShadow: "0 0 10px rgba(124,92,255,0.5)" }}>
             GAME LIBRARY
           </h2>
-          <button onClick={() => guard({ type: "new" })} className="btn-gold px-6 py-2 rounded text-lg">
+          <button onClick={() => guard({ type: "new" })} className="btn-gold px-6 py-2 rounded text-lg w-full sm:w-auto">
             + NEW GAME
           </button>
         </div>
 
         {/* new game form — only shown after password */}
         {showNew && (
-          <div className="retro-panel rounded-xl p-6 mb-6">
+          <div className="retro-panel rounded-xl p-4 sm:p-6 mb-6">
             <h3 className="retro-title text-2xl text-[var(--gold)] mb-4 tracking-wider">CREATE NEW GAME</h3>
-            <div className="flex gap-3">
+            <div className="flex flex-col sm:flex-row gap-3">
               <input
                 autoFocus
                 type="text"
@@ -204,16 +204,18 @@ export default function HomePage() {
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
                 onKeyDown={(e) => e.key === "Enter" && createGame()}
-                className="flex-1 rounded px-4 py-2 text-white placeholder-blue-400 text-lg focus:outline-none"
+                className="flex-1 min-w-0 rounded px-4 py-2 text-white placeholder-blue-400 text-lg focus:outline-none"
                 style={{ background: "#170b30", border: "2px solid var(--sp-blue)", fontFamily: "'Oswald',sans-serif" }}
               />
-              <button onClick={createGame} disabled={creating || !title.trim()}
-                className="btn-gold px-6 py-2 rounded text-lg disabled:opacity-40">
-                {creating ? "CREATING..." : "CREATE"}
-              </button>
-              <button onClick={() => setShowNew(false)} className="btn-blue px-5 py-2 rounded text-lg text-white">
-                CANCEL
-              </button>
+              <div className="flex gap-3">
+                <button onClick={createGame} disabled={creating || !title.trim()}
+                  className="btn-gold px-6 py-2 rounded text-lg disabled:opacity-40 flex-1 sm:flex-none">
+                  {creating ? "CREATING..." : "CREATE"}
+                </button>
+                <button onClick={() => setShowNew(false)} className="btn-blue px-5 py-2 rounded text-lg text-white flex-1 sm:flex-none">
+                  CANCEL
+                </button>
+              </div>
             </div>
           </div>
         )}
@@ -230,20 +232,22 @@ export default function HomePage() {
           <div className="flex flex-col gap-3">
             {games.map((game, i) => (
               <div key={game.id}
-                className="retro-panel rounded-xl px-6 py-4 flex items-center gap-4 transition-all hover:shadow-[0_0_24px_rgba(124,92,255,0.3)]">
-                <div className="w-10 h-10 rounded flex items-center justify-center text-lg font-black shrink-0"
-                  style={{ background: "var(--sp-blue)", fontFamily: "'Bebas Neue',sans-serif", color: "var(--gold)", boxShadow: "0 0 8px rgba(124,92,255,0.6)" }}>
-                  {i + 1}
+                className="retro-panel rounded-xl px-4 sm:px-6 py-4 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 transition-all hover:shadow-[0_0_24px_rgba(124,92,255,0.3)]">
+                <div className="flex items-center gap-3 min-w-0">
+                  <div className="w-10 h-10 rounded flex items-center justify-center text-lg font-black shrink-0"
+                    style={{ background: "var(--sp-blue)", fontFamily: "'Bebas Neue',sans-serif", color: "var(--gold)", boxShadow: "0 0 8px rgba(124,92,255,0.6)" }}>
+                    {i + 1}
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <p className="retro-title text-xl text-white truncate tracking-wide">{game.title}</p>
+                    <p style={{ fontFamily: "'Share Tech Mono',monospace", color: "rgba(167,139,250,0.7)", fontSize: "0.7rem", letterSpacing: "0.1em" }}>
+                      {game.categories.length} CATEGORIES · {new Date(game.createdAt).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }).toUpperCase()}
+                    </p>
+                  </div>
                 </div>
-                <div className="flex-1 min-w-0">
-                  <p className="retro-title text-xl text-white truncate tracking-wide">{game.title}</p>
-                  <p style={{ fontFamily: "'Share Tech Mono',monospace", color: "rgba(167,139,250,0.7)", fontSize: "0.7rem", letterSpacing: "0.1em" }}>
-                    {game.categories.length} CATEGORIES · {new Date(game.createdAt).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }).toUpperCase()}
-                  </p>
-                </div>
-                <div className="flex gap-2 shrink-0">
+                <div className="grid grid-cols-3 sm:flex gap-2 shrink-0">
                   <Link href={`/play/${game.id}`}
-                    className="btn-gold px-5 py-2 rounded text-base" style={{ textDecoration: "none" }}>
+                    className="btn-gold px-5 py-2 rounded text-base text-center" style={{ textDecoration: "none" }}>
                     PLAY
                   </Link>
                   <button onClick={() => guard({ type: "edit", gameId: game.id })}
