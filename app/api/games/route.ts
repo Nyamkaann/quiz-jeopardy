@@ -9,15 +9,23 @@ export async function GET() {
 }
 
 export async function POST(req: Request) {
-  const body = await req.json();
-  const now = new Date().toISOString();
-  const game: Game = {
-    id: uuidv4(),
-    title: body.title || "New Game",
-    categories: body.categories || [],
-    createdAt: now,
-    updatedAt: now,
-  };
-  saveGame(game);
-  return NextResponse.json(game, { status: 201 });
+  try {
+    const body = await req.json();
+    const now = new Date().toISOString();
+    const game: Game = {
+      id: uuidv4(),
+      title: body.title || "New Game",
+      categories: body.categories || [],
+      createdAt: now,
+      updatedAt: now,
+    };
+    saveGame(game);
+    return NextResponse.json(game, { status: 201 });
+  } catch (error) {
+    console.error("Error creating game:", error);
+    return NextResponse.json(
+      { error: "Failed to create game" },
+      { status: 500 },
+    );
+  }
 }

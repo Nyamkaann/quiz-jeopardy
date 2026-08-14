@@ -14,7 +14,12 @@ export function readGames(): Game[] {
 }
 
 export function writeGames(games: Game[]): void {
-  fs.writeFileSync(DB_PATH, JSON.stringify(games, null, 2), "utf-8");
+  try {
+    fs.writeFileSync(DB_PATH, JSON.stringify(games, null, 2), "utf-8");
+  } catch (error) {
+    console.error("Error writing games to database:", error);
+    throw error;
+  }
 }
 
 export function getGame(id: string): Game | null {
