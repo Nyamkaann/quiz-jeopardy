@@ -1,324 +1,331 @@
 [
   {
-    "id": "cf66d08a-f883-4631-a699-2de92618adad",
-    "title": "Astro Jeopardy Quiz Round 1",
+    "id": "c7ed176f-47d3-4f6b-b790-1abd1394758f",
+    "title": "S&P Quiz",
     "categories": [
       {
-        "id": "cat-history",
-        "name": "History",
-        "questions": []
-      },
-      {
-        "id": "cat-movies",
-        "name": "Movies",
-        "questions": []
-      },
-      {
-        "id": "cat-sports",
-        "name": "Sports",
-        "questions": []
-      },
-      {
-        "id": "cat-songs",
-        "name": "Songs",
-        "questions": []
-      },
-      {
-        "id": "cat-meme",
-        "name": "Meme",
-        "questions": []
-      },
-      {
-        "id": "cat-geography",
-        "name": "Geography",
-        "questions": []
-      }
-    ],
-    "createdAt": "2026-05-15T03:55:39.425Z",
-    "updatedAt": "2026-08-14T05:01:26.349Z"
-  },
-  {
-    "id": "3db72ff0-824a-43b2-a994-4f9e7479b138",
-    "title": "Astro Jeopardy Quiz Round 2",
-    "categories": [
-      {
-        "id": "cat-finance",
-        "name": "Finance",
+        "id": "3e6f7af4-2411-4899-8fae-40357ba42eea",
+        "name": "Celebrity",
         "questions": [
           {
-            "id": "f1",
+            "id": "05483d53-0acd-4bc4-b845-09fe847bce3f",
             "value": 100,
-            "answered": false,
+            "clue": "Энэ хэн бэ ? ",
+            "answer": "Marilyn Monroe",
             "isDailyDouble": false,
-            "clue": "Cryptocurrency-ийн анхны төхөөрөмж юу вэ?",
-            "answer": "Bitcoin"
+            "answered": false,
+            "clueImages": [
+              "/uploads/e094a3ea-2a37-4906-b294-bd38c77f2519.jpg"
+            ]
           },
           {
-            "id": "f2",
+            "id": "10d42367-d218-4dd8-afbc-c69b1532a6c3",
             "value": 200,
-            "answered": false,
+            "clue": "Энэ хэн бэ ?",
+            "answer": "SIA",
             "isDailyDouble": false,
-            "clue": "S&P 500 индекс хэдэн компанийг төлөөлөх вэ?",
-            "answer": "500"
+            "answered": false,
+            "clueImages": [
+              "/uploads/d1ea99e8-90da-4afb-a7fd-e40a9f1f2a37.webp"
+            ]
           },
           {
-            "id": "f3",
+            "id": "bb7753cb-6daf-484c-83bb-9150ebbd83bf",
             "value": 300,
-            "answered": false,
+            "clue": "Энэ хэн бэ ?",
+            "answer": "Lil Nas X",
             "isDailyDouble": false,
-            "clue": "Berkshire Hathaway-ийн ерөнхий захирал хэн бэ?",
-            "answer": "Warren Buffett"
+            "answered": false,
+            "clueImages": [
+              "/uploads/08b3ee28-f5cc-472d-90d2-a5ab92ffa982.jpg"
+            ]
           },
           {
-            "id": "f4",
+            "id": "d19d5b48-4b41-4336-9ca9-5be685394d4e",
             "value": 400,
-            "answered": false,
+            "clue": "Энэ хэн бэ ?",
+            "answer": "Frank Sinatra",
             "isDailyDouble": false,
-            "clue": "IMF гэж юу гэсэн үгний товчлол вэ?",
-            "answer": "International Monetary Fund"
+            "answered": false,
+            "clueImages": [
+              "/uploads/1e6deb0e-eade-4cd6-9e02-f1863c37c67c.webp"
+            ]
           },
           {
-            "id": "f5",
+            "id": "7b7a2647-a07f-4ca7-9dbf-3f883d8c6eb0",
             "value": 500,
-            "answered": false,
+            "clue": "Энэ хэн бэ ?",
+            "answer": "Beyonce",
             "isDailyDouble": false,
-            "clue": "Хамгийн анхны stock exchange хэдэн онд байгуулагдсан бэ? (Нидерланд)",
-            "answer": "1611"
+            "answered": false,
+            "clueImages": [
+              "/uploads/b549bf63-d183-41e6-ac5a-4e739ee5114a.png"
+            ]
           }
         ]
       },
       {
-        "id": "cat-seppuku",
+        "id": "ba5e3f38-3410-4ba9-ac29-67458362cdfa",
+        "name": "Movies BY SCENE",
+        "questions": [
+          {
+            "id": "58ea4398-a35e-49f4-bc7c-ddba1a8de646",
+            "value": 100,
+            "clue": "Энэ ямар кино вэ ?",
+            "answer": "Zombieland",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "/uploads/71e9552d-7039-46dc-afc9-803b4816b095.png"
+            ]
+          },
+          {
+            "id": "3f62cc19-4d63-4a40-861f-f20175cb37e4",
+            "value": 200,
+            "clue": "Энэ ямар кино вэ ?",
+            "answer": "Star Is Born",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "/uploads/bfa4df8d-ada8-4c04-9ff4-29ad1ab38565.png"
+            ]
+          },
+          {
+            "id": "c9b5ade2-c8e8-495b-842c-769a37993417",
+            "value": 300,
+            "clue": "Энэ ямар кино вэ ?",
+            "answer": "Rush Hour 1",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "/uploads/9780190c-eb0d-404a-9681-dc4109ee3efa.png"
+            ]
+          },
+          {
+            "id": "385a9bf4-30f2-4684-a29c-2746c3b7c55d",
+            "value": 400,
+            "clue": "The Suicide Squad\n",
+            "answer": "Suicide Squad 2 \"2021\" ",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "/uploads/eedc548e-8995-4c82-af81-248697a7d333.png"
+            ]
+          },
+          {
+            "id": "05cf4282-d073-40da-98b2-d0499feba14d",
+            "value": 500,
+            "clue": "The Suicide Squad\n",
+            "answer": "Rio",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "/uploads/342e399b-5ac7-4796-b4fe-150e76da4168.png"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "435f27c9-07a7-43ad-9269-8aabd29626d5",
+        "name": "Language",
+        "questions": [
+          {
+            "id": "adcf3b55-00b6-48f2-b830-59b21186ce29",
+            "value": 100,
+            "clue": "Энэ ямар хэл вэ ?",
+            "answer": "Japanese",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "/uploads/cbced4be-c3dd-4450-8b10-a18c6975cf8a.png"
+            ]
+          },
+          {
+            "id": "eebb22fb-1446-41b9-9182-488fcd1083ab",
+            "value": 200,
+            "clue": "Энэ ямар хэл вэ ?",
+            "answer": "Arabic",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "/uploads/30af5c8d-eacd-4fbf-b164-b6bc96aa8a41.png"
+            ]
+          },
+          {
+            "id": "a2633681-d849-495d-a896-019eed4c117c",
+            "value": 300,
+            "clue": "Энэ ямар хэл вэ ?",
+            "answer": "Spain",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "/uploads/255655f2-1f82-4ea0-a6da-df323a7ac8bf.png"
+            ]
+          },
+          {
+            "id": "6716bd26-7b5a-4f10-bd34-2836e85b9625",
+            "value": 400,
+            "clue": "Энэ ямар хэл вэ ?",
+            "answer": "Thai",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "/uploads/18aef13e-6bd4-4a09-9b13-c52d5d2def40.png"
+            ]
+          },
+          {
+            "id": "69c19b8c-0cef-4911-9bef-6cdf26d1b1d4",
+            "value": 500,
+            "clue": "Энэ ямар хэл вэ ?",
+            "answer": "Greek",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "/uploads/8cbb94dc-658a-4893-ba55-7fd7799f00aa.png"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1741119f-f922-4342-95f8-d0e7ab188830",
+        "name": "Music",
+        "questions": [
+          {
+            "id": "22a1b842-527e-4b40-8a75-b39b3140edb4",
+            "value": 100,
+            "clue": "Ямар дууны үг вэ ?\nУудмын холоос ч гийгүүлэн байдаг \nУргах наран шиг туяарсан\n Уяруухан хайранд чинь би \nҮргэлж мөнхийн гэрэлтэж явна аа би",
+            "answer": "Итгэл юм шүү \"Болдбаатар\"",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "1b9c584b-2e2f-473b-8344-afc003b358ed",
+            "value": 200,
+            "clue": "Ямар дууны үг вэ ?\nFind light in the beautiful sea\nI choose to be happy\nYou and I, you and I",
+            "answer": "Diamonds \"Rihanna\" ",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "d2f4b5f2-df02-488a-89fa-1bcd4f4815f5",
+            "value": 300,
+            "clue": "Who is the artist with an album called \"21\"",
+            "answer": "Adele",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "05cf1bfa-06e4-4b65-9410-e08a14562d6a",
+            "value": 400,
+            "clue": "________, Do you love me? Are you riding?\n\n",
+            "answer": "KIKI",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "451d7974-ded5-4af9-82c5-a39d6dccea58",
+            "value": 500,
+            "clue": "His palms are sweaty, knees weak, arms are heavy There's vomit on his sweater already, mom's _____________",
+            "answer": "spaghetti",
+            "isDailyDouble": false,
+            "answered": false
+          }
+        ]
+      },
+      {
+        "id": "2485d423-8364-466a-b38e-de1987125d28",
+        "name": "Geography",
+        "questions": [
+          {
+            "id": "6831f47b-c476-4d7f-8c2c-c370125db60a",
+            "value": 100,
+            "clue": "3-н нийслэл хот той улс",
+            "answer": "South Africa",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "86e3907a-4303-43fc-9691-1592b1b0c07b",
+            "value": 200,
+            "clue": "Дэлхийн хамгийн олон улстай хиллэдэг улс аль вэ?",
+            "answer": "China / Russia  — тус бүр 14 улс",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "a0114646-e166-439b-bbdc-dcdb7370b337",
+            "value": 300,
+            "clue": "Дэлхий дээрх хоёр тивд зэрэг оршдог цорын ганц улс аль вэ?",
+            "answer": "Turkey",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "b23ceebd-592f-4401-b3eb-b35e466f5510",
+            "value": 400,
+            "clue": "Дэлхийн хамгийн том цөл аль нь вэ?",
+            "answer": "Antarctic Desert",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "3536e94e-a884-4398-b8af-c7ba9f83ba08",
+            "value": 500,
+            "clue": "Нийслэл нь дэлхийн хамгийн өндөрт байрладаг улс аль вэ?Bolivia",
+            "answer": "Bolivia",
+            "isDailyDouble": false,
+            "answered": false
+          }
+        ]
+      },
+      {
+        "id": "dab958ef-90bd-47a4-bc4c-32594bbefd75",
         "name": "Random",
         "questions": [
           {
-            "id": "se1",
+            "id": "721dfe42-4052-40e0-b1fd-3140741e0c2a",
             "value": 100,
-            "answered": false,
+            "clue": "Шатрын тоглоомонд нийт хэдэн ширхэг хүү (pawn) эхэлж байрладаг вэ?",
+            "answer": "16 \"2 тал орно\"",
             "isDailyDouble": false,
-            "clue": "Нийгмийн сүлжээ Facebook-ийг хэн үүсгэсэн бэ?",
-            "answer": "Mark Zuckerberg"
+            "answered": false
           },
           {
-            "id": "se2",
+            "id": "742f1adb-3aee-4596-b5dd-0ae8f6d036b8",
             "value": 200,
-            "answered": false,
+            "clue": "Усны химийн томьёо юу вэ?",
+            "answer": "H2o",
             "isDailyDouble": false,
-            "clue": "Хүний ДНХ хэдэн хромосом агуулдаг вэ?",
-            "answer": "46"
+            "answered": false
           },
           {
-            "id": "se3",
+            "id": "84c18c94-ce88-4261-b7be-04fe1951483f",
             "value": 300,
-            "answered": false,
+            "clue": " FIFA World Cup-ийг хамгийн олон удаа түрүүлсэн улс аль вэ?",
+            "answer": "Brazil 5",
             "isDailyDouble": false,
-            "clue": "Та сонсож буй энэ дуу ямар кино дээр гарсан вэ?",
-            "answer": "Titanic"
+            "answered": false
           },
           {
-            "id": "se4",
+            "id": "e5bccac4-3a38-4f8a-a0d7-91583681901e",
             "value": 400,
-            "answered": false,
+            "clue": "“Fortnight” гэдэг англи үг яг хэдэн өдрийн хугацааг илэрхийлдэг вэ?",
+            "answer": "14 days",
             "isDailyDouble": false,
-            "clue": "Шоколадны эхлэл хаана эхэлсэн бэ?",
-            "answer": "Мексик"
+            "answered": false
           },
           {
-            "id": "se5",
+            "id": "5dfdf84b-0be7-41da-b2b5-571970b251ac",
             "value": 500,
-            "answered": false,
-            "isDailyDouble": true,
-            "clue": "Оруулалт хийх хэрхэн сурах хамгийн сайн арга юу вэ?",
-            "answer": "Warren Buffett-ийн номнуудыг унших"
-          }
-        ]
-      },
-      {
-        "id": "cat-politics",
-        "name": "Mongolian Politics",
-        "questions": [
-          {
-            "id": "p1",
-            "value": 100,
-            "answered": false,
+            "clue": "1-ээс 100 хүртэлх бүхэл тоонуудын нийлбэр хэд вэ?",
+            "answer": "5,050",
             "isDailyDouble": false,
-            "clue": "Монголын ерөнхийлөгч сонгоон хэдэн жилд нэг удаа болдог вэ?",
-            "answer": "4"
-          },
-          {
-            "id": "p2",
-            "value": 200,
-            "answered": false,
-            "isDailyDouble": false,
-            "clue": "Монгол Улсын хувьсгал хэдэн онд болсон бэ?",
-            "answer": "1921"
-          },
-          {
-            "id": "p3",
-            "value": 300,
-            "answered": false,
-            "isDailyDouble": false,
-            "clue": "Сүхэ Батор ямар нам үүсгэсэн бэ?",
-            "answer": "Революцийн Үндэсний Нам (МХТП)"
-          },
-          {
-            "id": "p4",
-            "value": 400,
-            "answered": false,
-            "isDailyDouble": false,
-            "clue": "Монголын Их Хурал хэдэн сэтгүүлтэнээс бүрддэг вэ?",
-            "answer": "76"
-          },
-          {
-            "id": "p5",
-            "value": 500,
-            "answered": false,
-            "isDailyDouble": false,
-            "clue": "Монголын конституцыг сүүлийн удаа өөрчилсөн жил хэдэн байсан бэ?",
-            "answer": "2001"
-          }
-        ]
-      },
-      {
-        "id": "cat-sequence",
-        "name": "Sequence →",
-        "questions": [
-          {
-            "id": "sq1",
-            "value": 100,
-            "answered": false,
-            "isDailyDouble": false,
-            "clue": "2, 4, 6, 8, ? - Дараагийн тоо юу вэ?",
-            "answer": "10"
-          },
-          {
-            "id": "sq2",
-            "value": 200,
-            "answered": false,
-            "isDailyDouble": false,
-            "clue": "1, 1, 2, 3, 5, 8, ? - Фибоначчи дарааллын дараагийн тоо юу вэ?",
-            "answer": "13"
-          },
-          {
-            "id": "sq3",
-            "value": 300,
-            "answered": false,
-            "isDailyDouble": false,
-            "clue": "A, C, E, G, ? - Дараагийн үсэг юу вэ?",
-            "answer": "I"
-          },
-          {
-            "id": "sq4",
-            "value": 400,
-            "answered": false,
-            "isDailyDouble": false,
-            "clue": "100, 90, 80, 70, ? - Дараагийн тоо юу вэ?",
-            "answer": "60"
-          },
-          {
-            "id": "sq5",
-            "value": 500,
-            "answered": false,
-            "isDailyDouble": false,
-            "clue": "2, 3, 5, 7, 11, 13, ? - Анхны тоонуудын дарааллын дараагийн тоо юу вэ?",
-            "answer": "17"
-          }
-        ]
-      },
-      {
-        "id": "cat-storepay",
-        "name": "Space",
-        "questions": [
-          {
-            "id": "sp1",
-            "value": 100,
-            "answered": false,
-            "isDailyDouble": false,
-            "clue": "Манай нарны системд хэдэн гариг байдаг вэ?",
-            "answer": "8"
-          },
-          {
-            "id": "sp2",
-            "value": 200,
-            "answered": false,
-            "isDailyDouble": false,
-            "clue": "Дэлхий нарны эргэн орлог хэдэн өдөр үргэлжилдэг вэ?",
-            "answer": "365 (365.25)"
-          },
-          {
-            "id": "sp3",
-            "value": 300,
-            "answered": false,
-            "isDailyDouble": false,
-            "clue": "Сарнаас дэлхий хүртэл ойролцоо хэдэн км байдаг вэ?",
-            "answer": "384,400"
-          },
-          {
-            "id": "sp4",
-            "value": 400,
-            "answered": false,
-            "isDailyDouble": false,
-            "clue": "Хамгийн том гариг юу вэ?",
-            "answer": "Jupiter"
-          },
-          {
-            "id": "sp5",
-            "value": 500,
-            "answered": false,
-            "isDailyDouble": false,
-            "clue": "Сониуч сар (Black Hole)-г анх хэн нээсэн бэ? (Эрдэмтнүүдийн нэр)",
-            "answer": "Karl Schwarzschild"
-          }
-        ]
-      },
-      {
-        "id": "a6209880-28c0-4b74-91ad-03d3b05e96ae",
-        "name": "GuesS The Song",
-        "questions": [
-          {
-            "id": "gs1",
-            "value": 100,
-            "answered": false,
-            "isDailyDouble": false,
-            "clue": "🎵 'I wanna hold your hand' - Энэ ямар хамтлагын дуу вэ?",
-            "answer": "The Beatles"
-          },
-          {
-            "id": "gs2",
-            "value": 200,
-            "answered": false,
-            "isDailyDouble": false,
-            "clue": "🎵 'Bohemian Rhapsody' - Энэ ямар хамтлагын дуу вэ?",
-            "answer": "Queen"
-          },
-          {
-            "id": "gs3",
-            "value": 300,
-            "answered": false,
-            "isDailyDouble": false,
-            "clue": "🎵 'Imagine' - Энэ ямар нэгэн дуучины дуу вэ?",
-            "answer": "John Lennon"
-          },
-          {
-            "id": "gs4",
-            "value": 400,
-            "answered": false,
-            "isDailyDouble": false,
-            "clue": "🎵 'Blinding Lights' - Энэ ямар нэгэн уран бүтээлч вэ?",
-            "answer": "The Weeknd"
-          },
-          {
-            "id": "gs5",
-            "value": 500,
-            "answered": false,
-            "isDailyDouble": false,
-            "clue": "🎵 'Shape of You' - Энэ ямар нэгэн уран бүтээлч вэ?",
-            "answer": "Ed Sheeran"
+            "answered": false
           }
         ]
       }
     ],
-    "createdAt": "2026-05-15T06:19:02.100Z",
-    "updatedAt": "2026-08-14T05:01:26.350Z"
+    "createdAt": "2026-08-14T06:07:52.360Z",
+    "updatedAt": "2026-08-14T06:40:55.063Z"
   }
 ]
