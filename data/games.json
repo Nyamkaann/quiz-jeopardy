@@ -1,7 +1,7 @@
 [
   {
     "id": "c7ed176f-47d3-4f6b-b790-1abd1394758f",
-    "title": "S&P Quiz",
+    "title": "S&P Quiz Round 1",
     "categories": [
       {
         "id": "3e6f7af4-2411-4899-8fae-40357ba42eea",
@@ -188,7 +188,7 @@
       },
       {
         "id": "1741119f-f922-4342-95f8-d0e7ab188830",
-        "name": "Music",
+        "name": "Music ",
         "questions": [
           {
             "id": "22a1b842-527e-4b40-8a75-b39b3140edb4",
@@ -326,6 +326,315 @@
       }
     ],
     "createdAt": "2026-08-14T06:07:52.360Z",
-    "updatedAt": "2026-08-14T06:40:55.063Z"
+    "updatedAt": "2026-08-14T07:19:50.881Z"
+  },
+  {
+    "id": "e0f508e3-d59e-4c2d-934b-0c2200c4cc82",
+    "title": "S&P Quiz Round 2",
+    "categories": [
+      {
+        "id": "607f621f-60ce-4ff9-b333-26506309ad3a",
+        "name": "A.I",
+        "questions": [
+          {
+            "id": "45e3df17-2810-4e61-bb51-3c0a25c0f9aa",
+            "value": 100,
+            "clue": "Хиймэл оюун ухаанд тодорхой даалгавар гүйцэтгүүлэхийн тулд хэрэглэгчийн бичиж өгч байгаа асуулт, зааварчилгаа эсвэл текстийг юу гэж нэрлэдэг вэ?\n",
+            "answer": "Prompt",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "94d995c6-b087-4b6e-82df-9e645e1ec9a6",
+            "value": 200,
+            "clue": "Орчин үеийн хиймэл оюун ухааны салбарт асар их хэмжээний өгөгдөл (data) дээр үндэслэн хүний оролцоогүйгээр бие даан суралцах, зүй тогтлыг олж харах болон таамаглал дэвшүүлэх боломжийг компьютерт олгодог салбар ухааныг юу гэж нэрлэдэг вэ?\n",
+            "answer": "Machine Learning",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "b0b70596-5896-4905-b9a9-9f20660bcf23",
+            "value": 300,
+            "clue": "Компьютерт хүний яриа болон бичгийн хэлийг ойлгох, дүн шинжилгээ хийх, орчуулах болон хариулах боломжийг олгодог AI-ийн салбарыг юу гэдэг вэ?\n",
+            "answer": "Natural Language Processing (NLP) ",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "b77caa3d-f1c7-4f3a-9022-953a701b59e6",
+            "value": 400,
+            "clue": "ChatGPT, Midjourney зэрэг хэрэглэгчийн өгсөн зааварчилгааны дагуу шинэ текст, зураг, аудио эсвэл код боловсруулан үүсгэдэг хиймэл оюун ухааны салбарыг юу гэж нэрлэдэг вэ?\n",
+            "answer": "Generative A.I",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "be5b1d27-52d8-4bb1-bce4-89220e8ec063",
+            "value": 500,
+            "clue": "Хүний тархины мэдрэлийн эсүүдийн (нейрон) ажиллах зарчмыг дуурайлган бүтээсэн, олон үе шаталт алгоритмаас бүрдэх машин сургалтын гүнзгийрүүлсэн салбарыг юу гэж нэрлэдэг вэ? ",
+            "answer": "Deep Learning ",
+            "isDailyDouble": false,
+            "answered": false
+          }
+        ]
+      },
+      {
+        "id": "344bd021-2d81-4b77-8507-416247fb17f2",
+        "name": "Game Map",
+        "questions": [
+          {
+            "id": "b6859949-45ed-4ced-a3da-ad48ef8c5454",
+            "value": 100,
+            "clue": "Ямар тоглоомын ямар нэртэй map вэ ?",
+            "answer": "PUBG-Erangel",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "/uploads/5b86909a-fc10-4797-ab86-d410b0ced83c.png"
+            ]
+          },
+          {
+            "id": "a12fd3b7-97de-4ba7-b241-0aca0ff9a69e",
+            "value": 200,
+            "clue": "Ямар тоглоомын ямар нэртэй map вэ ?",
+            "answer": "Dota ",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "/uploads/aac78f6a-e6ef-483e-a659-a237a4f28997.png"
+            ]
+          },
+          {
+            "id": "d728a7d3-7585-4e1d-8b93-76785bdf2090",
+            "value": 300,
+            "clue": "Ямар тоглоомын ямар нэртэй map вэ ?",
+            "answer": "Counter Strike \"OFFICE\"",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "/uploads/83c17ce5-8376-4d8f-ab51-89248ae701a9.png"
+            ]
+          },
+          {
+            "id": "47b1e924-c117-4429-a5ad-0e19223a2d70",
+            "value": 400,
+            "clue": "Ямар тоглоомын ямар нэртэй map вэ ?",
+            "answer": "Among us \"Skeld\"",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "/uploads/e4772da4-f222-4e74-88f9-c603dbba9e1a.png"
+            ]
+          },
+          {
+            "id": "db05fe69-ee24-4548-ac29-fce336f172b8",
+            "value": 500,
+            "clue": "Ямар тоглоомын ямар нэртэй map вэ ?",
+            "answer": "FIVE NIGHTS AT FREDDY: SISTER LOCATION",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "/uploads/55dde190-5f6b-43cc-9be4-0c6fa84684e4.png"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "46b361d8-83cc-41f3-b25d-b8657385fde1",
+        "name": "WHO AM I? ",
+        "questions": [
+          {
+            "id": "983ed7f0-d2c5-4a18-9297-9fcfbe6375ad",
+            "value": 100,
+            "clue": "* Би 1961 онд төрсөн.\n* Би Канадын жүжигчин.\n* Би The Matrix кинонд Neo-ийн дүрийг бүтээсэн.",
+            "answer": "Keanu Reeves",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "a0e409b3-c93b-4ab0-82fe-24978a36d9d0",
+            "value": 200,
+            "clue": "  Би 1988 онд төрсөн.\n Би Барбадосын дуучин.",
+            "answer": "Rihanna",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "25500d18-37e7-483b-8f3b-db78fc623b09",
+            "value": 300,
+            "clue": "WHO AM I? Би 1981 онд төрсөн. Би жүжигчин бөгөөд The Lord of the Rings, Pirates of the Caribbean, Kingdom of Heaven зэрэг кинонд тоглосон. Миний бүтээсэн дүрүүдийн нэг нь Legolas. Би хэн бэ?",
+            "answer": "Orlando Bloom",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "02200da3-19de-4f04-88be-8ff288fd5ae7",
+            "value": 400,
+            "clue": "WHO AM I? Би 1969 онд төрсөн. Би мэргэжлийн хөлбөмбөгчин байсан. Би Barcelona болон Arsenal-д тоглож байсан бөгөөд 2004 онд Arsenal-ийн unbeaten Premier League season-ийн нэг хэсэг байсан. Би хэн бэ?",
+            "answer": "Thierry Henry",
+            "isDailyDouble": false,
+            "answered": false,
+            "answerImages": []
+          },
+          {
+            "id": "ce2ef4de-cf7a-4a95-977d-4d5057c8de9a",
+            "value": 500,
+            "clue": " Би 1973 онд төрсөн. Би хөгжмийн продюсер, дуучин бөгөөд Kanye West, Jay-Z, Rihanna зэрэг олон уран бүтээлчтэй хамтарсан. Би Daft Punk-ийн Random Access Memories цомог дээр ажиллаж, олон Grammy шагнал хүртсэн. Би хэн бэ?",
+            "answer": "Pharell Williams",
+            "isDailyDouble": false,
+            "answered": false
+          }
+        ]
+      },
+      {
+        "id": "7fb386d1-8b33-412f-8399-fa153f9a7f7d",
+        "name": "Anime",
+        "questions": [
+          {
+            "id": "1a5ee1b0-a607-42f3-91b4-8a07b3084dc1",
+            "value": 100,
+            "clue": "Naruto-ийн 9н сүүлт үнэгний нэр",
+            "answer": "Kurama",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "b51c1f43-e4c9-4890-a38c-41d3266e08f9",
+            "value": 200,
+            "clue": "Demon Slayer дээрх Усны Hashira хэн бэ ?",
+            "answer": "Giyu Tomioka",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "f3808d84-fe13-4930-97e1-73fa264b7b0e",
+            "value": 300,
+            "clue": "Chimera Shadow Garden гэж хэний Domain Expansion \"Хүрээ тэлэлт\"вэ ? ",
+            "answer": "Megumoi Fushiguro",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "b1f85f0d-74b2-49c8-820c-eaa551ad4d68",
+            "value": 400,
+            "clue": "Aincrad гэж ямар аниме дээр гардаг цайз вэ ? ",
+            "answer": "Sword Art Online",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "eced9c90-805e-4733-8e83-ab342b210b13",
+            "value": 500,
+            "clue": "Ямар аниме-ий дуу вэ ?",
+            "answer": "Dragon Ball",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueAudio": "/uploads/02a02929-501d-4016-b4ea-22e2aebcdf84.mp3"
+          }
+        ]
+      },
+      {
+        "id": "c2a2d927-5d96-4551-973d-de7ebc83dbba",
+        "name": "Sequence",
+        "questions": [
+          {
+            "id": "00066b7c-f87f-43b8-8d33-d31b374f4aae",
+            "value": 100,
+            "clue": "2010 South Africa - 2014 Brazil - 2018 ? - 2022 Qatar",
+            "answer": "Russia",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "d1a83138-1160-47b1-986c-0bf6acc22277",
+            "value": 200,
+            "clue": "Windows 7 → Windows ? → Windows 10 → Windows 11",
+            "answer": " Windows 8",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "337a6ff4-6a7d-4f8c-a45e-f7233249bbe5",
+            "value": 300,
+            "clue": "Alpha - Beta - ? - Delta",
+            "answer": "Gamma",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "eecdaeaa-9ef6-4569-aa09-1b7788440acc",
+            "value": 400,
+            "clue": "Stone Age → Bronze Age → Iron Age → ___ → Industrial Age",
+            "answer": "→ Middle Ages",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "73fd11cd-a57e-49c8-affe-3d5885b40a25",
+            "value": 500,
+            "clue": "Rihanna- Usher -Kendrick Lamar - ?",
+            "answer": "Bad Bunny",
+            "isDailyDouble": false,
+            "answered": false
+          }
+        ]
+      },
+      {
+        "id": "8a78b144-dd2b-47a2-9c51-e78f667ece33",
+        "name": "Ears Wide Open",
+        "questions": [
+          {
+            "id": "ae580101-3baf-49e4-9da2-27fb1dbd6e33",
+            "value": 100,
+            "clue": "Ямар тоглоом вэ? ",
+            "answer": "Mario",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueAudio": "/uploads/cab1b34c-2d03-4041-92f9-104cb5faffeb.mp3"
+          },
+          {
+            "id": "a9cbe865-d5f5-4833-a5a3-6bd2439acf7f",
+            "value": 200,
+            "clue": "Энэ хэн бэ Ю",
+            "answer": "I Show Speed",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueAudio": "/uploads/e196e509-2708-4b42-924d-ad0f341e4de2.mp3"
+          },
+          {
+            "id": "98e3dd47-3740-4fa4-98af-e3b47d297f2e",
+            "value": 300,
+            "clue": "Ямар application ий дуу вэ Ю ",
+            "answer": "Discord",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueAudio": "/uploads/677289d7-8dd9-45f0-ba08-86e86d8cda29.mp3"
+          },
+          {
+            "id": "b9c00bc8-64a8-4ae2-9906-a3b232d3e380",
+            "value": 400,
+            "clue": "Ямар дуу вэ ?",
+            "answer": "Alors on Dacne",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueAudio": "/uploads/a9eccbbd-68eb-4cb1-ba90-eb510f203cb2.mp3",
+            "answerImages": [
+              "/uploads/daa653b0-591d-486d-9336-868332f8c515.png"
+            ]
+          },
+          {
+            "id": "1d573b2d-1104-464e-b6c4-bd180f078ff2",
+            "value": 500,
+            "clue": "Энэ ямар дуу вэ ?",
+            "answer": "Beaetles - Dont Let Me Down",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueAudio": "/uploads/357b7ea5-5f7a-498d-9823-cedc4f60d4cc.mp3"
+          }
+        ]
+      }
+    ],
+    "createdAt": "2026-08-14T06:44:21.648Z",
+    "updatedAt": "2026-08-14T07:32:25.235Z"
   }
 ]
