@@ -1,15 +1,16 @@
 import fs from "fs";
 import path from "path";
+import type { Game } from "@/types";
 
 const DB_PATH = path.join(process.cwd(), "data", "games.json");
 
 function clearAllQuestions() {
   try {
     const raw = fs.readFileSync(DB_PATH, "utf-8");
-    const games = JSON.parse(raw);
+    const games: Game[] = JSON.parse(raw);
 
     // Clear all questions from all categories in all games
-    const clearedGames = games.map((game) => ({
+    const clearedGames = games.map((game: Game) => ({
       ...game,
       categories: game.categories.map((category) => ({
         ...category,
