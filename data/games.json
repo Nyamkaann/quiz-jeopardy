@@ -1,640 +1,1718 @@
 [
   {
-    "id": "c7ed176f-47d3-4f6b-b790-1abd1394758f",
-    "title": "S&P Quiz Round 1",
+    "id": "7cceeb78-2a4f-44f5-8b6b-741cae7ecb32",
+    "title": "Тест Round",
+    "folderId": "84a2dc68-72ed-4b3a-a5f8-e488c576c7cf",
     "categories": [
       {
-        "id": "3e6f7af4-2411-4899-8fae-40357ba42eea",
-        "name": "Celebrity",
+        "id": "64e3d54c-9b4d-4d72-b456-1281edef89d2",
+        "name": "Сансар",
         "questions": [
           {
-            "id": "05483d53-0acd-4bc4-b845-09fe847bce3f",
+            "id": "c6b4dec1-49cd-4cef-985c-315d9e918f1e",
             "value": 100,
-            "clue": "Энэ хэн бэ ? ",
-            "answer": "Marilyn Monroe",
-            "isDailyDouble": false,
-            "answered": false,
-            "clueImages": [
-              "/uploads/e094a3ea-2a37-4906-b294-bd38c77f2519.jpg"
-            ]
-          },
-          {
-            "id": "10d42367-d218-4dd8-afbc-c69b1532a6c3",
-            "value": 200,
-            "clue": "Энэ хэн бэ ?",
-            "answer": "SIA",
-            "isDailyDouble": false,
-            "answered": false,
-            "clueImages": [
-              "/uploads/d1ea99e8-90da-4afb-a7fd-e40a9f1f2a37.webp"
-            ]
-          },
-          {
-            "id": "bb7753cb-6daf-484c-83bb-9150ebbd83bf",
-            "value": 300,
-            "clue": "Энэ хэн бэ ?",
-            "answer": "Lil Nas X",
-            "isDailyDouble": false,
-            "answered": false,
-            "clueImages": [
-              "/uploads/08b3ee28-f5cc-472d-90d2-a5ab92ffa982.jpg"
-            ]
-          },
-          {
-            "id": "d19d5b48-4b41-4336-9ca9-5be685394d4e",
-            "value": 400,
-            "clue": "Энэ хэн бэ ?",
-            "answer": "Frank Sinatra",
-            "isDailyDouble": false,
-            "answered": false,
-            "clueImages": [
-              "/uploads/1e6deb0e-eade-4cd6-9e02-f1863c37c67c.webp"
-            ]
-          },
-          {
-            "id": "7b7a2647-a07f-4ca7-9dbf-3f883d8c6eb0",
-            "value": 500,
-            "clue": "Энэ хэн бэ ?",
-            "answer": "Beyonce",
-            "isDailyDouble": false,
-            "answered": false,
-            "clueImages": [
-              "/uploads/b549bf63-d183-41e6-ac5a-4e739ee5114a.png"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "ba5e3f38-3410-4ba9-ac29-67458362cdfa",
-        "name": "Movies BY SCENE",
-        "questions": [
-          {
-            "id": "58ea4398-a35e-49f4-bc7c-ddba1a8de646",
-            "value": 100,
-            "clue": "Энэ ямар кино вэ ?",
-            "answer": "Zombieland",
-            "isDailyDouble": false,
-            "answered": false,
-            "clueImages": [
-              "/uploads/71e9552d-7039-46dc-afc9-803b4816b095.png"
-            ]
-          },
-          {
-            "id": "3f62cc19-4d63-4a40-861f-f20175cb37e4",
-            "value": 200,
-            "clue": "Энэ ямар кино вэ ?",
-            "answer": "Star Is Born",
-            "isDailyDouble": false,
-            "answered": false,
-            "clueImages": [
-              "/uploads/bfa4df8d-ada8-4c04-9ff4-29ad1ab38565.png"
-            ]
-          },
-          {
-            "id": "c9b5ade2-c8e8-495b-842c-769a37993417",
-            "value": 300,
-            "clue": "Энэ ямар кино вэ ?",
-            "answer": "Rush Hour 1",
-            "isDailyDouble": false,
-            "answered": false,
-            "clueImages": [
-              "/uploads/9780190c-eb0d-404a-9681-dc4109ee3efa.png"
-            ]
-          },
-          {
-            "id": "385a9bf4-30f2-4684-a29c-2746c3b7c55d",
-            "value": 400,
-            "clue": "The Suicide Squad\n",
-            "answer": "Suicide Squad 2 \"2021\" ",
-            "isDailyDouble": false,
-            "answered": false,
-            "clueImages": [
-              "/uploads/eedc548e-8995-4c82-af81-248697a7d333.png"
-            ]
-          },
-          {
-            "id": "05cf4282-d073-40da-98b2-d0499feba14d",
-            "value": 500,
-            "clue": "The Suicide Squad\n",
-            "answer": "Rio",
-            "isDailyDouble": false,
-            "answered": false,
-            "clueImages": [
-              "/uploads/342e399b-5ac7-4796-b4fe-150e76da4168.png"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "435f27c9-07a7-43ad-9269-8aabd29626d5",
-        "name": "Language",
-        "questions": [
-          {
-            "id": "adcf3b55-00b6-48f2-b830-59b21186ce29",
-            "value": 100,
-            "clue": "Энэ ямар хэл вэ ?",
-            "answer": "Japanese",
-            "isDailyDouble": false,
-            "answered": false,
-            "clueImages": [
-              "/uploads/cbced4be-c3dd-4450-8b10-a18c6975cf8a.png"
-            ]
-          },
-          {
-            "id": "eebb22fb-1446-41b9-9182-488fcd1083ab",
-            "value": 200,
-            "clue": "Энэ ямар хэл вэ ?",
-            "answer": "Arabic",
-            "isDailyDouble": false,
-            "answered": false,
-            "clueImages": [
-              "/uploads/30af5c8d-eacd-4fbf-b164-b6bc96aa8a41.png"
-            ]
-          },
-          {
-            "id": "a2633681-d849-495d-a896-019eed4c117c",
-            "value": 300,
-            "clue": "Энэ ямар хэл вэ ?",
-            "answer": "Spain",
-            "isDailyDouble": false,
-            "answered": false,
-            "clueImages": [
-              "/uploads/255655f2-1f82-4ea0-a6da-df323a7ac8bf.png"
-            ]
-          },
-          {
-            "id": "6716bd26-7b5a-4f10-bd34-2836e85b9625",
-            "value": 400,
-            "clue": "Энэ ямар хэл вэ ?",
-            "answer": "Thai",
-            "isDailyDouble": false,
-            "answered": false,
-            "clueImages": [
-              "/uploads/18aef13e-6bd4-4a09-9b13-c52d5d2def40.png"
-            ]
-          },
-          {
-            "id": "69c19b8c-0cef-4911-9bef-6cdf26d1b1d4",
-            "value": 500,
-            "clue": "Энэ ямар хэл вэ ?",
-            "answer": "Greek",
-            "isDailyDouble": false,
-            "answered": false,
-            "clueImages": [
-              "/uploads/8cbb94dc-658a-4893-ba55-7fd7799f00aa.png"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "1741119f-f922-4342-95f8-d0e7ab188830",
-        "name": "Music ",
-        "questions": [
-          {
-            "id": "22a1b842-527e-4b40-8a75-b39b3140edb4",
-            "value": 100,
-            "clue": "Ямар дууны үг вэ ?\nУудмын холоос ч гийгүүлэн байдаг \nУргах наран шиг туяарсан\n Уяруухан хайранд чинь би \nҮргэлж мөнхийн гэрэлтэж явна аа би",
-            "answer": "Итгэл юм шүү \"Болдбаатар\"",
+            "clue": "Нарны аймгийн хамгийн том гариг аль вэ?",
+            "answer": "Бархасбадь",
             "isDailyDouble": false,
             "answered": false
           },
           {
-            "id": "1b9c584b-2e2f-473b-8344-afc003b358ed",
+            "id": "3ff083bb-56b5-49fe-ae99-a6c832be8cca",
             "value": 200,
-            "clue": "Ямар дууны үг вэ ?\nFind light in the beautiful sea\nI choose to be happy\nYou and I, you and I",
-            "answer": "Diamonds \"Rihanna\" ",
+            "clue": "Дэлхийн цорын ганц байгалийн дагуул юу вэ?",
+            "answer": "Сар",
             "isDailyDouble": false,
             "answered": false
           },
           {
-            "id": "d2f4b5f2-df02-488a-89fa-1bcd4f4815f5",
+            "id": "d684948a-fba7-4b57-8ba4-c28b98f13d6c",
             "value": 300,
-            "clue": "Who is the artist with an album called \"21\"",
-            "answer": "Adele",
+            "clue": "Сансарт ниссэн анхны хүн хэн бэ?",
+            "answer": "Юрий Гагарин (1961)",
             "isDailyDouble": false,
             "answered": false
           },
           {
-            "id": "05cf1bfa-06e4-4b65-9410-e08a14562d6a",
+            "id": "f57f6a4d-fa04-47d6-a81d-4367264e799c",
             "value": 400,
-            "clue": "________, Do you love me? Are you riding?\n\n",
-            "answer": "KIKI",
+            "clue": "Монголын анхны сансрын нисгэгч хэн бэ?",
+            "answer": "Жүгдэрдэмидийн Гүррагчаа (1981)",
             "isDailyDouble": false,
             "answered": false
           },
           {
-            "id": "451d7974-ded5-4af9-82c5-a39d6dccea58",
+            "id": "f11b6a01-eb19-41e3-ba30-6d351ffa3248",
             "value": 500,
-            "clue": "His palms are sweaty, knees weak, arms are heavy There's vomit on his sweater already, mom's _____________",
-            "answer": "spaghetti",
+            "clue": "Нарны аймгийн хамгийн халуун гариг аль вэ?",
+            "answer": "Сугар",
             "isDailyDouble": false,
             "answered": false
           }
         ]
       },
       {
-        "id": "2485d423-8364-466a-b38e-de1987125d28",
-        "name": "Geography",
+        "id": "2888f91a-63fd-4090-ab2b-6707549ea791",
+        "name": "Монгол",
         "questions": [
           {
-            "id": "6831f47b-c476-4d7f-8c2c-c370125db60a",
+            "id": "879f11ff-2ab9-4c4a-88ad-a7048887da05",
             "value": 100,
-            "clue": "3-н нийслэл хот той улс",
-            "answer": "South Africa",
+            "clue": "Монгол Улсын нийслэл хот аль вэ?",
+            "answer": "Улаанбаатар",
             "isDailyDouble": false,
             "answered": false
           },
           {
-            "id": "86e3907a-4303-43fc-9691-1592b1b0c07b",
+            "id": "7837a07e-869f-4583-a1e5-80450654724a",
             "value": 200,
-            "clue": "Дэлхийн хамгийн олон улстай хиллэдэг улс аль вэ?",
-            "answer": "China / Russia  — тус бүр 14 улс",
+            "clue": "Их Монгол Улс хэдэн онд байгуулагдсан бэ?",
+            "answer": "1206 он",
             "isDailyDouble": false,
             "answered": false
           },
           {
-            "id": "a0114646-e166-439b-bbdc-dcdb7370b337",
+            "id": "0c38845a-bffc-43a4-9e4c-537cf9e3eecf",
             "value": 300,
-            "clue": "Дэлхий дээрх хоёр тивд зэрэг оршдог цорын ганц улс аль вэ?",
-            "answer": "Turkey",
+            "clue": "Монголын хамгийн өндөр оргил аль вэ?",
+            "answer": "Хүйтэн оргил (4374 м)",
             "isDailyDouble": false,
             "answered": false
           },
           {
-            "id": "b23ceebd-592f-4401-b3eb-b35e466f5510",
+            "id": "4c2ebcb3-b7c6-4fab-91c2-208e043ff06f",
             "value": 400,
-            "clue": "Дэлхийн хамгийн том цөл аль нь вэ?",
-            "answer": "Antarctic Desert",
+            "clue": "Талбайгаараа Монголын хамгийн том нуур аль вэ?",
+            "answer": "Увс нуур",
             "isDailyDouble": false,
             "answered": false
           },
           {
-            "id": "3536e94e-a884-4398-b8af-c7ba9f83ba08",
+            "id": "ea0da588-2180-41e4-80a1-8307a039cbbf",
             "value": 500,
-            "clue": "Нийслэл нь дэлхийн хамгийн өндөрт байрладаг улс аль вэ?Bolivia",
-            "answer": "Bolivia",
+            "clue": "Монгол бичгийг ямар чиглэлд бичдэг вэ?",
+            "answer": "Дээрээс доош, зүүнээс баруун тийш",
             "isDailyDouble": false,
             "answered": false
           }
         ]
       },
       {
-        "id": "dab958ef-90bd-47a4-bc4c-32594bbefd75",
-        "name": "Random",
+        "id": "4ad134a5-e0d0-4d98-b6c0-5206bbbcc7cf",
+        "name": "Кино",
         "questions": [
           {
-            "id": "721dfe42-4052-40e0-b1fd-3140741e0c2a",
+            "id": "7f824a26-2984-445e-ba59-044d0fea801c",
             "value": 100,
-            "clue": "Шатрын тоглоомонд нийт хэдэн ширхэг хүү (pawn) эхэлж байрладаг вэ?",
-            "answer": "16 \"2 тал орно\"",
+            "clue": "«Titanic» киноны найруулагч хэн бэ?",
+            "answer": "Жеймс Камерон",
             "isDailyDouble": false,
             "answered": false
           },
           {
-            "id": "742f1adb-3aee-4596-b5dd-0ae8f6d036b8",
+            "id": "2653ae05-9d89-446e-9783-9d2c809aae79",
             "value": 200,
+            "clue": "Харри Поттерын сурдаг шидтэний сургуулийн нэр юу вэ?",
+            "answer": "Хогвартс",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "ba619060-e416-475d-9794-9bd9e68511dd",
+            "value": 300,
+            "clue": "«Interstellar» кинонд Куперийн дүрийг хэн бүтээсэн бэ?",
+            "answer": "Мэттью Макконахи",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "7cbed687-7d0c-4004-9ef3-dcb3a696136d",
+            "value": 400,
+            "clue": "Оскарын 11 шагнал хүртсэн гурван киноны нэгийг нэрлэнэ үү.",
+            "answer": "Бен-Хур / Титаник / Бөгжний эзэн: Хааны эргэн ирэлт",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "683bcdcb-99f8-4dd4-8f17-5fc92c602648",
+            "value": 500,
+            "clue": "«Оддын дайн»-д Лүкийн аав хэн болох нь илэрдэг вэ?",
+            "answer": "Дарт Вейдер",
+            "isDailyDouble": false,
+            "answered": false
+          }
+        ]
+      },
+      {
+        "id": "27a5a88f-a709-47e3-ad82-d22130b80686",
+        "name": "Хөгжим",
+        "questions": [
+          {
+            "id": "399c8246-7c36-4871-b52a-0e0e916167c6",
+            "value": 100,
+            "clue": "До, ре, ми… гамм хэдэн үндсэн нотоос бүрддэг вэ?",
+            "answer": "7",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "ee68c5dd-e4c9-42b4-987f-6d10369b4cb7",
+            "value": 200,
+            "clue": "«Thriller» цомгийг хэн гаргасан бэ?",
+            "answer": "Майкл Жексон",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "d2f1ae3d-6770-4dc0-a20d-7322e3f5b059",
+            "value": 300,
+            "clue": "Морин хуур хэдэн утастай вэ?",
+            "answer": "2",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "affcabb2-13d4-4c52-be4e-3e585b55d4b7",
+            "value": 400,
+            "clue": "Бетховен нийт хэдэн симфони бичсэн бэ?",
+            "answer": "9",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "3a4ad203-bb74-436f-a175-493af4fbf2a6",
+            "value": 500,
+            "clue": "ЮНЕСКО-д бүртгэгдсэн Монголын уламжлалт хоолойн урлагийг юу гэдэг вэ?",
+            "answer": "Хөөмий",
+            "isDailyDouble": false,
+            "answered": false
+          }
+        ]
+      },
+      {
+        "id": "122c5fd9-0784-46db-a13c-2b8adf009ff5",
+        "name": "Шинжлэх ухаан",
+        "questions": [
+          {
+            "id": "02fb7573-24f1-4aed-b707-c42a1d114d58",
+            "value": 100,
             "clue": "Усны химийн томьёо юу вэ?",
-            "answer": "H2o",
+            "answer": "H₂O",
             "isDailyDouble": false,
             "answered": false
           },
           {
-            "id": "84c18c94-ce88-4261-b7be-04fe1951483f",
+            "id": "1f78a0e6-650c-47f3-bd00-392083c82d1d",
+            "value": 200,
+            "clue": "Хүний биеийн хамгийн том эрхтэн аль вэ?",
+            "answer": "Арьс",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "6dc2b0f3-0db1-4044-a556-327fa7fcd47b",
             "value": 300,
-            "clue": " FIFA World Cup-ийг хамгийн олон удаа түрүүлсэн улс аль вэ?",
-            "answer": "Brazil 5",
+            "clue": "Гэрлийн хурд секундэд ойролцоогоор хэдэн км вэ?",
+            "answer": "≈ 300 000 км/с",
             "isDailyDouble": false,
             "answered": false
           },
           {
-            "id": "e5bccac4-3a38-4f8a-a0d7-91583681901e",
+            "id": "95f3eb51-7a18-4e8c-8be3-be09eb18fbab",
             "value": 400,
-            "clue": "“Fortnight” гэдэг англи үг яг хэдэн өдрийн хугацааг илэрхийлдэг вэ?",
-            "answer": "14 days",
+            "clue": "Химийн элементүүдийн үелэх системийг хэн зохиосон бэ?",
+            "answer": "Дмитрий Менделеев",
             "isDailyDouble": false,
             "answered": false
           },
           {
-            "id": "5dfdf84b-0be7-41da-b2b5-571970b251ac",
+            "id": "e13ca35b-d043-489c-bc31-9dc4943c9c65",
             "value": 500,
-            "clue": "1-ээс 100 хүртэлх бүхэл тоонуудын нийлбэр хэд вэ?",
-            "answer": "5,050",
+            "clue": "Алтны химийн тэмдэг юу вэ?",
+            "answer": "Au",
             "isDailyDouble": false,
             "answered": false
+          }
+        ]
+      },
+      {
+        "id": "05211559-db69-4022-96af-cbf963a2f218",
+        "name": "CONNECT",
+        "type": "connect",
+        "questions": [
+          {
+            "id": "60f8f691-6ca8-4c16-b103-d5f4a4e51384",
+            "value": 100,
+            "clue": "",
+            "answer": "",
+            "isDailyDouble": false,
+            "answered": false,
+            "connect": {
+              "clues": [
+                {
+                  "id": "5c9de785-2192-44ff-ac7f-80482542a5c6",
+                  "text": "МКС"
+                },
+                {
+                  "id": "ea561eba-4952-4fb7-b521-e304704acff0",
+                  "text": "Хаббл"
+                },
+                {
+                  "id": "d53357c3-6310-4ce9-9abe-30c8834a77d8",
+                  "text": "Гүррагчаа"
+                },
+                {
+                  "id": "96f77dd0-77df-4e66-8bd0-06d20f093964",
+                  "text": "Гагарин"
+                },
+                {
+                  "id": "1bb9605f-b799-45c7-8430-f2076dc14cf3",
+                  "text": "Аполлон 11"
+                }
+              ],
+              "answer": "Сансар судлал"
+            }
+          },
+          {
+            "id": "579ab0f3-497a-45ff-adc3-b872437ba1bf",
+            "value": 200,
+            "clue": "",
+            "answer": "",
+            "isDailyDouble": false,
+            "answered": false,
+            "connect": {
+              "clues": [
+                {
+                  "id": "e1a0ba6b-6bd6-4c96-9731-7335dd98a567",
+                  "text": "Буйр"
+                },
+                {
+                  "id": "4bd5b029-0f12-4e17-9c2e-9359b094225b",
+                  "text": "Хяргас"
+                },
+                {
+                  "id": "2888c7de-40a2-455a-b902-f69de7f0e37f",
+                  "text": "Хар-Ус"
+                },
+                {
+                  "id": "c63567d7-8fd4-485f-8352-32df1447c470",
+                  "text": "Увс"
+                },
+                {
+                  "id": "563ab929-80ed-4c69-8e55-20ea19809857",
+                  "text": "Хөвсгөл"
+                }
+              ],
+              "answer": "Монголын нуурууд"
+            }
+          },
+          {
+            "id": "91f75261-b887-46e7-8b9b-ceaba3dd41fe",
+            "value": 300,
+            "clue": "",
+            "answer": "",
+            "isDailyDouble": false,
+            "answered": false,
+            "connect": {
+              "clues": [
+                {
+                  "id": "1c741e55-4322-4f75-915b-a4062dc8e4e5",
+                  "text": "Шилүүс"
+                },
+                {
+                  "id": "caf42fe6-f30a-4d9a-8862-e2a5416693db",
+                  "text": "Ягуар"
+                },
+                {
+                  "id": "f1210a2c-30dc-47d8-acfa-9802b1587a53",
+                  "text": "Ирвэс"
+                },
+                {
+                  "id": "667af9ad-2050-42a4-9bed-d490c3c98b97",
+                  "text": "Бар"
+                },
+                {
+                  "id": "6973ac4d-c5aa-482e-a499-1fcb425651f1",
+                  "text": "Арслан"
+                }
+              ],
+              "answer": "Муурын овгийн амьтад"
+            }
+          },
+          {
+            "id": "6a7a5271-d353-4f42-adb1-7ec555d40236",
+            "value": 400,
+            "clue": "",
+            "answer": "",
+            "isDailyDouble": false,
+            "answered": false,
+            "connect": {
+              "clues": [
+                {
+                  "id": "42529cac-b897-43fb-8500-84835f386ccb",
+                  "text": "Гүюг"
+                },
+                {
+                  "id": "4b1836bb-c92f-43a7-b3d2-a7c522c2ae46",
+                  "text": "Мөнх"
+                },
+                {
+                  "id": "3f034387-43e4-4a0c-b428-c192b3e021f5",
+                  "text": "Өгөдэй"
+                },
+                {
+                  "id": "fcf1ad92-044c-4681-8b76-d447f9519262",
+                  "text": "Хубилай"
+                },
+                {
+                  "id": "e9f608cb-bee7-4c4a-95fc-6a2f1ef4e5bc",
+                  "text": "Чингис"
+                }
+              ],
+              "answer": "Их Монгол Улсын хаад"
+            }
+          },
+          {
+            "id": "68421178-c44f-4ab1-ab81-2faccb20bf61",
+            "value": 500,
+            "clue": "",
+            "answer": "",
+            "isDailyDouble": false,
+            "answered": false,
+            "connect": {
+              "clues": [
+                {
+                  "id": "05d9f8d5-9944-40ba-ad20-f068da0b6f83",
+                  "text": "Санчир"
+                },
+                {
+                  "id": "1d8134d4-7216-40db-bb15-f29d7446d75b",
+                  "text": "Буд"
+                },
+                {
+                  "id": "ecc87d0a-e5d0-4686-99e0-4e1ff41b98ad",
+                  "text": "Бархасбадь"
+                },
+                {
+                  "id": "f0d42f9e-5594-4a48-b967-2da7e3160503",
+                  "text": "Сугар"
+                },
+                {
+                  "id": "1f68cd35-d386-44ca-9fdb-b0d9929931f9",
+                  "text": "Ангараг"
+                }
+              ],
+              "answer": "Гаригууд (Бямба, Лхагва, Пүрэв, Баасан, Мягмар гарагууд)"
+            }
           }
         ]
       }
     ],
-    "createdAt": "2026-08-14T06:07:52.360Z",
-    "updatedAt": "2026-08-14T07:19:50.881Z"
+    "timerSeconds": 60,
+    "createdAt": "2026-10-02T17:14:15.494665Z",
+    "updatedAt": "2026-10-02T17:14:15.494665Z"
   },
   {
-    "id": "e0f508e3-d59e-4c2d-934b-0c2200c4cc82",
-    "title": "S&P Quiz Round 2",
+    "id": "e71d327e-bec9-41ab-b33f-6f26e475de48",
+    "title": "Round 1",
     "categories": [
       {
-        "id": "607f621f-60ce-4ff9-b333-26506309ad3a",
-        "name": "A.I",
+        "id": "2972ec47-25e1-4ec5-a6c2-b97456d5e00b",
+        "name": "Газар зүй",
         "questions": [
           {
-            "id": "45e3df17-2810-4e61-bb51-3c0a25c0f9aa",
+            "id": "1b948cb8-0cc1-4973-9d20-342feae52ed1",
             "value": 100,
-            "clue": "Хиймэл оюун ухаанд тодорхой даалгавар гүйцэтгүүлэхийн тулд хэрэглэгчийн бичиж өгч байгаа асуулт, зааварчилгаа эсвэл текстийг юу гэж нэрлэдэг вэ?\n",
-            "answer": "Prompt",
+            "clue": "Монгол Улс далайд гарцгүй улсуудаас нутаг дэвсгэрээрээ дэлхийд 2-т ордог. Тэгвэл 2.7 сая гаруй км² талбайтай, далайд гарцгүй улсуудаас хамгийн том нь аль улс вэ?",
+            "answer": "Казахстан (Kazakhstan)",
             "isDailyDouble": false,
-            "answered": false
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Landlocked_country"
           },
           {
-            "id": "94d995c6-b087-4b6e-82df-9e645e1ec9a6",
+            "id": "03ee1d88-6f55-43f8-ad45-c7541f6dfee1",
             "value": 200,
-            "clue": "Орчин үеийн хиймэл оюун ухааны салбарт асар их хэмжээний өгөгдөл (data) дээр үндэслэн хүний оролцоогүйгээр бие даан суралцах, зүй тогтлыг олж харах болон таамаглал дэвшүүлэх боломжийг компьютерт олгодог салбар ухааныг юу гэж нэрлэдэг вэ?\n",
-            "answer": "Machine Learning",
+            "clue": "Хөвсгөл нуур өмнө зүг рүү ганц голоор урсаж гардаг. Тэр гол Сэлэнгэ мөрөнтэй нийлж, 1000 гаруй км замыг туулан эцэстээ Байгаль нуурт цутгадаг. Хөвсгөлөөс урсан гардаг энэ голын нэр юу вэ?",
+            "answer": "Эгийн гол (Egiin Gol)",
             "isDailyDouble": false,
-            "answered": false
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Lake_Kh%C3%B6vsg%C3%B6l"
           },
           {
-            "id": "b0b70596-5896-4905-b9a9-9f20660bcf23",
+            "id": "2490972c-b9e7-42b4-9b89-1362d427d363",
             "value": 300,
-            "clue": "Компьютерт хүний яриа болон бичгийн хэлийг ойлгох, дүн шинжилгээ хийх, орчуулах болон хариулах боломжийг олгодог AI-ийн салбарыг юу гэдэг вэ?\n",
-            "answer": "Natural Language Processing (NLP) ",
+            "clue": "Далайд гарахын тулд дор хаяж ХОЁР улсын хилийг давах шаардлагатай, өөрөөр хэлбэл зөвхөн далайд гарцгүй улсуудаар бүрэн хүрээлэгдсэн \"давхар далайд гарцгүй\" (doubly landlocked) улс дэлхийд ердөө хоёр бий. Нэг нь Европт, нөгөө нь Төв Азид. Хоёуланг нь нэрлэ.",
+            "answer": "Лихтенштейн ба Узбекистан (Liechtenstein & Uzbekistan) — хоёуланг нь хэлэх ёстой",
             "isDailyDouble": false,
-            "answered": false
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Landlocked_country"
           },
           {
-            "id": "b77caa3d-f1c7-4f3a-9022-953a701b59e6",
+            "id": "e273ee97-a20a-43ed-b5f6-96f1d9c9e462",
             "value": 400,
-            "clue": "ChatGPT, Midjourney зэрэг хэрэглэгчийн өгсөн зааварчилгааны дагуу шинэ текст, зураг, аудио эсвэл код боловсруулан үүсгэдэг хиймэл оюун ухааны салбарыг юу гэж нэрлэдэг вэ?\n",
-            "answer": "Generative A.I",
+            "clue": "Монголын хамгийн өндөр цэг Хүйтэн оргил 4374 м. Харин Монголын хамгийн НАМ цэг нь далайн түвшнээс ердөө 560 метрийн өндөрт, улсын зүүн хэсэгт орших нэгэн нуур юм. Энэ нуурын нэр юу вэ?",
+            "answer": "Хөх нуур (Hoh Nuur)",
             "isDailyDouble": false,
-            "answered": false
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Geography_of_Mongolia"
           },
           {
-            "id": "be5b1d27-52d8-4bb1-bce4-89220e8ec063",
+            "id": "2c0450df-3848-474b-9be1-fcc78f7e4c8c",
             "value": 500,
-            "clue": "Хүний тархины мэдрэлийн эсүүдийн (нейрон) ажиллах зарчмыг дуурайлган бүтээсэн, олон үе шаталт алгоритмаас бүрдэх машин сургалтын гүнзгийрүүлсэн салбарыг юу гэж нэрлэдэг вэ? ",
-            "answer": "Deep Learning ",
+            "clue": "1899 онд Их Британи, Египетийн гэрээгээр Египет-Суданы хилийг 22-р өргөргийн дагуу шулуун татжээ. 1902 онд харин нутгийн овог аймгуудын бэлчээрийг харгалзан \"захиргааны\" шинэ хил зурав. Өнөөдөр Египет 1899 оны хилийг, Судан 1902 оны хилийг баримталдаг. Хоёулаа илүү үнэ цэнтэй Халаибын гурвалжинг өөрийнх гэж нэхэмжилдэг тул үлдсэн 2060 км² орчим цөлийг аль аль нь \"манайх биш\" гэдэг. Дэлхийн цөөн хэдэн эзэнгүй газрын нэг болсон энэ нутгийн нэр юу вэ?",
+            "answer": "Бир Тавил (Bir Tawil)",
             "isDailyDouble": false,
-            "answered": false
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Topographic_Map_of_Bir_Tawil.png/1280px-Topographic_Map_of_Bir_Tawil.png"
+            ],
+            "source": "https://en.wikipedia.org/wiki/Bir_Tawil"
           }
         ]
       },
       {
-        "id": "344bd021-2d81-4b77-8507-416247fb17f2",
-        "name": "Game Map",
+        "id": "5b43e286-d441-4eb9-bf61-fe4ed5a9d06e",
+        "name": "Загасчлал",
         "questions": [
           {
-            "id": "b6859949-45ed-4ced-a3da-ad48ef8c5454",
+            "id": "347b1a48-172e-45e3-80e0-ca57d561bab1",
             "value": 100,
-            "clue": "Ямар тоглоомын ямар нэртэй map вэ ?",
-            "answer": "PUBG-Erangel",
+            "clue": "National Geographic намайг \"Mongolian Terror Trout\" гэж нэрлэсэн. Би хулд загасны овгийн дэлхийн хамгийн том төлөөлөгч, загаснаас гадна мэрэгч амьтан, шувуу хүртэл иддэг, 55-аас дээш жил амьдарч чадна. IUCN-ийн жагсаалтад \"эмзэг\" ангилалд байгаа тул ихэнх газар зөвхөн \"барьж суллах\" зарчмаар агнадаг. Монгол нэр минь юу вэ?",
+            "answer": "Тул (Taimen, Hucho taimen)",
             "isDailyDouble": false,
             "answered": false,
-            "clueImages": [
-              "/uploads/5b86909a-fc10-4797-ab86-d410b0ced83c.png"
-            ]
+            "clueImages": [],
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Hucho_taimen_June_2007_Uur_River.jpg/1280px-Hucho_taimen_June_2007_Uur_River.jpg"
+            ],
+            "source": "https://en.wikipedia.org/wiki/Hucho_taimen"
           },
           {
-            "id": "a12fd3b7-97de-4ba7-b241-0aca0ff9a69e",
+            "id": "f4d82492-a87f-46ce-87ff-a64b0edf0538",
             "value": 200,
-            "clue": "Ямар тоглоомын ямар нэртэй map вэ ?",
-            "answer": "Dota ",
+            "clue": "Шинжлэх ухааны нэр нь Thymallus nigrescens. Энэ загас дэлхий дээр зөвхөн Монголын НЭГ л нуурт амьдардаг эндемик зүйл. Ямар загас вэ? (Нуурыг нь хамт хэлбэл бүрэн оноо)",
+            "answer": "Хөвсгөлийн хадран (Hovsgol grayling) — Хөвсгөл нуур",
             "isDailyDouble": false,
             "answered": false,
-            "clueImages": [
-              "/uploads/aac78f6a-e6ef-483e-a659-a237a4f28997.png"
-            ]
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Thymallus_nigrescens"
           },
           {
-            "id": "d728a7d3-7585-4e1d-8b93-76785bdf2090",
+            "id": "5876b296-6574-435f-8aa2-dec9d6b109be",
             "value": 300,
-            "clue": "Ямар тоглоомын ямар нэртэй map вэ ?",
-            "answer": "Counter Strike \"OFFICE\"",
+            "clue": "Японы уулын горхинд 400 гаруй жилийн өмнө мэргэжлийн загасчдын дунд үүссэн арга. Ороомог (reel) огт хэрэглэдэггүй — зөвхөн саваа, шугам, хиймэл \"ялаа\" л байдаг. Ямамэ, ивана, амаго зэрэг загас агнадаг бөгөөд 2009 онд АНУ-д танилцуулагдсанаар барууны орнуудад түгсэн. Энэ загасчлалын аргыг юу гэдэг вэ?",
+            "answer": "Tenkara (тэнкара)",
             "isDailyDouble": false,
             "answered": false,
-            "clueImages": [
-              "/uploads/83c17ce5-8376-4d8f-ab51-89248ae701a9.png"
-            ]
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Tenkara_fishing"
           },
           {
-            "id": "47b1e924-c117-4429-a5ad-0e19223a2d70",
+            "id": "ee6066fe-28da-4d8a-9d00-221b880fcbce",
             "value": 400,
-            "clue": "Ямар тоглоомын ямар нэртэй map вэ ?",
-            "answer": "Among us \"Skeld\"",
+            "clue": "1938 онд Өмнөд Африкийн Ист Лондон хотын ойролцоо Хендрик Гоосен ахлагчтай траулерын торонд хачин загас оржээ. Орон нутгийн музейн эрхлэгч бүсгүй үүнийг анзаарч, профессор Ж.Л.Б. Смитэд мэдэгдэв. Тэр нь 66 сая жилийн өмнө устсан гэж үздэг байсан \"амьд чулуужсан олдвор\" загас байлаа. Энэ загасны шинжлэх ухааны төрлийн нэр (Latimeria) хэний нэрээр нэрлэгдсэн бэ?",
+            "answer": "Marjorie Courtenay-Latimer (Марджори Куртенэй-Латимер) — загас нь Coelacanth (Latimeria chalumnae)",
             "isDailyDouble": false,
             "answered": false,
-            "clueImages": [
-              "/uploads/e4772da4-f222-4e74-88f9-c603dbba9e1a.png"
-            ]
+            "clueImages": [],
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Latimeria_Chalumnae_-_Coelacanth_-_NHMW.jpg/1280px-Latimeria_Chalumnae_-_Coelacanth_-_NHMW.jpg"
+            ],
+            "source": "https://en.wikipedia.org/wiki/West_Indian_Ocean_coelacanth"
           },
           {
-            "id": "db05fe69-ee24-4548-ac29-fce336f172b8",
+            "id": "5be055c8-3b19-4493-b806-fc8482f6b3fa",
             "value": 500,
-            "clue": "Ямар тоглоомын ямар нэртэй map вэ ?",
-            "answer": "FIVE NIGHTS AT FREDDY: SISTER LOCATION",
+            "clue": "1932 онд Жорж Перри Жоржиа мужийн Монтгомери нуураас 22 фунт 4 унц (10.09 кг) жинтэй largemouth bass барьжээ. 2009 оны 7-р сард Япон загасчин Манабу Курита Бива нуураас 22 фунт 5 унц буюу 1 унцаар ИЛҮҮ жинтэй загас барьсан. Гэвч IGFA түүнийг шинэ дээд амжилт биш, \"тэнцсэн\" дээд амжилт гэж бүртгэсэн. Яагаад?",
+            "answer": "IGFA-гийн дүрмээр шинэ рекорд хуучнаасаа дор хаяж 2 унцаар илүү байх ёстой (1 унц хангалтгүй)",
             "isDailyDouble": false,
             "answered": false,
-            "clueImages": [
-              "/uploads/55dde190-5f6b-43cc-9be4-0c6fa84684e4.png"
-            ]
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Largemouth_bass"
           }
         ]
       },
       {
-        "id": "46b361d8-83cc-41f3-b25d-b8657385fde1",
-        "name": "WHO AM I? ",
+        "id": "2794b84a-ca5e-4d2c-82f4-1a318a31eeac",
+        "name": "Хятад",
         "questions": [
           {
-            "id": "983ed7f0-d2c5-4a18-9297-9fcfbe6375ad",
+            "id": "61d71888-9154-4fc3-af7f-dce6a0cf51df",
             "value": 100,
-            "clue": "* Би 1961 онд төрсөн.\n* Би Канадын жүжигчин.\n* Би The Matrix кинонд Neo-ийн дүрийг бүтээсэн.",
-            "answer": "Keanu Reeves",
-            "isDailyDouble": false,
-            "answered": false
-          },
-          {
-            "id": "a0e409b3-c93b-4ab0-82fe-24978a36d9d0",
-            "value": 200,
-            "clue": "  Би 1988 онд төрсөн.\n Би Барбадосын дуучин.",
-            "answer": "Rihanna",
-            "isDailyDouble": false,
-            "answered": false
-          },
-          {
-            "id": "25500d18-37e7-483b-8f3b-db78fc623b09",
-            "value": 300,
-            "clue": "WHO AM I? Би 1981 онд төрсөн. Би жүжигчин бөгөөд The Lord of the Rings, Pirates of the Caribbean, Kingdom of Heaven зэрэг кинонд тоглосон. Миний бүтээсэн дүрүүдийн нэг нь Legolas. Би хэн бэ?",
-            "answer": "Orlando Bloom",
-            "isDailyDouble": false,
-            "answered": false
-          },
-          {
-            "id": "02200da3-19de-4f04-88be-8ff288fd5ae7",
-            "value": 400,
-            "clue": "WHO AM I? Би 1969 онд төрсөн. Би мэргэжлийн хөлбөмбөгчин байсан. Би Barcelona болон Arsenal-д тоглож байсан бөгөөд 2004 онд Arsenal-ийн unbeaten Premier League season-ийн нэг хэсэг байсан. Би хэн бэ?",
-            "answer": "Thierry Henry",
+            "clue": "Бээжин гэдэг нэр \"Хойд нийслэл\" гэсэн утгатай. Тэгвэл 1368 онд Мин улсын Хунъү хаан \"Өмнөд нийслэл\" хэмээн нэрлэсэн, 1927 оноос Бүгд Найрамдах Хятад Улсын нийслэл байсан, одоо Жянсу мужийн төв болох хот аль вэ?",
+            "answer": "Нанжин (Nanjing)",
             "isDailyDouble": false,
             "answered": false,
-            "answerImages": []
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Nanjing"
           },
           {
-            "id": "ce2ef4de-cf7a-4a95-977d-4d5057c8de9a",
-            "value": 500,
-            "clue": " Би 1973 онд төрсөн. Би хөгжмийн продюсер, дуучин бөгөөд Kanye West, Jay-Z, Rihanna зэрэг олон уран бүтээлчтэй хамтарсан. Би Daft Punk-ийн Random Access Memories цомог дээр ажиллаж, олон Grammy шагнал хүртсэн. Би хэн бэ?",
-            "answer": "Pharell Williams",
+            "id": "0a42ca73-7a7d-4bc2-a524-55ff57f82783",
+            "value": 200,
+            "clue": "1974 оны 3-р сарын 29-нд Шиань хотын ойролцоо Ян Жифа болон түүний ах дүүс худаг ухаж байгаад шавар хэлтэрхий олжээ. Энэ нь 8000 гаруй цэрэг, 130 тэрэг, олон зуун морины баримал бүхий \"Терракота арми\" болж хувирсан. Энэ армийг хэний бунханд зориулж бүтээсэн бэ?",
+            "answer": "Чин Ши Хуанди (Qin Shi Huang) — Хятадын анхны эзэн хаан",
             "isDailyDouble": false,
-            "answered": false
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/51714-Terracota-Army.jpg/1280px-51714-Terracota-Army.jpg"
+            ],
+            "source": "https://en.wikipedia.org/wiki/Terracotta_Army"
+          },
+          {
+            "id": "23a9c851-3af6-470a-9bdb-5969cb1a77eb",
+            "value": 300,
+            "clue": "Би мэргэжлээрээ эдийн засагч, банкир байсан. 1955 онд Жоу Эньлай намайг хэл шинжлэлд сонирхолтойг минь санаж, нэгэн чухал ажлыг даалгасан. Миний ахалсан баг боловсруулсан системийг 1958 онд Хятад албан ёсоор баталж, 1982 онд ISO стандарт болсон. Би 111 насалсан. Намайг юуны \"эцэг\" гэж нэрлэдэг вэ?",
+            "answer": "Пиньинь (Pinyin) — Жоу Югуан (Zhou Youguang)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/commons/4/41/Zhou_Youguang_1920s.jpg"
+            ],
+            "source": "https://en.wikipedia.org/wiki/Zhou_Youguang"
+          },
+          {
+            "id": "32324594-289e-46ec-9719-b0f9533585b1",
+            "value": 400,
+            "clue": "Би Юньнанийн лалын шашинт гэр бүлд \"Ма Хэ\" нэртэй төрсөн, тайган (eunuch) болж Юнлэ хааны итгэлт хүн болсон. 1405–1433 онд \"эрдэнэсийн флот\"-оо удирдан долоон удаа аялж, Африкийн Свахили эрэг хүртэл хүрсэн. Миний аяллаас Малинди хотоос авчирсан нэгэн амьтныг ордныхон домгийн \"цилинь\" гэж үзэн, Тэнгэрийн мандатын баталгаа хэмээжээ. Би хэн бэ, тэр амьтан юу байсан бэ?",
+            "answer": "Жэн Хэ (Zheng He); анааш (giraffe)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Tribute_Giraffe_with_Attendant.jpg/1280px-Tribute_Giraffe_with_Attendant.jpg"
+            ],
+            "source": "https://en.wikipedia.org/wiki/Zheng_He"
+          },
+          {
+            "id": "b1800639-b41b-466a-800b-9efd62253d3a",
+            "value": 500,
+            "clue": "1958 онд Мао Зэдун \"Дөрвөн хортон\"-ыг устгах кампанит ажил эхлүүлэв: харх, ялаа, шумуул, болон бор шувуу. Сая сая бор шувуу устгагдсаны дараа шавьж, царцаа тасралтгүй олширч, ургац сүйдэн Их өлсгөлөнд нөлөөлсөн. Шувуу судлаач Чжэн Цзосинь бор шувуу шавьж их иддэгийг нотолсны дараа 1960 онд жагсаалтыг өөрчилжээ. Бор шувууг ямар хортноор сольсон бэ?",
+            "answer": "Бясаа (bed bugs)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Four_Pests_campaign"
           }
         ]
       },
       {
-        "id": "7fb386d1-8b33-412f-8399-fa153f9a7f7d",
+        "id": "261638bc-e309-4115-9f32-8a4e5432d5de",
         "name": "Anime",
         "questions": [
           {
-            "id": "1a5ee1b0-a607-42f3-91b4-8a07b3084dc1",
+            "id": "d1b8a98a-fccc-4fd1-b816-8a0317bb50fd",
             "value": 100,
-            "clue": "Naruto-ийн 9н сүүлт үнэгний нэр",
-            "answer": "Kurama",
-            "isDailyDouble": false,
-            "answered": false
-          },
-          {
-            "id": "b51c1f43-e4c9-4890-a38c-41d3266e08f9",
-            "value": 200,
-            "clue": "Demon Slayer дээрх Усны Hashira хэн бэ ?",
-            "answer": "Giyu Tomioka",
-            "isDailyDouble": false,
-            "answered": false
-          },
-          {
-            "id": "f3808d84-fe13-4930-97e1-73fa264b7b0e",
-            "value": 300,
-            "clue": "Chimera Shadow Garden гэж хэний Domain Expansion \"Хүрээ тэлэлт\"вэ ? ",
-            "answer": "Megumoi Fushiguro",
-            "isDailyDouble": false,
-            "answered": false
-          },
-          {
-            "id": "b1f85f0d-74b2-49c8-820c-eaa551ad4d68",
-            "value": 400,
-            "clue": "Aincrad гэж ямар аниме дээр гардаг цайз вэ ? ",
-            "answer": "Sword Art Online",
-            "isDailyDouble": false,
-            "answered": false
-          },
-          {
-            "id": "eced9c90-805e-4733-8e83-ab342b210b13",
-            "value": 500,
-            "clue": "Ямар аниме-ий дуу вэ ?",
-            "answer": "Dragon Ball",
+            "clue": "10 настай охин шулам Юбабагийн халуун усны газарт ажиллахын тулд нэрээ \"хулгайлуулж\", \"Сэн\" гэж нэрлэгдэнэ. Энэ кино 2002 онд Берлиний Алтан баавгай, 2003 онд Оскарын \"Шилдэг хүүхэлдэйн кино\" шагналыг хүртсэн анхны гар зурмал, англи бус хэлтэй кино болсон. Киноны нэр?",
+            "answer": "Spirited Away (Sen to Chihiro no Kamikakushi / Сэн ба Чихирогийн ид шидийн аялал)",
             "isDailyDouble": false,
             "answered": false,
-            "clueAudio": "/uploads/02a02929-501d-4016-b4ea-22e2aebcdf84.mp3"
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Spirited_Away"
+          },
+          {
+            "id": "ae0394ac-e393-4272-989f-4d949af79202",
+            "value": 200,
+            "clue": "Death Note-ийн шинигами Рюүк шинигамийн ертөнцөд уйдсандаа хоёр дахь дэвтрээ хүний ертөнцөд хаясан. Тэр нэгэн хүнсэнд донтсон — түүнд энэ нь хүнд тамхи, архи шиг нөлөөлдөг бөгөөд удаан идэхгүй бол бие нь мушгирч, гар дээрээ зогсдог. Ямар хүнс вэ?",
+            "answer": "Алим (apple)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Ryuk_(Death_Note)"
+          },
+          {
+            "id": "455778c9-80bd-480a-b3dc-f5267e7eaf20",
+            "value": 300,
+            "clue": "1985 онд Миязаки Хаяо, Такахата Исао нар үүсгэн байгуулсан студийн нэр нь Ливийн араб гаралтай, Сахарын халуун салхийг илэрхийлэх итали үг бөгөөд Дэлхийн 2-р дайны үеийн Италийн Caproni Ca.309 онгоцны хоч байсан. Нисэх онгоцонд дурлалтай Миязаки \"аниме салбарт шинэ салхи үлээлгэе\" гэж энэ нэрийг сонгожээ. Студийн нэр?",
+            "answer": "Studio Ghibli (Ghibli = Сахарын халуун салхи)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Studio_Ghibli"
+          },
+          {
+            "id": "2f21d852-c4a7-4b6c-ba39-96b37b54b7fd",
+            "value": 400,
+            "clue": "Dragon Ball Z-ийн англи dub-д (1997) Вегета Гокугийн хүчийг скаутераараа хэмжээд, түүнийг гартаа бяцлан \"It's over 9000!\" хэмээн хашгирсан нь интернетийн алдартай мем болсон. Гэтэл Япон эх хувилбарт Вегета өөр тоо хэлдэг. Ямар тоо вэ?",
+            "answer": "8000 (\"8000以上だ!\")",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/It%27s_Over_9000!"
+          },
+          {
+            "id": "db27a741-0569-4e47-8cda-ef34cfb1375e",
+            "value": 500,
+            "clue": "1997 оны 12-р сарын 16-нд Японд гарсан Покемоны нэг ангийг үзээд 685 хүн, гол төлөв хүүхдүүд, эмнэлэгт хүргэгдсэн. Үнэндээ улаан-цэнхэр анивчсан гэрлийг Пикачугийн аянгын довтолгоо үүсгэсэн байсан ч, тухайн ангийн нэрэнд орсон өөр нэгэн покемон \"буруутан\" болж, түүнээс хойш (хувьслууд нь ч) аниме цувралд дахин гараагүй. Ямар покемон бэ?",
+            "answer": "Porygon (Порыгон)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Denn%C5%8D_Senshi_Porygon"
           }
         ]
       },
       {
-        "id": "c2a2d927-5d96-4551-973d-de7ebc83dbba",
-        "name": "Sequence",
+        "id": "af492f58-e92d-464d-bb62-7ead638e2f1d",
+        "name": "Philosophy",
         "questions": [
           {
-            "id": "00066b7c-f87f-43b8-8d33-d31b374f4aae",
+            "id": "e3a2df3d-adaa-498d-922c-5abb3f64b1fd",
             "value": 100,
-            "clue": "2010 South Africa - 2014 Brazil - 2018 ? - 2022 Qatar",
-            "answer": "Russia",
+            "clue": "1637 онд \"Аргын тухай яриа\" (Discourse on the Method) бүтээлдээ франц хэлээр \"je pense, donc je suis\" гэж бичсэн, хожим латинаар \"cogito, ergo sum\" буюу \"Би бодож байна, тиймээс би оршин байна\" хэмээн алдаршсан философич хэн бэ?",
+            "answer": "Рене Декарт (René Descartes)",
             "isDailyDouble": false,
-            "answered": false
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Cogito,_ergo_sum"
           },
           {
-            "id": "d1a83138-1160-47b1-986c-0bf6acc22277",
+            "id": "da3a4a60-9015-4a74-ac9e-1a5a26f327c4",
             "value": 200,
-            "clue": "Windows 7 → Windows ? → Windows 10 → Windows 11",
-            "answer": " Windows 8",
+            "clue": "XIV зууны Английн францискан лам, номиналист философичийн нэрээр нэрлэгдсэн зарчим: \"Шаардлагагүй бол зүйлсийг олшруулж болохгүй\" — өөрөөр хэлбэл хэд хэдэн тайлбараас хамгийн энгийнийг нь сонго. Сонирхолтой нь, энэ алдартай латин хэллэг түүний бүтээлүүдэд яг ингэж байдаггүй. Энэ зарчмыг юу гэдэг вэ?",
+            "answer": "Occam's razor (Оккамын сахлын хутга) — William of Ockham",
             "isDailyDouble": false,
-            "answered": false
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Occam%27s_razor"
           },
           {
-            "id": "337a6ff4-6a7d-4f8c-a45e-f7233249bbe5",
+            "id": "97de39a8-ae1a-4464-9270-e49cbd30a9cc",
             "value": 300,
-            "clue": "Alpha - Beta - ? - Delta",
-            "answer": "Gamma",
+            "clue": "1967 онд Филиппа Фут үр хөндөлт ба \"давхар үр дагаврын сургаал\"-ын тухай өгүүлэлдээ анх дэвшүүлж, 1976 онд Жудит Жарвис Томсон өнөөгийн нэрийг нь өгсөн бодлын туршилт: хяналтгүй явж буй тэрэг 5 хүн рүү давхиж байна, хөшүүрэг татвал өөр замд байгаа 1 хүн үхнэ. Энэ бодлын туршилтыг юу гэдэг вэ?",
+            "answer": "Trolley problem (Трамвайн/тэрэгний асуудал)",
             "isDailyDouble": false,
-            "answered": false
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Trolley_problem"
           },
           {
-            "id": "eecdaeaa-9ef6-4569-aa09-1b7788440acc",
+            "id": "c1779a54-d195-4635-a64f-293832bd89be",
             "value": 400,
-            "clue": "Stone Age → Bronze Age → Iron Age → ___ → Industrial Age",
-            "answer": "→ Middle Ages",
-            "isDailyDouble": false,
-            "answered": false
-          },
-          {
-            "id": "73fd11cd-a57e-49c8-affe-3d5885b40a25",
-            "value": 500,
-            "clue": "Rihanna- Usher -Kendrick Lamar - ?",
-            "answer": "Bad Bunny",
-            "isDailyDouble": false,
-            "answered": false
-          }
-        ]
-      },
-      {
-        "id": "8a78b144-dd2b-47a2-9c51-e78f667ece33",
-        "name": "Ears Wide Open",
-        "questions": [
-          {
-            "id": "ae580101-3baf-49e4-9da2-27fb1dbd6e33",
-            "value": 100,
-            "clue": "Ямар тоглоом вэ? ",
-            "answer": "Mario",
+            "clue": "Би Синоп хотод төрсөн. Афинд том шавар ваар (pithos) дотор амьдарч, өдрийн цагаар дэнлүү барин \"хүн хайж байна\" гэж зах дээр явдаг байв. Их Александр надаас юу хүсэхийг асуухад \"Нарыг минь бүү халхал\" гэсэн. Платон хүнийг \"өдгүй, хоёр хөлтөн\" гэж тодорхойлоход би түүний сургууль руу нэгэн зүйл аваачиж \"Энэ бол Платоны хүн!\" гэв. Би юу аваачсан бэ?",
+            "answer": "Өдийг нь зулгаасан тахиа (азарган тахиа) — Диоген",
             "isDailyDouble": false,
             "answered": false,
-            "clueAudio": "/uploads/cab1b34c-2d03-4041-92f9-104cb5faffeb.mp3"
-          },
-          {
-            "id": "a9cbe865-d5f5-4833-a5a3-6bd2439acf7f",
-            "value": 200,
-            "clue": "Энэ хэн бэ Ю",
-            "answer": "I Show Speed",
-            "isDailyDouble": false,
-            "answered": false,
-            "clueAudio": "/uploads/e196e509-2708-4b42-924d-ad0f341e4de2.mp3"
-          },
-          {
-            "id": "98e3dd47-3740-4fa4-98af-e3b47d297f2e",
-            "value": 300,
-            "clue": "Ямар application ий дуу вэ Ю ",
-            "answer": "Discord",
-            "isDailyDouble": false,
-            "answered": false,
-            "clueAudio": "/uploads/677289d7-8dd9-45f0-ba08-86e86d8cda29.mp3"
-          },
-          {
-            "id": "b9c00bc8-64a8-4ae2-9906-a3b232d3e380",
-            "value": 400,
-            "clue": "Ямар дуу вэ ?",
-            "answer": "Alors on Dacne",
-            "isDailyDouble": false,
-            "answered": false,
-            "clueAudio": "/uploads/a9eccbbd-68eb-4cb1-ba90-eb510f203cb2.mp3",
+            "clueImages": [],
             "answerImages": [
-              "/uploads/daa653b0-591d-486d-9336-868332f8c515.png"
-            ]
+              "https://upload.wikimedia.org/wikipedia/commons/8/89/Diogenes_Mosaic_R%C3%B6misch-Germanisches_Museum.jpg"
+            ],
+            "source": "https://en.wikipedia.org/wiki/Diogenes"
           },
           {
-            "id": "1d573b2d-1104-464e-b6c4-bd180f078ff2",
+            "id": "5e80f481-08f4-4b2b-881b-418570847608",
             "value": 500,
-            "clue": "Энэ ямар дуу вэ ?",
-            "answer": "Beaetles - Dont Let Me Down",
+            "clue": "Утилитаризмыг үндэслэгч энэ философич 1832 онд нас барахдаа биеэ задлан шинжлүүлж, араг ясыг нь хувцаслан шилэн шүүгээнд \"auto-icon\" болгон хадгалахыг гэрээслэжээ. Өнөөдөр тэрээр Лондонгийн UCL-д олны нүдэн дээр сууж байгаа. Гэвч нэг зүйлийг төлөвлөснөөс өөрчлөхөд хүрсэн: юуг, юугаар сольсон бэ, яагаад?",
+            "answer": "Жереми Бентамын жинхэнэ толгойг лавлан (лав) толгойгоор сольсон — Маори аргаар мумижуулах оролдлого бүтэлгүйтэж толгой нь аймшигтай харагдсан (жинхэнэ толгойг оюутнуудын тоглоомноос болж цоожилж хадгалдаг)",
             "isDailyDouble": false,
             "answered": false,
-            "clueAudio": "/uploads/357b7ea5-5f7a-498d-9823-cedc4f60d4cc.mp3"
+            "clueImages": [],
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Jeremy_Bentham_auto_icon_1.jpg/1280px-Jeremy_Bentham_auto_icon_1.jpg"
+            ],
+            "source": "https://en.wikipedia.org/wiki/Auto-icon"
+          }
+        ]
+      },
+      {
+        "id": "e315ccc9-7424-431e-bf45-679148db6d1d",
+        "name": "Монгол кино",
+        "questions": [
+          {
+            "id": "1e870bc2-5e32-44d9-a96c-6b08c74754ff",
+            "value": 100,
+            "clue": "2003 оны энэ баримтат-уран сайхны кинонд Говийн малчин айлын ингэ анхны ботгоо голдог. Ламын ёслол үр дүнгүй болсны дараа айл хөгжимчин урьж, хөгжмийг нь ингэний бөхөнд өлгөж, дараа нь тоглоход ингэ нулимс унагаж ботгоо хүлээн авдаг. Бямбасүрэн Даваа, Луиджи Фалорни нарын Оскарт нэр дэвшсэн энэ кинонд ямар хөгжим тоглосон бэ?",
+            "answer": "Морин хуур (The Story of the Weeping Camel)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/en/1/1a/The_Story_of_the_Weeping_Camel.jpg"
+            ],
+            "source": "https://en.wikipedia.org/wiki/The_Story_of_the_Weeping_Camel"
+          },
+          {
+            "id": "e485848e-d627-4734-be6b-4009461b1443",
+            "value": 200,
+            "clue": "Сергей Бодровын 2007 оны \"Монгол\" кино Оскарын \"Шилдэг гадаад хэлний кино\"-нд Казахстаны нэрээр нэр дэвшсэн. Энэ кинонд Тэмүжиний дүрийг ямар улсын жүжигчин бүтээсэн бэ? (Нэрийг нь хэлбэл нэмэлт хүндэтгэл)",
+            "answer": "Япон — Таданобу Асано (Tadanobu Asano)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/en/8/81/Mongol_poster.jpg"
+            ],
+            "source": "https://en.wikipedia.org/wiki/Mongol_(film)"
+          },
+          {
+            "id": "58ab4235-6d4f-4bf1-b542-09162646a701",
+            "value": 300,
+            "clue": "Энэ киноны гол дүр Зэ бол сургуулийн сурагч бөгөөд нэгэн зэрэг бөө — өвөг дээдсийнхээ сүнстэй харилцаж, хорооллынхоо хүмүүст тусалдаг. Маралаатай танилцсаны дараа түүний авьяас анх удаа ганхана. Лхагвадулам Пүрэв-Очирын анхны уран сайхны кино 2023 оны Венецийн наадмын Orizzonti хөтөлбөрт шилдэг эрэгтэй жүжигчний шагналыг (Тэргэл Болд-Эрдэнэ) хүртсэн. Киноны нэр?",
+            "answer": "Сэр сэр салхи (City of Wind)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/en/4/48/City_of_Wind_poster.jpg"
+            ],
+            "source": "https://en.wikipedia.org/wiki/City_of_Wind"
+          },
+          {
+            "id": "40ffec3d-25cf-4001-a8a7-307dcfe99165",
+            "value": 400,
+            "clue": "2023 оны тавдугаар сард Каннын кино наадмын Un Certain Regard хөтөлбөрт Монгол кино анх удаа албан ёсны шалгаруулалтад орж түүх бичив. Улаанбаатарын захын гэр хороололд амьдардаг 9-р ангийн Өлзий физикийн олимпиадад орж тэтгэлэг авах уу, эсвэл ээжийгээ явсны дараа дүү нараа тэжээхийн тулд хууль бусаар мод бэлтгэх үү гэдэг сонголтын өмнө зогсоно. Золжаргал Пүрэвдашийн энэ киноны Монгол нэр юу вэ?",
+            "answer": "Баавгай болохсон (If Only I Could Hibernate)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/en/9/9d/If_Only_I_Could_Hibernate_poster.jpg"
+            ],
+            "source": "https://en.wikipedia.org/wiki/If_Only_I_Could_Hibernate"
+          },
+          {
+            "id": "c3dac8f1-2035-47a7-8e9e-849555ed804b",
+            "value": 500,
+            "clue": "Хүний амь хохироосон хэргээр 14 жил хоригдож суллагдсан 32 настай Мягмар оршуулгын машины жолооч болж, золбин нохдыг асран, нэгэн лам болон сохор авс урлагчийн охин Саруултай дотносно. Жанчивдорж Сэнгэдоржийн энэ кино 2024 онд Таллинны \"Black Nights\" наадмын Гран При-г хүртэж, Монголын нэрээр 98-р Оскарт илгээгдсэн. Киноны нэр?",
+            "answer": "Чимээгүй хотын жолооч (Silent City Driver)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/en/2/2f/Silent_City_Driver_film_poster.jpg"
+            ],
+            "source": "https://en.wikipedia.org/wiki/Silent_City_Driver"
           }
         ]
       }
     ],
-    "createdAt": "2026-08-14T06:44:21.648Z",
-    "updatedAt": "2026-08-14T07:32:25.235Z"
+    "folderId": "dc2697c6-ca9b-4b2b-8a8f-3de624408cf6",
+    "createdAt": "2026-10-02T17:34:09.905Z",
+    "updatedAt": "2026-10-02T18:15:20.502926Z"
+  },
+  {
+    "id": "5436bc91-1c26-4260-a774-e7cd9ec2282d",
+    "title": "Round 2",
+    "categories": [
+      {
+        "id": "b2349bb8-1f13-447e-a7f2-05dfb99d95ab",
+        "name": "Album Covers",
+        "questions": [
+          {
+            "id": "209d2797-a954-42b1-98cf-eca0360c996e",
+            "value": 100,
+            "clue": "Ямар цомог вэ? Уран бүтээлч нь хэн бэ?",
+            "answer": "Abbey Road — The Beatles",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/The_Beatles_Abbey_Road_album_cover.jpg/1280px-The_Beatles_Abbey_Road_album_cover.jpg"
+            ],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Abbey_Road"
+          },
+          {
+            "id": "1dd98123-d705-4ccb-a463-a0743748c9ae",
+            "value": 200,
+            "clue": "Ямар цомог вэ? Уран бүтээлч нь хэн бэ?",
+            "answer": "The Dark Side of the Moon — Pink Floyd",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Dark_Side_of_the_Moon.png/1280px-Dark_Side_of_the_Moon.png"
+            ],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/The_Dark_Side_of_the_Moon"
+          },
+          {
+            "id": "86b8cb8c-a540-495d-95cb-2cd580f9a4dc",
+            "value": 300,
+            "clue": "Ямар цомог вэ? Уран бүтээлч нь хэн бэ?",
+            "answer": "Led Zeppelin IV (Untitled) — Led Zeppelin",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "https://upload.wikimedia.org/wikipedia/commons/f/fa/Zeppelin_IV.jpg"
+            ],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Led_Zeppelin_IV"
+          },
+          {
+            "id": "fd98bf84-9751-41ef-ab0e-397a18e4764d",
+            "value": 400,
+            "clue": "Ямар цомог вэ? Уран бүтээлч нь хэн бэ?",
+            "answer": "Unknown Pleasures — Joy Division (хавтас нь CP 1919 пульсарын радио дохионы график)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "https://upload.wikimedia.org/wikipedia/en/5/5a/UnknownPleasuresVinyl.jpg"
+            ],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Unknown_Pleasures"
+          },
+          {
+            "id": "d26d7800-1199-4388-8b85-64dff7590f80",
+            "value": 500,
+            "clue": "Ямар цомог вэ? Уран бүтээлч нь хэн бэ? (1969 он)",
+            "answer": "In the Court of the Crimson King — King Crimson",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "https://upload.wikimedia.org/wikipedia/en/8/84/In_the_Court_of_the_Crimson_King_-_40th_Anniversary_Box_Set_-_Front_cover.jpeg"
+            ],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/In_the_Court_of_the_Crimson_King"
+          }
+        ]
+      },
+      {
+        "id": "0222d00d-210e-4287-bbaf-73a8b46d7446",
+        "name": "Car Badges",
+        "questions": [
+          {
+            "id": "42422e1e-1e28-408c-835f-5da01affe1e1",
+            "value": 100,
+            "clue": "Ямар брэнд вэ?",
+            "answer": "Toyota",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Toyota_Symbol.svg/1280px-Toyota_Symbol.svg.png"
+            ],
+            "answerImages": [],
+            "source": "https://commons.wikimedia.org/wiki/File:Toyota_Symbol.svg"
+          },
+          {
+            "id": "4e984fca-989a-4618-b810-a48ccb13c466",
+            "value": 200,
+            "clue": "Ямар брэнд вэ?",
+            "answer": "Subaru (зургаан од нь Плеяд/Мичид одны бөөгнөрөл)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Subaru_Logo_Abstraktion.svg/1280px-Subaru_Logo_Abstraktion.svg.png"
+            ],
+            "answerImages": [],
+            "source": "https://commons.wikimedia.org/wiki/File:Subaru_Logo_Abstraktion.svg"
+          },
+          {
+            "id": "ac3a74b4-3047-496e-9eb3-ded7cf0ae2f7",
+            "value": 300,
+            "clue": "Ямар брэнд вэ?",
+            "answer": "Infiniti (Nissan-ий тансаг зэрэглэлийн брэнд)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Infiniti_logo_1989_-_no_text.svg/1280px-Infiniti_logo_1989_-_no_text.svg.png"
+            ],
+            "answerImages": [],
+            "source": "https://commons.wikimedia.org/wiki/File:Infiniti_logo_1989_-_no_text.svg"
+          },
+          {
+            "id": "48fde919-fe7f-49f2-8497-a7fb2c9b8b05",
+            "value": 400,
+            "clue": "Ямар брэнд вэ? (Шведийн цахилгаан машин)",
+            "answer": "Polestar (Volvo / Geely-ийн цахилгаан машины брэнд)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Polestar_logo_2020.svg/1280px-Polestar_logo_2020.svg.png"
+            ],
+            "answerImages": [],
+            "source": "https://commons.wikimedia.org/wiki/File:Polestar_logo_2020.svg"
+          },
+          {
+            "id": "b975357f-8920-49ed-ab21-6fd70bb213db",
+            "value": 500,
+            "clue": "Ямар брэнд вэ? (Испани)",
+            "answer": "Cupra (SEAT-аас 2018 онд тусдаа брэнд болсон)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Cupra_symbol.svg/1280px-Cupra_symbol.svg.png"
+            ],
+            "answerImages": [],
+            "source": "https://commons.wikimedia.org/wiki/File:Cupra_symbol.svg"
+          }
+        ]
+      },
+      {
+        "id": "fa7b3eb4-8b92-43f7-becd-b0648f02356f",
+        "name": "Inventions by Accident",
+        "questions": [
+          {
+            "id": "3f7f5031-44b2-469e-be4f-e014671678a3",
+            "value": 100,
+            "clue": "1928 онд Шотланд эрдэмтэн амралтаас буцаж ирээд стафилококкийн тавгийг мөөгөнцөр бохирдуулсныг, мөөгөнцрийн эргэн тойронд бактери үхсэнийг анзаарчээ. Тэрээр 1945 онд Нобелийн шагнал хүртсэн. Юуг нээсэн бэ?",
+            "answer": "Penicillin / Пенициллин (Alexander Fleming)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Alexander_Fleming"
+          },
+          {
+            "id": "4efdae67-f1c5-4704-bebc-326a7fbaaf54",
+            "value": 200,
+            "clue": "Дэлхийн 2-р дайны үед Raytheon компанийн инженер Перси Спенсер радарын магнетроны дэргэд зогсож байхад халаасан дахь шоколад нь хайлжээ. Тэрээр дараа нь эрдэнэ шиш хүртэл шарсан. Ямар гэр ахуйн хэрэгсэл бий болсон бэ?",
+            "answer": "Microwave oven / Богино долгионы зуух",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Percy_Spencer"
+          },
+          {
+            "id": "592ad5d6-68db-4b2d-8735-6e8dedd8f470",
+            "value": 300,
+            "clue": "1968 онд 3M-ийн эрдэмтэн Спенсер Силвер маш хүчтэй цавуу хийх гэж оролдоод, харин сул, дахин наагдах цавуу гаргажээ. 1974 онд хамтран ажиллагч Арт Фрай сүмийн дууны номныхоо хавчуургыг унахгүй байлгахын тулд ашиглах санаа олсон. Ямар бүтээгдэхүүн бэ?",
+            "answer": "Post-it Note / Пост-ит наалт",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Post-it_Note"
+          },
+          {
+            "id": "dca5d5e2-bac3-4470-a3a7-df808cb869d4",
+            "value": 400,
+            "clue": "1938 оны 4-р сарын 6-нд DuPont-ын химич Рой Планкетт шинэ хөргөгч бодис судалж байхдаа хийн баллоныг нээхэд хий гарсангүй, дотор нь цагаан нунтаг байжээ. Энэ гулгамтгай материал хожим тогоо, хайруулын тавганд хэрэглэгдэх болсон. Юу вэ?",
+            "answer": "Teflon / PTFE (polytetrafluoroethylene) / Тефлон",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Roy_J._Plunkett"
+          },
+          {
+            "id": "b31a5508-9577-433a-bbc5-1b6fad08380c",
+            "value": 500,
+            "clue": "1856 онд 18 настай Уильям Перкин хумхаа өвчний эм хинин нийлэгжүүлэх гэж оролдоод анилинаас хар тунадас гаргажээ. Колбоо спиртээр угаахад нил ягаан өнгө гарсан нь анхны нийлэг будаг болсон. Энэ будгийн нэр?",
+            "answer": "Mauveine / Mauve / Мовейн (нил ягаан будаг)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Mauveine"
+          }
+        ]
+      },
+      {
+        "id": "73ee9ad1-36c3-4b9e-9bba-ff3c7c3ee0eb",
+        "name": "Failed Tech",
+        "questions": [
+          {
+            "id": "ca26c7f9-4ec5-48fa-b556-0406b67aed08",
+            "value": 100,
+            "clue": "2013 онд хөгжүүлэгчдэд 1,500 доллараар зарагдсан энэ ухаалаг нүдний шил хэрэглэгчдийг \"Glasshole\" гэж шоолуулж, хувийн нууцын асуудал үүсгэсэн. Enterprise хувилбарыг 2023 онд зогсоосон. Юу вэ?",
+            "answer": "Google Glass",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/commons/8/8e/Google_Glass_Explorer_Edition.jpg"
+            ],
+            "source": "https://en.wikipedia.org/wiki/Google_Glass"
+          },
+          {
+            "id": "0ea5ecc2-4ade-4960-9440-93b074923664",
+            "value": 200,
+            "clue": "Microsoft 2006 оны 11-р сард iPod-той өрсөлдөх зорилгоор гаргасан энэ хөгжим тоглуулагчийн анхны 30GB загварууд 2008 оны 12-р сарын 31-нд нэгэн зэрэг гацсан. Төхөөрөмжийн үйлдвэрлэлийг 2011 онд зогсоосон. Юу вэ?",
+            "answer": "Zune / Microsoft Zune",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Microsoft_Zune_80_in_Red_%282487253502%29.jpg/1280px-Microsoft_Zune_80_in_Red_%282487253502%29.jpg"
+            ],
+            "source": "https://en.wikipedia.org/wiki/Zune"
+          },
+          {
+            "id": "de2799ee-3218-4184-bdb9-1292a6151e0e",
+            "value": 300,
+            "clue": "Жеффри Катценберг, Мег Уитман нар 1.75 тэрбум доллар босгож, 10 минутаас богино \"quick bites\" цувралуудаар гар утсанд зориулсан энэ стриминг үйлчилгээг 2020 оны 4-р сард эхлүүлсэн боловч 6 сарын дараа хаахаа зарласан. Юу вэ?",
+            "answer": "Quibi",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Quibi"
+          },
+          {
+            "id": "7973f059-c820-4727-9a62-b5eb4be02721",
+            "value": 400,
+            "clue": "2016 онд 699 доллараар зарагдсан, 120 сая долларын хөрөнгө оруулалт авсан энэ Wi-Fi-тэй жүүс шахагч машины жимсний уутыг гараар шахахад адилхан гардгийг 2017 онд Bloomberg илрүүлж, компани мөн онд хаагдсан. Юу вэ?",
+            "answer": "Juicero",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Juicero"
+          },
+          {
+            "id": "4973797b-47b3-4eec-823f-1dc3f9c3ed52",
+            "value": 500,
+            "clue": "Microsoft 2008 онд Danger компанийг худалдан авч, 2010 оны 5-р сарын 14-нд Verizon-оор залууст зориулсан ONE, TWO гэсэн хоёр утас гаргасан. Тэд зах зээл дээр ердөө 48 хоног байсан. Ямар утас вэ?",
+            "answer": "Microsoft Kin / Kin ONE & Kin TWO",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Microsoft-Sharp-Kin-Two-Phone-Open.jpg/1280px-Microsoft-Sharp-Kin-Two-Phone-Open.jpg"
+            ],
+            "source": "https://en.wikipedia.org/wiki/Microsoft_Kin"
+          }
+        ]
+      },
+      {
+        "id": "d1944d4d-1ff4-42b7-bbcb-f0512cc1f9a3",
+        "name": "Silhouettes",
+        "questions": [
+          {
+            "id": "4d9b4089-74e4-4f6d-b021-d2ff8a111075",
+            "value": 100,
+            "clue": "Энэ юуны дүрс вэ?",
+            "answer": "Eiffel Tower / Эйфелийн цамхаг (Парис)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Eiffel_Tower_Silhouette.svg/1280px-Eiffel_Tower_Silhouette.svg.png"
+            ],
+            "answerImages": [],
+            "source": "https://commons.wikimedia.org/wiki/File:Eiffel_Tower_Silhouette.svg"
+          },
+          {
+            "id": "98c4a7a1-f10b-4472-86c3-b560b2a1870e",
+            "value": 200,
+            "clue": "Энэ юуны дүрс вэ?",
+            "answer": "Statue of Liberty / Эрх чөлөөний хөшөө (Нью-Йорк)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Silhouette_of_the_Statue_of_Liberty_in_New_York.svg/1280px-Silhouette_of_the_Statue_of_Liberty_in_New_York.svg.png"
+            ],
+            "answerImages": [],
+            "source": "https://commons.wikimedia.org/wiki/File:Silhouette_of_the_Statue_of_Liberty_in_New_York.svg"
+          },
+          {
+            "id": "234d4806-c6a7-4345-9642-7ce9677ccfda",
+            "value": 300,
+            "clue": "Энэ юуны дүрс вэ?",
+            "answer": "Tower Bridge (Лондон)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/London_Tower_Bridge_Silhouette.svg/1280px-London_Tower_Bridge_Silhouette.svg.png"
+            ],
+            "answerImages": [],
+            "source": "https://commons.wikimedia.org/wiki/File:London_Tower_Bridge_Silhouette.svg"
+          },
+          {
+            "id": "d0efcbd1-766a-483a-87ce-9044f4f218ae",
+            "value": 400,
+            "clue": "Энэ юуны дүрс вэ?",
+            "answer": "Brandenburg Gate / Бранденбургийн хаалга (Берлин)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/BrandenburgerTorSilhouette.svg/1280px-BrandenburgerTorSilhouette.svg.png"
+            ],
+            "answerImages": [],
+            "source": "https://commons.wikimedia.org/wiki/File:BrandenburgerTorSilhouette.svg"
+          },
+          {
+            "id": "a5a2b733-48fe-4a1f-a860-7977b5287678",
+            "value": 500,
+            "clue": "Энэ аль хотын дүрс вэ?",
+            "answer": "Johannesburg / Йоханнесбург (Өмнөд Африк — Hillbrow ба Sentech цамхаг)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/JohannesburgArtisticSilhouette.svg/1280px-JohannesburgArtisticSilhouette.svg.png"
+            ],
+            "answerImages": [],
+            "source": "https://commons.wikimedia.org/wiki/File:JohannesburgArtisticSilhouette.svg"
+          }
+        ]
+      },
+      {
+        "id": "28ff9be7-db56-48be-9578-c1e499ff64e7",
+        "name": "What Year?",
+        "questions": [
+          {
+            "id": "a1a0fb17-246d-4d96-a7f7-eb5353034dc1",
+            "value": 100,
+            "clue": "Аль онд вэ? • Apollo 11 Сарны гадаргуу дээр буув • Concorde анхны нислэгээ хийв • Woodstock наадам болов • ARPANET-ээр анхны мессеж илгээгдэв (🔊 бичлэгийг сонсоорой)",
+            "answer": "1969",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "clueAudio": "https://upload.wikimedia.org/wikipedia/commons/transcoded/d/dd/Armstrong_Small_Step.ogg/Armstrong_Small_Step.ogg.mp3",
+            "source": "https://en.wikipedia.org/wiki/1969"
+          },
+          {
+            "id": "01f0b486-96bb-4ac0-aa7e-2dfa82c2005d",
+            "value": 200,
+            "clue": "Аль онд вэ? • \"Цөлийн шуурга\" ажиллагаа эхлэв • Тим Бернерс-Ли World Wide Web төслөө олон нийтэд зарлав • Nirvana \"Nevermind\" цомгоо гаргав • ЗХУ задрав",
+            "answer": "1991",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/1991"
+          },
+          {
+            "id": "121c705e-9789-4f1e-bbc5-34c19ff17e9d",
+            "value": 300,
+            "clue": "Аль онд вэ? • Гана тусгаар тогтнолоо олов • Ромын гэрээгээр Европын Эдийн засгийн хамтын нийгэмлэг байгуулагдав • Дэлхийн анхны хиймэл дагуул хөөргөв • Лайка нохой тойрог замд гарав (🔊 бичлэгийг сонсоорой)",
+            "answer": "1957",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "clueAudio": "https://upload.wikimedia.org/wikipedia/commons/7/75/Sputnik_-_Beep.mp3",
+            "source": "https://en.wikipedia.org/wiki/1957"
+          },
+          {
+            "id": "8757dbbb-e1f5-450b-894b-55e2e06f4cc9",
+            "value": 400,
+            "clue": "Аль онд вэ? • Challenger сансрын хөлөг хөөрснөөс 73 секундын дараа задрав • ЗХУ \"Мир\" станцыг хөөргөв • Чернобылийн АЦС-ын осол • Марадонагийн \"Бурхны гар\" гоол",
+            "answer": "1986",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/1986"
+          },
+          {
+            "id": "129f28ed-80c6-42ac-a6b0-5148e6fb2ff8",
+            "value": 500,
+            "clue": "Аль онд вэ? • Наполеон Эльба арлаас оргож \"Зуун өдөр\" эхлэв • Тамбора галт уул дэлбэрэв • Венийн конгрессын эцсийн акт гарын үсэг зурав • Ватерлоогийн тулалдаан",
+            "answer": "1815",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/1815"
+          }
+        ]
+      }
+    ],
+    "folderId": "dc2697c6-ca9b-4b2b-8a8f-3de624408cf6",
+    "createdAt": "2026-10-02T17:38:21.216Z",
+    "updatedAt": "2026-10-02T18:15:20.502926Z"
+  },
+  {
+    "id": "3c72cd99-07a9-4a31-8fd8-bf553ebb3a08",
+    "title": "Round 3",
+    "categories": [
+      {
+        "id": "f51684d9-5adf-4789-b471-987e012b1ff5",
+        "name": "Registered As",
+        "questions": [
+          {
+            "id": "527df8a8-9333-4d3a-8948-0e79d8e9419b",
+            "value": 100,
+            "clue": "1994 оны 7-р сарын 5-нд Вашингтон мужид \"Cadabra, Inc.\" нэрээр бүртгэгдсэн. Хуульч нь нэрийг \"cadaver\" (цогцос) гэж буруу сонссоны дараа үүсгэн байгуулагч нь толь бичгээс дэлхийн хамгийн том гол мөрний нэрийг сонгож, мөн \"A\" үсгээр эхэлбэл жагсаалтын эхэнд гарна гэж бодсон. Бид хэн бэ?",
+            "answer": "Amazon",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/History_of_Amazon"
+          },
+          {
+            "id": "7e683eb5-161e-4b82-bbb9-1cd65a0d96fe",
+            "value": 200,
+            "clue": "1977 оны 6-р сарын 16-нд Santa Clara-д гурван хүн \"Software Development Laboratories\" (SDL) нэртэй компани байгуулав. Дараа нь \"Relational Software, Inc.\" болж, эцэст нь үүсгэн байгуулагч Ларри Эллисоны өмнө нь Ampex-д ажиллаж байхдаа оролцсон, CIA-ийн санхүүжүүлсэн төслийн кодын нэрийг өөртөө авсан. Бид хэн бэ?",
+            "answer": "Oracle",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Oracle_Corporation"
+          },
+          {
+            "id": "5c3cfc08-ed0f-42d6-9ae2-ad54703b935a",
+            "value": 300,
+            "clue": "1946 оны 5-р сарын 7-нд Masaru Ibuka, Akio Morita нар \"Tokyo Tsushin Kogyo K.K.\" (Токиогийн харилцаа холбооны инженерчлэлийн корпораци) байгуулжээ. 1958 оны 1-р сард латин \"sonus\" (дуу авиа) болон \"sonny\" гэсэн үгсээс бүтсэн нэр рүү шилжсэн. Бид хэн бэ?",
+            "answer": "Sony",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Sony"
+          },
+          {
+            "id": "d81dfdb4-10f4-41a8-be4b-62cedbebab1a",
+            "value": 400,
+            "clue": "1942–1970 онд энэ компанийн хууль ёсны нэр \"Hayakawa Electric Industry Co., Ltd.\" байв. Үүсгэн байгуулагч Tokuji Hayakawa 1915 онд зохион бүтээсэн \"Ever-Ready ...\" механик харандааныхаа нэрийг компанидаа өгсөн. 2016 оноос Тайваний аварга компанийн мэдэлд бий. Бид хэн бэ?",
+            "answer": "Sharp",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Sharp_Corporation"
+          },
+          {
+            "id": "46e5bd1a-29b2-48ce-92ec-a14e14904464",
+            "value": 500,
+            "clue": "1920 оны 1-р сарын 30-нд Хирошимад Jujiro Matsuda \"Toyo Cork Kogyo\" нэрээр үйсэн бөглөө үйлдвэрлэх компани байгуулав. 1927–1984 онд хууль ёсны нэр нь \"Toyo Kogyo Co., Ltd.\" байсан бөгөөд 1984 онд л албан ёсоор өнөөгийн нэрээ авсан — эртний Баруун Азийн мэргэн ухааны бурхны нэр, бас үүсгэн байгуулагчийн овогтой төстэй. Бид хэн бэ?",
+            "answer": "Mazda",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Mazda"
+          }
+        ]
+      },
+      {
+        "id": "25106e2e-3358-4d06-b255-39eade008474",
+        "name": "Codenames",
+        "questions": [
+          {
+            "id": "a74d787c-c114-4c19-a324-a2a269ec6e7e",
+            "value": 100,
+            "clue": "Microsoft-ийн \"Chicago\" кодын нэртэй үйлдлийн систем 1995 оны 8-р сарын 24-нд худалдаанд гарсан. Энэ бүтээгдэхүүний албан ёсны нэр?",
+            "answer": "Windows 95",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Windows_95"
+          },
+          {
+            "id": "3ad1101a-2964-45ae-83a3-1737b8ddce29",
+            "value": 200,
+            "clue": "2009 оны 6-р сарын 1-нд E3 дээр Steven Spielberg-ийн оролцоотойгоор \"Project Natal\" нэрээр танилцуулагдсан — ахлах хөгжүүлэгч Alex Kipman-ы эх орон Бразилийн нэгэн хотын нэр. 60 хоногт 8 сая ширхэг зарагдаж, Guinness-ийн \"хамгийн хурдан зарагдсан хэрэглээний электрон төхөөрөмж\" болсон. Бүтээгдэхүүн?",
+            "answer": "Kinect (Xbox 360 Kinect)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Kinect"
+          },
+          {
+            "id": "a72fae3c-e82f-41e4-992d-8e5c7008e50f",
+            "value": 300,
+            "clue": "\"Operation Neptune Spear\" — Ромын далайн бурхны гурвалжин жадны нэрээр нэрлэгдсэн, Navy SEAL-ийн Trident тэмдэгтэй холбоотой. 2011 оны 5-р сарын 2-нд Пакистаны Abbottabad хотод SEAL Team Six хэрэгжүүлсэн бөгөөд радиогоор \"Geronimo EKIA\" гэж мэдээлсэн. Энэ ямар ажиллагаа вэ?",
+            "answer": "Осама бин Ладеныг устгасан ажиллагаа / Killing of Osama bin Laden",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Killing_of_Osama_bin_Laden"
+          },
+          {
+            "id": "2e2cf095-2bf7-4ce4-af42-2e387d8e1936",
+            "value": 400,
+            "clue": "1993 оны 8-р сард Nintendo болон Silicon Graphics (SGI) \"Project Reality\" нэртэй хамтын ажиллагаагаа зарлав. Дараа нь \"Ultra 64\" гэж нэрлэгдэж байгаад 1996 оны 6-р сарын 23-нд Японд худалдаанд гарсан. Консол?",
+            "answer": "Nintendo 64",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Nintendo_64"
+          },
+          {
+            "id": "3811bbd8-c0fe-4cb6-b24a-e2dac6c9a21b",
+            "value": 500,
+            "clue": "1994 онд АНУ-ын нууц ажиллагаа \"Project Sapphire\"-ийн хүрээнд Усть-Каменогорскийн ойролцоох Ulba Metallurgical Plant-аас ~600 кг (≈24 атомын бөмбөг хийх хэмжээний) зэвсгийн зэрэглэлийн баяжуулсан ураныг гурван C-5 онгоцоор 20 цаг нисч Delaware руу аваачсан. Уран аль улсаас гаргагдсан бэ?",
+            "answer": "Казахстан / Kazakhstan",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Project_Sapphire"
+          }
+        ]
+      },
+      {
+        "id": "1df65275-e5f0-4f7c-83df-e211a6b6b35b",
+        "name": "Seppuku",
+        "questions": [
+          {
+            "id": "8b7299b2-446b-4daa-bdb7-5b671e76644a",
+            "value": 100,
+            "clue": "Би 84 жижиг хөгжмийн хэсэг бичиж байж нэгийг нь сонгосон; захиалагч яг 3¼ секундтэй байх ёстой гэсэн. Хамгийн инээдтэй нь би үүнийг Mac дээр бичсэн — \"PC-г амьдралдаа хэрэглэж байгаагүй, дургүй\" гэж BBC-д хэлсэн. 2025 онд энэ дуу АНУ-ын National Recording Registry-д орсон. Би хэн бэ?",
+            "answer": "Brian Eno (Windows 95-ын эхлэлийн дуу)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Brian_Eno"
+          },
+          {
+            "id": "ec49a49b-66d4-41f6-a9b0-e713c7a3f901",
+            "value": 200,
+            "clue": "1932 оны 11-р сарын 2-оос 12-р сарын 10-ны хооронд Баруун Австралийн Campion дүүрэгт хошууч G.P.W. Meredith хоёр Lewis пулемёт, 10,000 сумтай \"дайсан\"-тай тулалдав. 9,860 сум буудаж, 986-г нь устгасан ч ялагдсан. Meredith: \"Тэдний сум даах чадвартай дивиз бидэнд байсан бол дэлхийн аль ч армитай тулна\" гэжээ. Энэ дайныг юу гэж нэрлэдэг вэ?",
+            "answer": "Emu War / Эму шувууны дайн",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/commons/2/27/Emus_coming_to_drink_Emu_War.jpg"
+            ],
+            "source": "https://en.wikipedia.org/wiki/Emu_War"
+          },
+          {
+            "id": "cac22a6f-85ce-481d-a396-452d76f562dc",
+            "value": 300,
+            "clue": "Стокгольмын арлын Resarö арал дээрх энэ жижиг тосгоны уурхайгаас 1787 онд хар эрдэс олдсон. Үр дүнд нь Y, Tb, Er, Yb гэсэн ДӨРВӨН химийн элемент энэ тосгоны нэрээр нэрлэгдсэн — дэлхийд элемент нээлтийн хамгийн баян ганц газар. Тосгон?",
+            "answer": "Ytterby (Швед)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/2019-03_Ytterby_Mine_on_Resar%C3%B6_in_Vaxholm_Municipality_Stockholm_archipelago_06.jpg/1280px-2019-03_Ytterby_Mine_on_Resar%C3%B6_in_Vaxholm_Municipality_Stockholm_archipelago_06.jpg"
+            ],
+            "source": "https://en.wikipedia.org/wiki/Ytterby"
+          },
+          {
+            "id": "8df921db-2805-4e9f-9442-12c97aba5bd2",
+            "value": 400,
+            "clue": "Би 1920 оны Антверпений Зуны олимпод боксоор (light-heavyweight) алт авсан. 12 жилийн дараа 1932 онд Lake Placid-ийн Өвлийн олимпод огт өөр спорт — дөрвөн хүний бобслейгоор дахин алт хүртсэн. Зун, Өвлийн олимпод ӨӨР спортоор алт авсан цорын ганц хүн. Би хэн бэ?",
+            "answer": "Eddie Eagan",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Eddie_Eagan"
+          },
+          {
+            "id": "4316144f-04e5-41fe-b31b-d78f7fe9d1e9",
+            "value": 500,
+            "clue": "1963 онд Танганьикийн Magamba дунд сургуулийн 3-р ангийн сурагч хоолны хичээл дээр халуун зайрмагийн хольц хүйтнээсээ түрүүлж хөлдөхийг анзаарчээ. Багш нар нь шоолсон ч физикч Denis Osborne туршиж баталж, 1969 онд хамтдаа нийтлэл гаргав. Аристотель ч үүнтэй төстэй ажиглалт тэмдэглэж байсан. Энэ үзэгдлийг хүүгийн нэрээр юу гэж нэрлэдэг вэ?",
+            "answer": "Mpemba effect / Мпембагийн эффект",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Mpemba_effect"
+          }
+        ]
+      },
+      {
+        "id": "c737219f-bfc1-4644-8f35-44bc1d3ef515",
+        "name": "Esports",
+        "questions": [
+          {
+            "id": "daa83bef-938b-414b-b0b7-3b6b9d576b39",
+            "value": 100,
+            "clue": "2013 онд байгуулагдсан энэ Монгол байгууллагын Counter-Strike баг 2025 оны 2-р сард Монгол Улсын Засгийн газраас үндэсний шигшээ баг гэж хүлээн зөвшөөрөгдсөн. BLAST.tv Austin Major 2025-ын финалд Vitality-д ялагдсан ч Counter-Strike Major-ын финалд шалгарсан анхны Азийн баг болсон, мөн 2025 оны Esports World Cup-т түрүүлсэн. Баг?",
+            "answer": "The MongolZ",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/The_MongolZ"
+          },
+          {
+            "id": "b910271b-8cdc-4ac7-bcf9-c1d0d35d3ccd",
+            "value": 200,
+            "clue": "2025 оны League of Legends Worlds-ийн финалд T1 баг KT Rolster-ыг 3–2-оор хожсоноор энэ тоглогч 2013, 2015, 2016, 2023, 2024 оны дээр нэмж 6 дахь аваргаа хүртэж түүх бичсэн. Түүний ник нэр (болон жинхэнэ нэр)?",
+            "answer": "Faker (Lee Sang-hyeok / И Сан Хёк)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Faker_(gamer)"
+          },
+          {
+            "id": "7292afc3-2de9-42e9-98ba-4d74d04c870d",
+            "value": 300,
+            "clue": "2018 оны 5-р сард гурван тоглогчоо алдаж, шууд урилгагүй болсон энэ баг Open Qualifier-аас эхэлж, Vancouver-ийн Rogers Arena-д PSG.LGD-г 3–2-оор хожиж TI8-д түрүүлсэн. Дараа жил нь Шанхайд Team Liquid-ийг 3–1-ээр хожиж The International-д давхар түрүүлсэн анхны баг болсон. Баг?",
+            "answer": "OG",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/OG_(esports)"
+          },
+          {
+            "id": "f9395141-596d-44ce-b4a3-d49458c35db8",
+            "value": 400,
+            "clue": "The International 2021 (10)-ыг Бухарестийн Arena Națională-д 2021 оны 10-р сарын 7–17-нд зохион байгуулсан бөгөөд нийт шагналын сан $40,018,195 байв. Финалд PSG.LGD-г 3–2-оор хожиж $18,208,300 авсан баг?",
+            "answer": "Team Spirit",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/The_International_2021"
+          },
+          {
+            "id": "808203a1-9365-4af5-847f-3959976825e7",
+            "value": 500,
+            "clue": "Counter-Strike: Global Offensive-ын түүхэн дэх АНХНЫ Major — DreamHack Winter 2013 — 2013 оны 11-р сарын 28–30-нд Шведийн Jönköping хотын Elmia төвд $250,000-ын шагналын сантай болсон. Финалд Ninjas in Pyjamas-ыг 2–1-ээр хожиж $100,000 авсан баг?",
+            "answer": "Fnatic",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/DreamHack_Winter_2013"
+          }
+        ]
+      },
+      {
+        "id": "f7bb130b-7b06-413a-9973-3ce9a50a1c88",
+        "name": "Sequence",
+        "questions": [
+          {
+            "id": "fe20944b-c396-4f23-a4ce-237bebc8e771",
+            "value": 100,
+            "clue": "Casino Royale (2006) → Quantum of Solace (2008) → Skyfall (2012) → ?",
+            "answer": "Spectre (2015)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Daniel_Craig"
+          },
+          {
+            "id": "ea0c3d00-6592-4d5a-a48b-8011db31716a",
+            "value": 200,
+            "clue": "Очирбат → Багабанди → Энхбаяр → ?",
+            "answer": "Ц. Элбэгдорж (Монгол Улсын 4 дэх Ерөнхийлөгч)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/President_of_Mongolia"
+          },
+          {
+            "id": "9ecd4d23-5300-46e9-8aee-0c0a9734d664",
+            "value": 300,
+            "clue": "Sochi → PyeongChang → Beijing → ?",
+            "answer": "Milan–Cortina (2026 оны Өвлийн олимп) / Milano Cortina",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Winter_Olympic_Games"
+          },
+          {
+            "id": "b4048c55-01a1-4997-8b3f-fdb5e28da413",
+            "value": 400,
+            "clue": "Friedrich Mohs 1812: Talc → Gypsum → Calcite → ?",
+            "answer": "Fluorite / Флюорит (Mohs-ын хатуулгийн шкалын 4)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Mohs_scale"
+          },
+          {
+            "id": "04c5fc96-5814-4bfb-9df8-aeec252bdcc0",
+            "value": 500,
+            "clue": "John Conway \"audioactive\" гэж нэрлэсэн дараалал: 1 → 11 → 21 → 1211 → ?",
+            "answer": "111221 (look-and-say дараалал)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Look-and-say_sequence"
+          }
+        ]
+      },
+      {
+        "id": "57e12307-d788-4960-8b71-91eb055bb9fb",
+        "name": "Connect",
+        "questions": [
+          {
+            "id": "793a0979-6fb1-4f6d-b02a-d0f9c0698856",
+            "value": 100,
+            "clue": "",
+            "answer": "",
+            "isDailyDouble": false,
+            "answered": false,
+            "connect": {
+              "clues": [
+                {
+                  "id": "cdbe1682-009d-426c-a8d1-341a1c5b8d99",
+                  "text": "Hydrargyrum — \"шингэн мөнгө\""
+                },
+                {
+                  "id": "21595780-daf4-4dfe-815a-9c0c17b13eb0",
+                  "text": "1961 оны 5-р сарын 5-нд Alan Shepard-ыг Freedom 7-оор 15 минут 22 секунд сансарт хөөргөсөн NASA-гийн хөтөлбөр"
+                },
+                {
+                  "id": "e9fed10d-99b4-4957-9b84-59fe49486534",
+                  "text": "1946 оны 9-р сарын 5-нд Занзибарын Stone Town-д төрсөн Farrokh Bulsara-гийн тайзны овог"
+                },
+                {
+                  "id": "2a1414b5-704e-446e-8ea0-a49025cb51b9",
+                  "text": "Далавчтай гуталтай Ромын элч бурхан"
+                },
+                {
+                  "id": "6c08f0ff-548d-4b10-abfa-b2ddaceb2f8c",
+                  "text": "Нарны аймгийн нарандаа хамгийн ойр гариг"
+                }
+              ],
+              "answer": "Mercury / Буд"
+            }
+          },
+          {
+            "id": "3552aa90-4a3e-413f-a401-102c536777a9",
+            "value": 200,
+            "clue": "",
+            "answer": "",
+            "isDailyDouble": false,
+            "answered": false,
+            "connect": {
+              "clues": [
+                {
+                  "id": "220138e8-1a37-41cb-8d04-87af270dd67c",
+                  "text": "1993 онд \"Do the math!\" уриатай \"64-bit\" гэж сурталчилсан Atari-гийн сүүлчийн гэрийн консол"
+                },
+                {
+                  "id": "402019d7-74ef-4d76-babd-081c3c0849ef",
+                  "text": "10.2 хувилбар, 2002 оны 8-р сарын 23 — кодын нэрээ анх удаа сурталчилгаанд ашигласан Mac OS X"
+                },
+                {
+                  "id": "db183a9c-faa7-433c-8d4c-0f2b3b3df515",
+                  "text": "1993 оны 11-р сарын 30-нд Carolina Panthers-тэй хамт NFL-д элссэн Флоридагийн баг"
+                },
+                {
+                  "id": "97b70878-e704-4bd0-9f18-27e842a83afa",
+                  "text": "Ковентрийн тансаг автомашины брэнд"
+                },
+                {
+                  "id": "0aed69f8-e700-4b5b-b5cb-899caafe1536",
+                  "text": "Америк тивийн хамгийн том муур"
+                }
+              ],
+              "answer": "Jaguar"
+            }
+          },
+          {
+            "id": "5778272d-4763-4811-8849-bde97aec58be",
+            "value": 300,
+            "clue": "",
+            "answer": "",
+            "isDailyDouble": false,
+            "answered": false,
+            "connect": {
+              "clues": [
+                {
+                  "id": "cda1b3bb-5e0d-4742-aa10-c99b60cbb989",
+                  "text": "Ang Lee 2019 онд 120 fps-ээр буулгасан, Will Smith өөрийн залуу клонтой тулалддаг кино"
+                },
+                {
+                  "id": "653ed69d-babb-4e38-aece-a1792f778d86",
+                  "text": "1965 оны 6-р сарын 3-нд Ed White анхны Америкийн сансрын гарц хийсэн хоёр хүний хөтөлбөр"
+                },
+                {
+                  "id": "e9328918-d71b-44ce-ac67-c0ed133fed79",
+                  "text": "2024 оны 2-р сарын 8-нд Google-ийн Bard шинэ нэр авсан"
+                },
+                {
+                  "id": "bbf6d998-0cf4-4d9f-b3c6-efb55669824d",
+                  "text": "Кастор ба Поллукс"
+                },
+                {
+                  "id": "a445496d-91b9-4afb-84ce-60c453df4230",
+                  "text": "Ихрүүдийн орд (5-р сарын сүүл – 6-р сар)"
+                }
+              ],
+              "answer": "Gemini / Ихэр"
+            }
+          },
+          {
+            "id": "25869bbf-04ee-4a90-93f3-b39cf244b4b3",
+            "value": 400,
+            "clue": "",
+            "answer": "",
+            "isDailyDouble": false,
+            "answered": false,
+            "connect": {
+              "clues": [
+                {
+                  "id": "6a33d7c8-423d-41dc-9030-c43d432742eb",
+                  "text": "1980 онд Voyager 1-ийн зураг дээрээс олдсон, Prometheus-тэй хамт F цагиргийн дэргэд эргэдэг Санчир гаригийн дагуул"
+                },
+                {
+                  "id": "1d110c98-50ee-4b22-abfd-aa0b35bc439c",
+                  "text": "Alpha Centauri A-г тойрох Polyphemus аварга гаригийн дагуул — Na'vi-гийн гэр"
+                },
+                {
+                  "id": "7452474f-d969-4d5e-86c3-1d64038e7c92",
+                  "text": "1982 онд Per, Winnie Enevoldsen нарын Копенгагенд үүсгэсэн charm bracelet-ээрээ алдартай үнэт эдлэлийн брэнд"
+                },
+                {
+                  "id": "6958cd99-e9af-425c-8a61-a06f32320ad4",
+                  "text": "Hesiod-ын домгоор бурхдын бүтээсэн анхны эмэгтэй"
+                },
+                {
+                  "id": "4283457f-9ad4-47b5-8b7e-72252c47ed6c",
+                  "text": "Онгойлгож болохгүй хайрцаг"
+                }
+              ],
+              "answer": "Pandora"
+            }
+          },
+          {
+            "id": "a3731621-f77a-4b9b-bb53-2a1e7438b11b",
+            "value": 500,
+            "clue": "",
+            "answer": "",
+            "isDailyDouble": false,
+            "answered": false,
+            "connect": {
+              "clues": [
+                {
+                  "id": "0a3c04a0-3f37-4873-b1b9-198b9edd815f",
+                  "text": "2025 оны 1-р сарын 29-нд — авга ахынхаа өргөмжлөгдсөн өдөр — 74 дэх нь болсон Сугаррагчаагийн Бямбасүрэн"
+                },
+                {
+                  "id": "5e845e4b-1528-471c-9d52-3a31aa443633",
+                  "text": "2014 онд 71 дэх нь болсон, Сүхбаатар аймагт төрсөн"
+                },
+                {
+                  "id": "17ad4ac4-e597-4038-8ca1-c8c229200123",
+                  "text": "2012 онд 70 дахь нь болсон, Говь-Алтайд төрсөн"
+                },
+                {
+                  "id": "c59b78b7-7a3f-4169-8134-c7050b3e9429",
+                  "text": "2007 онд 69 дэх нь болсон, Улаанбаатарт төрсөн"
+                },
+                {
+                  "id": "41ad1106-3ce9-49ec-b195-156f57d91500",
+                  "text": "2003 онд 68 дахь нь болсон — энэ цолд хүрсэн анхны Монгол"
+                }
+              ],
+              "answer": "Монгол ёкозуна нар (Hōshōryū, Kakuryū, Harumafuji, Hakuhō, Asashōryū)"
+            }
+          }
+        ],
+        "type": "connect"
+      }
+    ],
+    "folderId": "dc2697c6-ca9b-4b2b-8a8f-3de624408cf6",
+    "createdAt": "2026-10-02T17:41:55.089Z",
+    "updatedAt": "2026-10-02T18:15:20.502926Z"
   }
 ]

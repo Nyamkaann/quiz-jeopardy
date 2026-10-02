@@ -2,18 +2,10 @@
 
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import { login } from "@/lib/clientAuth";
 
-const PASSWORD = "Nyamka2324";
-const SESSION_KEY = "sp_quiz_auth";
-
-export function isAuthed(): boolean {
-  if (typeof window === "undefined") return false;
-  return sessionStorage.getItem(SESSION_KEY) === "1";
-}
-
-export function setAuthed() {
-  sessionStorage.setItem(SESSION_KEY, "1");
-}
+// Re-exported so existing imports keep working; the password itself lives on the server.
+export { isAuthed } from "@/lib/clientAuth";
 
 interface Props {
   onSuccess: () => void;
@@ -31,22 +23,30 @@ export default function PasswordModal({ onSuccess, onCancel, action = "continue"
     inputRef.current?.focus();
   }, []);
 
-  function attempt() {
-    if (value === PASSWORD) {
-      setAuthed();
+  const [checking, setChecking] = useState(false);
+  const [serverError, setServerError] = useState<string | null>(null);
+
+  async function attempt() {
+    if (!value || checking) return;
+    setChecking(true);
+    const { ok, error: err } = await login(value);
+    setChecking(false);
+    if (ok) {
       onSuccess();
-    } else {
-      setError(true);
-      setShake(true);
-      setValue("");
-      setTimeout(() => setShake(false), 500);
+      return;
     }
+    setServerError(err ?? null);
+    setError(true);
+    setShake(true);
+    setValue("");
+    setTimeout(() => setShake(false), 500);
+    inputRef.current?.focus();
   }
 
   return (
     <div
       className="fixed inset-0 z-[100] flex items-center justify-center p-4"
-      style={{ background: "rgba(4,5,26,0.95)" }}
+      style={{ background: "rgba(3,8,14,0.65)" }}
       onClick={(e) => e.target === e.currentTarget && onCancel()}
     >
       <div
@@ -55,13 +55,13 @@ export default function PasswordModal({ onSuccess, onCancel, action = "continue"
       >
         {/* header */}
         <div className="flex items-center gap-3 px-6 py-4"
-          style={{ borderBottom: "2px solid var(--sp-blue)", background: "linear-gradient(90deg,#150a33,#0a0518)" }}>
-          <Image src="/astro-logo.png" width={22} height={22} alt="" />
+          style={{ borderBottom: "1px solid var(--sp-blue)", background: "rgba(255,255,255,0.03)" }}>
+          <Image src="/astro-nots.png" width={22} height={22} alt="" />
           <span className="retro-title text-xl text-[var(--gold)] tracking-widest">ACCESS REQUIRED</span>
         </div>
 
         <div className="p-6 space-y-4">
-          <p style={{ fontFamily: "'Share Tech Mono',monospace", color: "rgba(167,139,250,0.7)", fontSize: "0.75rem", letterSpacing: "0.1em" }}>
+          <p style={{ fontFamily: "var(--font-mono)", color: "rgba(243,233,210,0.7)", fontSize: "0.75rem", letterSpacing: "0.1em" }}>
             ENTER PASSWORD TO {action.toUpperCase()}
           </p>
 
@@ -72,30 +72,30 @@ export default function PasswordModal({ onSuccess, onCancel, action = "continue"
             value={value}
             onChange={(e) => { setValue(e.target.value); setError(false); }}
             onKeyDown={(e) => e.key === "Enter" && attempt()}
-            className="w-full px-4 py-3 rounded text-white text-center text-xl tracking-widest focus:outline-none"
+            className="w-full px-4 py-3 rounded text-[var(--cream)] text-center text-xl tracking-widest focus:outline-none"
             style={{
-              background: "#170b30",
+              background: "rgba(255,255,255,0.05)",
               border: `2px solid ${error ? "#cc2200" : "var(--sp-blue)"}`,
-              fontFamily: "'Share Tech Mono',monospace",
-              boxShadow: error ? "0 0 12px rgba(204,34,0,0.4)" : "0 0 8px rgba(124,92,255,0.2)",
+              fontFamily: "var(--font-mono)",
+              boxShadow: error ? "0 0 12px rgba(204,34,0,0.4)" : "0 0 8px rgba(95,195,195,0.2)",
             }}
           />
 
           {error && (
             <p className="text-center text-sm"
-              style={{ fontFamily: "'Share Tech Mono',monospace", color: "#ff5544", letterSpacing: "0.1em" }}>
-              ✗ INCORRECT PASSWORD
+              style={{ fontFamily: "var(--font-mono)", color: "#ff5544", letterSpacing: "0.1em" }}>
+              {serverError ? `⚠ ${serverError}` : "✗ INCORRECT PASSWORD"}
             </p>
           )}
 
           <div className="flex gap-3 pt-2">
             <button onClick={onCancel}
-              className="btn-blue flex-1 py-3 rounded text-base text-white">
+              className="btn-blue flex-1 py-3 rounded text-base text-[var(--cream)]">
               CANCEL
             </button>
-            <button onClick={attempt} disabled={!value}
+            <button onClick={attempt} disabled={!value || checking}
               className="btn-gold flex-1 py-3 rounded text-base disabled:opacity-30">
-              UNLOCK
+              {checking ? "..." : "UNLOCK"}
             </button>
           </div>
         </div>

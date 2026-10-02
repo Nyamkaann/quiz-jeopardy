@@ -9,6 +9,7 @@ const nextConfig: NextConfig = {
     localPatterns: [
       { pathname: "/uploads/**", search: "" },
       { pathname: "/astro-logo.png", search: "" },
+      { pathname: "/astro-nots.png", search: "" },
     ],
   },
 };

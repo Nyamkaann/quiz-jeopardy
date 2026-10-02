@@ -11,17 +11,46 @@ export interface Question {
   answerImage?: string;    // legacy single
   answerImages?: string[]; // multi-image support
   answerAudio?: string;
+  connect?: ConnectData;   // only used when the category type is "connect"
 }
+
+export type CategoryType = "normal" | "connect";
 
 export interface Category {
   id: string;
   name: string;
+  type?: CategoryType;     // undefined = "normal"
   questions: Question[];
+}
+
+/* ── Connect round ── */
+export interface ConnectClue {
+  id: string;
+  text?: string;
+  image?: string;
+  audio?: string;
+}
+
+/** Payload of a tile that lives in a "connect" category */
+export interface ConnectData {
+  clues: ConnectClue[]; // up to 5, revealed one by one (1000 → 200)
+  answer: string;
+  answerImage?: string;
+}
+
+export interface Folder {
+  id: string;
+  name: string;
+  parentId: string | null; // null = root
+  createdAt: string;
 }
 
 export interface Game {
   id: string;
   title: string;
+  folderId?: string | null; // null / undefined = root
+  timerSeconds?: number;     // clue countdown length (default 60)
+  timerMusic?: string;       // uploaded countdown track; empty = built-in loop
   categories: Category[];
   createdAt: string;
   updatedAt: string;

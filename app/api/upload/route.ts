@@ -1,9 +1,12 @@
+import { requireAdmin } from "@/lib/auth";
 import { NextResponse } from "next/server";
-import { writeFile } from "fs/promises";
+import { mkdir, writeFile } from "fs/promises";
 import path from "path";
 import { v4 as uuidv4 } from "uuid";
 
 export async function POST(req: Request) {
+    const deny = await requireAdmin();
+    if (deny) return deny;
   try {
     const form = await req.formData();
     const file = form.get("file") as File | null;
@@ -13,6 +16,7 @@ export async function POST(req: Request) {
     const filename = `${uuidv4()}.${ext}`;
     const dest = path.join(process.cwd(), "public", "uploads", filename);
 
+    await mkdir(path.dirname(dest), { recursive: true });
     const buffer = Buffer.from(await file.arrayBuffer());
     await writeFile(dest, buffer);
 

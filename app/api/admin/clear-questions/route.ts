@@ -1,7 +1,10 @@
+import { requireAdmin } from "@/lib/auth";
 import { NextResponse } from "next/server";
 import { readGames, writeGames } from "@/lib/db";
 
 export async function POST() {
+    const deny = await requireAdmin();
+    if (deny) return deny;
   try {
     const games = readGames();
 

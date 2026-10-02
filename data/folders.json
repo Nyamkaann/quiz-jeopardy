@@ -1,0 +1,14 @@
+[
+  {
+    "id": "dc2697c6-ca9b-4b2b-8a8f-3de624408cf6",
+    "name": "Tunkhel",
+    "parentId": null,
+    "createdAt": "2026-10-02T16:39:22.095Z"
+  },
+  {
+    "id": "84a2dc68-72ed-4b3a-a5f8-e488c576c7cf",
+    "name": "Тест",
+    "parentId": null,
+    "createdAt": "2026-10-02T17:14:15.494665Z"
+  }
+]

@@ -1,16 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import Link from "next/link";
+import { Suspense, useState } from "react";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
-import { Game } from "@/types";
-import PasswordModal, { isAuthed } from "@/components/PasswordModal";
-
-type PendingAction =
-  | { type: "new" }
-  | { type: "edit"; gameId: string }
-  | { type: "delete"; game: Game };
+import { ShootingStars } from "@/components/Fx";
+import QuizExplorer from "@/components/QuizExplorer";
 
 const RULES = [
   { icon: "🎯", title: "Асуулт сонгох", body: "Багууд сэдэв болон оноогоо сонгож асуултад хариулна. Сонгосон асуултандаа заавал хариулах шаардлагатай ба бусад багийн асуултад хариулж болно." },
@@ -25,29 +18,29 @@ function RulesModal({ onClose }: { onClose: () => void }) {
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center p-4"
-      style={{ background: "rgba(4,5,26,0.93)" }}
+      style={{ background: "rgba(3,8,14,0.6)" }}
       onClick={(e) => e.target === e.currentTarget && onClose()}
     >
       <div className="retro-frame rounded-2xl w-full max-w-lg overflow-hidden" style={{ background: "var(--bg-card)" }}>
         {/* header */}
         <div className="flex items-center justify-between px-6 py-4"
-          style={{ background: "linear-gradient(90deg,#150a33,#0a0518)", borderBottom: "2px solid var(--sp-blue)" }}>
+          style={{ background: "rgba(255,255,255,0.03)", borderBottom: "1px solid var(--sp-blue)" }}>
           <div className="flex items-center gap-3">
-            <Image src="/astro-logo.png" width={24} height={24} alt="" />
+            <Image src="/astro-nots.png" width={24} height={24} alt="" />
             <h2 className="retro-title text-xl text-[var(--gold)] tracking-wider">ТОГЛООМЫН ДҮРЭМ</h2>
           </div>
-          <button onClick={onClose} className="text-blue-400 hover:text-white text-2xl leading-none transition-colors">×</button>
+          <button onClick={onClose} className="text-[var(--teal)] hover:text-[var(--cream)] text-2xl leading-none transition-colors">×</button>
         </div>
 
         {/* rules list */}
         <div className="p-6 space-y-4 overflow-y-auto" style={{ maxHeight: "70vh" }}>
           {RULES.map((r, i) => (
             <div key={i} className="flex gap-4 rounded-xl px-4 py-3"
-              style={{ background: "#170b30", border: "1px solid rgba(124,92,255,0.25)" }}>
+              style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(95,195,195,0.25)" }}>
               <span className="text-2xl shrink-0 mt-0.5">{r.icon}</span>
               <div>
-                <p className="retro-title text-base text-[var(--gold)] tracking-wide mb-1">{r.title}</p>
-                <p style={{ fontFamily: "'Oswald',sans-serif", color: "rgba(196,181,253,0.85)", fontSize: "0.95rem", lineHeight: "1.5" }}>
+                <p className="retro-title title-mixed text-base text-[var(--gold)] tracking-wide mb-1">{r.title}</p>
+                <p style={{ fontFamily: "var(--font-body)", color: "rgba(243,233,210,0.85)", fontSize: "0.95rem", lineHeight: "1.5" }}>
                   {r.body}
                 </p>
               </div>
@@ -55,8 +48,8 @@ function RulesModal({ onClose }: { onClose: () => void }) {
           ))}
 
           <div className="mt-2 rounded-xl px-4 py-3 text-center"
-            style={{ background: "linear-gradient(90deg,rgba(124,92,255,0.1),rgba(255,215,0,0.08))", border: "1px solid rgba(255,215,0,0.2)" }}>
-            <p style={{ fontFamily: "'Share Tech Mono',monospace", color: "rgba(196,181,253,0.5)", fontSize: "0.7rem", letterSpacing: "0.15em" }}>
+            style={{ background: "linear-gradient(90deg,rgba(95,195,195,0.1),rgba(255,138,61,0.08))", border: "1px solid rgba(255,138,61,0.2)" }}>
+            <p style={{ fontFamily: "var(--font-mono)", color: "rgba(243,233,210,0.5)", fontSize: "0.7rem", letterSpacing: "0.15em" }}>
               ASTRO JEOPARDY — ШИЛДЭГ БАГИЙГ ТОДРУУЛЪЯ!
             </p>
           </div>
@@ -64,7 +57,7 @@ function RulesModal({ onClose }: { onClose: () => void }) {
 
         <div className="px-6 pb-5">
           <button onClick={onClose} className="btn-gold w-full py-3 rounded text-xl">
-            ОЙЛГОСОн!
+            ОЙЛГОСОН!
           </button>
         </div>
       </div>
@@ -73,209 +66,44 @@ function RulesModal({ onClose }: { onClose: () => void }) {
 }
 
 export default function HomePage() {
-  const router = useRouter();
-  const [games, setGames] = useState<Game[]>([]);
-  const [title, setTitle] = useState("");
-  const [creating, setCreating] = useState(false);
-  const [showNew, setShowNew] = useState(false);
   const [showRules, setShowRules] = useState(false);
-  const [pending, setPending] = useState<PendingAction | null>(null);
-
-  useEffect(() => {
-    fetch("/api/games").then((r) => r.json()).then(setGames);
-  }, []);
-
-  function guard(action: PendingAction) {
-    if (isAuthed()) {
-      execute(action);
-    } else {
-      setPending(action);
-    }
-  }
-
-  function execute(action: PendingAction) {
-    if (action.type === "new") {
-      setShowNew(true);
-    } else if (action.type === "edit") {
-      router.push(`/admin/${action.gameId}`);
-    } else if (action.type === "delete") {
-      doDelete(action.game);
-    }
-    setPending(null);
-  }
-
-  async function createGame() {
-    if (!title.trim()) return;
-    setCreating(true);
-    const res = await fetch("/api/games", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        title: title.trim(),
-        categories: Array.from({ length: 6 }, (_, ci) => ({
-          id: crypto.randomUUID(),
-          name: `Category ${ci + 1}`,
-          questions: [100, 200, 300, 400, 500].map((v) => ({
-            id: crypto.randomUUID(),
-            value: v, clue: "", answer: "",
-            isDailyDouble: false, answered: false,
-          })),
-        })),
-      }),
-    });
-    const game: Game = await res.json();
-    setGames((prev) => [...prev, game]);
-    setTitle("");
-    setShowNew(false);
-    setCreating(false);
-  }
-
-  async function doDelete(game: Game) {
-    await fetch(`/api/games/${game.id}`, { method: "DELETE" });
-    setGames((prev) => prev.filter((g) => g.id !== game.id));
-  }
-
-  const actionLabel =
-    pending?.type === "new" ? "create a new game" :
-    pending?.type === "edit" ? "edit this game" :
-    pending?.type === "delete" ? "delete this game" : "";
 
   return (
-    <div className="min-h-screen" style={{ background: "var(--bg-deep)" }}>
-      {/* rules modal */}
+    <div className="h-dvh w-full overflow-hidden flex flex-col">
+      <div className="orbit-ring" />
+      <ShootingStars />
       {showRules && <RulesModal onClose={() => setShowRules(false)} />}
 
-      {/* password modal */}
-      {pending && (
-        <PasswordModal
-          action={actionLabel}
-          onSuccess={() => execute(pending)}
-          onCancel={() => setPending(null)}
-        />
-      )}
-
-      {/* ── HEADER ── */}
-      <header className="relative overflow-hidden"
-        style={{ background: "linear-gradient(180deg,#150a33 0%,#0a0518 100%)", borderBottom: "3px solid var(--sp-blue)", boxShadow: "0 0 40px rgba(124,92,255,0.4)" }}>
-        <div className="absolute top-3 left-4 opacity-30">
-          <Image src="/astro-logo.png" width={28} height={28} alt="" />
-        </div>
-        <div className="absolute top-3 right-4 opacity-30">
-          <Image src="/astro-logo.png" width={28} height={28} alt="" />
-        </div>
-        <div className="flex flex-col items-center py-8 px-4 gap-4 text-center">
-          <Image src="/astro-logo.png" width={72} height={72} alt="Astro" className="w-14 h-14 sm:w-[72px] sm:h-[72px]" />
-          <h1 className="retro-title text-5xl sm:text-7xl text-[var(--gold)]">ASTRO</h1>
-          <div className="star-divider w-64 max-w-full mb-1" />
-          <h2 className="retro-title text-2xl sm:text-4xl sp-glow text-white tracking-widest">JEOPARDY!</h2>
-          <p style={{ fontFamily: "'Share Tech Mono',monospace", color: "rgba(196,181,253,0.7)", fontSize: "0.75rem", letterSpacing: "0.15em" }}>
-            THE ULTIMATE QUIZ CHALLENGE
-          </p>
-          <button
-            onClick={() => setShowRules(true)}
-            className="px-5 py-1.5 rounded-full text-sm tracking-widest transition-all hover:opacity-80"
-            style={{ fontFamily: "'Share Tech Mono',monospace", border: "1px solid rgba(124,92,255,0.5)", color: "rgba(167,139,250,0.8)", background: "rgba(124,92,255,0.08)", letterSpacing: "0.15em", fontSize: "0.7rem" }}>
-            📋 ДҮРЭМТЭЙ ТАНИЛЦАХ
-          </button>
-        </div>
-        <div className="star-divider w-full" />
-      </header>
-
-      <main className="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-10">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
-          <h2 className="retro-title text-2xl sm:text-3xl text-white tracking-wider"
-            style={{ textShadow: "0 0 10px rgba(124,92,255,0.5)" }}>
-            GAME LIBRARY
-          </h2>
-          <button onClick={() => guard({ type: "new" })} className="btn-gold px-6 py-2 rounded text-lg w-full sm:w-auto">
-            + NEW GAME
-          </button>
-        </div>
-
-        {/* new game form — only shown after password */}
-        {showNew && (
-          <div className="retro-panel rounded-xl p-4 sm:p-6 mb-6">
-            <h3 className="retro-title text-2xl text-[var(--gold)] mb-4 tracking-wider">CREATE NEW GAME</h3>
-            <div className="flex flex-col sm:flex-row gap-3">
-              <input
-                autoFocus
-                type="text"
-                placeholder="Enter game title..."
-                value={title}
-                onChange={(e) => setTitle(e.target.value)}
-                onKeyDown={(e) => e.key === "Enter" && createGame()}
-                className="flex-1 min-w-0 rounded px-4 py-2 text-white placeholder-blue-400 text-lg focus:outline-none"
-                style={{ background: "#170b30", border: "2px solid var(--sp-blue)", fontFamily: "'Oswald',sans-serif" }}
-              />
-              <div className="flex gap-3">
-                <button onClick={createGame} disabled={creating || !title.trim()}
-                  className="btn-gold px-6 py-2 rounded text-lg disabled:opacity-40 flex-1 sm:flex-none">
-                  {creating ? "CREATING..." : "CREATE"}
-                </button>
-                <button onClick={() => setShowNew(false)} className="btn-blue px-5 py-2 rounded text-lg text-white flex-1 sm:flex-none">
-                  CANCEL
-                </button>
-              </div>
-            </div>
+      <div className="flex-1 min-h-0 grid grid-cols-1 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] gap-4 lg:gap-6 p-4 lg:p-6 overflow-y-auto lg:overflow-hidden">
+        {/* ── HERO ── */}
+        <section className="relative flex flex-col items-center justify-center text-center gap-4 lg:gap-6 py-4">
+          <div className="relative floaty drop-in">
+            <div className="absolute inset-0 rounded-full blur-3xl" style={{ background: "radial-gradient(circle, rgba(95,195,195,0.35), transparent 65%)" }} />
+            <div className="logo-orbit" />
+            <div className="logo-orbit reverse" />
+            <Image src="/astro-nots.png" width={520} height={520} priority alt="Astro-Nots"
+              className="relative w-[44vw] max-w-[220px] lg:max-w-none lg:w-[min(30vw,52vh)] h-auto drop-shadow-[0_20px_60px_rgba(0,0,0,0.6)]" />
           </div>
-        )}
-
-        {games.length === 0 ? (
-          <div className="text-center py-20">
-            <Image src="/astro-logo.png" width={64} height={64} alt="" className="mx-auto mb-6 opacity-20" />
-            <p className="retro-title text-2xl text-blue-400 tracking-wider">NO GAMES YET</p>
-            <p style={{ color: "rgba(167,139,250,0.5)", fontFamily: "'Share Tech Mono',monospace", fontSize: "0.8rem", marginTop: "0.5rem" }}>
-              CREATE A GAME TO GET STARTED
+          <div className="flex flex-col items-center gap-3 rise-in" style={{ animationDelay: "150ms" }}>
+            <h1 className="retro-title text-gradient text-4xl sm:text-5xl xl:text-7xl font-black">JEOPARDY</h1>
+            <div className="star-divider w-56 sm:w-80 max-w-full" />
+            <p className="mono text-[0.7rem] sm:text-xs" style={{ color: "rgba(243,233,210,0.6)" }}>
+              THE ULTIMATE QUIZ CHALLENGE
             </p>
           </div>
-        ) : (
-          <div className="flex flex-col gap-3">
-            {games.map((game, i) => (
-              <div key={game.id}
-                className="retro-panel rounded-xl px-4 sm:px-6 py-4 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 transition-all hover:shadow-[0_0_24px_rgba(124,92,255,0.3)]">
-                <div className="flex items-center gap-3 min-w-0">
-                  <div className="w-10 h-10 rounded flex items-center justify-center text-lg font-black shrink-0"
-                    style={{ background: "var(--sp-blue)", fontFamily: "'Bebas Neue',sans-serif", color: "var(--gold)", boxShadow: "0 0 8px rgba(124,92,255,0.6)" }}>
-                    {i + 1}
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <p className="retro-title text-xl text-white truncate tracking-wide">{game.title}</p>
-                    <p style={{ fontFamily: "'Share Tech Mono',monospace", color: "rgba(167,139,250,0.7)", fontSize: "0.7rem", letterSpacing: "0.1em" }}>
-                      {game.categories.length} CATEGORIES · {new Date(game.createdAt).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }).toUpperCase()}
-                    </p>
-                  </div>
-                </div>
-                <div className="grid grid-cols-3 sm:flex gap-2 shrink-0">
-                  <Link href={`/play/${game.id}`}
-                    className="btn-gold px-5 py-2 rounded text-base text-center" style={{ textDecoration: "none" }}>
-                    PLAY
-                  </Link>
-                  <button onClick={() => guard({ type: "edit", gameId: game.id })}
-                    className="btn-blue px-5 py-2 rounded text-base text-white">
-                    EDIT
-                  </button>
-                  <button
-                    onClick={() => guard({ type: "delete", game })}
-                    className="px-4 py-2 rounded text-base font-black tracking-wider transition-colors"
-                    style={{ fontFamily: "'Bebas Neue',sans-serif", background: "linear-gradient(180deg,#cc2200,#880000)", border: "2px solid #ff4422", boxShadow: "0 3px 0 #440000", color: "white" }}>
-                    DEL
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div>
-        )}
-      </main>
+          <button onClick={() => setShowRules(true)}
+            className="glass rounded-full px-5 py-2 mono text-[0.7rem] transition-all hover:border-[var(--teal)]"
+            style={{ color: "var(--cream)" }}>
+            📋 ДҮРЭМТЭЙ ТАНИЛЦАХ
+          </button>
+        </section>
 
-      <footer className="text-center py-6" style={{ borderTop: "1px solid rgba(124,92,255,0.2)" }}>
-        <div className="flex items-center justify-center gap-3">
-          <Image src="/astro-logo.png" width={16} height={16} alt="" className="opacity-40" />
-          <span style={{ fontFamily: "'Share Tech Mono',monospace", color: "rgba(147,112,255,0.4)", fontSize: "0.65rem", letterSpacing: "0.2em" }}>
-            ASTRO JEOPARDY © {new Date().getFullYear()}
-          </span>
-          <Image src="/astro-logo.png" width={16} height={16} alt="" className="opacity-40" />
-        </div>
-      </footer>
+        {/* ── QUIZ EXPLORER (folders + games) ── */}
+        {/* useSearchParams (?f=folder) needs a Suspense boundary */}
+        <Suspense fallback={<section className="glass rounded-3xl min-h-0" />}>
+          <QuizExplorer />
+        </Suspense>
+      </div>
     </div>
   );
 }
