@@ -11,13 +11,14 @@ import { NextResponse } from "next/server";
 export const AUTH_COOKIE = "astro_admin";
 const TTL_SECONDS = 12 * 60 * 60; // 12h
 
+/**
+ * Cookie-signing key. Works as long as ANY of the secrets is set, so the play
+ * code still works on a host where only PLAY_CODE was configured.
+ */
 function key(): Buffer | null {
-  const pw = process.env.ADMIN_PASSWORD;
-  if (!pw) return null;
-  return crypto
-    .createHash("sha256")
-    .update(`astro:${pw}:${process.env.AUTH_SECRET ?? ""}`)
-    .digest();
+  const parts = [process.env.AUTH_SECRET, process.env.ADMIN_PASSWORD, process.env.PLAY_CODE].filter(Boolean);
+  if (parts.length === 0) return null;
+  return crypto.createHash("sha256").update(`astro:${parts.join(":")}`).digest();
 }
 
 export function passwordConfigured(): boolean {
