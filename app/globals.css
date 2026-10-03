@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* short:  — landscape phones and other low screens */
+@custom-variant short (@media (max-height: 500px));
+
 /* ═══════════════════════════════════════════════════════════
    ASTRO-NOTS · glass + deep-space theme
    Palette sampled from the Astro-Nots logo

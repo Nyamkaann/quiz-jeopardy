@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, use, useRef } from "react";
+import { useEffect, useLayoutEffect, useState, use, useRef, type CSSProperties } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Game, Question, Player } from "@/types";
@@ -155,6 +155,7 @@ function PlayGame({ gameId }: { gameId: string }) {
   const [activePlayer, setActivePlayer] = useState<string | null>(null);
   const [buzzed, setBuzzed] = useState<string | null>(null);
   const [wrongPlayers, setWrongPlayers] = useState<Set<string>>(new Set());
+  const [winner, setWinner] = useState<string | null>(null); // answered correctly → answer is shown
   const [finalWagers, setFinalWagers] = useState<Record<string, string>>({});
   const [finalClue, setFinalClue] = useState("");
   const [finalAnswer, setFinalAnswer] = useState("");
@@ -346,6 +347,26 @@ function PlayGame({ gameId }: { gameId: string }) {
     return () => window.removeEventListener("keydown", onKey);
   }, [phase, showAnswer]);
 
+  /* Shrink the clue/answer text until it fits its card (long clues on phones / low screens) */
+  useLayoutEffect(() => {
+    const card = clueCardRef.current;
+    if (phase !== "clue" || !card) return;
+    const fit = () => {
+      let f = 1;
+      card.style.setProperty("--fit", "1");
+      while (card.scrollHeight > card.clientHeight + 1 && f > 0.45) {
+        f -= 0.05;
+        card.style.setProperty("--fit", String(f));
+      }
+    };
+    fit();
+    const ro = new ResizeObserver(fit);
+    ro.observe(card);
+    // images load later and change the height
+    card.querySelectorAll("img").forEach((img) => img.addEventListener("load", fit));
+    return () => ro.disconnect();
+  }, [phase, activeQ, showAnswer]);
+
   /* stop music if we leave the page */
   useEffect(() => () => stopMusic(), []);
 
@@ -495,6 +516,7 @@ function PlayGame({ gameId }: { gameId: string }) {
     setBuzzed(null);
     setActivePlayer(null);
     setWrongPlayers(new Set());
+    setWinner(null);
     resetTimer();
     setPhase("clue");
   }
@@ -526,20 +548,17 @@ function PlayGame({ gameId }: { gameId: string }) {
     setShowAnswer(false);
   }
 
-  function closeQuestion(correct: boolean) {
-    if (!activeQ) return;
-    if (activePlayer && correct) {
-      adjustScore(activePlayer, activeQ.q.value, `${qLabel(activeQ.catId, activeQ.q.value)} ✓`);
-      fire("good");
-    }
+  /** Award the points and reveal the answer; the host returns to the board with ← САМБАР РУУ. */
+  function markCorrect() {
+    if (!activeQ || !activePlayer) return;
+    adjustScore(activePlayer, activeQ.q.value, `${qLabel(activeQ.catId, activeQ.q.value)} ✓`);
+    fire("good");
     stopMusic();
-    setTimerState("idle");
-    markAnswered(activeQ.catId, activeQ.q.id);
-    setActiveQ(null);
-    setPhase("board");
+    if (timerState === "running" || timerState === "paused") setTimerState("done");
+    setWinner(activePlayer);
     setBuzzed(null);
     setActivePlayer(null);
-    setWrongPlayers(new Set());
+    setShowAnswer(true);
   }
 
   function skipQuestion() {
@@ -822,14 +841,15 @@ function PlayGame({ gameId }: { gameId: string }) {
         {fxLayer}
         {scorePanel}
         {/* top bar: logo · title · actions */}
-        <div className="glass-bar flex items-center gap-3 px-3 sm:px-5 py-2 shrink-0">
+        <div className="glass-bar flex flex-wrap items-center gap-x-3 gap-y-1.5 px-3 sm:px-5 py-2 shrink-0">
           <Link href={game.folderId ? `/?f=${game.folderId}` : "/"} className="flex items-center gap-2 shrink-0 transition-opacity hover:opacity-80" style={{ textDecoration: "none" }}>
             <Image src="/astro-nots.png" width={40} height={40} alt="Home" className="w-9 h-9 sm:w-10 sm:h-10" />
           </Link>
-          <h1 className="retro-title title-mixed text-sm sm:text-xl text-[var(--cream)] truncate flex-1 min-w-0">
+          <h1 className="retro-title title-mixed text-sm sm:text-xl text-[var(--cream)] truncate flex-1 min-w-24">
             {game.title}
           </h1>
-          <div className="flex gap-1.5 sm:gap-2 items-center shrink-0">
+          {/* on a narrow phone the actions drop to their own row instead of squeezing the title */}
+          <div className="flex flex-wrap justify-end gap-1.5 sm:gap-2 items-center ml-auto">
             <button
               onClick={toggleMute}
               title={muted ? "Дуу асаах" : "Дуу хаах"}
@@ -867,18 +887,20 @@ function PlayGame({ gameId }: { gameId: string }) {
         {/* board fills remaining height */}
         <div className="flex-1 min-h-0 p-2 sm:p-3 overflow-auto">
           <div
-            className="grid gap-1.5 sm:gap-2.5 h-full min-w-[640px]"
+            className="grid gap-1.5 sm:gap-2.5 h-full"
             style={{
+              // ~56px per column: fits a phone without sideways scrolling; only very wide boards scroll
+              minWidth: `${game.categories.length * 56}px`,
               gridTemplateColumns: `repeat(${game.categories.length}, minmax(0, 1fr))`,
-              gridTemplateRows: `minmax(56px, auto) repeat(${rows}, minmax(56px, 1fr))`,
+              gridTemplateRows: `minmax(34px, auto) repeat(${rows}, minmax(34px, 1fr))`,
             }}
           >
             {game.categories.map((cat, colIdx) => (
               <div key={cat.id}
-                className={`cat-header rounded-xl flex items-center justify-center gap-1.5 px-2 py-2 text-center ${boardIntro ? "drop-in" : ""}`}
+                className={`cat-header rounded-xl flex items-center justify-center gap-1.5 px-1 sm:px-2 py-1 sm:py-2 text-center leading-tight break-words hyphens-auto min-w-0 ${boardIntro ? "drop-in" : ""}`}
                 style={{
                   animationDelay: `${colIdx * 60}ms`,
-                  fontSize: "clamp(0.65rem, 1.1vw, 1.05rem)",
+                  fontSize: "clamp(0.55rem, 1.1vw, 1.05rem)",
                   ...(isConnectCategory(cat) && {
                     borderBottomColor: "var(--teal)",
                     background: "linear-gradient(180deg, rgba(95,195,195,0.22), rgba(255,255,255,0.03))",
@@ -935,7 +957,9 @@ function PlayGame({ gameId }: { gameId: string }) {
 
         {/* score dock */}
         <div className="glass-bar shrink-0 px-2 sm:px-3 py-2" style={{ borderTop: "1px solid var(--glass-border)", borderBottom: "none" }}>
-          <div className="grid gap-2" style={{ gridTemplateColumns: `repeat(${Math.max(players.length, 1)}, minmax(0, 1fr))` }}>
+          {/* phones: at most 2 chips per row so names stay readable */}
+          <div className={`grid gap-1.5 sm:gap-2 sm:[grid-template-columns:var(--cols)] ${players.length > 1 ? "grid-cols-2" : "grid-cols-1"}`}
+            style={{ "--cols": `repeat(${Math.max(players.length, 1)}, minmax(0, 1fr))` } as CSSProperties}>
             {players.map((p) => (
               <button key={p.id} onClick={() => setShowScores(true)} title="Оноо засах"
                 className="score-chip rounded-xl px-3 py-1.5 flex items-center justify-between gap-2 min-w-0 text-left transition-colors hover:border-[rgba(255,165,82,0.5)]">
@@ -1058,8 +1082,9 @@ function PlayGame({ gameId }: { gameId: string }) {
         </div>
 
         {/* clue / answer display */}
-        <div className="flex-1 min-h-0 overflow-y-auto flex flex-col items-center justify-center px-4 sm:px-10 text-center gap-6 py-6">
-          <div ref={clueCardRef} className="glass zoom-in rounded-3xl w-full max-w-6xl flex-1 min-h-0 flex flex-col items-center justify-center gap-6 px-6 sm:px-12 py-8">
+        {/* text auto-shrinks to fit (see --fit); the card scrolls only as a last resort */}
+        <div className="flex-1 min-h-0 flex flex-col items-center px-3 sm:px-10 text-center py-3 sm:py-6 short:py-2">
+          <div ref={clueCardRef} className="glass zoom-in rounded-3xl w-full max-w-6xl flex-1 min-h-0 overflow-y-auto flex flex-col items-center justify-center gap-4 sm:gap-6 px-4 sm:px-12 py-5 sm:py-8 short:py-3">
           {!showAnswer ? (
             <>
               {q.clue && (
@@ -1067,7 +1092,7 @@ function PlayGame({ gameId }: { gameId: string }) {
                   className="flip-in font-bold text-[var(--cream)] leading-relaxed"
                   style={{
                     fontFamily: "var(--font-body)",
-                    fontSize: "clamp(1.6rem,min(4.2vw,7vh),4.5rem)", lineHeight: 1.25,
+                    fontSize: "calc(clamp(1.3rem,min(6.5vw,7vh),4.5rem) * var(--fit, 1))", lineHeight: 1.25,
                   }}
                 >
                   {q.clue}
@@ -1103,7 +1128,7 @@ function PlayGame({ gameId }: { gameId: string }) {
                   className="flip-in font-bold leading-relaxed"
                   style={{
                     fontFamily: "var(--font-body)",
-                    fontSize: "clamp(1.6rem,min(4.2vw,7vh),4.5rem)", lineHeight: 1.25,
+                    fontSize: "calc(clamp(1.3rem,min(6.5vw,7vh),4.5rem) * var(--fit, 1))", lineHeight: 1.25,
                     color: "var(--gold)",
                     textShadow: "0 0 20px rgba(255,138,61,0.4)",
                   }}
@@ -1127,6 +1152,19 @@ function PlayGame({ gameId }: { gameId: string }) {
                   />
                 </div>
               )}
+              {q.explanation && (
+                <p
+                  className="flip-in max-w-4xl"
+                  style={{
+                    fontFamily: "var(--font-body)",
+                    fontSize: "calc(clamp(0.95rem,min(2.6vw,3vh),1.6rem) * var(--fit, 1))", lineHeight: 1.4,
+                    color: "rgba(243,233,210,0.85)",
+                  }}
+                >
+                  <span className="mono" style={{ color: "var(--teal)", marginRight: "0.5em" }}>ЯАГААД?</span>
+                  {q.explanation}
+                </p>
+              )}
               {!q.answer &&
                 getAnswerImages(q).length === 0 &&
                 !q.answerAudio && (
@@ -1144,7 +1182,7 @@ function PlayGame({ gameId }: { gameId: string }) {
 
         {/* bottom controls */}
         <div
-          className="glass-bar px-4 sm:px-6 pb-4 pt-3 space-y-3 shrink-0"
+          className="glass-bar px-3 sm:px-6 pb-4 pt-3 space-y-3 short:pb-2 short:pt-2 short:space-y-2 shrink-0"
           style={{ borderTop: "1px solid var(--glass-border)", borderBottom: "none" }}
         >
           {/* host-only answer (never sent to the audience screen until REVEAL) */}
@@ -1177,11 +1215,20 @@ function PlayGame({ gameId }: { gameId: string }) {
             </div>
           )}
 
+          {/* winner badge */}
+          {winner && (
+            <div className="flex justify-center">
+              <span className="rise-in rounded-2xl px-5 py-2 title-mixed text-lg" style={{ background: "rgba(80,220,150,0.18)", border: "1px solid rgba(120,240,180,0.55)", color: "#bff8da" }}>
+                🏆 {players.find((p) => p.id === winner)?.name} +{q.value}
+              </span>
+            </div>
+          )}
+
           {/* buzz-in buttons — hide players who already answered wrong */}
-          {players.filter((p) => !wrongPlayers.has(p.id)).length > 0 && (
+          {!winner && players.filter((p) => !wrongPlayers.has(p.id)).length > 0 && (
             <div>
               <p
-                className="text-center mb-2"
+                className="text-center mb-2 short:hidden"
                 style={{
                   fontFamily: "var(--font-mono)",
                   color: "rgba(243,233,210,0.6)",
@@ -1236,8 +1283,8 @@ function PlayGame({ gameId }: { gameId: string }) {
             {/* CORRECT — always visible when someone is selected */}
             {activePlayer && (
               <button
-                onClick={() => closeQuestion(true)}
-                className="px-8 py-3 rounded-xl text-lg"
+                onClick={markCorrect}
+                className="px-8 py-3 short:px-5 short:py-2 rounded-xl text-lg short:text-base"
                 style={{
                   fontFamily: "var(--font-display)",
                   fontWeight: 700,
@@ -1257,7 +1304,7 @@ function PlayGame({ gameId }: { gameId: string }) {
             {activePlayer && (
               <button
                 onClick={markWrong}
-                className="px-8 py-3 rounded-xl text-lg"
+                className="px-8 py-3 short:px-5 short:py-2 rounded-xl text-lg short:text-base"
                 style={{
                   fontFamily: "var(--font-display)",
                   fontWeight: 700,
@@ -1277,7 +1324,7 @@ function PlayGame({ gameId }: { gameId: string }) {
             {!showAnswer && (
               <button
                 onClick={toggleTimer}
-                className={`btn-gold px-8 py-3 rounded-xl text-lg ${timerState === "idle" ? "pill-pulse" : ""}`}
+                className={`btn-gold px-8 py-3 short:px-5 short:py-2 rounded-xl text-lg short:text-base ${timerState === "idle" ? "pill-pulse" : ""}`}
                 title="Space"
               >
                 {timerState === "idle" ? "▶ ЦАГ ЭХЛҮҮЛЭХ" :
@@ -1295,7 +1342,7 @@ function PlayGame({ gameId }: { gameId: string }) {
                   setShowAnswer(true);
                   sfx.reveal();
                 }}
-                className="btn-blue px-8 py-3 rounded-xl text-lg"
+                className="btn-blue px-8 py-3 short:px-5 short:py-2 rounded-xl text-lg short:text-base"
               >
                 REVEAL ANSWER
               </button>
@@ -1304,9 +1351,9 @@ function PlayGame({ gameId }: { gameId: string }) {
             {/* NO ONE / close */}
             <button
               onClick={skipQuestion}
-              className="btn-blue px-6 py-3 rounded-xl text-lg"
+              className="btn-blue px-6 py-3 short:px-5 short:py-2 rounded-xl text-lg short:text-base"
             >
-              NO ONE
+              {winner ? "← САМБАР РУУ" : "NO ONE"}
             </button>
           </div>
         </div>

@@ -516,6 +516,16 @@ export default function AdminPage({ params }: { params: Promise<{ gameId: string
                   style={{ background: "rgba(255,255,255,0.05)", border: "2px solid rgba(255,138,61,0.4)", fontFamily: "var(--font-body)", fontSize: "1rem" }}
                 />
 
+                <label className="block text-xs tracking-widest mb-1" style={{ fontFamily: "var(--font-mono)", color: "rgba(243,233,210,0.6)" }}>ЯАГААД? (тайлбар)</label>
+                <textarea
+                  rows={2}
+                  placeholder="Хариулт яагаад зөв болохыг товч тайлбарлана"
+                  value={editingQ.explanation ?? ""}
+                  onChange={(e) => updateQuestion(editing.catId, editing.qId, { explanation: e.target.value })}
+                  className="w-full px-4 py-2 rounded text-[var(--cream)] focus:outline-none mb-3 resize-y"
+                  style={{ background: "rgba(255,255,255,0.05)", border: "2px solid rgba(255,138,61,0.4)", fontFamily: "var(--font-body)", fontSize: "0.95rem" }}
+                />
+
                 <MultiImageUpload
                   label="IMAGES"
                   images={getAnswerImages(editingQ)}

@@ -89,6 +89,15 @@ export default function ConnectEditor({
                 className="w-full px-4 py-3 rounded-xl text-lg focus:outline-none title-mixed"
                 style={{ ...inputStyle, border: "1px solid rgba(255,165,82,0.5)" }}
               />
+              <label className="mono text-[0.6rem] block mt-3 mb-1" style={{ color: "var(--gold)" }}>ЯАГААД? (ТАЙЛБАР)</label>
+              <textarea
+                rows={2}
+                value={data.explanation ?? ""}
+                onChange={(e) => patch({ explanation: e.target.value })}
+                placeholder="Сэжүүр бүр хариулттай хэрхэн холбогдохыг товч тайлбарлана"
+                className="w-full px-4 py-2 rounded-xl text-sm focus:outline-none resize-y"
+                style={{ ...inputStyle, border: "1px solid rgba(255,165,82,0.5)" }}
+              />
             </div>
             <div className="w-full md:w-56">
               <MediaPick kind="image" label="ХАРИУЛТЫН ЗУРАГ" url={data.answerImage} onSet={(url) => patch({ answerImage: url })} />
@@ -130,6 +139,14 @@ function ClueSlot({
         onChange={(e) => onPatch({ text: e.target.value })}
         placeholder="Текст (заавал биш)"
         className="w-full px-3 py-2 rounded-lg text-sm resize-none focus:outline-none"
+        style={inputStyle}
+      />
+      <input
+        type="text"
+        value={clue?.note ?? ""}
+        onChange={(e) => onPatch({ note: e.target.value })}
+        placeholder="Тайлбар (дуусахад харагдана)"
+        className="w-full px-3 py-1.5 rounded-lg text-xs focus:outline-none"
         style={inputStyle}
       />
       <MediaPick kind="image" label="ЗУРАГ" url={clue?.image} onSet={(url) => onPatch({ image: url })} />

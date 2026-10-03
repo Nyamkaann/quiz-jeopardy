@@ -202,6 +202,12 @@ function Clue({ s }: { s: DisplaySnapshot }) {
               <p className="mono text-sm" style={{ color: "var(--teal)" }}>ХАРИУЛТ</p>
               {q.answer && <p className="flip-in title-mixed text-gradient" style={big}>{q.answer}</p>}
               <Pics images={ansImgs} />
+              {q.explanation && (
+                <p className="flip-in max-w-5xl text-[var(--cream)]" style={{ fontSize: "clamp(1.1rem, min(2.4vw, 4vh), 2.4rem)", lineHeight: 1.35, opacity: 0.85 }}>
+                  <span className="mono" style={{ color: "var(--teal)", marginRight: "0.5em" }}>ЯАГААД?</span>
+                  {q.explanation}
+                </p>
+              )}
             </>
           )}
         </div>
@@ -266,7 +272,7 @@ function Connect({ s }: { s: DisplaySnapshot }) {
         <PointsLadder current={done ? -1 : st.revealed - 1} max={clues.length} compact />
         <div className="flex-1 min-h-0 grid gap-3" style={{ gridTemplateColumns: `repeat(${Math.max(clues.length, 1)}, minmax(0, 1fr))` }}>
           {clues.map((c, i) => (
-            <ClueCard key={c.id} clue={c} index={i} points={CONNECT_POINTS[i]} visible={i < st.revealed} latest={!done && i === st.revealed - 1} silent />
+            <ClueCard key={c.id} clue={c} index={i} points={CONNECT_POINTS[i]} visible={i < st.revealed} latest={!done && i === st.revealed - 1} silent showNote={done} />
           ))}
         </div>
         {done && (
@@ -279,6 +285,12 @@ function Connect({ s }: { s: DisplaySnapshot }) {
             <div>
               <p className="mono text-xs mb-1" style={{ color: "var(--teal)" }}>ХОЛБООС</p>
               <p className="title-mixed text-gradient" style={{ fontSize: "clamp(2rem, 4.5vw, 4.5rem)", lineHeight: 1.1 }}>{data.answer || "—"}</p>
+              {data.explanation && (
+                <p className="mt-2 text-[var(--cream)]" style={{ fontSize: "clamp(1rem, 1.8vw, 1.8rem)", lineHeight: 1.35, opacity: 0.85 }}>
+                  <span className="mono" style={{ color: "var(--teal)", marginRight: "0.5em" }}>ЯАГААД?</span>
+                  {data.explanation}
+                </p>
+              )}
               {winner && <p className="mono text-base mt-2" style={{ color: "var(--gold)" }}>🏆 {winner.name} +{st.winPoints ?? 0}</p>}
             </div>
           </div>

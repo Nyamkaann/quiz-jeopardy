@@ -158,6 +158,7 @@ export default function ConnectRound({
               points={CONNECT_POINTS[i]}
               visible={i < state.revealed}
               latest={!done && i === state.revealed - 1}
+              showNote={done}
             />
           ))}
         </div>
@@ -175,6 +176,12 @@ export default function ConnectRound({
               <p className="title-mixed text-gradient" style={{ fontSize: "clamp(1.6rem, 4vw, 3.2rem)", lineHeight: 1.15 }}>
                 {q.answer || "—"}
               </p>
+              {q.explanation && (
+                <p className="mt-2 text-[var(--cream)] max-w-4xl" style={{ fontSize: "clamp(0.9rem, 1.6vw, 1.3rem)", lineHeight: 1.4, opacity: 0.85 }}>
+                  <span className="mono" style={{ color: "var(--teal)", marginRight: "0.5em" }}>ЯАГААД?</span>
+                  {q.explanation}
+                </p>
+              )}
               {winner && (
                 <p className="mono text-xs mt-2" style={{ color: "var(--gold)" }}>
                   🏆 {winner.name} +{state.winPoints ?? 0}
@@ -331,6 +338,7 @@ export function ClueCard({
   visible,
   latest,
   silent,
+  showNote,
 }: {
   clue: ConnectClue;
   index: number;
@@ -338,6 +346,7 @@ export function ClueCard({
   visible: boolean;
   latest: boolean;
   silent?: boolean; // audience screen: show an icon instead of a second audio player
+  showNote?: boolean; // round over: reveal how this clue links to the answer
 }) {
   if (!visible) {
     return (
@@ -399,6 +408,12 @@ export function ClueCard({
           ) : (
             <audio key={clue.audio} controls autoPlay={latest} src={clue.audio} className="w-full" style={{ height: 34 }} />
           )}
+        </div>
+      )}
+
+      {showNote && clue.note && (
+        <div className="flip-in shrink-0 px-3 py-2 text-center" style={{ background: "rgba(95,195,195,0.12)", borderTop: "1px solid rgba(95,195,195,0.35)" }}>
+          <p style={{ color: "var(--teal)", fontSize: "clamp(0.8rem, 1.1vw, 1.15rem)", lineHeight: 1.3 }}>{clue.note}</p>
         </div>
       )}
     </div>
