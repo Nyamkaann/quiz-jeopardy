@@ -2114,7 +2114,9 @@
             "isDailyDouble": false,
             "answered": false,
             "clueImages": [],
-            "answerImages": [],
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Mxrningstar.jpg/1280px-Mxrningstar.jpg"
+            ],
             "source": "https://en.wikipedia.org/wiki/Valentina_Tereshkova",
             "clueAudio": "/uploads/6a5aff13-107c-4c59-aefd-17aa223ebfd4.mp3"
           },
@@ -2284,7 +2286,7 @@
     "folderId": "59ef3da5-4d8f-4476-8dde-913e80fac97e",
     "timerSeconds": 45,
     "createdAt": "2026-10-30T06:16:52.052284Z",
-    "updatedAt": "2026-10-30T07:29:56.441Z"
+    "updatedAt": "2026-10-30T08:30:50.873655Z"
   },
   {
     "id": "5ba84f68-b67d-4365-af66-a83f199fd07f",
@@ -2303,7 +2305,9 @@
             "answered": false,
             "source": "https://en.wikipedia.org/wiki/Saudi_Arabia",
             "clueImages": [],
-            "answerImages": []
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/1280px-Flag_of_Saudi_Arabia.svg.png"
+            ]
           },
           {
             "id": "9dea8851-9e7d-4e0d-b7fb-2ed403a0e1b6",
@@ -2314,7 +2318,9 @@
             "answered": false,
             "source": "https://en.wikipedia.org/wiki/Cornea",
             "clueImages": [],
-            "answerImages": []
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/commons/6/61/Cornea.png"
+            ]
           },
           {
             "id": "e7995b52-7f0d-4aad-9545-aa8b02049a12",
@@ -2325,7 +2331,9 @@
             "answered": false,
             "source": "https://en.wikipedia.org/wiki/The_Landlord%27s_Game",
             "clueImages": [],
-            "answerImages": []
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Monopoly_board_on_white_bg.jpg/1280px-Monopoly_board_on_white_bg.jpg"
+            ]
           },
           {
             "id": "639e1d6c-547b-4463-a0f5-b97b1e4d97ce",
@@ -2336,7 +2344,9 @@
             "answered": false,
             "source": "https://en.wikipedia.org/wiki/Jiaozi_(currency)",
             "clueImages": [],
-            "answerImages": []
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/commons/1/1c/Hue-tzu_%28Song_Dynasty_government_issue%29%2C_1023_-_John_E._Sandrock.jpg"
+            ]
           },
           {
             "id": "7eb07bf8-9dcb-4020-b937-8fa87e53c14e",
@@ -2347,7 +2357,9 @@
             "answered": false,
             "source": "https://en.wikipedia.org/wiki/Octopus",
             "clueImages": [],
-            "answerImages": []
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Octopus2.jpg/1280px-Octopus2.jpg"
+            ]
           }
         ]
       },
@@ -2364,7 +2376,9 @@
             "answered": false,
             "source": "https://en.wikipedia.org/wiki/One_Piece",
             "clueImages": [],
-            "answerImages": [],
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/en/0/0b/Your_Name_poster.png"
+            ],
             "clueAudio": "/uploads/a3d9b487-f7f1-42c5-b704-461b1d65d063.mp3"
           },
           {
@@ -2378,7 +2392,9 @@
             "clueImages": [
               "/uploads/70a683c2-c6fe-4a00-a9d9-d15b953f54f7.webp"
             ],
-            "answerImages": []
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/en/d/d6/Shingeki_no_Kyojin_manga_volume_1.jpg"
+            ]
           },
           {
             "id": "f627b9e6-0808-4c13-b185-17971de734b8",
@@ -2389,7 +2405,9 @@
             "answered": false,
             "source": "https://en.wikipedia.org/wiki/Kurama_(Naruto)",
             "clueImages": [],
-            "answerImages": []
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Logo_Naruto_Shipp%C5%ABden.svg/1280px-Logo_Naruto_Shipp%C5%ABden.svg.png"
+            ]
           },
           {
             "id": "dafa9c09-1be9-45b2-9929-9fa049fdd5da",
@@ -2402,7 +2420,9 @@
             "clueImages": [
               "/uploads/12481084-1dea-471a-b7a5-a1f37b5103a5.jpeg"
             ],
-            "answerImages": []
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/en/4/48/Samurai_Champloo_key_art.jpg"
+            ]
           },
           {
             "id": "2af993aa-9c92-40bc-bcef-b343139cd94d",
@@ -2413,7 +2433,9 @@
             "answered": false,
             "source": "https://en.wikipedia.org/wiki/My_Neighbor_Totoro",
             "clueImages": [],
-            "answerImages": []
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/en/4/41/How_Do_You_Live_poster.jpg"
+            ]
           }
         ]
       },
@@ -2511,7 +2533,9 @@
             "answered": false,
             "source": "https://en.wikipedia.org/wiki/Tsogt_taij_(film)",
             "clueImages": [],
-            "answerImages": []
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Tsogtiin_tsagaan_baishin.JPG/1280px-Tsogtiin_tsagaan_baishin.JPG"
+            ]
           },
           {
             "id": "9baedfce-94ed-457c-8829-d97887b9e1be",
@@ -2522,7 +2546,9 @@
             "answered": false,
             "source": "https://mn.wikipedia.org/wiki/Мандухай_сэцэн_хатан_(кино)",
             "clueImages": [],
-            "answerImages": []
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/%D0%9C%D0%B0%D0%BD%D0%B4%D1%83%D1%85%D0%B0%D0%B9_%D1%81%D1%8D%D1%86%D1%8D%D0%BD_%D1%85%D0%B0%D1%82%D0%B0%D0%BD.jpg/1280px-%D0%9C%D0%B0%D0%BD%D0%B4%D1%83%D1%85%D0%B0%D0%B9_%D1%81%D1%8D%D1%86%D1%8D%D0%BD_%D1%85%D0%B0%D1%82%D0%B0%D0%BD.jpg"
+            ]
           },
           {
             "id": "21696e05-55a5-48e7-82f9-449fa5813cb7",
@@ -2548,7 +2574,9 @@
             "answered": false,
             "source": "https://en.wikipedia.org/wiki/Khadak_(2006_film)",
             "clueImages": [],
-            "answerImages": []
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/en/3/30/Khadak-2006-Brosens-Woodworth-poster.jpg"
+            ]
           },
           {
             "id": "8c32c771-80b9-41ce-bc13-a7b307199675",
@@ -2576,7 +2604,9 @@
             "answered": false,
             "source": "https://en.wikipedia.org/wiki/M%C3%B6ngke_Khan",
             "clueImages": [],
-            "answerImages": []
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/commons/4/42/M%C3%B6ngke_enthroned._Tarikh-i_Jahangushay-i_Juvaini%2C_1438%2C_Shiraz.jpg"
+            ]
           },
           {
             "id": "8381d001-bf9a-46d3-bca5-53a1481d4180",
@@ -2587,7 +2617,9 @@
             "answered": false,
             "source": "https://en.wikipedia.org/wiki/2032_Summer_Olympics",
             "clueImages": [],
-            "answerImages": []
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Brisbane_CBD_seen_from_Kangaroo_Point%2C_2024%2C_01_%282%29.jpg/1280px-Brisbane_CBD_seen_from_Kangaroo_Point%2C_2024%2C_01_%282%29.jpg"
+            ]
           },
           {
             "id": "aeec7272-6de9-4fab-80f9-6c093eae23de",
@@ -2598,7 +2630,9 @@
             "answered": false,
             "source": "https://en.wikipedia.org/wiki/English_numerals",
             "clueImages": [],
-            "answerImages": []
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/commons/a/a4/Vier.jpg"
+            ]
           },
           {
             "id": "722da273-aa53-433b-9f0b-236175593873",
@@ -2609,7 +2643,9 @@
             "answered": false,
             "source": "https://en.wikipedia.org/wiki/Chinese_zodiac",
             "clueImages": [],
-            "answerImages": []
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Chinese_black_dragon.svg/1280px-Chinese_black_dragon.svg.png"
+            ]
           },
           {
             "id": "8fc257f1-bcf8-4c67-b062-ee860c1d7cc4",
@@ -2620,7 +2656,9 @@
             "answered": false,
             "source": "https://mn.wikipedia.org/wiki/Тоо",
             "clueImages": [],
-            "answerImages": []
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Mongolian_numerals_2013.jpg/1280px-Mongolian_numerals_2013.jpg"
+            ]
           }
         ]
       },
@@ -2658,7 +2696,8 @@
                   "text": "10-р сарын 31"
                 }
               ],
-              "answer": "Хэллоуин (Halloween)"
+              "answer": "Хэллоуин (Halloween)",
+              "answerImage": "https://upload.wikimedia.org/wikipedia/commons/5/53/Balle-%C3%A0-leunettes_10.jpg"
             }
           },
           {
@@ -2691,7 +2730,8 @@
                   "text": "Дракула"
                 }
               ],
-              "answer": "Цус сорогч (Vampire)"
+              "answer": "Цус сорогч (Vampire)",
+              "answerImage": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Philip_Burne-Jones_-_The_Vampire.jpg"
             }
           },
           {
@@ -2724,7 +2764,8 @@
                   "text": "Сарьсан багваахай"
                 }
               ],
-              "answer": "Бэтмэн (Batman)"
+              "answer": "Бэтмэн (Batman)",
+              "answerImage": "https://upload.wikimedia.org/wikipedia/en/c/c7/Batman_Infobox.jpg"
             }
           },
           {
@@ -2757,7 +2798,8 @@
                   "text": "Морь, тэрэг, бэрс"
                 }
               ],
-              "answer": "Шатар (Chess)"
+              "answer": "Шатар (Chess)",
+              "answerImage": "https://upload.wikimedia.org/wikipedia/commons/6/6f/ChessSet.jpg"
             }
           },
           {
@@ -2790,7 +2832,8 @@
                   "text": "Пирамид"
                 }
               ],
-              "answer": "Египет (Egypt)"
+              "answer": "Египет (Egypt)",
+              "answerImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Pyramids_of_the_Giza_Necropolis.jpg/1280px-Pyramids_of_the_Giza_Necropolis.jpg"
             }
           }
         ],
@@ -2799,7 +2842,7 @@
     ],
     "folderId": "59ef3da5-4d8f-4476-8dde-913e80fac97e",
     "createdAt": "2026-10-30T07:30:17.997Z",
-    "updatedAt": "2026-10-30T08:05:56.426Z",
+    "updatedAt": "2026-10-30T08:32:01.904066Z",
     "timerSeconds": 45
   }
 ]
