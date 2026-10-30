@@ -90,7 +90,7 @@ function RulesModal({ onClose }: { onClose: () => void }) {
               className="flex gap-4 rounded-xl px-4 py-3"
               style={{
                 background: "rgba(255,255,255,0.05)",
-                border: "1px solid rgba(166,120,255,0.25)",
+                border: "1px solid rgba(185,166,224,0.25)",
               }}
             >
               <span className="text-2xl shrink-0 mt-0.5">{r.icon}</span>
@@ -655,8 +655,8 @@ function PlayGame({ gameId }: { gameId: string }) {
     <button
       onClick={openDisplay}
       title={displayOn ? "Үзэгчдийн дэлгэц холбогдсон" : "Проектор / үзэгчдийн дэлгэц нээх"}
-      className="rounded-lg px-3 py-1.5 mono text-[0.6rem] flex items-center gap-1.5 transition-colors hover:bg-[rgba(166,120,255,0.18)]"
-      style={{ color: "var(--cream)", background: "rgba(166,120,255,0.08)", border: `1px solid ${displayOn ? "rgba(120,240,180,0.6)" : "rgba(166,120,255,0.4)"}` }}
+      className="rounded-lg px-3 py-1.5 mono text-[0.6rem] flex items-center gap-1.5 transition-colors hover:bg-[rgba(185,166,224,0.18)]"
+      style={{ color: "var(--cream)", background: "rgba(185,166,224,0.08)", border: `1px solid ${displayOn ? "rgba(120,240,180,0.6)" : "rgba(185,166,224,0.4)"}` }}
     >
       <span className="w-1.5 h-1.5 rounded-full" style={{ background: displayOn ? "#5ef0a0" : "rgba(243,233,210,0.3)", boxShadow: displayOn ? "0 0 8px #5ef0a0" : "none" }} />
       📺 ҮЗЭГЧИД
@@ -667,8 +667,8 @@ function PlayGame({ gameId }: { gameId: string }) {
     <button
       onClick={() => setShowScores(true)}
       title="Онооны удирдлага"
-      className="rounded-lg px-3 py-1.5 mono text-[0.6rem] flex items-center gap-1.5 transition-colors hover:bg-[rgba(255,138,61,0.18)]"
-      style={{ color: "var(--gold)", background: "rgba(255,138,61,0.08)", border: "1px solid rgba(255,165,82,0.4)" }}
+      className="rounded-lg px-3 py-1.5 mono text-[0.6rem] flex items-center gap-1.5 transition-colors hover:bg-[rgba(111,177,200,0.18)]"
+      style={{ color: "var(--gold)", background: "rgba(111,177,200,0.08)", border: "1px solid rgba(169,220,236,0.4)" }}
     >
       ± ОНОО
     </button>
@@ -691,7 +691,7 @@ function PlayGame({ gameId }: { gameId: string }) {
         {showRules && <RulesModal onClose={() => setShowRules(false)} />}
         <div className="flex flex-col items-center text-center gap-4">
           <div className="relative floaty drop-in">
-            <div className="absolute inset-0 rounded-full blur-3xl" style={{ background: "radial-gradient(circle, rgba(166,120,255,0.35), transparent 65%)" }} />
+            <div className="absolute inset-0 rounded-full blur-3xl" style={{ background: "radial-gradient(circle, rgba(185,166,224,0.35), transparent 65%)" }} />
             <div className="logo-orbit" />
             <div className="logo-orbit reverse" />
             <Image src="/astro-nots.png" width={480} height={480} priority alt="Astro-Nots"
@@ -744,7 +744,7 @@ function PlayGame({ gameId }: { gameId: string }) {
                   className="flex items-center justify-between px-4 py-2 rounded"
                   style={{
                     background: "rgba(255,255,255,0.05)",
-                    border: "1px solid rgba(166,120,255,0.4)",
+                    border: "1px solid rgba(185,166,224,0.4)",
                   }}
                 >
                   <div className="flex items-center gap-3">
@@ -813,9 +813,9 @@ function PlayGame({ gameId }: { gameId: string }) {
                   onClick={() => setScreenMode(o.m)}
                   className="rounded-xl p-3 text-left transition-all"
                   style={{
-                    background: on ? "linear-gradient(160deg,rgba(255,138,61,0.18),rgba(255,255,255,0.03))" : "rgba(255,255,255,0.03)",
-                    border: `1px solid ${on ? "rgba(255,165,82,0.7)" : "var(--glass-border)"}`,
-                    boxShadow: on ? "0 0 20px rgba(255,138,61,0.2)" : "none",
+                    background: on ? "linear-gradient(160deg,rgba(111,177,200,0.18),rgba(255,255,255,0.03))" : "rgba(255,255,255,0.03)",
+                    border: `1px solid ${on ? "rgba(169,220,236,0.7)" : "var(--glass-border)"}`,
+                    boxShadow: on ? "0 0 20px rgba(111,177,200,0.2)" : "none",
                   }}
                 >
                   <span className="text-lg">{o.icon}</span>
@@ -840,9 +840,9 @@ function PlayGame({ gameId }: { gameId: string }) {
             className="w-full mt-3 py-2 rounded-full text-sm tracking-widest transition-all hover:opacity-80"
             style={{
               fontFamily: "var(--font-mono)",
-              border: "1px solid rgba(166,120,255,0.4)",
+              border: "1px solid rgba(185,166,224,0.4)",
               color: "rgba(243,233,210,0.7)",
-              background: "rgba(166,120,255,0.06)",
+              background: "rgba(185,166,224,0.06)",
               letterSpacing: "0.15em",
               fontSize: "0.7rem",
             }}
@@ -940,7 +940,7 @@ function PlayGame({ gameId }: { gameId: string }) {
                   fontSize: "clamp(0.55rem, 1.35vw, 1.5rem)",
                   ...(isConnectCategory(cat) && {
                     borderBottomColor: "var(--teal)",
-                    background: "linear-gradient(180deg, rgba(166,120,255,0.22), rgba(255,255,255,0.03))",
+                    background: "linear-gradient(180deg, rgba(185,166,224,0.22), rgba(255,255,255,0.03))",
                   }),
                 }}>
                 {isConnectCategory(cat) && <span style={{ color: "var(--teal)" }}>✦</span>}
@@ -980,7 +980,7 @@ function PlayGame({ gameId }: { gameId: string }) {
                       onClick={() => reopenQuestion(cat.id, q)}
                       title="Санамсаргүй хаасан бол дахин нээх"
                       className="absolute inset-0 m-auto w-fit h-fit rounded-lg px-3 py-1.5 mono text-[0.6rem] opacity-0 group-hover:opacity-100 focus:opacity-100 transition-opacity"
-                      style={{ color: "var(--cream)", background: "rgba(10,5,16,0.8)", border: "1px solid var(--glass-border-hi)" }}
+                      style={{ color: "var(--cream)", background: "rgba(8,12,20,0.8)", border: "1px solid var(--glass-border-hi)" }}
                     >
                       ↺ ДАХИН НЭЭХ
                     </button>
@@ -999,7 +999,7 @@ function PlayGame({ gameId }: { gameId: string }) {
             style={{ "--cols": `repeat(${Math.max(players.length, 1)}, minmax(0, 1fr))` } as CSSProperties}>
             {players.map((p) => (
               <button key={p.id} onClick={() => setShowScores(true)} title="Оноо засах"
-                className="score-chip rounded-xl px-3 py-1.5 flex items-center justify-between gap-2 min-w-0 text-left transition-colors hover:border-[rgba(255,165,82,0.5)]">
+                className="score-chip rounded-xl px-3 py-1.5 flex items-center justify-between gap-2 min-w-0 text-left transition-colors hover:border-[rgba(169,220,236,0.5)]">
                 <span className="truncate text-xs sm:text-sm font-semibold" style={{ color: "var(--cream)", fontFamily: "var(--font-body)" }}>
                   {p.name}
                 </span>
@@ -1083,7 +1083,7 @@ function PlayGame({ gameId }: { gameId: string }) {
             style={{ width: 44, height: 44, opacity: timerState === "idle" ? 0.7 : 1 }}
           >
             <svg width="44" height="44" viewBox="0 0 64 64" style={{ position: "absolute", top: 0, left: 0, transform: "rotate(-90deg)" }}>
-              <circle cx="32" cy="32" r="28" fill="none" stroke="rgba(166,120,255,0.2)" strokeWidth="4" />
+              <circle cx="32" cy="32" r="28" fill="none" stroke="rgba(185,166,224,0.2)" strokeWidth="4" />
               <circle
                 cx="32" cy="32" r="28" fill="none"
                 stroke={timeLeft <= 10 ? "#ff4422" : timeLeft <= 20 ? "#ffaa00" : "var(--sp-blue)"}
@@ -1138,7 +1138,7 @@ function PlayGame({ gameId }: { gameId: string }) {
               <ImageRow
                 images={getClueImages(q)}
                 borderColor="var(--sp-blue)"
-                glowColor="rgba(166,120,255,0.4)"
+                glowColor="rgba(185,166,224,0.4)"
               />
               {q.clueAudio && (
                 <div className="w-full max-w-sm">
@@ -1167,7 +1167,7 @@ function PlayGame({ gameId }: { gameId: string }) {
                     fontFamily: "var(--font-body)",
                     fontSize: `calc(${textSize(q.answer, getAnswerImages(q).length > 0)} * var(--fit, 1))`, lineHeight: 1.2,
                     color: "var(--gold)",
-                    textShadow: "0 0 20px rgba(255,138,61,0.4)",
+                    textShadow: "0 0 20px rgba(111,177,200,0.4)",
                   }}
                 >
                   {q.answer}
@@ -1176,7 +1176,7 @@ function PlayGame({ gameId }: { gameId: string }) {
               <ImageRow
                 images={getAnswerImages(q)}
                 borderColor="var(--gold)"
-                glowColor="rgba(255,138,61,0.3)"
+                glowColor="rgba(111,177,200,0.3)"
               />
               {q.answerAudio && (
                 <div className="w-full max-w-sm">
@@ -1207,7 +1207,7 @@ function PlayGame({ gameId }: { gameId: string }) {
                 !q.answerAudio && (
                   <p
                     className="retro-title text-3xl tracking-widest"
-                    style={{ color: "rgba(255,138,61,0.3)" }}
+                    style={{ color: "rgba(111,177,200,0.3)" }}
                   >
                     (NO ANSWER SET)
                   </p>
@@ -1296,16 +1296,16 @@ function PlayGame({ gameId }: { gameId: string }) {
                         background:
                           buzzed === p.id
                             ? "var(--gold)"
-                            : "rgba(166,120,255,0.14)",
-                        color: buzzed === p.id ? "#1a0b04" : "white",
+                            : "rgba(185,166,224,0.14)",
+                        color: buzzed === p.id ? "#0b1a22" : "white",
                         border:
                           buzzed === p.id
-                            ? "1px solid rgba(255,214,170,0.7)"
-                            : "1px solid rgba(166,120,255,0.45)",
+                            ? "1px solid rgba(200,230,242,0.7)"
+                            : "1px solid rgba(185,166,224,0.45)",
                         boxShadow:
                           buzzed === p.id
-                            ? "0 0 16px rgba(255,138,61,0.5)"
-                            : "0 0 8px rgba(166,120,255,0.3)",
+                            ? "0 0 16px rgba(111,177,200,0.5)"
+                            : "0 0 8px rgba(185,166,224,0.3)",
                       }}
                     >
                       {p.name}
@@ -1452,7 +1452,7 @@ function PlayGame({ gameId }: { gameId: string }) {
                 className="w-full px-4 py-2 rounded text-[var(--cream)]  focus:outline-none"
                 style={{
                   background: "rgba(255,255,255,0.05)",
-                  border: "2px solid rgba(255,138,61,0.5)",
+                  border: "2px solid rgba(111,177,200,0.5)",
                   fontFamily: "var(--font-body)",
                   fontSize: "1rem",
                 }}
@@ -1495,7 +1495,7 @@ function PlayGame({ gameId }: { gameId: string }) {
                     className="flex-1 min-w-0 px-3 py-2 rounded text-[var(--cream)] focus:outline-none"
                     style={{
                       background: "rgba(255,255,255,0.05)",
-                      border: "2px solid rgba(166,120,255,0.4)",
+                      border: "2px solid rgba(185,166,224,0.4)",
                       fontFamily: "var(--font-mono)",
                     }}
                   />
@@ -1563,7 +1563,7 @@ function PlayGame({ gameId }: { gameId: string }) {
               fontFamily: "var(--font-body)",
               fontSize: "clamp(2rem,5vw,4rem)",
               color: "var(--gold)",
-              textShadow: "0 0 24px rgba(255,138,61,0.4)",
+              textShadow: "0 0 24px rgba(111,177,200,0.4)",
             }}
           >
             {finalAnswer}
@@ -1680,7 +1680,7 @@ function PlayGame({ gameId }: { gameId: string }) {
                 animationDelay: i === 0 ? `${(sorted.length - 1) * 0.35 + 0.3}s, ${(sorted.length - 1) * 0.35 + 0.8}s` : `${(sorted.length - 1 - i) * 0.35}s`,
                 background:
                   i === 0
-                    ? "linear-gradient(90deg,rgba(166,120,255,0.12),rgba(255,138,61,0.14))"
+                    ? "linear-gradient(90deg,rgba(185,166,224,0.12),rgba(111,177,200,0.14))"
                     : "var(--bg-card)",
                 border:
                   i === 0
@@ -1688,8 +1688,8 @@ function PlayGame({ gameId }: { gameId: string }) {
                     : "1px solid var(--sp-blue)",
                 boxShadow:
                   i === 0
-                    ? "0 0 24px rgba(255,138,61,0.2), 0 0 8px rgba(166,120,255,0.3)"
-                    : "0 0 8px rgba(166,120,255,0.15)",
+                    ? "0 0 24px rgba(111,177,200,0.2), 0 0 8px rgba(185,166,224,0.3)"
+                    : "0 0 8px rgba(185,166,224,0.15)",
               }}
             >
               <span

@@ -106,7 +106,7 @@ export default function ScorePanel(props: Props) {
       <aside
         className="h-full w-full sm:w-[440px] flex flex-col"
         style={{
-          background: "rgba(20,10,30,0.82)",
+          background: "rgba(14,20,32,0.82)",
           borderLeft: "1px solid var(--glass-border-hi)",
           backdropFilter: "blur(28px) saturate(150%)",
           WebkitBackdropFilter: "blur(28px) saturate(150%)",
@@ -135,9 +135,9 @@ export default function ScorePanel(props: Props) {
                   onClick={() => { setStep(s); setCustomStep(""); }}
                   className="retro-title rounded-lg px-3 py-1.5 text-sm transition-all"
                   style={{
-                    color: on ? "#1a0b04" : "var(--gold)",
-                    background: on ? "linear-gradient(135deg,#ffb066,var(--orange))" : "rgba(255,255,255,0.04)",
-                    border: `1px solid ${on ? "rgba(255,214,170,0.7)" : "var(--glass-border)"}`,
+                    color: on ? "#0b1a22" : "var(--gold)",
+                    background: on ? "linear-gradient(135deg,#c4e8f2,var(--orange))" : "rgba(255,255,255,0.04)",
+                    border: `1px solid ${on ? "rgba(200,230,242,0.7)" : "var(--glass-border)"}`,
                   }}
                 >
                   {s}
@@ -151,8 +151,8 @@ export default function ScorePanel(props: Props) {
               inputMode="numeric"
               className="w-16 rounded-lg px-2 py-1.5 text-sm text-center focus:outline-none mono"
               style={{
-                background: customStep ? "rgba(255,138,61,0.15)" : "rgba(255,255,255,0.04)",
-                border: `1px solid ${customStep ? "rgba(255,165,82,0.6)" : "var(--glass-border)"}`,
+                background: customStep ? "rgba(111,177,200,0.15)" : "rgba(255,255,255,0.04)",
+                border: `1px solid ${customStep ? "rgba(169,220,236,0.6)" : "var(--glass-border)"}`,
                 color: "var(--cream)",
               }}
             />
@@ -170,7 +170,7 @@ export default function ScorePanel(props: Props) {
               <div key={p.id} className="group rounded-2xl p-3"
                 style={{
                   background: "linear-gradient(160deg,rgba(255,255,255,0.07),rgba(255,255,255,0.02))",
-                  border: `1px solid ${rank === 0 && p.score > 0 ? "rgba(255,165,82,0.5)" : "var(--glass-border)"}`,
+                  border: `1px solid ${rank === 0 && p.score > 0 ? "rgba(169,220,236,0.5)" : "var(--glass-border)"}`,
                 }}>
                 <div className="flex items-center gap-2 mb-2.5">
                   <span className="retro-title text-xs w-6 text-center" style={{ color: rank === 0 ? "var(--gold)" : "rgba(243,233,210,0.4)" }}>

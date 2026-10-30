@@ -48,7 +48,7 @@ export default function AudienceView({ s, fx }: { s: DisplaySnapshot; fx: Displa
 function Logo({ size = 380 }: { size?: number }) {
   return (
     <div className="relative floaty drop-in">
-      <div className="absolute inset-0 rounded-full blur-3xl" style={{ background: "radial-gradient(circle, rgba(166,120,255,0.35), transparent 65%)" }} />
+      <div className="absolute inset-0 rounded-full blur-3xl" style={{ background: "radial-gradient(circle, rgba(185,166,224,0.35), transparent 65%)" }} />
       <div className="logo-orbit" />
       <div className="logo-orbit reverse" />
       <Image src="/astro-nots.png" width={size} height={size} alt="" priority
@@ -69,8 +69,8 @@ function ScoreDock({ players, buzzed, wrong }: { players: Player[]; buzzed: stri
           return (
             <div key={p.id} className="score-chip rounded-2xl px-4 py-2 flex items-center justify-between gap-3 min-w-0 transition-all"
               style={{
-                borderColor: on ? "rgba(255,165,82,0.9)" : undefined,
-                boxShadow: on ? "0 0 30px rgba(255,138,61,0.45)" : undefined,
+                borderColor: on ? "rgba(169,220,236,0.9)" : undefined,
+                boxShadow: on ? "0 0 30px rgba(111,177,200,0.45)" : undefined,
                 opacity: out ? 0.45 : 1,
               }}>
               <span className="truncate title-mixed" style={{ color: "var(--cream)", fontSize: "clamp(0.9rem, 1.6vw, 1.6rem)" }}>
@@ -123,7 +123,7 @@ function Board({ s }: { s: DisplaySnapshot }) {
               style={{
                 animationDelay: `${ci * 60}ms`,
                 fontSize: "clamp(0.7rem, 1.3vw, 1.4rem)",
-                ...(isConnectCategory(cat) && { borderBottomColor: "var(--teal)", background: "linear-gradient(180deg, rgba(166,120,255,0.22), rgba(255,255,255,0.03))" }),
+                ...(isConnectCategory(cat) && { borderBottomColor: "var(--teal)", background: "linear-gradient(180deg, rgba(185,166,224,0.22), rgba(255,255,255,0.03))" }),
               }}>
               {isConnectCategory(cat) && <span style={{ color: "var(--teal)" }}>✦</span>}
               {cat.name.toUpperCase()}
@@ -163,7 +163,7 @@ function TimerRing({ left, total, state }: { left: number; total: number; state:
     <div className={`relative flex items-center justify-center ${state === "running" && left > 0 && left <= 10 ? "urgent" : ""}`}
       style={{ width: 76, height: 76, opacity: state === "idle" ? 0.45 : 1 }}>
       <svg width="76" height="76" viewBox="0 0 64 64" style={{ position: "absolute", inset: 0, transform: "rotate(-90deg)" }}>
-        <circle cx="32" cy="32" r={r} fill="none" stroke="rgba(166,120,255,0.2)" strokeWidth="4" />
+        <circle cx="32" cy="32" r={r} fill="none" stroke="rgba(185,166,224,0.2)" strokeWidth="4" />
         <circle cx="32" cy="32" r={r} fill="none" stroke={color} strokeWidth="4" strokeLinecap="round"
           strokeDasharray={c} strokeDashoffset={c * (1 - left / Math.max(total, 1))}
           style={{ transition: "stroke-dashoffset 0.9s linear, stroke 0.3s" }} />
@@ -217,7 +217,7 @@ function Clue({ s }: { s: DisplaySnapshot }) {
         <div className="shrink-0 flex flex-wrap justify-center gap-3 pb-3">
           {buzzed && !s.showAnswer && (
             <span className="rise-in rounded-2xl px-6 py-2.5 title-mixed text-2xl pill-pulse"
-              style={{ background: "var(--gold)", color: "#1a0b04" }}>🔔 {buzzed.name}</span>
+              style={{ background: "var(--gold)", color: "#0b1a22" }}>🔔 {buzzed.name}</span>
           )}
           {s.wrongPlayers.map((id) => {
             const p = s.players.find((x) => x.id === id);
@@ -290,7 +290,7 @@ function Connect({ s }: { s: DisplaySnapshot }) {
           ))}
         </div>
         {done && (
-          <div className="flip-in glass rounded-3xl px-6 py-5 flex items-center justify-center gap-6 text-center shrink-0" style={{ borderColor: "rgba(255,165,82,0.5)" }}>
+          <div className="flip-in glass rounded-3xl px-6 py-5 flex items-center justify-center gap-6 text-center shrink-0" style={{ borderColor: "rgba(169,220,236,0.5)" }}>
             {data.answerImage && (
               <div className="relative w-36 h-24 rounded-xl overflow-hidden shrink-0" style={{ border: "1px solid var(--glass-border-hi)" }}>
                 <Image src={data.answerImage} alt="" fill className="object-cover" unoptimized />
@@ -311,7 +311,7 @@ function Connect({ s }: { s: DisplaySnapshot }) {
         )}
         {!done && (buzzed || st.wrong.length > 0) && (
           <div className="shrink-0 flex flex-wrap justify-center gap-3">
-            {buzzed && <span className="rounded-2xl px-6 py-2 title-mixed text-2xl pill-pulse" style={{ background: "var(--gold)", color: "#1a0b04" }}>🔔 {buzzed.name}</span>}
+            {buzzed && <span className="rounded-2xl px-6 py-2 title-mixed text-2xl pill-pulse" style={{ background: "var(--gold)", color: "#0b1a22" }}>🔔 {buzzed.name}</span>}
             {st.wrong.map((id) => {
               const p = s.players.find((x) => x.id === id);
               return p ? (

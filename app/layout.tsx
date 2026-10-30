@@ -1,21 +1,18 @@
 import type { Metadata } from "next";
-import { Tektur, Play, JetBrains_Mono } from "next/font/google";
+import { Cormorant_Garamond, Play, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import HalloweenDecor from "@/components/HalloweenDecor";
+import GothicDecor from "@/components/GothicDecor";
 
-// Tektur — retro-futuristic display face that matches the Astro-Nots wordmark.
-// Loaded for LATIN ONLY: its Cyrillic З/Э look like "3" and Ө like "0", so any
-// Mongolian text in a heading falls through to Play (see --font-display in globals.css).
-const display = Tektur({
-  subsets: ["latin"],
-  weight: ["500", "600", "700", "800", "900"],
-  variable: "--font-tektur",
+// Cormorant Garamond — tall Victorian serif for the "Corpse Bride" look.
+// Includes cyrillic-ext, so Mongolian Ө and Ү render in the same face as the rest of a heading.
+const display = Cormorant_Garamond({
+  subsets: ["latin", "cyrillic", "cyrillic-ext"],
+  weight: ["500", "600", "700"],
+  variable: "--font-gothic",
   display: "swap",
-  adjustFontFallback: false,
 });
 
-// Play — futuristic face with full Mongolian Cyrillic (Ө, Ү). Used for body text
-// and as the fallback for any Cyrillic inside Tektur headings.
+// Play — full Mongolian Cyrillic (Ө, Ү). Used for body text and user-entered clues.
 const body = Play({
   subsets: ["latin", "cyrillic", "cyrillic-ext"],
   weight: ["400", "700"],
@@ -39,7 +36,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="mn" className={`${display.variable} ${body.variable} ${mono.variable}`}>
       <body>
-        <HalloweenDecor />
+        <GothicDecor />
         {children}
       </body>
     </html>

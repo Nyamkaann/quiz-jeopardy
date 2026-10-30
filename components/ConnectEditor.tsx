@@ -87,7 +87,7 @@ export default function ConnectEditor({
                 onChange={(e) => patch({ answer: e.target.value })}
                 placeholder="Жишээ: Нарны аймгийн гаригууд"
                 className="w-full px-4 py-3 rounded-xl text-lg focus:outline-none title-mixed"
-                style={{ ...inputStyle, border: "1px solid rgba(255,165,82,0.5)" }}
+                style={{ ...inputStyle, border: "1px solid rgba(169,220,236,0.5)" }}
               />
               <label className="mono text-[0.6rem] block mt-3 mb-1" style={{ color: "var(--gold)" }}>ЯАГААД? (ТАЙЛБАР)</label>
               <textarea
@@ -96,7 +96,7 @@ export default function ConnectEditor({
                 onChange={(e) => patch({ explanation: e.target.value })}
                 placeholder="Сэжүүр бүр хариулттай хэрхэн холбогдохыг товч тайлбарлана"
                 className="w-full px-4 py-2 rounded-xl text-sm focus:outline-none resize-y"
-                style={{ ...inputStyle, border: "1px solid rgba(255,165,82,0.5)" }}
+                style={{ ...inputStyle, border: "1px solid rgba(169,220,236,0.5)" }}
               />
             </div>
             <div className="w-full md:w-56">
@@ -126,7 +126,7 @@ function ClueSlot({
       className="rounded-xl p-3 flex flex-col gap-2"
       style={{
         background: "rgba(255,255,255,0.03)",
-        border: `1px solid ${empty ? "var(--glass-border)" : "rgba(166,120,255,0.45)"}`,
+        border: `1px solid ${empty ? "var(--glass-border)" : "rgba(185,166,224,0.45)"}`,
       }}
     >
       <div className="flex items-center justify-between">
@@ -172,7 +172,7 @@ export function MediaPick({
 
   if (url) {
     return (
-      <div className="relative group rounded-lg overflow-hidden" style={{ border: "1px solid rgba(166,120,255,0.4)" }}>
+      <div className="relative group rounded-lg overflow-hidden" style={{ border: "1px solid rgba(185,166,224,0.4)" }}>
         {kind === "image" ? (
           <div className="relative h-20">
             <Image src={url} alt={label} fill className="object-contain" unoptimized />
@@ -216,7 +216,7 @@ export function MediaPick({
       <button
         onClick={() => ref.current?.click()}
         disabled={busy}
-        className="px-2 py-1.5 mono text-[0.6rem] shrink-0 transition-colors hover:bg-[rgba(166,120,255,0.12)]"
+        className="px-2 py-1.5 mono text-[0.6rem] shrink-0 transition-colors hover:bg-[rgba(185,166,224,0.12)]"
         style={{ color: "rgba(243,233,210,0.7)", borderRight: "1px solid var(--glass-border)" }}
       >
         {busy ? "..." : kind === "image" ? "🖼 " + label : "🔊 " + label}

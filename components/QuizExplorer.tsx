@@ -387,7 +387,7 @@ export default function QuizExplorer() {
       {/* inline create */}
       {creating && (
         <div className="drop-in mx-5 sm:mx-7 mt-4 rounded-2xl p-3 sm:p-4 flex flex-col sm:flex-row gap-3"
-          style={{ background: "rgba(166,120,255,0.08)", border: "1px solid rgba(166,120,255,0.3)" }}>
+          style={{ background: "rgba(185,166,224,0.08)", border: "1px solid rgba(185,166,224,0.3)" }}>
           <span className="self-center text-xl hidden sm:block">{creating === "folder" ? "📁" : "🪐"}</span>
           <input
             autoFocus
@@ -452,10 +452,10 @@ export default function QuizExplorer() {
                       style={{
                         ...delay(),
                         background: hot
-                          ? "linear-gradient(160deg,rgba(255,138,61,0.22),rgba(255,255,255,0.04))"
-                          : "linear-gradient(160deg,rgba(166,120,255,0.12),rgba(255,255,255,0.02))",
-                        border: `1px solid ${hot ? "rgba(255,165,82,0.8)" : "rgba(166,120,255,0.3)"}`,
-                        boxShadow: hot ? "0 0 30px rgba(255,138,61,0.3)" : undefined,
+                          ? "linear-gradient(160deg,rgba(111,177,200,0.22),rgba(255,255,255,0.04))"
+                          : "linear-gradient(160deg,rgba(185,166,224,0.12),rgba(255,255,255,0.02))",
+                        border: `1px solid ${hot ? "rgba(169,220,236,0.8)" : "rgba(185,166,224,0.3)"}`,
+                        boxShadow: hot ? "0 0 30px rgba(111,177,200,0.3)" : undefined,
                       }}
                     >
                       <FolderIcon open={hot} />
@@ -509,7 +509,7 @@ export default function QuizExplorer() {
                   >
                     <div className="flex items-center gap-4 min-w-0">
                       <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0 text-xl"
-                        style={{ background: "linear-gradient(135deg,rgba(166,120,255,0.25),rgba(255,138,61,0.2))", border: "1px solid var(--glass-border-hi)" }}>
+                        style={{ background: "linear-gradient(135deg,rgba(185,166,224,0.25),rgba(111,177,200,0.2))", border: "1px solid var(--glass-border-hi)" }}>
                         🪐
                       </div>
                       <div className="flex-1 min-w-0">
@@ -589,8 +589,8 @@ function Crumb({
       className="rounded-lg px-2 py-1 transition-colors truncate max-w-[12rem]"
       style={{
         color: active ? "var(--gold)" : "rgba(243,233,210,0.7)",
-        background: hot ? "rgba(255,138,61,0.25)" : active ? "rgba(255,138,61,0.08)" : "transparent",
-        border: `1px solid ${hot ? "rgba(255,165,82,0.8)" : "transparent"}`,
+        background: hot ? "rgba(111,177,200,0.25)" : active ? "rgba(111,177,200,0.08)" : "transparent",
+        border: `1px solid ${hot ? "rgba(169,220,236,0.8)" : "transparent"}`,
       }}
     >
       {label}
@@ -608,7 +608,7 @@ function IconBtn({ children, title, danger, onClick }: { children: React.ReactNo
       }}
       className="w-7 h-7 rounded-lg flex items-center justify-center text-sm"
       style={{
-        background: danger ? "rgba(242,72,63,0.2)" : "rgba(10,5,16,0.7)",
+        background: danger ? "rgba(242,72,63,0.2)" : "rgba(8,12,20,0.7)",
         border: `1px solid ${danger ? "rgba(242,72,63,0.5)" : "var(--glass-border-hi)"}`,
         color: danger ? "#ff8a83" : "var(--cream)",
       }}
@@ -623,13 +623,13 @@ function FolderIcon({ open }: { open?: boolean }) {
     <svg width="44" height="36" viewBox="0 0 44 36" aria-hidden className="transition-transform" style={{ transform: open ? "scale(1.08)" : undefined }}>
       <defs>
         <linearGradient id="fold" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stopColor="#a678ff" />
-          <stop offset="1" stopColor="#6b3fb8" />
+          <stop offset="0" stopColor="#b9a6e0" />
+          <stop offset="1" stopColor="#6d5aa6" />
         </linearGradient>
       </defs>
       <path d="M2 6a4 4 0 0 1 4-4h10l4 4h18a4 4 0 0 1 4 4v20a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z" fill="url(#fold)" opacity="0.9" />
-      <path d={open ? "M2 14h40l-3 16a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z" : "M2 12h40v18a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"} fill="#d6c2ff" opacity="0.35" />
-      <circle cx="34" cy="22" r="3" fill="#ff8a3d" />
+      <path d={open ? "M2 14h40l-3 16a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z" : "M2 12h40v18a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"} fill="#ded4f2" opacity="0.35" />
+      <circle cx="34" cy="22" r="3" fill="#6fb1c8" />
     </svg>
   );
 }
@@ -675,7 +675,7 @@ function MoveDialog({
         key={id ?? "root"}
         disabled={disabled}
         onClick={() => onPick(id)}
-        className="w-full text-left rounded-xl px-3 py-2.5 flex items-center gap-2 transition-colors hover:bg-[rgba(166,120,255,0.12)] disabled:opacity-30 disabled:hover:bg-transparent"
+        className="w-full text-left rounded-xl px-3 py-2.5 flex items-center gap-2 transition-colors hover:bg-[rgba(185,166,224,0.12)] disabled:opacity-30 disabled:hover:bg-transparent"
         style={{ paddingLeft: 12 + depth * 20, color: "var(--cream)" }}
       >
         <span>{id ? "📁" : "🏠"}</span>
@@ -763,8 +763,8 @@ function BackupDialog({ onClose }: { onClose: () => void }) {
             <button key={k} onClick={() => setKind(k)}
               className="rounded-lg px-3 py-1.5 mono text-[0.65rem]"
               style={{
-                color: kind === k ? "#1a0b04" : "var(--cream)",
-                background: kind === k ? "linear-gradient(135deg,#ffb066,var(--orange))" : "rgba(255,255,255,0.04)",
+                color: kind === k ? "#0b1a22" : "var(--cream)",
+                background: kind === k ? "linear-gradient(135deg,#c4e8f2,var(--orange))" : "rgba(255,255,255,0.04)",
                 border: "1px solid var(--glass-border)",
               }}>
               {k === "games" ? "QUIZ" : "FOLDER"}

@@ -165,7 +165,7 @@ export default function ConnectRound({
 
         {done && (
           <div className="flip-in glass rounded-3xl px-6 py-5 flex flex-col sm:flex-row items-center justify-center gap-5 text-center shrink-0"
-            style={{ borderColor: "rgba(255,165,82,0.5)" }}>
+            style={{ borderColor: "rgba(169,220,236,0.5)" }}>
             {q.answerImage && (
               <div className="relative w-28 h-20 rounded-xl overflow-hidden shrink-0" style={{ border: "1px solid var(--glass-border-hi)" }}>
                 <Image src={q.answerImage} alt="answer" fill className="object-cover" unoptimized />
@@ -235,10 +235,10 @@ export default function ConnectRound({
                       style={{
                         fontFamily: "var(--font-body)",
                         fontWeight: 700,
-                        background: on ? "var(--gold)" : "rgba(166,120,255,0.12)",
-                        color: on ? "#1a0b04" : "var(--cream)",
-                        border: on ? "1px solid rgba(255,214,170,0.8)" : "1px solid rgba(166,120,255,0.4)",
-                        boxShadow: on ? "0 0 20px rgba(255,138,61,0.45)" : "none",
+                        background: on ? "var(--gold)" : "rgba(185,166,224,0.12)",
+                        color: on ? "#0b1a22" : "var(--cream)",
+                        border: on ? "1px solid rgba(200,230,242,0.8)" : "1px solid rgba(185,166,224,0.4)",
+                        boxShadow: on ? "0 0 20px rgba(111,177,200,0.45)" : "none",
                       }}
                     >
                       {p.name}
@@ -314,11 +314,11 @@ export function PointsLadder({ current, max = CONNECT_POINTS.length, compact }: 
             <span
               className={`retro-title rounded-lg px-3 py-1 text-sm sm:text-base transition-all ${active ? "pill-pulse" : ""}`}
               style={{
-                color: active ? "#1a0b04" : past ? "rgba(243,233,210,0.25)" : "var(--gold)",
-                background: active ? "linear-gradient(135deg,#ffb066,var(--orange))" : "rgba(255,255,255,0.04)",
-                border: `1px solid ${active ? "rgba(255,214,170,0.7)" : "var(--glass-border)"}`,
+                color: active ? "#0b1a22" : past ? "rgba(243,233,210,0.25)" : "var(--gold)",
+                background: active ? "linear-gradient(135deg,#c4e8f2,var(--orange))" : "rgba(255,255,255,0.04)",
+                border: `1px solid ${active ? "rgba(200,230,242,0.7)" : "var(--glass-border)"}`,
                 textDecoration: past ? "line-through" : "none",
-                boxShadow: active ? "0 0 20px rgba(255,138,61,0.35)" : "none",
+                boxShadow: active ? "0 0 20px rgba(111,177,200,0.35)" : "none",
               }}
             >
               {pt}
@@ -365,15 +365,15 @@ export function ClueCard({
       className="card-flip relative rounded-2xl overflow-hidden flex flex-col min-h-32"
       style={{
         background: "linear-gradient(160deg, rgba(255,255,255,0.09), rgba(255,255,255,0.025))",
-        border: `1px solid ${latest ? "rgba(255,165,82,0.7)" : "var(--glass-border-hi)"}`,
+        border: `1px solid ${latest ? "rgba(169,220,236,0.7)" : "var(--glass-border-hi)"}`,
         backdropFilter: "var(--blur)",
         WebkitBackdropFilter: "var(--blur)",
-        boxShadow: latest ? "0 0 0 1px rgba(255,165,82,0.25), 0 12px 48px rgba(255,138,61,0.22)" : "0 10px 40px rgba(0,0,0,0.3)",
+        boxShadow: latest ? "0 0 0 1px rgba(169,220,236,0.25), 0 12px 48px rgba(111,177,200,0.22)" : "0 10px 40px rgba(0,0,0,0.3)",
       }}
     >
       <span
         className="absolute top-2 left-2 z-10 retro-title text-xs rounded-md px-2 py-0.5"
-        style={{ background: "rgba(10,5,16,0.7)", border: "1px solid var(--glass-border)", color: latest ? "var(--gold)" : "var(--cream)" }}
+        style={{ background: "rgba(8,12,20,0.7)", border: "1px solid var(--glass-border)", color: latest ? "var(--gold)" : "var(--cream)" }}
       >
         {index + 1}
       </span>
@@ -412,7 +412,7 @@ export function ClueCard({
       )}
 
       {showNote && clue.note && (
-        <div className="flip-in shrink-0 px-3 py-2 text-center" style={{ background: "rgba(166,120,255,0.12)", borderTop: "1px solid rgba(166,120,255,0.35)" }}>
+        <div className="flip-in shrink-0 px-3 py-2 text-center" style={{ background: "rgba(185,166,224,0.12)", borderTop: "1px solid rgba(185,166,224,0.35)" }}>
           <p style={{ color: "var(--teal)", fontSize: "clamp(0.8rem, 1.1vw, 1.15rem)", lineHeight: 1.3 }}>{clue.note}</p>
         </div>
       )}
