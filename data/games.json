@@ -1,417 +1,5 @@
 [
   {
-    "id": "7cceeb78-2a4f-44f5-8b6b-741cae7ecb32",
-    "title": "Тест Round",
-    "folderId": "84a2dc68-72ed-4b3a-a5f8-e488c576c7cf",
-    "categories": [
-      {
-        "id": "64e3d54c-9b4d-4d72-b456-1281edef89d2",
-        "name": "Сансар",
-        "questions": [
-          {
-            "id": "c6b4dec1-49cd-4cef-985c-315d9e918f1e",
-            "value": 100,
-            "clue": "Нарны аймгийн хамгийн том гариг аль вэ?",
-            "answer": "Бархасбадь",
-            "isDailyDouble": false,
-            "answered": false
-          },
-          {
-            "id": "3ff083bb-56b5-49fe-ae99-a6c832be8cca",
-            "value": 200,
-            "clue": "Дэлхийн цорын ганц байгалийн дагуул юу вэ?",
-            "answer": "Сар",
-            "isDailyDouble": false,
-            "answered": false
-          },
-          {
-            "id": "d684948a-fba7-4b57-8ba4-c28b98f13d6c",
-            "value": 300,
-            "clue": "Сансарт ниссэн анхны хүн хэн бэ?",
-            "answer": "Юрий Гагарин (1961)",
-            "isDailyDouble": false,
-            "answered": false
-          },
-          {
-            "id": "f57f6a4d-fa04-47d6-a81d-4367264e799c",
-            "value": 400,
-            "clue": "Монголын анхны сансрын нисгэгч хэн бэ?",
-            "answer": "Жүгдэрдэмидийн Гүррагчаа (1981)",
-            "isDailyDouble": false,
-            "answered": false
-          },
-          {
-            "id": "f11b6a01-eb19-41e3-ba30-6d351ffa3248",
-            "value": 500,
-            "clue": "Нарны аймгийн хамгийн халуун гариг аль вэ?",
-            "answer": "Сугар",
-            "isDailyDouble": false,
-            "answered": false
-          }
-        ]
-      },
-      {
-        "id": "2888f91a-63fd-4090-ab2b-6707549ea791",
-        "name": "Монгол",
-        "questions": [
-          {
-            "id": "879f11ff-2ab9-4c4a-88ad-a7048887da05",
-            "value": 100,
-            "clue": "Монгол Улсын нийслэл хот аль вэ?",
-            "answer": "Улаанбаатар",
-            "isDailyDouble": false,
-            "answered": false
-          },
-          {
-            "id": "7837a07e-869f-4583-a1e5-80450654724a",
-            "value": 200,
-            "clue": "Их Монгол Улс хэдэн онд байгуулагдсан бэ?",
-            "answer": "1206 он",
-            "isDailyDouble": false,
-            "answered": false
-          },
-          {
-            "id": "0c38845a-bffc-43a4-9e4c-537cf9e3eecf",
-            "value": 300,
-            "clue": "Монголын хамгийн өндөр оргил аль вэ?",
-            "answer": "Хүйтэн оргил (4374 м)",
-            "isDailyDouble": false,
-            "answered": false
-          },
-          {
-            "id": "4c2ebcb3-b7c6-4fab-91c2-208e043ff06f",
-            "value": 400,
-            "clue": "Талбайгаараа Монголын хамгийн том нуур аль вэ?",
-            "answer": "Увс нуур",
-            "isDailyDouble": false,
-            "answered": false
-          },
-          {
-            "id": "ea0da588-2180-41e4-80a1-8307a039cbbf",
-            "value": 500,
-            "clue": "Монгол бичгийг ямар чиглэлд бичдэг вэ?",
-            "answer": "Дээрээс доош, зүүнээс баруун тийш",
-            "isDailyDouble": false,
-            "answered": false
-          }
-        ]
-      },
-      {
-        "id": "4ad134a5-e0d0-4d98-b6c0-5206bbbcc7cf",
-        "name": "Кино",
-        "questions": [
-          {
-            "id": "7f824a26-2984-445e-ba59-044d0fea801c",
-            "value": 100,
-            "clue": "«Titanic» киноны найруулагч хэн бэ?",
-            "answer": "Жеймс Камерон",
-            "isDailyDouble": false,
-            "answered": false
-          },
-          {
-            "id": "2653ae05-9d89-446e-9783-9d2c809aae79",
-            "value": 200,
-            "clue": "Харри Поттерын сурдаг шидтэний сургуулийн нэр юу вэ?",
-            "answer": "Хогвартс",
-            "isDailyDouble": false,
-            "answered": false
-          },
-          {
-            "id": "ba619060-e416-475d-9794-9bd9e68511dd",
-            "value": 300,
-            "clue": "«Interstellar» кинонд Куперийн дүрийг хэн бүтээсэн бэ?",
-            "answer": "Мэттью Макконахи",
-            "isDailyDouble": false,
-            "answered": false
-          },
-          {
-            "id": "7cbed687-7d0c-4004-9ef3-dcb3a696136d",
-            "value": 400,
-            "clue": "Оскарын 11 шагнал хүртсэн гурван киноны нэгийг нэрлэнэ үү.",
-            "answer": "Бен-Хур / Титаник / Бөгжний эзэн: Хааны эргэн ирэлт",
-            "isDailyDouble": false,
-            "answered": false
-          },
-          {
-            "id": "683bcdcb-99f8-4dd4-8f17-5fc92c602648",
-            "value": 500,
-            "clue": "«Оддын дайн»-д Лүкийн аав хэн болох нь илэрдэг вэ?",
-            "answer": "Дарт Вейдер",
-            "isDailyDouble": false,
-            "answered": false
-          }
-        ]
-      },
-      {
-        "id": "27a5a88f-a709-47e3-ad82-d22130b80686",
-        "name": "Хөгжим",
-        "questions": [
-          {
-            "id": "399c8246-7c36-4871-b52a-0e0e916167c6",
-            "value": 100,
-            "clue": "До, ре, ми… гамм хэдэн үндсэн нотоос бүрддэг вэ?",
-            "answer": "7",
-            "isDailyDouble": false,
-            "answered": false
-          },
-          {
-            "id": "ee68c5dd-e4c9-42b4-987f-6d10369b4cb7",
-            "value": 200,
-            "clue": "«Thriller» цомгийг хэн гаргасан бэ?",
-            "answer": "Майкл Жексон",
-            "isDailyDouble": false,
-            "answered": false
-          },
-          {
-            "id": "d2f1ae3d-6770-4dc0-a20d-7322e3f5b059",
-            "value": 300,
-            "clue": "Морин хуур хэдэн утастай вэ?",
-            "answer": "2",
-            "isDailyDouble": false,
-            "answered": false
-          },
-          {
-            "id": "affcabb2-13d4-4c52-be4e-3e585b55d4b7",
-            "value": 400,
-            "clue": "Бетховен нийт хэдэн симфони бичсэн бэ?",
-            "answer": "9",
-            "isDailyDouble": false,
-            "answered": false
-          },
-          {
-            "id": "3a4ad203-bb74-436f-a175-493af4fbf2a6",
-            "value": 500,
-            "clue": "ЮНЕСКО-д бүртгэгдсэн Монголын уламжлалт хоолойн урлагийг юу гэдэг вэ?",
-            "answer": "Хөөмий",
-            "isDailyDouble": false,
-            "answered": false
-          }
-        ]
-      },
-      {
-        "id": "122c5fd9-0784-46db-a13c-2b8adf009ff5",
-        "name": "Шинжлэх ухаан",
-        "questions": [
-          {
-            "id": "02fb7573-24f1-4aed-b707-c42a1d114d58",
-            "value": 100,
-            "clue": "Усны химийн томьёо юу вэ?",
-            "answer": "H₂O",
-            "isDailyDouble": false,
-            "answered": false
-          },
-          {
-            "id": "1f78a0e6-650c-47f3-bd00-392083c82d1d",
-            "value": 200,
-            "clue": "Хүний биеийн хамгийн том эрхтэн аль вэ?",
-            "answer": "Арьс",
-            "isDailyDouble": false,
-            "answered": false
-          },
-          {
-            "id": "6dc2b0f3-0db1-4044-a556-327fa7fcd47b",
-            "value": 300,
-            "clue": "Гэрлийн хурд секундэд ойролцоогоор хэдэн км вэ?",
-            "answer": "≈ 300 000 км/с",
-            "isDailyDouble": false,
-            "answered": false
-          },
-          {
-            "id": "95f3eb51-7a18-4e8c-8be3-be09eb18fbab",
-            "value": 400,
-            "clue": "Химийн элементүүдийн үелэх системийг хэн зохиосон бэ?",
-            "answer": "Дмитрий Менделеев",
-            "isDailyDouble": false,
-            "answered": false
-          },
-          {
-            "id": "e13ca35b-d043-489c-bc31-9dc4943c9c65",
-            "value": 500,
-            "clue": "Алтны химийн тэмдэг юу вэ?",
-            "answer": "Au",
-            "isDailyDouble": false,
-            "answered": false
-          }
-        ]
-      },
-      {
-        "id": "05211559-db69-4022-96af-cbf963a2f218",
-        "name": "CONNECT",
-        "type": "connect",
-        "questions": [
-          {
-            "id": "60f8f691-6ca8-4c16-b103-d5f4a4e51384",
-            "value": 100,
-            "clue": "",
-            "answer": "",
-            "isDailyDouble": false,
-            "answered": false,
-            "connect": {
-              "clues": [
-                {
-                  "id": "5c9de785-2192-44ff-ac7f-80482542a5c6",
-                  "text": "МКС"
-                },
-                {
-                  "id": "ea561eba-4952-4fb7-b521-e304704acff0",
-                  "text": "Хаббл"
-                },
-                {
-                  "id": "d53357c3-6310-4ce9-9abe-30c8834a77d8",
-                  "text": "Гүррагчаа"
-                },
-                {
-                  "id": "96f77dd0-77df-4e66-8bd0-06d20f093964",
-                  "text": "Гагарин"
-                },
-                {
-                  "id": "1bb9605f-b799-45c7-8430-f2076dc14cf3",
-                  "text": "Аполлон 11"
-                }
-              ],
-              "answer": "Сансар судлал"
-            }
-          },
-          {
-            "id": "579ab0f3-497a-45ff-adc3-b872437ba1bf",
-            "value": 200,
-            "clue": "",
-            "answer": "",
-            "isDailyDouble": false,
-            "answered": false,
-            "connect": {
-              "clues": [
-                {
-                  "id": "e1a0ba6b-6bd6-4c96-9731-7335dd98a567",
-                  "text": "Буйр"
-                },
-                {
-                  "id": "4bd5b029-0f12-4e17-9c2e-9359b094225b",
-                  "text": "Хяргас"
-                },
-                {
-                  "id": "2888c7de-40a2-455a-b902-f69de7f0e37f",
-                  "text": "Хар-Ус"
-                },
-                {
-                  "id": "c63567d7-8fd4-485f-8352-32df1447c470",
-                  "text": "Увс"
-                },
-                {
-                  "id": "563ab929-80ed-4c69-8e55-20ea19809857",
-                  "text": "Хөвсгөл"
-                }
-              ],
-              "answer": "Монголын нуурууд"
-            }
-          },
-          {
-            "id": "91f75261-b887-46e7-8b9b-ceaba3dd41fe",
-            "value": 300,
-            "clue": "",
-            "answer": "",
-            "isDailyDouble": false,
-            "answered": false,
-            "connect": {
-              "clues": [
-                {
-                  "id": "1c741e55-4322-4f75-915b-a4062dc8e4e5",
-                  "text": "Шилүүс"
-                },
-                {
-                  "id": "caf42fe6-f30a-4d9a-8862-e2a5416693db",
-                  "text": "Ягуар"
-                },
-                {
-                  "id": "f1210a2c-30dc-47d8-acfa-9802b1587a53",
-                  "text": "Ирвэс"
-                },
-                {
-                  "id": "667af9ad-2050-42a4-9bed-d490c3c98b97",
-                  "text": "Бар"
-                },
-                {
-                  "id": "6973ac4d-c5aa-482e-a499-1fcb425651f1",
-                  "text": "Арслан"
-                }
-              ],
-              "answer": "Муурын овгийн амьтад"
-            }
-          },
-          {
-            "id": "6a7a5271-d353-4f42-adb1-7ec555d40236",
-            "value": 400,
-            "clue": "",
-            "answer": "",
-            "isDailyDouble": false,
-            "answered": false,
-            "connect": {
-              "clues": [
-                {
-                  "id": "42529cac-b897-43fb-8500-84835f386ccb",
-                  "text": "Гүюг"
-                },
-                {
-                  "id": "4b1836bb-c92f-43a7-b3d2-a7c522c2ae46",
-                  "text": "Мөнх"
-                },
-                {
-                  "id": "3f034387-43e4-4a0c-b428-c192b3e021f5",
-                  "text": "Өгөдэй"
-                },
-                {
-                  "id": "fcf1ad92-044c-4681-8b76-d447f9519262",
-                  "text": "Хубилай"
-                },
-                {
-                  "id": "e9f608cb-bee7-4c4a-95fc-6a2f1ef4e5bc",
-                  "text": "Чингис"
-                }
-              ],
-              "answer": "Их Монгол Улсын хаад"
-            }
-          },
-          {
-            "id": "68421178-c44f-4ab1-ab81-2faccb20bf61",
-            "value": 500,
-            "clue": "",
-            "answer": "",
-            "isDailyDouble": false,
-            "answered": false,
-            "connect": {
-              "clues": [
-                {
-                  "id": "05d9f8d5-9944-40ba-ad20-f068da0b6f83",
-                  "text": "Санчир"
-                },
-                {
-                  "id": "1d8134d4-7216-40db-bb15-f29d7446d75b",
-                  "text": "Буд"
-                },
-                {
-                  "id": "ecc87d0a-e5d0-4686-99e0-4e1ff41b98ad",
-                  "text": "Бархасбадь"
-                },
-                {
-                  "id": "f0d42f9e-5594-4a48-b967-2da7e3160503",
-                  "text": "Сугар"
-                },
-                {
-                  "id": "1f68cd35-d386-44ca-9fdb-b0d9929931f9",
-                  "text": "Ангараг"
-                }
-              ],
-              "answer": "Гаригууд (Бямба, Лхагва, Пүрэв, Баасан, Мягмар гарагууд)"
-            }
-          }
-        ]
-      }
-    ],
-    "timerSeconds": 60,
-    "createdAt": "2026-10-02T17:14:15.494665Z",
-    "updatedAt": "2026-10-02T17:14:15.494665Z"
-  },
-  {
     "id": "e71d327e-bec9-41ab-b33f-6f26e475de48",
     "title": "Round 1",
     "categories": [
@@ -1714,5 +1302,1429 @@
     "folderId": "dc2697c6-ca9b-4b2b-8a8f-3de624408cf6",
     "createdAt": "2026-10-02T17:41:55.089Z",
     "updatedAt": "2026-10-02T18:15:20.502926Z"
+  },
+  {
+    "id": "f30adcb5-91e0-4b4a-9dba-75cb6225d594",
+    "title": "Halloween Party Round 1",
+    "categories": [
+      {
+        "id": "7a050dfe-8be1-431e-a901-36aa71ad352a",
+        "name": "Lego Movie",
+        "questions": [
+          {
+            "id": "11ad80a9-a25b-4e97-af10-4cf353efe11b",
+            "value": 100,
+            "clue": "Lego оор дүрсэлсэн киног таана уу ?",
+            "answer": "James Bond",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "/uploads/2a934403-2d91-4677-92ea-096170056ece.jpg"
+            ],
+            "answerImages": [
+              "/uploads/290699d5-70bf-4ea7-af18-052f762e69c8.gif"
+            ]
+          },
+          {
+            "id": "fd309236-3395-4f31-bf0f-251ec3efbfe0",
+            "value": 200,
+            "clue": "Lego оор дүрсэлсэн киног таана уу ?",
+            "answer": "Shining",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "/uploads/788b12a7-d8c0-4e9f-847a-e12bab6cab78.jpeg"
+            ],
+            "answerImages": [
+              "/uploads/d5cabca8-6d95-4215-b894-e63d2b5d90eb.jpeg"
+            ]
+          },
+          {
+            "id": "165ea8e7-cde4-4757-9a1d-197c798155eb",
+            "value": 300,
+            "clue": "Lego оор дүрсэлсэн киног таана уу ?",
+            "answer": "Inception",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "/uploads/72a41755-04b7-49fb-b428-2d5e95626cbc.jpg"
+            ],
+            "answerImages": [
+              "/uploads/9bffa4d7-9ab9-4573-b06f-7671e58ed36e.jpg"
+            ]
+          },
+          {
+            "id": "8a641f08-7fb8-4485-912f-4713bfdb0ea6",
+            "value": 400,
+            "clue": "Lego оор дүрсэлсэн киног таана уу ?",
+            "answer": "The Exorcist",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "/uploads/b5223dba-c917-45c9-b0e8-d7f4c67b4b2b.jpeg"
+            ],
+            "answerImages": [
+              "/uploads/4761d46d-f538-46f1-962b-8024752bedd9.jpeg"
+            ]
+          },
+          {
+            "id": "147b6067-dfb7-42b8-ae49-9e40d48acd57",
+            "value": 500,
+            "clue": "Lego оор дүрсэлсэн киног таана уу ?",
+            "answer": "The Silence Of The Lambs ",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "/uploads/88921450-2363-491b-99fd-3297f03b7a3e.jpg"
+            ],
+            "answerImages": [
+              "/uploads/4423ddde-27eb-4aeb-8db9-2e80353ce76e.jpg"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "dab47c28-b7ea-4506-a638-ab7cc08d8208",
+        "name": "Halloween Movie Themes",
+        "questions": [
+          {
+            "id": "fbd1d56f-0f75-4e44-af58-c3101428e123",
+            "value": 100,
+            "clue": "🔊 Аяыг сонсоод аль кино болохыг таана уу. (Hint: Жон Уильямсын бичсэн, челеста хэмээх хонх шиг дуугардаг зэмсгээр эхэлдэг энэ аялгуу гол дүрийн цасан цагаан шар шувууны нэрээр нэрлэгдсэн — 2001 оны шидтэн хүүгийн тухай кино)",
+            "answer": "Harry Potter and the Philosopher's Stone (Харри Поттер ба Шидтэний чулуу, 2001) — \"Hedwig's Theme\"",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/Hedwig%27s_Theme",
+            "clueImages": [],
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/en/7/7a/Harry_Potter_and_the_Philosopher%27s_Stone_banner.jpg"
+            ],
+            "clueAudio": "/uploads/2585d599-1988-4c11-91c5-693c6de68b1c.mp3"
+          },
+          {
+            "id": "912aa8fe-60c3-4e2b-b354-d33841fb70a2",
+            "value": 200,
+            "clue": "🔊 Аяыг сонсоод аль кино болохыг таана уу. (Hint: Найруулагч Жон Карпентер өөрөө 5/4 хэмнэлтэй энэ төгөлдөр хуурын аяыг зохиосон — 1978 оны, цагаан багтай Майкл Майерсын кино)",
+            "answer": "Halloween (1978)",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/Halloween_(1978_film)",
+            "clueImages": [],
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/en/a/af/Halloween_%281978%29_theatrical_poster.jpg"
+            ],
+            "clueAudio": "/uploads/f44031c7-5928-4a1d-8bd2-1650cf823a06.mp3"
+          },
+          {
+            "id": "5b414925-c245-4159-ae87-bdf64e369ad9",
+            "value": 300,
+            "clue": "🔊 Аяыг сонсоод аль кино болохыг таана уу. (Hint: Дэнни Элфманы бичсэн \"This Is Halloween\" дуу — Тим Бёртоны санаачилсан, Хэллоуины хотын \"Хулууны хаан\" Жек Скеллингтоны тухай 1993 оны хүүхэлдэйн кино)",
+            "answer": "The Nightmare Before Christmas (Зул сарын өмнөх хар дарсан зүүд, 1993)",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/This_Is_Halloween",
+            "clueImages": [],
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/en/9/9a/The_nightmare_before_christmas_poster.jpg"
+            ],
+            "clueAudio": "/uploads/505d9023-2f3c-41b5-a475-a83462c6d79f.mp3"
+          },
+          {
+            "id": "1518574c-be08-42bd-a327-803bf530eda1",
+            "value": 400,
+            "clue": "🔊 Аяыг сонсоод аль кино болохыг таана уу. (Hint: Жон Уильямсын бичсэн, ердөө хоёр нотоос (ми–фа) бүрдсэн энэ аялгуу далайд ойртож буй том цагаан акулыг илэрхийлдэг — Стивен Спилбергийн 1975 оны кино)",
+            "answer": "Jaws (Эрүү, 1975)",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/Jaws_(film)",
+            "clueImages": [],
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Jaws_movie_poster.jpg/1280px-Jaws_movie_poster.jpg"
+            ],
+            "clueAudio": "/uploads/529c1b76-0147-43a9-94e4-889dd77fe957.mp3"
+          },
+          {
+            "id": "3dcb5749-a5f2-43ba-98a8-90b28cdf2837",
+            "value": 500,
+            "clue": "🔊 Аяыг сонсоод аль кино болохыг таана уу. (Hint: Хөгжмийн зохиолч Харри Манфредини \"ki-ki-ki, ma-ma-ma\" гэсэн шивнээг \"Kill her, mommy\" гэсэн үгнээс гаргаж авсан — 1980 оны Кристал нуурын зуслангийн кино)",
+            "answer": "Friday the 13th (13-ны Баасан гараг, 1980)",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/Friday_the_13th_(1980_film)",
+            "clueImages": [],
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/en/2/2c/Friday_the_13th_%281980%29_theatrical_poster.jpg"
+            ],
+            "clueAudio": "/uploads/4f8dc70c-75f2-4de7-a7d6-54a77f17c4ae.mp3"
+          }
+        ]
+      },
+      {
+        "id": "9f6aca26-abc3-4c36-bf54-cf43889dbdee",
+        "name": "Slogans",
+        "questions": [
+          {
+            "id": "954ee884-0f58-4f22-bf23-d2bbb469b214",
+            "value": 100,
+            "clue": "\"Just Do It\" — 1988 онд эхэлсэн энэ уриа аль брэндийнх вэ?",
+            "answer": "Nike",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/Just_Do_It",
+            "clueImages": [],
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/1280px-Logo_NIKE.svg.png"
+            ]
+          },
+          {
+            "id": "d486778c-69fa-494d-8f72-45f2140b9d4e",
+            "value": 200,
+            "clue": "\"I'm Lovin' It\" ",
+            "answer": "McDonald's",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/I%27m_Lovin%27_It_(song)",
+            "clueImages": [],
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/1280px-McDonald%27s_Golden_Arches.svg.png"
+            ]
+          },
+          {
+            "id": "795a23f5-6434-43de-8894-97c272f6b417",
+            "value": 300,
+            "clue": "\"Think Different\" ",
+            "answer": "Apple",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/Think_different",
+            "clueImages": [],
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1280px-Apple_logo_black.svg.png"
+            ]
+          },
+          {
+            "id": "8a1cf2e0-3b9f-4fee-a667-70b333eaec7d",
+            "value": 400,
+            "clue": "\"Connecting People\" Finland Company",
+            "answer": "Nokia",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/Nokia",
+            "clueImages": [],
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Nokia_wordmark.svg/1280px-Nokia_wordmark.svg.png"
+            ]
+          },
+          {
+            "id": "b4b7d28a-02e7-45d7-8df5-a27a13e8bc37",
+            "value": 500,
+            "clue": "\"Because I'm Worth It\"",
+            "answer": "L'Oréal (Лореаль)",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/L%27Or%C3%A9al",
+            "clueImages": [],
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/L%27Or%C3%A9al_logo.svg/1280px-L%27Or%C3%A9al_logo.svg.png"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "5fd8eba5-67e9-4f2f-966c-a788bce667bb",
+        "name": "Flags",
+        "questions": [
+          {
+            "id": "022d221e-085a-4324-a838-ffb5b8db4b3b",
+            "value": 100,
+            "clue": "Аль улсын туг вэ?",
+            "answer": "Канад (Canada)",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/Flag_of_Canada",
+            "clueImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Canada.svg/1280px-Flag_of_Canada.svg.png"
+            ],
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Canada_%28orthographic_projection%29.svg/1280px-Canada_%28orthographic_projection%29.svg.png"
+            ]
+          },
+          {
+            "id": "30fba13c-7eda-4617-8b1a-15e416898e8e",
+            "value": 200,
+            "clue": "Аль улсын туг вэ?",
+            "answer": "Бразил (Brazil) — бичээс нь \"Ordem e Progresso\" (Дэг журам ба дэвшил)",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/Flag_of_Brazil",
+            "clueImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/1280px-Flag_of_Brazil.svg.png"
+            ],
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Brazil_%28orthographic_projection%29.svg/1280px-Brazil_%28orthographic_projection%29.svg.png"
+            ]
+          },
+          {
+            "id": "02c81474-1b12-4110-bb67-a7202e579e54",
+            "value": 300,
+            "clue": "Аль улсын туг вэ?",
+            "answer": "Португал (Portugal)",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/Flag_of_Portugal",
+            "clueImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/1280px-Flag_of_Portugal.svg.png"
+            ],
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Portugal_%28orthographic_projection%29.svg/1280px-Portugal_%28orthographic_projection%29.svg.png"
+            ]
+          },
+          {
+            "id": "e2ad6de3-a0ea-4c31-aeed-821176b99266",
+            "value": 400,
+            "clue": "Аль улсын туг вэ? (Дэлхийн цорын ганц тэгш өнцөгт биш үндэсний туг)",
+            "answer": "Балба (Nepal)",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/Flag_of_Nepal",
+            "clueImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Flag_of_Nepal.svg/1280px-Flag_of_Nepal.svg.png"
+            ],
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Nepal_%28orthographic_projection%29.svg/1280px-Nepal_%28orthographic_projection%29.svg.png"
+            ]
+          },
+          {
+            "id": "89e63a49-f32a-4898-bc60-be771f0cb89f",
+            "value": 500,
+            "clue": "Аль улсын туг вэ? (Африк — AK-47 автомат буу дүрслэгдсэн дэлхийн цорын ганц үндэсний туг)",
+            "answer": "Мозамбик (Mozambique) — AK-47, газар хагалах хоу (hoe), ном",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/Flag_of_Mozambique",
+            "clueImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Flag_of_Mozambique.svg/1280px-Flag_of_Mozambique.svg.png"
+            ],
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Mozambique_%28orthographic_projection%29.svg/1280px-Mozambique_%28orthographic_projection%29.svg.png"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "e456d042-0f27-4289-8cc9-d95327b9f9ff",
+        "name": "Хүний бие",
+        "questions": [
+          {
+            "id": "4e916fa2-a125-45ce-9ab0-d8e653ed7bdd",
+            "value": 100,
+            "clue": "Насанд хүрсэн хүний биеийн жингийн 15 орчим хувийг эзэлдэг, хүний биеийн хамгийн том эрхтэн юу вэ?",
+            "answer": "Арьс (Skin)",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/Skin",
+            "clueImages": [],
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/commons/1/13/Human_skin_structure.jpg"
+            ]
+          },
+          {
+            "id": "7f5e4462-72fe-4db2-83fa-51d0d4bca9ca",
+            "value": 200,
+            "clue": "Нярай хүүхэд 270–300 орчим ястай төрдөг ч өсөх явцдаа зарим нь нийлдэг. Насанд хүрсэн хүний биед ихэвчлэн хэдэн яс байдаг вэ?",
+            "answer": "206",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/List_of_bones_of_the_human_skeleton",
+            "clueImages": [],
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/commons/1/14/Human-Skeleton.jpg"
+            ]
+          },
+          {
+            "id": "6f5640b2-2d88-4084-b005-d5dfbc6cd4d0",
+            "value": 300,
+            "clue": "Дунд чихэнд байрлах, ердөө 3 мм орчим урттай, морины дөрөө шиг хэлбэртэй хүний биеийн хамгийн жижиг ясыг юу гэдэг вэ?",
+            "answer": "Дөрөө яс (Stapes)",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/Stapes",
+            "clueImages": [],
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Stapes_bone_svg_hariadhi.svg/1280px-Stapes_bone_svg_hariadhi.svg.png"
+            ]
+          },
+          {
+            "id": "5fbd3ef7-2ec7-4e56-9db2-2000034e3594",
+            "value": 400,
+            "clue": "Хүний цусны улаан эс (эритроцит) ясны чөмгөнд үүсээд дунджаар хэдэн хоног амьдардаг вэ? (±20 хоногийн зөрүүтэй хариулт зөв)",
+            "answer": "≈120 хоног",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/Red_blood_cell",
+            "clueImages": [],
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Blausen_0761_RedBloodCells.png/1280px-Blausen_0761_RedBloodCells.png"
+            ]
+          },
+          {
+            "id": "bb807b33-d412-4f50-a56f-f92db53da3f4",
+            "value": 500,
+            "clue": "1901 онд хүний цусыг бүлгүүдэд ялгаж, ABO цусны бүлгийн системийг нээснийхээ төлөө 1930 онд Нобелийн шагнал хүртсэн Австрийн эрдэмтэн хэн бэ? Түүний төрсөн өдөр 6-р сарын 14-нд ба Дэлхийн цусны донорын өдрийг тэмдэглэдэг.",
+            "answer": "Карл Ландштайнер (Karl Landsteiner)",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/Karl_Landsteiner",
+            "clueImages": [],
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/commons/e/e0/Karl_Landsteiner_nobel.jpg"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "6780d5a2-8b58-4573-94b6-006c272951ca",
+        "name": "Before They Were Famous",
+        "questions": [
+          {
+            "id": "bf5531ec-3d87-41fb-8ce3-027349179aab",
+            "value": 100,
+            "clue": "Энэ жүжигчин алдартай болохоосоо өмнө Лос-Анжелест El Pollo Loco ресторанд тахианы хувцас өмсөн гудамжинд сурталчилгаа хийдэг байжээ. Дараа нь \"Fight Club\", \"Troy\" кинонд тоглож, 2020 онд Оскар хүртсэн. Хэн бэ?",
+            "answer": "Брэд Питт (Brad Pitt)",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/Brad_Pitt",
+            "clueImages": [],
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Brad_Pitt-69858.jpg/960px-Brad_Pitt-69858.jpg"
+            ]
+          },
+          {
+            "id": "d26360fc-30be-4149-b427-8f57ab87aeef",
+            "value": 200,
+            "clue": "Энэ жүжигчин 1970-аад онд мужаан хийж амьдралаа залгуулдаг байв. Жорж Лукас түүнийг Хан Соло-гийн дүрд, дараа нь Стивен Спилберг Индиана Жонсын дүрд сонгосон. Хэн бэ?",
+            "answer": "Харрисон Форд (Harrison Ford)",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/Harrison_Ford",
+            "clueImages": [],
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Harrison_Ford_-_Televerse_2025-03.jpg/960px-Harrison_Ford_-_Televerse_2025-03.jpg"
+            ]
+          },
+          {
+            "id": "8e82cd64-c125-45a1-a7c2-0830338045f8",
+            "value": 300,
+            "clue": "Энэ дуучин 1978 онд Мичиганаас ердөө 35 доллартай Нью-Йоркт ирээд Таймс Скверийн Dunkin' Donuts-д ажиллаж байжээ. Хожим \"Like a Virgin\", \"Material Girl\" дуунуудаараа \"Поп хөгжмийн хатан\" хэмээн алдаршсан. Хэн бэ?",
+            "answer": "Мадонна (Madonna)",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/Madonna",
+            "clueImages": [],
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/MadonnaO2171023_%2897_of_133%29_%2853269593787%29_%28cropped%29.jpg/960px-MadonnaO2171023_%2897_of_133%29_%2853269593787%29_%28cropped%29.jpg"
+            ]
+          },
+          {
+            "id": "aba3f6a6-4d7b-4be5-b064-146b769f9beb",
+            "value": 400,
+            "clue": "1954 онд Мемфисийн Crown Electric компанид ачааны машины жолооч хийж байсан энэ залуу мөн онд Sun Records-д \"That's All Right\" дууг бичүүлж, хожим \"Рок-н-роллын хаан\" хэмээн алдаршсан. Хэн бэ?",
+            "answer": "Элвис Пресли (Elvis Presley)",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/Elvis_Presley",
+            "clueImages": [],
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Elvis_Presley_promoting_Jailhouse_Rock.jpg/960px-Elvis_Presley_promoting_Jailhouse_Rock.jpg"
+            ]
+          },
+          {
+            "id": "c2ad1059-6fe8-4e99-a4ed-e20e43b2104f",
+            "value": 500,
+            "clue": "Буэнос-Айрест төрсөн энэ хүн залуудаа химийн лабораторид техникч, бас шөнийн клубт хаалгачаар ажиллаж байсан гэдэг. 2013 онд Америк тивээс гаралтай анхны хүн болж энэ албан тушаалд сонгогдсон. Хэн бэ?",
+            "answer": "Пап лам Франциск (Pope Francis) — Хорхе Марио Берголио",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/Pope_Francis",
+            "clueImages": [],
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Pope_Francis_Korea_Haemi_Castle_19_%284x5_cropped%29.jpg/960px-Pope_Francis_Korea_Haemi_Castle_19_%284x5_cropped%29.jpg"
+            ]
+          }
+        ]
+      }
+    ],
+    "folderId": "59ef3da5-4d8f-4476-8dde-913e80fac97e",
+    "createdAt": "2026-10-30T03:36:08.421Z",
+    "updatedAt": "2026-10-30T06:25:59.756254Z",
+    "timerSeconds": 45
+  },
+  {
+    "id": "acecf37c-4c80-40bb-98d1-1c32d0952906",
+    "title": "Halloween Party Round 2",
+    "categories": [
+      {
+        "id": "b93433be-f38c-46e6-a718-cf0984e048ff",
+        "name": "Halloween Animation",
+        "questions": [
+          {
+            "id": "3d56e0a4-c554-4e87-8e8b-b70ca12f2a95",
+            "value": 100,
+            "clue": "Pixar-ын 2001 оны энэ кинонд Монстрополис хотын мангасууд хүүхдүүдийг айлгаж, тэдний хашгирааг хотынхоо эрчим хүч болгон ашигладаг.  Ямар кино вэ?",
+            "answer": "Monsters, Inc. (2001)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/en/6/63/Monsters_Inc.JPG"
+            ],
+            "source": "https://en.wikipedia.org/wiki/Monsters,_Inc."
+          },
+          {
+            "id": "d1ac24fe-7416-4d24-bdfe-da600b7f8fda",
+            "value": 200,
+            "clue": "2009 онд Хенри Селикийн найруулсан, Нил Гейманы зохиолоос сэдэвлэсэн энэ stop-motion кинонд охин шинэ байшиндаа нууц хаалга олдог. Ямар кино вэ?",
+            "answer": "Coraline (2009)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/en/3/36/Coraline_poster.jpg"
+            ],
+            "source": "https://en.wikipedia.org/wiki/Coraline_(film)"
+          },
+          {
+            "id": "d50d20b9-3d29-460a-a137-2bb16d6cd990",
+            "value": 300,
+            "clue": "2012 оны энэ хүүхэлдэйн кинонд мангасуудад зориулсан зочид буудал байдаг ба гол дүрийн охиныг Мэвис гэдэг. Гол дүрд нь  Адам Сэндлер дуу оруулсан. Ямар кино вэ?",
+            "answer": "Hotel Transylvania (2012)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Hotel_Transylvania_logo.svg/1280px-Hotel_Transylvania_logo.svg.png"
+            ],
+            "source": "https://en.wikipedia.org/wiki/Hotel_Transylvania"
+          },
+          {
+            "id": "ac5d3154-4dca-41cd-b3ad-a3bfb06df3cd",
+            "value": 400,
+            "clue": "Тим Бёртоны 2005 оны энэ stop-motion кинонд залуу Виктор хуримынхаа өмнө ойд бэлтгэл хийж байгаад санамсаргүйгээр нас барсан Эмили хэмээх бүсгүйд гэрлэх тангараг өргөдөг. Ямар кино вэ?",
+            "answer": "Corpse Bride (2005)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/en/a/a6/Corpse_Bride_film_poster.jpg"
+            ],
+            "source": "https://en.wikipedia.org/wiki/Corpse_Bride"
+          },
+          {
+            "id": "dd8933d6-75c8-4cc7-98eb-50c61204e964",
+            "value": 500,
+            "clue": "Laika студийн 2012 оны энэ stop-motion кинонд үхэгсэдтэй ярьж чаддаг хүү жижиг хотоо 300 жилийн настай шуламын хараалаас аврах ёстой болдог. Кино Оскарын шилдэг хүүхэлдэйн киноны төрөлд нэр дэвшсэн. Ямар кино вэ?",
+            "answer": "ParaNorman (2012)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/en/3/32/ParaNorman_poster.jpg"
+            ],
+            "source": "https://en.wikipedia.org/wiki/ParaNorman"
+          }
+        ]
+      },
+      {
+        "id": "fb37c3c2-3274-401e-b3d3-df02086a82a2",
+        "name": "Гадаад дуу",
+        "questions": [
+          {
+            "id": "d8d6d31e-d0ef-4f4d-bb82-e12a7a467223",
+            "value": 100,
+            "clue": "🔊 Дууг сонсоод дууны нэр болон дуучныг хэлнэ үү. (Хэллоуины хамгийн алдартай дуу, 1983)",
+            "answer": "Thriller — Michael Jackson",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/en/8/89/Michael_jackson_thriller_12_inch_single_USA.jpg"
+            ],
+            "source": "https://en.wikipedia.org/wiki/Thriller_(song)",
+            "clueAudio": "/uploads/72d06aa9-b889-4b53-95d9-c6e43d4e1cdc.mp3"
+          },
+          {
+            "id": "26f085ed-b087-4dab-adfd-cff355e3b055",
+            "value": 200,
+            "clue": "🔊 Дууг сонсоод дууны нэр болон дуучныг хэлнэ үү. (1977 он — Грэммигийн \"Оны шилдэг бичлэг\" шагнал хүртсэн рок дуу)",
+            "answer": "Hotel California — Eagles",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/en/2/20/Hotel_California_by_the_Eagles_US_vinyl_single.png"
+            ],
+            "source": "https://en.wikipedia.org/wiki/Hotel_California_(Eagles_song)",
+            "clueAudio": "/uploads/1fd11670-b844-46b1-99d3-1b8460721756.mp3"
+          },
+          {
+            "id": "aac18411-fb36-4a4a-9685-9096eeb4ad88",
+            "value": 300,
+            "clue": "🔊 Дууг сонсоод дуучныг хэлнэ үү. (2008 он)",
+            "answer": "Disturbia — Rihanna",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/en/3/30/Rihanna_-_Disturbia.png"
+            ],
+            "source": "https://en.wikipedia.org/wiki/Disturbia_(song)",
+            "clueAudio": "/uploads/e1529aa8-e329-47b2-8cb5-0bd7096ca1a5.mp3"
+          },
+          {
+            "id": "988589d9-7974-478e-8727-37dd31a3bb5e",
+            "value": 400,
+            "clue": "🔊 Дууг сонсоод дууны нэрийг хэлнэ үү. (1984 он — Японы \"city pop\" дуу, 2017 онд YouTube-ээр цацагдаж дэлхий даяар алдаршсан)",
+            "answer": "Plastic Love — Mariya Takeuchi (Мария Такэүчи)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/en/6/66/Mariya_Takeuchi_-_Plastic_Love_2021.jpg"
+            ],
+            "source": "https://en.wikipedia.org/wiki/Plastic_Love",
+            "clueAudio": "/uploads/1442679d-aee3-40b3-97a4-bb9fc71c2a2e.mp3"
+          },
+          {
+            "id": "5d81cc42-2da2-42a2-b811-60a78abf35af",
+            "value": 500,
+            "clue": "🔊 Дууг сонсоод дууны нэр болон дуучныг хэлнэ үү. (2003 он — цэнгэлдэх хүрээлэнгийн хөгжөөн дэмжигчдийн дуу болсон)",
+            "answer": "Seven Nation Army — The White Stripes",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/en/6/62/7nationarmy.jpg"
+            ],
+            "source": "https://en.wikipedia.org/wiki/Seven_Nation_Army",
+            "clueAudio": "/uploads/c3ec9b6b-7ec6-4171-b5ca-80a5b41b273d.mp3"
+          }
+        ]
+      },
+      {
+        "id": "310d0493-7844-4fc9-8172-b088d9faaa1e",
+        "name": "Famous Paintings",
+        "questions": [
+          {
+            "id": "2150d6e6-5eaf-4e8e-803c-d9736fc1b3b0",
+            "value": 100,
+            "clue": "Ямар зураг вэ? Зураач нь хэн бэ?",
+            "answer": "Мона Лиза — Леонардо да Винчи (Mona Lisa — Leonardo da Vinci)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Mona_Lisa.jpg/1280px-Mona_Lisa.jpg"
+            ],
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Francesco_Melzi_-_Portrait_of_Leonardo_%28colour_correction%29.png/1280px-Francesco_Melzi_-_Portrait_of_Leonardo_%28colour_correction%29.png"
+            ],
+            "source": "https://en.wikipedia.org/wiki/Mona_Lisa"
+          },
+          {
+            "id": "758d1f45-9998-4031-a36f-648862130e44",
+            "value": 200,
+            "clue": "Ямар зураг вэ? Зураач нь хэн бэ?",
+            "answer": "Одот шөнө — Винсент ван Гог (The Starry Night — Vincent van Gogh, 1889)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
+            ],
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg/1280px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg"
+            ],
+            "source": "https://en.wikipedia.org/wiki/The_Starry_Night"
+          },
+          {
+            "id": "e413fd72-354b-4a06-8584-828eb30fb007",
+            "value": 300,
+            "clue": "Ямар зураг вэ? ",
+            "answer": "Хашгираан — Эдвард Мунк (The Scream — Edvard Munch, 1893)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg/1280px-Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg"
+            ],
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/commons/8/8b/Portrait_of_Edvard_Munch_%28cropped%29.png"
+            ],
+            "source": "https://en.wikipedia.org/wiki/The_Scream"
+          },
+          {
+            "id": "884ec872-3ec1-4cd8-a39c-9ad00e29cda4",
+            "value": 400,
+            "clue": "Ямар зураг вэ? ",
+            "answer": "Сувдан ээмэгтэй охин — Йоханнес Вермеер (Girl with a Pearl Earring — Johannes Vermeer)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/1665_Girl_with_a_Pearl_Earring.jpg/1280px-1665_Girl_with_a_Pearl_Earring.jpg"
+            ],
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/commons/4/46/Cropped_version_of_Jan_Vermeer_van_Delft_002.jpg"
+            ],
+            "source": "https://en.wikipedia.org/wiki/Girl_with_a_Pearl_Earring"
+          },
+          {
+            "id": "6c345b92-a23d-4514-bf10-72e7013c89c2",
+            "value": 500,
+            "clue": "Ямар зураг вэ? (Испани — зураач үүнийг өөрийн байшингийн хананд зурсан)",
+            "answer": "Хүүгээ залгиж буй Сатурн — Франсиско Гойя (Saturn Devouring His Son — Francisco Goya, 1819–1823)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Francisco_de_Goya%2C_Saturno_devorando_a_su_hijo_%281819-1823%29.jpg/1280px-Francisco_de_Goya%2C_Saturno_devorando_a_su_hijo_%281819-1823%29.jpg"
+            ],
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Vicente_L%C3%B3pez_Porta%C3%B1a_-_el_pintor_Francisco_de_Goya.jpg/1280px-Vicente_L%C3%B3pez_Porta%C3%B1a_-_el_pintor_Francisco_de_Goya.jpg"
+            ],
+            "source": "https://en.wikipedia.org/wiki/Saturn_Devouring_His_Son"
+          }
+        ]
+      },
+      {
+        "id": "bd2f1f77-a096-4f7c-84da-777ea4e8ee7b",
+        "name": "Монгол дуу",
+        "questions": [
+          {
+            "id": "23e6a228-a240-4ea5-b770-c03ffe3ecbc9",
+            "value": 100,
+            "clue": "Ямар хамтлагын ямар нэртэй дуу вэ ?",
+            "answer": "Night Train - Zuulun ",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Venus",
+            "clueAudio": "/uploads/216cffaf-f5b7-48dd-8154-583301f9d623.mp3"
+          },
+          {
+            "id": "80d51398-0538-48f3-916c-4068b66ac60b",
+            "value": 200,
+            "clue": "Ямар киноны дуу вэ ? ",
+            "answer": "BX- Ийм нэгэн дурлал",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Pluto",
+            "clueAudio": "/uploads/4aa1687a-d0b7-4619-b25f-2e28066dcc3c.mp3"
+          },
+          {
+            "id": "1483b28a-4c18-4a19-84a6-010ea89e1b54",
+            "value": 300,
+            "clue": "Ямар хамтлагын дуу вэ ?",
+            "answer": "D45-Яаруулахгүй",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/International_Space_Station",
+            "clueAudio": "/uploads/0df3ed58-cfe3-444f-814e-fec55a326ffe.mp3"
+          },
+          {
+            "id": "2c3079bd-9951-4aab-9442-a22bba438301",
+            "value": 400,
+            "clue": "Ямар нэртэй дуу вэ ?",
+            "answer": "Mxrningstar- Uurneesee chi",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/Valentina_Tereshkova",
+            "clueAudio": "/uploads/6a5aff13-107c-4c59-aefd-17aa223ebfd4.mp3"
+          },
+          {
+            "id": "c65cf98a-30db-419c-89bf-7ffda94a6139",
+            "value": 500,
+            "clue": "Ямар хамтлагын ямар нэртэй дуу вэ ?",
+            "answer": "Pips - Гүн цэнхэр нүд",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [],
+            "source": "https://en.wikipedia.org/wiki/J%C3%BCgderdemidiin_G%C3%BCrragchaa",
+            "clueAudio": "/uploads/5033edaa-04c8-485f-a30e-aaf44f8aea6f.mp3"
+          }
+        ]
+      },
+      {
+        "id": "27a8e969-6c2e-4a3f-a2f3-7c7c801e9362",
+        "name": "Спорт",
+        "questions": [
+          {
+            "id": "692b0ec0-d23e-4ebb-89d8-5d66809f69a3",
+            "value": 100,
+            "clue": "Lewis Hamilton F1 ийн аль багт уралддаг вэ ? ",
+            "answer": "Ferrari",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "/uploads/dea05dae-6e0d-4e4f-ad8f-88b4d87e0f52.jpeg"
+            ],
+            "answerImages": [
+              "/uploads/595e6157-e311-4140-a31b-bc5af384e78c.jpeg"
+            ],
+            "source": "https://en.wikipedia.org/wiki/FIFA_World_Cup"
+          },
+          {
+            "id": "eee8502e-0e02-43ba-b047-cfaba628f51a",
+            "value": 200,
+            "clue": "Теннисний 4 их дуулга (Grand Slam) тэмцээнээс цорын ганц шавар талбай дээр болдог, Парист жил бүр зохиогддог тэмцээн юу вэ?",
+            "answer": "Roland-Garros / French Open (Францын нээлттэй тэмцээн)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/en/thumb/1/1d/Logo_Roland-Garros.svg/1280px-Logo_Roland-Garros.svg.png"
+            ],
+            "source": "https://en.wikipedia.org/wiki/French_Open"
+          },
+          {
+            "id": "3f939977-5031-4698-a17c-c35647be6049",
+            "value": 300,
+            "clue": "Майкл Жордан Chicago Bulls багтайгаа NBA-ийн аварга хэдэн удаа болсон бэ?",
+            "answer": "6 удаа (1991–93, 1996–98)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/commons/4/46/Michael_jordan_admad_rashad_%2851276390562%29_%28cropped%29.jpg"
+            ],
+            "source": "https://en.wikipedia.org/wiki/Michael_Jordan"
+          },
+          {
+            "id": "b0aca6bc-a003-49d4-b794-b53de31a4393",
+            "value": 400,
+            "clue": "Олимпийн түүхэнд хамгийн олон медаль буюу 28 медаль (үүнээс 23 нь алт) хүртсэн Америкийн усан сэлэгч хэн бэ?",
+            "answer": "Майкл Фелпс (Michael Phelps)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/commons/c/c7/Michael_Phelps_Rio_Olympics_2016.jpg"
+            ],
+            "source": "https://en.wikipedia.org/wiki/Michael_Phelps"
+          },
+          {
+            "id": "943c73f3-a090-4b93-be3c-9ee7a4beb78a",
+            "value": 500,
+            "clue": "Tokyo 2020 olymp-оос Жудо бөхийн 73kg ийн төрөлд хүрэл мэдаль хүртсэн уг тамирчин хэн бэ ? ",
+            "answer": "Цэнд-Очирын Цогтбаатар",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "/uploads/ef0d3847-6f95-4080-9d45-9b48a0c460e4.jpeg"
+            ],
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Flag_of_Mongolia.svg/1280px-Flag_of_Mongolia.svg.png"
+            ],
+            "source": "https://en.wikipedia.org/wiki/Naidangiin_T%C3%BCvshinbayar"
+          }
+        ]
+      },
+      {
+        "id": "cd735a3e-8f0d-433b-8fcc-232392889247",
+        "name": "Хоол",
+        "questions": [
+          {
+            "id": "8924d374-4c0d-46b6-80ab-257b5c386bbe",
+            "value": 100,
+            "clue": "Pizza аль улсаас гаралтай вэ ? ",
+            "answer": "Итали",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Neapolitan_pizza_at_Trappica_%2848701940197%29.jpg/1280px-Neapolitan_pizza_at_Trappica_%2848701940197%29.jpg"
+            ],
+            "source": "https://en.wikipedia.org/wiki/Pizza_Margherita"
+          },
+          {
+            "id": "93186545-e37e-4783-97de-4b2d2ea12f65",
+            "value": 200,
+            "clue": "Энэ сарны хэлбэртэй давхаргат талх Францын өглөөний цайны бэлгэдэл болсон ч түүний өвөг болох \"кипферл\" өөр улсаас гаралтай. Аль улс вэ?",
+            "answer": "Австри (Austria) — Вена",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "https://upload.wikimedia.org/wikipedia/commons/2/2a/Croissant-Petr_Kratochvil.jpg"
+            ],
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_Austria.svg/1280px-Flag_of_Austria.svg.png"
+            ],
+            "source": "https://en.wikipedia.org/wiki/Croissant"
+          },
+          {
+            "id": "20710dba-12a4-46d9-8bb7-eac2d1d7639c",
+            "value": 300,
+            "clue": "Нэр нь итали хэлээр \"намайг сэргээ\" гэсэн утгатай, кофенд дүрсэн жигнэмэг, маскарпоне бяслаг, какао нунтгаар хийдэг энэ амттан юу вэ?",
+            "answer": "Тирамису (Tiramisu)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Tiramisu_-_Raffaele_Diomede.jpg/1280px-Tiramisu_-_Raffaele_Diomede.jpg"
+            ],
+            "source": "https://en.wikipedia.org/wiki/Tiramisu"
+          },
+          {
+            "id": "3961c278-4270-4306-b7cc-f70aec08c83b",
+            "value": 400,
+            "clue": "Дэлхийн хамгийн алдартай түргэн хоолны нэг болох талхны дунд шарсан махан бифштекс хийсэн энэ хоолны нэр нь Германы нэгэн хотын нэрээс гаралтай. Аль хот вэ?",
+            "answer": "Гамбург (Hamburg) — гамбургер (hamburger)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/RedDot_Burger.jpg/1280px-RedDot_Burger.jpg"
+            ],
+            "source": "https://en.wikipedia.org/wiki/Hamburger"
+          },
+          {
+            "id": "9361eec7-91a2-43e8-ba44-de4f0fb02320",
+            "value": 500,
+            "clue": "Цагаан будаа, шафран, тахиа, туулай эсвэл далайн хоолоор том хавтгай тогоонд хийдэг энэ хоол Испанийн аль бүс нутгаас гаралтай вэ? (Хоолны нэр болон бүс нутгийг хэл)",
+            "answer": "Паэлья (Paella) — Валенсия (Valencia)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/01_Paella_Valenciana_original.jpg/1280px-01_Paella_Valenciana_original.jpg"
+            ],
+            "source": "https://en.wikipedia.org/wiki/Paella"
+          }
+        ]
+      }
+    ],
+    "folderId": "59ef3da5-4d8f-4476-8dde-913e80fac97e",
+    "timerSeconds": 45,
+    "createdAt": "2026-10-30T06:16:52.052284Z",
+    "updatedAt": "2026-10-30T07:29:56.441Z"
+  },
+  {
+    "id": "5ba84f68-b67d-4365-af66-a83f199fd07f",
+    "title": "Halloween Party Round 3",
+    "categories": [
+      {
+        "id": "02874d96-fd64-4922-a606-d583f0d737f7",
+        "name": "Random",
+        "questions": [
+          {
+            "id": "be9c5e68-a0e1-419a-88e5-e6f7fafbc9ca",
+            "value": 500,
+            "clue": "Нутаг дэвсгэрээрээ дэлхийд 12-т ордог ч жилийн турш тасралтгүй урсдаг ганц ч гол мөрөнгүй, ийм улсуудаас хамгийн том нь болох Арабын хойгийн улс юу вэ?",
+            "answer": "Саудын Араб (Saudi Arabia)",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/Saudi_Arabia",
+            "clueImages": [],
+            "answerImages": []
+          },
+          {
+            "id": "9dea8851-9e7d-4e0d-b7fb-2ed403a0e1b6",
+            "value": 500,
+            "clue": "Хүний биед цусны судасгүй, хүчилтөрөгчөө агаараас шууд авдаг тунгалаг эд байдаг бөгөөд эрхтэн шилжүүлэн суулгалтын хамгийн түгээмэл төрлийн нэг юм. Нүдний аль хэсэг вэ?",
+            "answer": "Эвэрлэг бүрхүүл (Cornea)",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/Cornea",
+            "clueImages": [],
+            "answerImages": []
+          },
+          {
+            "id": "e7995b52-7f0d-4aad-9545-aa8b02049a12",
+            "value": 500,
+            "clue": "1904 онд Лиззи Мэги газрын эзэд түрээслэгчдээ хэрхэн мөлждөгийг харуулах зорилгоор \"The Landlord's Game\" нэртэй тоглоом патентжуулжээ. Энэ нь хожим дэлхийн хамгийн алдартай BoardGame болсон бол энэ юу вэ?",
+            "answer": "Монополи (Monopoly)",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/The_Landlord%27s_Game",
+            "clueImages": [],
+            "answerImages": []
+          },
+          {
+            "id": "639e1d6c-547b-4463-a0f5-b97b1e4d97ce",
+            "value": 500,
+            "clue": "Дэлхийд анх удаа цаасан мөнгөн тэмдэгтийг 11-р зуунд Сүн гүрний үед албан ёсоор гүйлгээнд гаргасан улс аль нь вэ?",
+            "answer": "Хятад (China) — \"жяоцзы\" (jiaozi)",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/Jiaozi_(currency)",
+            "clueImages": [],
+            "answerImages": []
+          },
+          {
+            "id": "7eb07bf8-9dcb-4020-b937-8fa87e53c14e",
+            "value": 500,
+            "clue": "Хэллоуинд тохирох баримт: энэ далайн амьтан цэнхэр өнгийн цустай бөгөөд 3 зүрхтэй — хоёр нь заламгайдаа, нэг нь бүх биедээ цус шахдаг. 8 хөлтэй энэ амьтан юу вэ?",
+            "answer": "Наймаалж (Octopus)",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/Octopus",
+            "clueImages": [],
+            "answerImages": []
+          }
+        ]
+      },
+      {
+        "id": "b2d33fb5-f97b-41df-b4de-be8b7198369c",
+        "name": "Anime",
+        "questions": [
+          {
+            "id": "23c4232b-a750-4047-868a-2d8f335a3fef",
+            "value": 200,
+            "clue": "Ямар аниме ний дуу вэ ? ",
+            "answer": "Kimi no nawa \"Your Name\"",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/One_Piece",
+            "clueImages": [],
+            "answerImages": [],
+            "clueAudio": "/uploads/a3d9b487-f7f1-42c5-b704-461b1d65d063.mp3"
+          },
+          {
+            "id": "bc9a01cd-f46a-4f42-b3ad-137603b44bd2",
+            "value": 200,
+            "clue": "Attack on titan дээрх уг Titan-ийн нэр юу вэ ? ",
+            "answer": "Warhammer",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/Attack_on_Titan",
+            "clueImages": [
+              "/uploads/70a683c2-c6fe-4a00-a9d9-d15b953f54f7.webp"
+            ],
+            "answerImages": []
+          },
+          {
+            "id": "f627b9e6-0808-4c13-b185-17971de734b8",
+            "value": 200,
+            "clue": "Naruto Shippuden anime хэдэн ангитай вэ ?",
+            "answer": "500",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/Kurama_(Naruto)",
+            "clueImages": [],
+            "answerImages": []
+          },
+          {
+            "id": "dafa9c09-1be9-45b2-9929-9fa049fdd5da",
+            "value": 200,
+            "clue": "Зурагт харагдаж буй anime юу вэ?",
+            "answer": "Samurai Champloo",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/Nezuko_Kamado",
+            "clueImages": [
+              "/uploads/12481084-1dea-471a-b7a5-a1f37b5103a5.jpeg"
+            ],
+            "answerImages": []
+          },
+          {
+            "id": "2af993aa-9c92-40bc-bcef-b343139cd94d",
+            "value": 200,
+            "clue": "Hayao Miyazaki-ийн  Ghibli Studio-ийн Oscar авсан анхны бүтээл нь  Spirited Away бол 2 дахнь юу вэ ?",
+            "answer": "Boy and the Heron",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/My_Neighbor_Totoro",
+            "clueImages": [],
+            "answerImages": []
+          }
+        ]
+      },
+      {
+        "id": "0b4c67af-09a4-49d3-b6d4-36c34aad055d",
+        "name": "Famous Spouses",
+        "questions": [
+          {
+            "id": "9fbbf14b-1a56-46b0-b0d9-dbdcd1a6f15a",
+            "value": 100,
+            "clue": "Энэ бол Spice Girls хамтлагийн \"Posh Spice\" — Виктория. 1999 онд гэрлэсэн түүний нөхөр хэн бэ?",
+            "answer": "Дэвид Бэкхэм (David Beckham)",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/David_Beckham",
+            "clueImages": [
+              "https://upload.wikimedia.org/wikipedia/commons/a/a8/VictoriaBeckham2018-2-Crop.jpg"
+            ],
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/commons/7/73/David_Beckham_UNICEF_%28cropped2%29.jpg"
+            ]
+          },
+          {
+            "id": "ecace44b-0f24-4508-8b77-5880f45c684b",
+            "value": 200,
+            "clue": "Энэ бол реппер, бизнесмэн Jay-Z. 2008 онд түүнтэй гэрлэсэн эхнэр нь хэн бэ?",
+            "answer": "Бейонсе (Beyoncé)",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/Beyoncé",
+            "clueImages": [
+              "https://upload.wikimedia.org/wikipedia/commons/5/55/Jay-Z_meets_with_New_York_Senate_Majority_Leader_in_Albany_%28cropped%29.webp"
+            ],
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/commons/b/b7/Beyonc%C3%A9_-_Tottenham_Hotspur_Stadium_-_1st_June_2023_%2810_of_118%29_%2852946364598%29_%28best_crop%29.jpg"
+            ]
+          },
+          {
+            "id": "0a6b2a1a-a957-4d03-b44e-2e03108a4245",
+            "value": 300,
+            "clue": "Энэ бол загвар өмсөгч Хэйли (охин нэр нь Болдуин). 2018 онд гэрлэсэн түүний нөхөр хэн бэ?",
+            "answer": "Жастин Бибер (Justin Bieber)",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/Justin_Bieber",
+            "clueImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Hailey_Bieber_at_WWD_Style_Awards_2026.jpg/960px-Hailey_Bieber_at_WWD_Style_Awards_2026.jpg"
+            ],
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/commons/6/6c/P20260719DT-1213_President_Donald_J._Trump_and_First_Lady_Melania_Trump_attend_the_FIFA_World_Cup_Final_%28cropped_2%29.jpg"
+            ]
+          },
+          {
+            "id": "d7d027c7-77ae-41ff-a909-78bd27fc65c6",
+            "value": 400,
+            "clue": "Энэ бол \"Gossip Girl\" цувралд Серена ван дер Вудсений дүрд тоглосон жүжигчин Блэйк Лайвли. 2012 онд гэрлэсэн түүний нөхөр хэн бэ?",
+            "answer": "Райан Рэйнольдс (Ryan Reynolds)",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/Ryan_Reynolds",
+            "clueImages": [
+              "https://upload.wikimedia.org/wikipedia/commons/e/e4/Guests_at_the_2026_Met_Gala_435_%28Blake_Lively%29.jpg"
+            ],
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Deadpool_2_Japan_Premiere_Red_Carpet_Ryan_Reynolds_%28cropped%29.jpg/960px-Deadpool_2_Japan_Premiere_Red_Carpet_Ryan_Reynolds_%28cropped%29.jpg"
+            ]
+          },
+          {
+            "id": "4dff0789-243b-430c-b716-a48a3f3c5490",
+            "value": 500,
+            "clue": "Энэ бол 2000 оны Miss World, Энэтхэгийн жүжигчин Приянка Чопра. 2018 онд Жодпурт гэрлэсэн түүний нөхөр хэн бэ?",
+            "answer": "Ник Жонас (Nick Jonas) — Jonas Brothers",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/Nick_Jonas",
+            "clueImages": [
+              "https://upload.wikimedia.org/wikipedia/commons/4/45/Priyanka_Chopra_at_Bulgary_launch%2C_2024_%28cropped%29.jpg"
+            ],
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/commons/f/f5/Nick_Jonas_at_DIFF_2026.jpg"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "3804a320-8db7-4d16-a273-16d7c41b85df",
+        "name": "Монгол кино",
+        "questions": [
+          {
+            "id": "4e8d798a-3e5a-4ff6-bf74-375a00963deb",
+            "value": 100,
+            "clue": "1621 онд бичсэн шүлэг нь хадан дээр сийлэгдэн өнөөг хүртэл хадгалагдаж буй, 17-р зууны Халхын ноён Цогтын тухай 1945 оны энэ кино Монгол кино урлагийн сонгодог бүтээлд тооцогддог. Ямар кино вэ?",
+            "answer": "Цогт тайж (1945)",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/Tsogt_taij_(film)",
+            "clueImages": [],
+            "answerImages": []
+          },
+          {
+            "id": "9baedfce-94ed-457c-8829-d97887b9e1be",
+            "value": 200,
+            "clue": "15-р зуунд бага насны Батмөнхийг Даян хаан болгон өргөмжилж, Монголыг дахин нэгтгэхэд гол үүрэг гүйцэтгэсэн хатны тухай 1988 оны түүхэн кино юу вэ?",
+            "answer": "Мандухай сэцэн хатан (1988, найруулагч Б. Балжинням)",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://mn.wikipedia.org/wiki/Мандухай_сэцэн_хатан_(кино)",
+            "clueImages": [],
+            "answerImages": []
+          },
+          {
+            "id": "21696e05-55a5-48e7-82f9-449fa5813cb7",
+            "value": 300,
+            "clue": "Жүжигчин Болд-Эрдэнэ нэг л удаа кино найруулж байжээ. Уг кино нь аймшгийн кино ба гол дүрд нь жүжигчин Долгор тоглосон ба уг киноны нэр юу вэ ? ",
+            "answer": "Хөлтрөг",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/The_Cave_of_the_Yellow_Dog",
+            "clueImages": [
+              "/uploads/25d9f81d-c5d3-4180-b434-e700b965f949.jpeg"
+            ],
+            "answerImages": [
+              "/uploads/d3e952e5-133e-4baf-8994-36de6cfe837d.jpg"
+            ]
+          },
+          {
+            "id": "49f6924f-c2de-4e9a-a8ff-fb84dcb1d24b",
+            "value": 400,
+            "clue": "Малчдыг нүүрсний уурхай руу албадан нүүлгэж буй тухай, Петер Брозенс, Жессика Вудворт нарын найруулсан 2006 оны энэ кино Венецийн кино наадамд шилдэг анхны киноны \"Ирээдүйн арслан\" шагнал хүртсэн. Монгол нэр бүхий энэ кино юу вэ?",
+            "answer": "Хадаг (Khadak, 2006)",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/Khadak_(2006_film)",
+            "clueImages": [],
+            "answerImages": []
+          },
+          {
+            "id": "8c32c771-80b9-41ce-bc13-a7b307199675",
+            "value": 500,
+            "clue": "1938 онд найруулагч Балданы бүтээсэн энэ хар цагаан богино уран сайхны кино нь монгол хүний найруулсан анхны кино гэж тооцогддог. Ямар кино вэ?",
+            "answer": "Норжмаагийн зам (Norjmaa's Way, 1938)",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/Cinema_of_Mongolia",
+            "clueImages": [],
+            "answerImages": []
+          }
+        ]
+      },
+      {
+        "id": "b5b11064-6d25-4ea4-8cd1-5d13468b6c9c",
+        "name": "Sequence",
+        "questions": [
+          {
+            "id": "196e2dac-c3ac-4625-9176-7b185ea4dda1",
+            "value": 400,
+            "clue": "Чингис хаан → Өгөөдэй хаан → Гүюг хаан → ? (Их Монгол Улсын хаад)",
+            "answer": "Мөнх хаан (1251–1259)",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/M%C3%B6ngke_Khan",
+            "clueImages": [],
+            "answerImages": []
+          },
+          {
+            "id": "8381d001-bf9a-46d3-bca5-53a1481d4180",
+            "value": 400,
+            "clue": "Токио 2020 → Парис 2024 → Лос-Анжелес 2028 → ? (Зуны олимп)",
+            "answer": "Брисбен 2032 (Brisbane)",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/2032_Summer_Olympics",
+            "clueImages": [],
+            "answerImages": []
+          },
+          {
+            "id": "aeec7272-6de9-4fab-80f9-6c093eae23de",
+            "value": 400,
+            "clue": "O → T → T → ?",
+            "answer": "F— Four (англи тоонуудын эхний үсэг: One, Two, Three, Four)",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/English_numerals",
+            "clueImages": [],
+            "answerImages": []
+          },
+          {
+            "id": "722da273-aa53-433b-9f0b-236175593873",
+            "value": 400,
+            "clue": "Хулгана → Үхэр → Бар → Туулай → ?",
+            "answer": "Луу (12 жилийн 5 дахь нь)",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://en.wikipedia.org/wiki/Chinese_zodiac",
+            "clueImages": [],
+            "answerImages": []
+          },
+          {
+            "id": "8fc257f1-bcf8-4c67-b062-ee860c1d7cc4",
+            "value": 400,
+            "clue": "Нэг → Арав → Зуу → Мянга → Түм → ?",
+            "answer": "Бум (100 000)",
+            "isDailyDouble": false,
+            "answered": false,
+            "source": "https://mn.wikipedia.org/wiki/Тоо",
+            "clueImages": [],
+            "answerImages": []
+          }
+        ]
+      },
+      {
+        "id": "e131a11c-9bef-4eaf-974e-4e30d68d2168",
+        "name": "Connect",
+        "questions": [
+          {
+            "id": "0fe8ecb1-05df-4695-8dfe-79e73dbac1f6",
+            "value": 100,
+            "clue": "",
+            "answer": "",
+            "isDailyDouble": false,
+            "answered": false,
+            "connect": {
+              "clues": [
+                {
+                  "id": "9a462c51-7ee5-4d75-86ce-38499d4fa7ec",
+                  "text": "Сауин (Samhain)"
+                },
+                {
+                  "id": "84acd336-4921-40af-b250-782a9f6057a8",
+                  "text": "Харамч Жак"
+                },
+                {
+                  "id": "2102ae7b-1b8c-42d1-9977-8190b1c147fa",
+                  "text": "Хувцас өмсөх"
+                },
+                {
+                  "id": "3dceea04-4f14-4505-a115-c01b3a411a89",
+                  "text": "\"Trick or treat\""
+                },
+                {
+                  "id": "6919cc8e-69ce-498d-b00c-460d391075e9",
+                  "text": "10-р сарын 31"
+                }
+              ],
+              "answer": "Хэллоуин (Halloween)"
+            }
+          },
+          {
+            "id": "762f6fa7-14d3-41a8-bedb-134743303749",
+            "value": 200,
+            "clue": "",
+            "answer": "",
+            "isDailyDouble": false,
+            "answered": false,
+            "connect": {
+              "clues": [
+                {
+                  "id": "0bff0fb9-55ee-42e8-9690-9bae9984cd52",
+                  "text": "Носферату"
+                },
+                {
+                  "id": "33be3a11-9242-4885-83bc-20df95777303",
+                  "text": "Влад Цепеш"
+                },
+                {
+                  "id": "6ed694b2-e750-466a-89c6-88afcf283295",
+                  "text": "Сармис"
+                },
+                {
+                  "id": "22a51150-e340-4cc3-9116-bc863958d1bb",
+                  "text": "Брам Стокер"
+                },
+                {
+                  "id": "d1dfce34-7745-4c00-b41d-ca283097b408",
+                  "text": "Дракула"
+                }
+              ],
+              "answer": "Цус сорогч (Vampire)"
+            }
+          },
+          {
+            "id": "d778e504-a257-477a-86b7-bd67ce014481",
+            "value": 300,
+            "clue": "",
+            "answer": "",
+            "isDailyDouble": false,
+            "answered": false,
+            "connect": {
+              "clues": [
+                {
+                  "id": "9a7d0b56-dc92-4e21-8708-3e19efec3c45",
+                  "text": "Готэм"
+                },
+                {
+                  "id": "e63bd31e-921c-4742-afa3-e2bbd2795b01",
+                  "text": "Альфред"
+                },
+                {
+                  "id": "5ed7143e-0d76-4951-9c26-cc4e9b658baf",
+                  "text": "Жокер"
+                },
+                {
+                  "id": "677bac64-a422-4dcd-a5f4-3c71e719c40d",
+                  "text": "Брюс Уэйн"
+                },
+                {
+                  "id": "a7065c78-7c49-4614-bd73-21f5d250f9ff",
+                  "text": "Сарьсан багваахай"
+                }
+              ],
+              "answer": "Бэтмэн (Batman)"
+            }
+          },
+          {
+            "id": "e1911947-c15c-47fb-860d-057ff2bdd0b9",
+            "value": 400,
+            "clue": "",
+            "answer": "",
+            "isDailyDouble": false,
+            "answered": false,
+            "connect": {
+              "clues": [
+                {
+                  "id": "02f16f63-aac0-49a8-a694-413abd6c1e9a",
+                  "text": "Каспаров"
+                },
+                {
+                  "id": "5064717d-564d-4f46-9e44-d9074ce3492b",
+                  "text": "Рокировка"
+                },
+                {
+                  "id": "8bf85d6d-ad92-42f9-89d4-ce493e1caaee",
+                  "text": "Гамбит"
+                },
+                {
+                  "id": "2e15871c-d511-4479-9a0a-5766787be7d2",
+                  "text": "Magnus"
+                },
+                {
+                  "id": "8934c6ea-3f5e-4c3b-b636-94b721f76ad1",
+                  "text": "Морь, тэрэг, бэрс"
+                }
+              ],
+              "answer": "Шатар (Chess)"
+            }
+          },
+          {
+            "id": "12b52944-bc06-4ec4-8d16-0283d59e4c9e",
+            "value": 500,
+            "clue": "",
+            "answer": "",
+            "isDailyDouble": false,
+            "answered": false,
+            "connect": {
+              "clues": [
+                {
+                  "id": "a08d105d-9eef-44db-b743-2c4179c73c10",
+                  "text": "Тутанхамон"
+                },
+                {
+                  "id": "90fc8535-5ab3-4938-85ac-925f3430f05b",
+                  "text": "Сфинкс"
+                },
+                {
+                  "id": "891becb1-28aa-46d7-91ca-bd23a07bfc00",
+                  "text": "Нил мөрөн"
+                },
+                {
+                  "id": "75d22253-a8f0-40a2-b1ac-33c0852bdca5",
+                  "text": "Каир"
+                },
+                {
+                  "id": "1a21ae5d-9bcd-4952-b2d8-9a7f1f5a74d8",
+                  "text": "Пирамид"
+                }
+              ],
+              "answer": "Египет (Egypt)"
+            }
+          }
+        ],
+        "type": "connect"
+      }
+    ],
+    "folderId": "59ef3da5-4d8f-4476-8dde-913e80fac97e",
+    "createdAt": "2026-10-30T07:30:17.997Z",
+    "updatedAt": "2026-10-30T08:05:56.426Z",
+    "timerSeconds": 45
   }
 ]

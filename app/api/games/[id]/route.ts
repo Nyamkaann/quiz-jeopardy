@@ -26,6 +26,10 @@ export async function PUT(
     if (!existing)
       return NextResponse.json({ error: "Not found" }, { status: 404 });
     const body = await req.json();
+    // full saves from the editor carry the version they were loaded from;
+    // refuse them if the game changed since, so a stale tab can't overwrite newer edits
+    if (body.updatedAt && body.updatedAt !== existing.updatedAt)
+      return NextResponse.json({ error: "Conflict", game: existing }, { status: 409 });
     const updated = {
       ...existing,
       ...body,

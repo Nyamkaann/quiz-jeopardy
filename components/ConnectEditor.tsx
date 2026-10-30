@@ -117,7 +117,7 @@ function ClueSlot({
       className="rounded-xl p-3 flex flex-col gap-2"
       style={{
         background: "rgba(255,255,255,0.03)",
-        border: `1px solid ${empty ? "var(--glass-border)" : "rgba(95,195,195,0.45)"}`,
+        border: `1px solid ${empty ? "var(--glass-border)" : "rgba(166,120,255,0.45)"}`,
       }}
     >
       <div className="flex items-center justify-between">
@@ -155,7 +155,7 @@ export function MediaPick({
 
   if (url) {
     return (
-      <div className="relative group rounded-lg overflow-hidden" style={{ border: "1px solid rgba(95,195,195,0.4)" }}>
+      <div className="relative group rounded-lg overflow-hidden" style={{ border: "1px solid rgba(166,120,255,0.4)" }}>
         {kind === "image" ? (
           <div className="relative h-20">
             <Image src={url} alt={label} fill className="object-contain" unoptimized />
@@ -199,7 +199,7 @@ export function MediaPick({
       <button
         onClick={() => ref.current?.click()}
         disabled={busy}
-        className="px-2 py-1.5 mono text-[0.6rem] shrink-0 transition-colors hover:bg-[rgba(95,195,195,0.12)]"
+        className="px-2 py-1.5 mono text-[0.6rem] shrink-0 transition-colors hover:bg-[rgba(166,120,255,0.12)]"
         style={{ color: "rgba(243,233,210,0.7)", borderRight: "1px solid var(--glass-border)" }}
       >
         {busy ? "..." : kind === "image" ? "🖼 " + label : "🔊 " + label}

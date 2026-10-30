@@ -77,7 +77,7 @@ export default function PasswordModal({ onSuccess, onCancel, action = "continue"
               background: "rgba(255,255,255,0.05)",
               border: `2px solid ${error ? "#cc2200" : "var(--sp-blue)"}`,
               fontFamily: "var(--font-mono)",
-              boxShadow: error ? "0 0 12px rgba(204,34,0,0.4)" : "0 0 8px rgba(95,195,195,0.2)",
+              boxShadow: error ? "0 0 12px rgba(204,34,0,0.4)" : "0 0 8px rgba(166,120,255,0.2)",
             }}
           />
 

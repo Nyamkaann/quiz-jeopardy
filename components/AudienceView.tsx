@@ -48,7 +48,7 @@ export default function AudienceView({ s, fx }: { s: DisplaySnapshot; fx: Displa
 function Logo({ size = 380 }: { size?: number }) {
   return (
     <div className="relative floaty drop-in">
-      <div className="absolute inset-0 rounded-full blur-3xl" style={{ background: "radial-gradient(circle, rgba(95,195,195,0.35), transparent 65%)" }} />
+      <div className="absolute inset-0 rounded-full blur-3xl" style={{ background: "radial-gradient(circle, rgba(166,120,255,0.35), transparent 65%)" }} />
       <div className="logo-orbit" />
       <div className="logo-orbit reverse" />
       <Image src="/astro-nots.png" width={size} height={size} alt="" priority
@@ -123,7 +123,7 @@ function Board({ s }: { s: DisplaySnapshot }) {
               style={{
                 animationDelay: `${ci * 60}ms`,
                 fontSize: "clamp(0.7rem, 1.3vw, 1.4rem)",
-                ...(isConnectCategory(cat) && { borderBottomColor: "var(--teal)", background: "linear-gradient(180deg, rgba(95,195,195,0.22), rgba(255,255,255,0.03))" }),
+                ...(isConnectCategory(cat) && { borderBottomColor: "var(--teal)", background: "linear-gradient(180deg, rgba(166,120,255,0.22), rgba(255,255,255,0.03))" }),
               }}>
               {isConnectCategory(cat) && <span style={{ color: "var(--teal)" }}>✦</span>}
               {cat.name.toUpperCase()}
@@ -163,7 +163,7 @@ function TimerRing({ left, total, state }: { left: number; total: number; state:
     <div className={`relative flex items-center justify-center ${state === "running" && left > 0 && left <= 10 ? "urgent" : ""}`}
       style={{ width: 76, height: 76, opacity: state === "idle" ? 0.45 : 1 }}>
       <svg width="76" height="76" viewBox="0 0 64 64" style={{ position: "absolute", inset: 0, transform: "rotate(-90deg)" }}>
-        <circle cx="32" cy="32" r={r} fill="none" stroke="rgba(95,195,195,0.2)" strokeWidth="4" />
+        <circle cx="32" cy="32" r={r} fill="none" stroke="rgba(166,120,255,0.2)" strokeWidth="4" />
         <circle cx="32" cy="32" r={r} fill="none" stroke={color} strokeWidth="4" strokeLinecap="round"
           strokeDasharray={c} strokeDashoffset={c * (1 - left / Math.max(total, 1))}
           style={{ transition: "stroke-dashoffset 0.9s linear, stroke 0.3s" }} />
@@ -179,7 +179,7 @@ function Clue({ s }: { s: DisplaySnapshot }) {
   const buzzed = s.players.find((p) => p.id === s.buzzed);
   const clueImgs = getClueImages(q);
   const ansImgs = getAnswerImages(q);
-  const big = { fontSize: "clamp(2rem, min(4.6vw, 8vh), 5.5rem)", lineHeight: 1.2 };
+  const big = (text: string, withImages: boolean) => ({ fontSize: textSize(text, withImages), lineHeight: 1.2 });
 
   return (
     <>
@@ -190,17 +190,17 @@ function Clue({ s }: { s: DisplaySnapshot }) {
       </div>
 
       <div className="flex-1 min-h-0 flex items-center justify-center p-4 sm:p-8">
-        <div key={q.id} className="glass zoom-in rounded-3xl w-full max-w-7xl h-full flex flex-col items-center justify-center gap-6 px-8 py-8 text-center overflow-hidden">
+        <div key={q.id} className="glass zoom-in rounded-3xl w-full max-w-[1900px] h-full flex flex-col items-center justify-center gap-5 px-5 sm:px-10 py-6 sm:py-8 text-center overflow-hidden">
           {!s.showAnswer ? (
             <>
-              {q.clue && <p className="flip-in title-mixed text-[var(--cream)]" style={big}>{q.clue}</p>}
+              {q.clue && <p className="flip-in title-mixed text-[var(--cream)]" style={big(q.clue, clueImgs.length > 0)}>{q.clue}</p>}
               <Pics images={clueImgs} />
               {q.clueAudio && !q.clue && clueImgs.length === 0 && <span className="text-8xl">🔊</span>}
             </>
           ) : (
             <>
               <p className="mono text-sm" style={{ color: "var(--teal)" }}>ХАРИУЛТ</p>
-              {q.answer && <p className="flip-in title-mixed text-gradient" style={big}>{q.answer}</p>}
+              {q.answer && <p className="flip-in title-mixed text-gradient" style={big(q.answer, ansImgs.length > 0)}>{q.answer}</p>}
               <Pics images={ansImgs} />
             </>
           )}
@@ -228,13 +228,27 @@ function Clue({ s }: { s: DisplaySnapshot }) {
   );
 }
 
+/** Same scale as the host screen, a notch larger since this one is projected */
+function textSize(text: string, withImages: boolean): string {
+  const len = text.length;
+  if (withImages) {
+    if (len <= 60) return "clamp(2.2rem, min(5.4vw, 8.5vh), 6.5rem)";
+    if (len <= 160) return "clamp(1.8rem, min(4vw, 6.4vh), 5rem)";
+    return "clamp(1.5rem, min(3vw, 5vh), 3.8rem)";
+  }
+  if (len <= 40) return "clamp(2.8rem, min(7.5vw, 14vh), 10rem)";
+  if (len <= 120) return "clamp(2.2rem, min(5.6vw, 10vh), 7rem)";
+  if (len <= 260) return "clamp(1.9rem, min(4.3vw, 7.4vh), 5.4rem)";
+  return "clamp(1.6rem, min(3.4vw, 6vh), 4.4rem)";
+}
+
 function Pics({ images }: { images: string[] }) {
   if (images.length === 0) return null;
   const single = images.length === 1;
   return (
-    <div className="flip-in w-full flex gap-4 justify-center min-h-0 flex-1" style={{ maxHeight: single ? "60vh" : "48vh" }}>
+    <div className="flip-in w-full flex gap-4 justify-center min-h-0 flex-1" style={{ minHeight: single ? "40vh" : "32vh" }}>
       {images.map((src, i) => (
-        <div key={i} className="relative flex-1 rounded-2xl overflow-hidden" style={{ maxWidth: single ? "70vw" : undefined, border: "1px solid var(--glass-border-hi)" }}>
+        <div key={i} className="relative flex-1 rounded-2xl overflow-hidden" style={{ border: "1px solid var(--glass-border-hi)", background: "rgba(0,0,0,0.25)" }}>
           <Image src={src} alt="" fill className="object-contain" unoptimized />
         </div>
       ))}

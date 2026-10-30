@@ -106,7 +106,7 @@ export default function ScorePanel(props: Props) {
       <aside
         className="h-full w-full sm:w-[440px] flex flex-col"
         style={{
-          background: "rgba(8,20,32,0.82)",
+          background: "rgba(20,10,30,0.82)",
           borderLeft: "1px solid var(--glass-border-hi)",
           backdropFilter: "blur(28px) saturate(150%)",
           WebkitBackdropFilter: "blur(28px) saturate(150%)",

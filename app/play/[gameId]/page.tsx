@@ -90,7 +90,7 @@ function RulesModal({ onClose }: { onClose: () => void }) {
               className="flex gap-4 rounded-xl px-4 py-3"
               style={{
                 background: "rgba(255,255,255,0.05)",
-                border: "1px solid rgba(95,195,195,0.25)",
+                border: "1px solid rgba(166,120,255,0.25)",
               }}
             >
               <span className="text-2xl shrink-0 mt-0.5">{r.icon}</span>
@@ -373,6 +373,22 @@ function PlayGame({ gameId }: { gameId: string }) {
     setPlayers((prev) => prev.filter((p) => p.id !== id));
   }
 
+  /** Setup screen: points a team carries into this round (e.g. from the previous round). */
+  function setStartingScore(id: string, raw: string) {
+    const n = parseInt(raw, 10);
+    setPlayers((prev) => prev.map((p) => (p.id === id ? { ...p, score: Number.isFinite(n) ? n : 0 } : p)));
+  }
+
+  function startGame() {
+    // record starting points in the history so they show up there and can be undone like any other change
+    const now = Date.now();
+    const start = players
+      .filter((p) => p.score !== 0)
+      .map((p) => ({ id: crypto.randomUUID(), playerId: p.id, delta: p.score, reason: "ЭХЛЭХ ОНОО", at: now }));
+    if (start.length) setScoreLog((prev) => [...start, ...prev].slice(0, 60));
+    setPhase("board");
+  }
+
   /** Host fix: re-open a tile that was closed by mistake. */
   function reopenQuestion(catId: string, q: Question) {
     const cat = game?.categories.find((c) => c.id === catId);
@@ -620,8 +636,8 @@ function PlayGame({ gameId }: { gameId: string }) {
     <button
       onClick={openDisplay}
       title={displayOn ? "Үзэгчдийн дэлгэц холбогдсон" : "Проектор / үзэгчдийн дэлгэц нээх"}
-      className="rounded-lg px-3 py-1.5 mono text-[0.6rem] flex items-center gap-1.5 transition-colors hover:bg-[rgba(95,195,195,0.18)]"
-      style={{ color: "var(--cream)", background: "rgba(95,195,195,0.08)", border: `1px solid ${displayOn ? "rgba(120,240,180,0.6)" : "rgba(95,195,195,0.4)"}` }}
+      className="rounded-lg px-3 py-1.5 mono text-[0.6rem] flex items-center gap-1.5 transition-colors hover:bg-[rgba(166,120,255,0.18)]"
+      style={{ color: "var(--cream)", background: "rgba(166,120,255,0.08)", border: `1px solid ${displayOn ? "rgba(120,240,180,0.6)" : "rgba(166,120,255,0.4)"}` }}
     >
       <span className="w-1.5 h-1.5 rounded-full" style={{ background: displayOn ? "#5ef0a0" : "rgba(243,233,210,0.3)", boxShadow: displayOn ? "0 0 8px #5ef0a0" : "none" }} />
       📺 ҮЗЭГЧИД
@@ -656,7 +672,7 @@ function PlayGame({ gameId }: { gameId: string }) {
         {showRules && <RulesModal onClose={() => setShowRules(false)} />}
         <div className="flex flex-col items-center text-center gap-4">
           <div className="relative floaty drop-in">
-            <div className="absolute inset-0 rounded-full blur-3xl" style={{ background: "radial-gradient(circle, rgba(95,195,195,0.35), transparent 65%)" }} />
+            <div className="absolute inset-0 rounded-full blur-3xl" style={{ background: "radial-gradient(circle, rgba(166,120,255,0.35), transparent 65%)" }} />
             <div className="logo-orbit" />
             <div className="logo-orbit reverse" />
             <Image src="/astro-nots.png" width={480} height={480} priority alt="Astro-Nots"
@@ -700,13 +716,16 @@ function PlayGame({ gameId }: { gameId: string }) {
 
           {players.length > 0 && (
             <div className="space-y-2 mb-6">
+              <p className="mono text-[0.6rem] text-right pr-1" style={{ color: "rgba(243,233,210,0.5)" }}>
+                ЭХЛЭХ ОНОО · өмнөх round-оос авчирсан оноо (заавал биш)
+              </p>
               {players.map((p, i) => (
                 <div
                   key={p.id}
                   className="flex items-center justify-between px-4 py-2 rounded"
                   style={{
                     background: "rgba(255,255,255,0.05)",
-                    border: "1px solid rgba(95,195,195,0.4)",
+                    border: "1px solid rgba(166,120,255,0.4)",
                   }}
                 >
                   <div className="flex items-center gap-3">
@@ -720,6 +739,23 @@ function PlayGame({ gameId }: { gameId: string }) {
                       {p.name}
                     </span>
                   </div>
+                  <div className="flex items-center gap-3 shrink-0">
+                  <input
+                    type="number"
+                    inputMode="numeric"
+                    step={100}
+                    value={p.score === 0 ? "" : p.score}
+                    placeholder="0"
+                    onChange={(e) => setStartingScore(p.id, e.target.value)}
+                    title="Эхлэх оноо"
+                    aria-label={`${p.name} — эхлэх оноо`}
+                    className="w-24 px-2 py-1 rounded text-right retro-title text-base focus:outline-none"
+                    style={{
+                      background: "rgba(255,255,255,0.05)",
+                      border: "1px solid var(--glass-border-hi)",
+                      color: p.score < 0 ? "#ff6a62" : "var(--gold)",
+                    }}
+                  />
                   <button
                     onClick={() => removePlayer(p.id)}
                     className="text-xs tracking-wider transition-colors hover:text-red-300"
@@ -730,13 +766,14 @@ function PlayGame({ gameId }: { gameId: string }) {
                   >
                     REMOVE
                   </button>
+                  </div>
                 </div>
               ))}
             </div>
           )}
 
           <button
-            onClick={() => setPhase("board")}
+            onClick={startGame}
             disabled={players.length === 0}
             className="btn-gold w-full py-4 rounded text-2xl disabled:opacity-30"
           >
@@ -784,9 +821,9 @@ function PlayGame({ gameId }: { gameId: string }) {
             className="w-full mt-3 py-2 rounded-full text-sm tracking-widest transition-all hover:opacity-80"
             style={{
               fontFamily: "var(--font-mono)",
-              border: "1px solid rgba(95,195,195,0.4)",
+              border: "1px solid rgba(166,120,255,0.4)",
               color: "rgba(243,233,210,0.7)",
-              background: "rgba(95,195,195,0.06)",
+              background: "rgba(166,120,255,0.06)",
               letterSpacing: "0.15em",
               fontSize: "0.7rem",
             }}
@@ -867,7 +904,7 @@ function PlayGame({ gameId }: { gameId: string }) {
         {/* board fills remaining height */}
         <div className="flex-1 min-h-0 p-2 sm:p-3 overflow-auto">
           <div
-            className="grid gap-1.5 sm:gap-2.5 h-full min-w-[640px]"
+            className="grid gap-1 sm:gap-2.5 h-full min-w-0"
             style={{
               gridTemplateColumns: `repeat(${game.categories.length}, minmax(0, 1fr))`,
               gridTemplateRows: `minmax(56px, auto) repeat(${rows}, minmax(56px, 1fr))`,
@@ -875,13 +912,13 @@ function PlayGame({ gameId }: { gameId: string }) {
           >
             {game.categories.map((cat, colIdx) => (
               <div key={cat.id}
-                className={`cat-header rounded-xl flex items-center justify-center gap-1.5 px-2 py-2 text-center ${boardIntro ? "drop-in" : ""}`}
+                className={`cat-header rounded-lg sm:rounded-xl flex items-center justify-center gap-1.5 px-1 sm:px-2 py-2 text-center break-words ${boardIntro ? "drop-in" : ""}`}
                 style={{
                   animationDelay: `${colIdx * 60}ms`,
-                  fontSize: "clamp(0.65rem, 1.1vw, 1.05rem)",
+                  fontSize: "clamp(0.55rem, 1.35vw, 1.5rem)",
                   ...(isConnectCategory(cat) && {
                     borderBottomColor: "var(--teal)",
-                    background: "linear-gradient(180deg, rgba(95,195,195,0.22), rgba(255,255,255,0.03))",
+                    background: "linear-gradient(180deg, rgba(166,120,255,0.22), rgba(255,255,255,0.03))",
                   }),
                 }}>
                 {isConnectCategory(cat) && <span style={{ color: "var(--teal)" }}>✦</span>}
@@ -921,7 +958,7 @@ function PlayGame({ gameId }: { gameId: string }) {
                       onClick={() => reopenQuestion(cat.id, q)}
                       title="Санамсаргүй хаасан бол дахин нээх"
                       className="absolute inset-0 m-auto w-fit h-fit rounded-lg px-3 py-1.5 mono text-[0.6rem] opacity-0 group-hover:opacity-100 focus:opacity-100 transition-opacity"
-                      style={{ color: "var(--cream)", background: "rgba(5,13,22,0.8)", border: "1px solid var(--glass-border-hi)" }}
+                      style={{ color: "var(--cream)", background: "rgba(10,5,16,0.8)", border: "1px solid var(--glass-border-hi)" }}
                     >
                       ↺ ДАХИН НЭЭХ
                     </button>
@@ -1001,7 +1038,7 @@ function PlayGame({ gameId }: { gameId: string }) {
         {scorePanel}
         {/* header */}
         <div className="glass-bar drop-in flex items-center justify-between gap-2 px-3 sm:px-6 py-2.5 sm:py-3 shrink-0">
-          <span className="retro-title text-sm sm:text-lg text-[var(--sp-blue-glow)] tracking-wider truncate min-w-0">
+          <span className="retro-title text-base sm:text-2xl text-[var(--sp-blue-glow)] tracking-wider truncate min-w-0">
             {catName.toUpperCase()}
           </span>
 
@@ -1022,7 +1059,7 @@ function PlayGame({ gameId }: { gameId: string }) {
             style={{ width: 44, height: 44, opacity: timerState === "idle" ? 0.7 : 1 }}
           >
             <svg width="44" height="44" viewBox="0 0 64 64" style={{ position: "absolute", top: 0, left: 0, transform: "rotate(-90deg)" }}>
-              <circle cx="32" cy="32" r="28" fill="none" stroke="rgba(95,195,195,0.2)" strokeWidth="4" />
+              <circle cx="32" cy="32" r="28" fill="none" stroke="rgba(166,120,255,0.2)" strokeWidth="4" />
               <circle
                 cx="32" cy="32" r="28" fill="none"
                 stroke={timeLeft <= 10 ? "#ff4422" : timeLeft <= 20 ? "#ffaa00" : "var(--sp-blue)"}
@@ -1058,8 +1095,8 @@ function PlayGame({ gameId }: { gameId: string }) {
         </div>
 
         {/* clue / answer display */}
-        <div className="flex-1 min-h-0 overflow-y-auto flex flex-col items-center justify-center px-4 sm:px-10 text-center gap-6 py-6">
-          <div ref={clueCardRef} className="glass zoom-in rounded-3xl w-full max-w-6xl flex-1 min-h-0 flex flex-col items-center justify-center gap-6 px-6 sm:px-12 py-8">
+        <div className="flex-1 min-h-0 overflow-y-auto flex flex-col items-center justify-center px-2 sm:px-6 text-center py-3 sm:py-5">
+          <div ref={clueCardRef} className="glass zoom-in rounded-3xl w-full max-w-[1800px] flex-1 min-h-0 flex flex-col items-center justify-center gap-4 sm:gap-6 px-4 sm:px-10 py-5 sm:py-8">
           {!showAnswer ? (
             <>
               {q.clue && (
@@ -1067,7 +1104,7 @@ function PlayGame({ gameId }: { gameId: string }) {
                   className="flip-in font-bold text-[var(--cream)] leading-relaxed"
                   style={{
                     fontFamily: "var(--font-body)",
-                    fontSize: "clamp(1.6rem,min(4.2vw,7vh),4.5rem)", lineHeight: 1.25,
+                    fontSize: textSize(q.clue, getClueImages(q).length > 0), lineHeight: 1.2,
                   }}
                 >
                   {q.clue}
@@ -1076,7 +1113,7 @@ function PlayGame({ gameId }: { gameId: string }) {
               <ImageRow
                 images={getClueImages(q)}
                 borderColor="var(--sp-blue)"
-                glowColor="rgba(95,195,195,0.4)"
+                glowColor="rgba(166,120,255,0.4)"
               />
               {q.clueAudio && (
                 <div className="w-full max-w-sm">
@@ -1103,7 +1140,7 @@ function PlayGame({ gameId }: { gameId: string }) {
                   className="flip-in font-bold leading-relaxed"
                   style={{
                     fontFamily: "var(--font-body)",
-                    fontSize: "clamp(1.6rem,min(4.2vw,7vh),4.5rem)", lineHeight: 1.25,
+                    fontSize: textSize(q.answer, getAnswerImages(q).length > 0), lineHeight: 1.2,
                     color: "var(--gold)",
                     textShadow: "0 0 20px rgba(255,138,61,0.4)",
                   }}
@@ -1212,16 +1249,16 @@ function PlayGame({ gameId }: { gameId: string }) {
                         background:
                           buzzed === p.id
                             ? "var(--gold)"
-                            : "rgba(95,195,195,0.14)",
+                            : "rgba(166,120,255,0.14)",
                         color: buzzed === p.id ? "#1a0b04" : "white",
                         border:
                           buzzed === p.id
                             ? "1px solid rgba(255,214,170,0.7)"
-                            : "1px solid rgba(95,195,195,0.45)",
+                            : "1px solid rgba(166,120,255,0.45)",
                         boxShadow:
                           buzzed === p.id
                             ? "0 0 16px rgba(255,138,61,0.5)"
-                            : "0 0 8px rgba(95,195,195,0.3)",
+                            : "0 0 8px rgba(166,120,255,0.3)",
                       }}
                     >
                       {p.name}
@@ -1411,7 +1448,7 @@ function PlayGame({ gameId }: { gameId: string }) {
                     className="flex-1 min-w-0 px-3 py-2 rounded text-[var(--cream)] focus:outline-none"
                     style={{
                       background: "rgba(255,255,255,0.05)",
-                      border: "2px solid rgba(95,195,195,0.4)",
+                      border: "2px solid rgba(166,120,255,0.4)",
                       fontFamily: "var(--font-mono)",
                     }}
                   />
@@ -1596,7 +1633,7 @@ function PlayGame({ gameId }: { gameId: string }) {
                 animationDelay: i === 0 ? `${(sorted.length - 1) * 0.35 + 0.3}s, ${(sorted.length - 1) * 0.35 + 0.8}s` : `${(sorted.length - 1 - i) * 0.35}s`,
                 background:
                   i === 0
-                    ? "linear-gradient(90deg,rgba(95,195,195,0.12),rgba(255,138,61,0.14))"
+                    ? "linear-gradient(90deg,rgba(166,120,255,0.12),rgba(255,138,61,0.14))"
                     : "var(--bg-card)",
                 border:
                   i === 0
@@ -1604,8 +1641,8 @@ function PlayGame({ gameId }: { gameId: string }) {
                     : "1px solid var(--sp-blue)",
                 boxShadow:
                   i === 0
-                    ? "0 0 24px rgba(255,138,61,0.2), 0 0 8px rgba(95,195,195,0.3)"
-                    : "0 0 8px rgba(95,195,195,0.15)",
+                    ? "0 0 24px rgba(255,138,61,0.2), 0 0 8px rgba(166,120,255,0.3)"
+                    : "0 0 8px rgba(166,120,255,0.15)",
               }}
             >
               <span
@@ -1649,6 +1686,20 @@ function PlayGame({ gameId }: { gameId: string }) {
 }
 
 /* ── renders 1 image large, 2+ side-by-side in a row ── */
+/** Clue / answer text size: as large as the screen allows, smaller for long text or when images share the card */
+function textSize(text: string, withImages: boolean): string {
+  const len = text.length;
+  if (withImages) {
+    if (len <= 60) return "clamp(1.9rem, min(5vw, 8vh), 6rem)";
+    if (len <= 160) return "clamp(1.6rem, min(3.6vw, 6vh), 4.5rem)";
+    return "clamp(1.3rem, min(2.7vw, 4.6vh), 3.4rem)";
+  }
+  if (len <= 40) return "clamp(2.4rem, min(7vw, 13vh), 9rem)";
+  if (len <= 120) return "clamp(2rem, min(5.2vw, 9.5vh), 6.5rem)";
+  if (len <= 260) return "clamp(1.7rem, min(4vw, 7vh), 5rem)";
+  return "clamp(1.5rem, min(3.2vw, 5.6vh), 4rem)";
+}
+
 function ImageRow({
   images,
   borderColor,
@@ -1664,19 +1715,17 @@ function ImageRow({
 
   return (
     <div
-      className={`flip-in w-full flex gap-3 justify-center ${single ? "max-w-2xl" : "max-w-4xl"} mx-auto`}
+      className="flip-in w-full flex-1 flex flex-col sm:flex-row gap-3 justify-center mx-auto"
+      style={{ minHeight: single ? "min(48vh, 520px)" : "min(36vh, 380px)" }}
     >
       {images.map((src, i) => (
         <div
           key={i}
-          className="relative flex-1 rounded-xl overflow-hidden"
+          className="relative flex-1 min-h-[30vh] sm:min-h-0 rounded-2xl overflow-hidden"
           style={{
-            height: single ? "min(50vh,400px)" : "min(42vh,300px)",
-            maxWidth: single
-              ? undefined
-              : `${Math.min(100 / images.length, 50)}vw`,
             border: `3px solid ${borderColor}`,
-            boxShadow: `0 0 24px ${glowColor}`,
+            boxShadow: `0 0 28px ${glowColor}`,
+            background: "rgba(0,0,0,0.25)",
           }}
         >
           <Image

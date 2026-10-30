@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Tektur, Play, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import HalloweenDecor from "@/components/HalloweenDecor";
 
 // Tektur — retro-futuristic display face that matches the Astro-Nots wordmark.
 // Loaded for LATIN ONLY: its Cyrillic З/Э look like "3" and Ө like "0", so any
@@ -37,7 +38,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="mn" className={`${display.variable} ${body.variable} ${mono.variable}`}>
-      <body>{children}</body>
+      <body>
+        <HalloweenDecor />
+        {children}
+      </body>
     </html>
   );
 }

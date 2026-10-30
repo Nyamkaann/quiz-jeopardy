@@ -2,13 +2,19 @@
   {
     "id": "dc2697c6-ca9b-4b2b-8a8f-3de624408cf6",
     "name": "Tunkhel",
-    "parentId": null,
+    "parentId": "eac39ae2-c00d-491a-b8d1-1b834ce98f9a",
     "createdAt": "2026-10-02T16:39:22.095Z"
   },
   {
-    "id": "84a2dc68-72ed-4b3a-a5f8-e488c576c7cf",
-    "name": "Тест",
+    "id": "eac39ae2-c00d-491a-b8d1-1b834ce98f9a",
+    "name": "Rookie Jeo",
     "parentId": null,
-    "createdAt": "2026-10-02T17:14:15.494665Z"
+    "createdAt": "2026-10-30T03:35:50.114Z"
+  },
+  {
+    "id": "59ef3da5-4d8f-4476-8dde-913e80fac97e",
+    "name": "UPC",
+    "parentId": null,
+    "createdAt": "2026-10-30T03:35:55.431Z"
   }
 ]

@@ -36,7 +36,7 @@ function RulesModal({ onClose }: { onClose: () => void }) {
         <div className="p-6 space-y-4 overflow-y-auto" style={{ maxHeight: "70vh" }}>
           {RULES.map((r, i) => (
             <div key={i} className="flex gap-4 rounded-xl px-4 py-3"
-              style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(95,195,195,0.25)" }}>
+              style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(166,120,255,0.25)" }}>
               <span className="text-2xl shrink-0 mt-0.5">{r.icon}</span>
               <div>
                 <p className="retro-title title-mixed text-base text-[var(--gold)] tracking-wide mb-1">{r.title}</p>
@@ -48,7 +48,7 @@ function RulesModal({ onClose }: { onClose: () => void }) {
           ))}
 
           <div className="mt-2 rounded-xl px-4 py-3 text-center"
-            style={{ background: "linear-gradient(90deg,rgba(95,195,195,0.1),rgba(255,138,61,0.08))", border: "1px solid rgba(255,138,61,0.2)" }}>
+            style={{ background: "linear-gradient(90deg,rgba(166,120,255,0.1),rgba(255,138,61,0.08))", border: "1px solid rgba(255,138,61,0.2)" }}>
             <p style={{ fontFamily: "var(--font-mono)", color: "rgba(243,233,210,0.5)", fontSize: "0.7rem", letterSpacing: "0.15em" }}>
               ASTRO JEOPARDY — ШИЛДЭГ БАГИЙГ ТОДРУУЛЪЯ!
             </p>
@@ -78,7 +78,7 @@ export default function HomePage() {
         {/* ── HERO ── */}
         <section className="relative flex flex-col items-center justify-center text-center gap-4 lg:gap-6 py-4">
           <div className="relative floaty drop-in">
-            <div className="absolute inset-0 rounded-full blur-3xl" style={{ background: "radial-gradient(circle, rgba(95,195,195,0.35), transparent 65%)" }} />
+            <div className="absolute inset-0 rounded-full blur-3xl" style={{ background: "radial-gradient(circle, rgba(166,120,255,0.35), transparent 65%)" }} />
             <div className="logo-orbit" />
             <div className="logo-orbit reverse" />
             <Image src="/astro-nots.png" width={520} height={520} priority alt="Astro-Nots"

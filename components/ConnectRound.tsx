@@ -228,9 +228,9 @@ export default function ConnectRound({
                       style={{
                         fontFamily: "var(--font-body)",
                         fontWeight: 700,
-                        background: on ? "var(--gold)" : "rgba(95,195,195,0.12)",
+                        background: on ? "var(--gold)" : "rgba(166,120,255,0.12)",
                         color: on ? "#1a0b04" : "var(--cream)",
-                        border: on ? "1px solid rgba(255,214,170,0.8)" : "1px solid rgba(95,195,195,0.4)",
+                        border: on ? "1px solid rgba(255,214,170,0.8)" : "1px solid rgba(166,120,255,0.4)",
                         boxShadow: on ? "0 0 20px rgba(255,138,61,0.45)" : "none",
                       }}
                     >
@@ -364,7 +364,7 @@ export function ClueCard({
     >
       <span
         className="absolute top-2 left-2 z-10 retro-title text-xs rounded-md px-2 py-0.5"
-        style={{ background: "rgba(5,13,22,0.7)", border: "1px solid var(--glass-border)", color: latest ? "var(--gold)" : "var(--cream)" }}
+        style={{ background: "rgba(10,5,16,0.7)", border: "1px solid var(--glass-border)", color: latest ? "var(--gold)" : "var(--cream)" }}
       >
         {index + 1}
       </span>
