@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* short:  — landscape phones and other low screens */
+@custom-variant short (@media (max-height: 500px));
+
 /* ═══════════════════════════════════════════════════════════
    HALLOWEEN · glass + haunted-night theme
    Pumpkin orange leads; the old space teal is now haunted violet

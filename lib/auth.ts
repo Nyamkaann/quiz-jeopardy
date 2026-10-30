@@ -28,8 +28,8 @@ export function passwordConfigured(): boolean {
 export function checkPassword(input: unknown): boolean {
   const pw = process.env.ADMIN_PASSWORD;
   if (!pw || typeof input !== "string") return false;
-  const a = crypto.createHash("sha256").update(input).digest();
-  const b = crypto.createHash("sha256").update(pw).digest();
+  const a = crypto.createHash("sha256").update(input.trim()).digest();
+  const b = crypto.createHash("sha256").update(pw.trim()).digest();
   return crypto.timingSafeEqual(a, b);
 }
 

@@ -11,6 +11,7 @@ export interface Question {
   answerImage?: string;    // legacy single
   answerImages?: string[]; // multi-image support
   answerAudio?: string;
+  explanation?: string;   // «Яагаад?» — shown under the revealed answer
   connect?: ConnectData;   // only used when the category type is "connect"
 }
 
@@ -29,6 +30,7 @@ export interface ConnectClue {
   text?: string;
   image?: string;
   audio?: string;
+  note?: string; // shown on the card once the round is over: how this clue links to the answer
 }
 
 /** Payload of a tile that lives in a "connect" category */
@@ -36,6 +38,7 @@ export interface ConnectData {
   clues: ConnectClue[]; // up to 5, revealed one by one (1000 → 200)
   answer: string;
   answerImage?: string;
+  explanation?: string;  // how the clues link to the answer
 }
 
 export interface Folder {
