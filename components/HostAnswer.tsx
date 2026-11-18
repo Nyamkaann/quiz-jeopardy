@@ -74,12 +74,12 @@ export default function HostAnswer({
           </span>
         </div>
       ) : (
-        <span className="flex-1 mono text-[0.6rem]" style={{ color: "rgba(243,233,210,0.4)" }}>
+        <span className="flex-1 mono text-[0.6rem]" style={{ color: "rgba(234,243,251,0.4)" }}>
           НУУГДСАН · 👁 ДАРАХ ЭСВЭЛ «A» ТОВЧИЙГ ДАРЖ БАРИНА
         </span>
       )}
 
-      <span className="shrink-0 mono text-[0.55rem] hidden sm:inline" style={{ color: "rgba(243,233,210,0.35)" }}>
+      <span className="shrink-0 mono text-[0.55rem] hidden sm:inline" style={{ color: "rgba(234,243,251,0.35)" }}>
         🔒 ЗӨВХӨН ХӨТЛӨГЧИД
       </span>
     </div>

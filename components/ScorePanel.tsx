@@ -125,7 +125,7 @@ export default function ScorePanel(props: Props) {
 
         {/* step selector */}
         <div className="px-5 py-3 shrink-0 space-y-2" style={{ borderBottom: "1px solid var(--glass-border)" }}>
-          <p className="mono text-[0.6rem]" style={{ color: "rgba(243,233,210,0.5)" }}>НЭМЭХ / ХАСАХ ХЭМЖЭЭ</p>
+          <p className="mono text-[0.6rem]" style={{ color: "rgba(234,243,251,0.5)" }}>НЭМЭХ / ХАСАХ ХЭМЖЭЭ</p>
           <div className="flex flex-wrap gap-1.5 items-center">
             {STEPS.map((s) => {
               const on = !customStep.trim() && step === s;
@@ -151,8 +151,8 @@ export default function ScorePanel(props: Props) {
               inputMode="numeric"
               className="w-16 rounded-lg px-2 py-1.5 text-sm text-center focus:outline-none mono"
               style={{
-                background: customStep ? "rgba(111,177,200,0.15)" : "rgba(255,255,255,0.04)",
-                border: `1px solid ${customStep ? "rgba(169,220,236,0.6)" : "var(--glass-border)"}`,
+                background: customStep ? "rgba(127,214,240,0.15)" : "rgba(255,255,255,0.04)",
+                border: `1px solid ${customStep ? "rgba(201,238,250,0.6)" : "var(--glass-border)"}`,
                 color: "var(--cream)",
               }}
             />
@@ -162,7 +162,7 @@ export default function ScorePanel(props: Props) {
         {/* teams */}
         <div className="flex-1 min-h-0 overflow-y-auto px-4 py-4 space-y-2.5">
           {players.length === 0 && (
-            <p className="mono text-xs text-center py-8" style={{ color: "rgba(243,233,210,0.45)" }}>БАГ АЛГА</p>
+            <p className="mono text-xs text-center py-8" style={{ color: "rgba(234,243,251,0.45)" }}>БАГ АЛГА</p>
           )}
           {players.map((p) => {
             const rank = rankOf(p.id);
@@ -170,10 +170,10 @@ export default function ScorePanel(props: Props) {
               <div key={p.id} className="group rounded-2xl p-3"
                 style={{
                   background: "linear-gradient(160deg,rgba(255,255,255,0.07),rgba(255,255,255,0.02))",
-                  border: `1px solid ${rank === 0 && p.score > 0 ? "rgba(169,220,236,0.5)" : "var(--glass-border)"}`,
+                  border: `1px solid ${rank === 0 && p.score > 0 ? "rgba(201,238,250,0.5)" : "var(--glass-border)"}`,
                 }}>
                 <div className="flex items-center gap-2 mb-2.5">
-                  <span className="retro-title text-xs w-6 text-center" style={{ color: rank === 0 ? "var(--gold)" : "rgba(243,233,210,0.4)" }}>
+                  <span className="retro-title text-xs w-6 text-center" style={{ color: rank === 0 ? "var(--gold)" : "rgba(234,243,251,0.4)" }}>
                     {rank === 0 && p.score > 0 ? "🏆" : `#${rank + 1}`}
                   </span>
                   {editingName?.id === p.id ? (
@@ -254,7 +254,7 @@ export default function ScorePanel(props: Props) {
         {/* history */}
         <div className="shrink-0 max-h-[36%] flex flex-col" style={{ borderTop: "1px solid var(--glass-border)" }}>
           <div className="flex items-center justify-between gap-2 px-5 pt-3 pb-2">
-            <p className="mono text-[0.6rem]" style={{ color: "rgba(243,233,210,0.5)" }}>СҮҮЛИЙН ӨӨРЧЛӨЛТ</p>
+            <p className="mono text-[0.6rem]" style={{ color: "rgba(234,243,251,0.5)" }}>СҮҮЛИЙН ӨӨРЧЛӨЛТ</p>
             {log.length > 0 && (
               <button
                 onClick={() => undo(log[0].id)}
@@ -268,7 +268,7 @@ export default function ScorePanel(props: Props) {
           </div>
           <div className="overflow-y-auto px-3 pb-3 space-y-1.5">
             {log.length === 0 && (
-              <p className="mono text-[0.6rem] px-2 pb-2" style={{ color: "rgba(243,233,210,0.3)" }}>ОДООГООР ӨӨРЧЛӨЛТ АЛГА</p>
+              <p className="mono text-[0.6rem] px-2 pb-2" style={{ color: "rgba(234,243,251,0.3)" }}>ОДООГООР ӨӨРЧЛӨЛТ АЛГА</p>
             )}
             {log.slice(0, 30).map((e, i) => {
               const plus = e.delta > 0;
@@ -298,7 +298,7 @@ export default function ScorePanel(props: Props) {
                   </span>
                   <div className="flex-1 min-w-0 leading-tight">
                     <p className="title-mixed text-sm text-[var(--cream)] truncate">{nameOf(e.playerId)}</p>
-                    <p className="mono text-[0.55rem] truncate" style={{ color: "rgba(243,233,210,0.4)" }}>
+                    <p className="mono text-[0.55rem] truncate" style={{ color: "rgba(234,243,251,0.4)" }}>
                       {e.reason} · {ago(e.at, now)}
                     </p>
                   </div>

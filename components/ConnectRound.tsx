@@ -132,10 +132,10 @@ export default function ConnectRound({
         {extra}
         {!done && (
           <div className="flex items-center gap-3">
-            <span className="mono text-[0.6rem] hidden sm:inline" style={{ color: "rgba(243,233,210,0.5)" }}>
+            <span className="mono text-[0.6rem] hidden sm:inline" style={{ color: "rgba(234,243,251,0.5)" }}>
               ОДООГИЙН ОНОО
             </span>
-            <span key={points} className="flip-in retro-title text-2xl sm:text-4xl font-black text-gradient">
+            <span key={points} className="flip-in retro-title text-2xl sm:text-4xl font-black text-[var(--value)]">
               {points}
             </span>
           </div>
@@ -165,7 +165,7 @@ export default function ConnectRound({
 
         {done && (
           <div className="flip-in glass rounded-3xl px-6 py-5 flex flex-col sm:flex-row items-center justify-center gap-5 text-center shrink-0"
-            style={{ borderColor: "rgba(169,220,236,0.5)" }}>
+            style={{ borderColor: "rgba(201,238,250,0.5)" }}>
             {q.answerImage && (
               <div className="relative w-28 h-20 rounded-xl overflow-hidden shrink-0" style={{ border: "1px solid var(--glass-border-hi)" }}>
                 <Image src={q.answerImage} alt="answer" fill className="object-cover" unoptimized />
@@ -173,7 +173,7 @@ export default function ConnectRound({
             )}
             <div>
               <p className="mono text-[0.65rem] mb-1" style={{ color: "var(--teal)" }}>ХОЛБООС</p>
-              <p className="title-mixed text-gradient" style={{ fontSize: "clamp(1.6rem, 4vw, 3.2rem)", lineHeight: 1.15 }}>
+              <p className="title-mixed text-[var(--value)]" style={{ fontSize: "clamp(1.6rem, 4vw, 3.2rem)", lineHeight: 1.15 }}>
                 {q.answer || "—"}
               </p>
               {q.explanation && (
@@ -235,10 +235,10 @@ export default function ConnectRound({
                       style={{
                         fontFamily: "var(--font-body)",
                         fontWeight: 700,
-                        background: on ? "var(--gold)" : "rgba(185,166,224,0.12)",
+                        background: on ? "var(--gold)" : "rgba(156,196,242,0.12)",
                         color: on ? "#0b1a22" : "var(--cream)",
-                        border: on ? "1px solid rgba(200,230,242,0.8)" : "1px solid rgba(185,166,224,0.4)",
-                        boxShadow: on ? "0 0 20px rgba(111,177,200,0.45)" : "none",
+                        border: on ? "1px solid rgba(200,230,242,0.8)" : "1px solid rgba(156,196,242,0.4)",
+                        boxShadow: on ? "0 0 20px rgba(127,214,240,0.45)" : "none",
                       }}
                     >
                       {p.name}
@@ -295,7 +295,7 @@ function TopBar({ title, onExit, children }: { title: string; onExit: () => void
     <div className="glass-bar flex items-center gap-3 px-3 sm:px-5 py-2 shrink-0">
       <button onClick={onExit} className="flex items-center gap-2 shrink-0 transition-opacity hover:opacity-80" title="Самбар руу">
         <Image src="/astro-nots.png" width={40} height={40} alt="" className="w-9 h-9 sm:w-10 sm:h-10" />
-        <span className="mono text-[0.6rem] hidden sm:inline" style={{ color: "rgba(243,233,210,0.6)" }}>← BOARD</span>
+        <span className="mono text-[0.6rem] hidden sm:inline" style={{ color: "rgba(234,243,251,0.6)" }}>← BOARD</span>
       </button>
       <h1 className="retro-title text-sm sm:text-xl text-[var(--cream)] flex-1 min-w-0 truncate text-center">{title}</h1>
       <div className="shrink-0 min-w-[60px] flex items-center justify-end gap-3">{children}</div>
@@ -314,16 +314,16 @@ export function PointsLadder({ current, max = CONNECT_POINTS.length, compact }: 
             <span
               className={`retro-title rounded-lg px-3 py-1 text-sm sm:text-base transition-all ${active ? "pill-pulse" : ""}`}
               style={{
-                color: active ? "#0b1a22" : past ? "rgba(243,233,210,0.25)" : "var(--gold)",
+                color: active ? "#0b1a22" : past ? "rgba(234,243,251,0.25)" : "var(--gold)",
                 background: active ? "linear-gradient(135deg,#c4e8f2,var(--orange))" : "rgba(255,255,255,0.04)",
                 border: `1px solid ${active ? "rgba(200,230,242,0.7)" : "var(--glass-border)"}`,
                 textDecoration: past ? "line-through" : "none",
-                boxShadow: active ? "0 0 20px rgba(111,177,200,0.35)" : "none",
+                boxShadow: active ? "0 0 20px rgba(127,214,240,0.35)" : "none",
               }}
             >
               {pt}
             </span>
-            {i < max - 1 && <span style={{ color: "rgba(243,233,210,0.25)" }}>›</span>}
+            {i < max - 1 && <span style={{ color: "rgba(234,243,251,0.25)" }}>›</span>}
           </div>
         );
       })}
@@ -351,8 +351,8 @@ export function ClueCard({
   if (!visible) {
     return (
       <div className="board-tile rounded-2xl flex flex-col items-center justify-center gap-2 min-h-32" style={{ opacity: 0.55 }}>
-        <span className="retro-title text-5xl" style={{ color: "rgba(243,233,210,0.18)" }}>?</span>
-        <span className="mono text-[0.6rem]" style={{ color: "rgba(243,233,210,0.35)" }}>#{index + 1} · {points}</span>
+        <span className="retro-title text-5xl" style={{ color: "rgba(234,243,251,0.18)" }}>?</span>
+        <span className="mono text-[0.6rem]" style={{ color: "rgba(234,243,251,0.35)" }}>#{index + 1} · {points}</span>
       </div>
     );
   }
@@ -365,10 +365,10 @@ export function ClueCard({
       className="card-flip relative rounded-2xl overflow-hidden flex flex-col min-h-32"
       style={{
         background: "linear-gradient(160deg, rgba(255,255,255,0.09), rgba(255,255,255,0.025))",
-        border: `1px solid ${latest ? "rgba(169,220,236,0.7)" : "var(--glass-border-hi)"}`,
+        border: `1px solid ${latest ? "rgba(201,238,250,0.7)" : "var(--glass-border-hi)"}`,
         backdropFilter: "var(--blur)",
         WebkitBackdropFilter: "var(--blur)",
-        boxShadow: latest ? "0 0 0 1px rgba(169,220,236,0.25), 0 12px 48px rgba(111,177,200,0.22)" : "0 10px 40px rgba(0,0,0,0.3)",
+        boxShadow: latest ? "0 0 0 1px rgba(201,238,250,0.25), 0 12px 48px rgba(127,214,240,0.22)" : "0 10px 40px rgba(0,0,0,0.3)",
       }}
     >
       <span
@@ -412,7 +412,7 @@ export function ClueCard({
       )}
 
       {showNote && clue.note && (
-        <div className="flip-in shrink-0 px-3 py-2 text-center" style={{ background: "rgba(185,166,224,0.12)", borderTop: "1px solid rgba(185,166,224,0.35)" }}>
+        <div className="flip-in shrink-0 px-3 py-2 text-center" style={{ background: "rgba(156,196,242,0.12)", borderTop: "1px solid rgba(156,196,242,0.35)" }}>
           <p style={{ color: "var(--teal)", fontSize: "clamp(0.8rem, 1.1vw, 1.15rem)", lineHeight: 1.3 }}>{clue.note}</p>
         </div>
       )}

@@ -99,9 +99,9 @@ export default function PlayCodeGate({ children }: { children: React.ReactNode }
                 key={i}
                 className="w-14 h-16 rounded-2xl flex items-center justify-center retro-title text-3xl transition-all"
                 style={{
-                  background: filled ? "linear-gradient(160deg,rgba(111,177,200,0.22),rgba(255,255,255,0.04))" : "rgba(255,255,255,0.04)",
+                  background: filled ? "linear-gradient(160deg,rgba(127,214,240,0.22),rgba(255,255,255,0.04))" : "rgba(255,255,255,0.04)",
                   border: `1px solid ${error ? "rgba(242,72,63,0.7)" : active ? "var(--gold)" : "var(--glass-border-hi)"}`,
-                  boxShadow: active ? "0 0 18px rgba(111,177,200,0.35)" : "none",
+                  boxShadow: active ? "0 0 18px rgba(127,214,240,0.35)" : "none",
                   color: "var(--gold)",
                 }}
               >
@@ -111,7 +111,7 @@ export default function PlayCodeGate({ children }: { children: React.ReactNode }
           })}
         </div>
 
-        <p className="mono text-[0.65rem] h-4" style={{ color: error ? "#ff8a83" : "rgba(243,233,210,0.4)" }}>
+        <p className="mono text-[0.65rem] h-4" style={{ color: error ? "#ff8a83" : "rgba(234,243,251,0.4)" }}>
           {busy ? "ШАЛГАЖ БАЙНА…" : error ?? "4 ОРОНТОЙ КОД"}
         </p>
 
@@ -121,7 +121,7 @@ export default function PlayCodeGate({ children }: { children: React.ReactNode }
             <Key key={d} onClick={() => press(d)}>{d}</Key>
           ))}
           <Link href="/" className="rounded-2xl h-14 flex items-center justify-center mono text-[0.6rem] transition-colors hover:bg-[rgba(255,255,255,0.06)]"
-            style={{ color: "rgba(243,233,210,0.55)", textDecoration: "none" }}>
+            style={{ color: "rgba(234,243,251,0.55)", textDecoration: "none" }}>
             ← БУЦАХ
           </Link>
           <Key onClick={() => press("0")}>0</Key>
@@ -140,7 +140,7 @@ function Key({ children, onClick }: { children: React.ReactNode; onClick: () => 
   return (
     <button
       onClick={onClick}
-      className="rounded-2xl h-14 retro-title text-2xl transition-all active:scale-95 hover:border-[rgba(169,220,236,0.6)]"
+      className="rounded-2xl h-14 retro-title text-2xl transition-all active:scale-95 hover:border-[rgba(201,238,250,0.6)]"
       style={{
         color: "var(--cream)",
         background: "linear-gradient(160deg,rgba(255,255,255,0.08),rgba(255,255,255,0.02))",

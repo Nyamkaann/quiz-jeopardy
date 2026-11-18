@@ -90,7 +90,7 @@ function RulesModal({ onClose }: { onClose: () => void }) {
               className="flex gap-4 rounded-xl px-4 py-3"
               style={{
                 background: "rgba(255,255,255,0.05)",
-                border: "1px solid rgba(185,166,224,0.25)",
+                border: "1px solid rgba(156,196,242,0.25)",
               }}
             >
               <span className="text-2xl shrink-0 mt-0.5">{r.icon}</span>
@@ -101,7 +101,7 @@ function RulesModal({ onClose }: { onClose: () => void }) {
                 <p
                   style={{
                     fontFamily: "var(--font-body)",
-                    color: "rgba(243,233,210,0.85)",
+                    color: "rgba(234,243,251,0.85)",
                     fontSize: "0.95rem",
                     lineHeight: "1.5",
                   }}
@@ -641,7 +641,7 @@ function PlayGame({ gameId }: { gameId: string }) {
       onClick={() => setScreenMode(dual ? "single" : "dual")}
       title={dual ? "Нэг дэлгэцээр тоглох руу шилжих" : "Үзэгчдийн дэлгэцтэй тоглох руу шилжих"}
       className="rounded-lg px-2.5 py-1.5 mono text-[0.6rem] transition-colors hover:bg-[rgba(255,255,255,0.08)]"
-      style={{ color: "rgba(243,233,210,0.7)", background: "rgba(255,255,255,0.04)", border: "1px solid var(--glass-border)" }}
+      style={{ color: "rgba(234,243,251,0.7)", background: "rgba(255,255,255,0.04)", border: "1px solid var(--glass-border)" }}
     >
       {dual ? "🖥🖥 2" : "🖥 1"}
     </button>
@@ -655,10 +655,10 @@ function PlayGame({ gameId }: { gameId: string }) {
     <button
       onClick={openDisplay}
       title={displayOn ? "Үзэгчдийн дэлгэц холбогдсон" : "Проектор / үзэгчдийн дэлгэц нээх"}
-      className="rounded-lg px-3 py-1.5 mono text-[0.6rem] flex items-center gap-1.5 transition-colors hover:bg-[rgba(185,166,224,0.18)]"
-      style={{ color: "var(--cream)", background: "rgba(185,166,224,0.08)", border: `1px solid ${displayOn ? "rgba(120,240,180,0.6)" : "rgba(185,166,224,0.4)"}` }}
+      className="rounded-lg px-3 py-1.5 mono text-[0.6rem] flex items-center gap-1.5 transition-colors hover:bg-[rgba(156,196,242,0.18)]"
+      style={{ color: "var(--cream)", background: "rgba(156,196,242,0.08)", border: `1px solid ${displayOn ? "rgba(120,240,180,0.6)" : "rgba(156,196,242,0.4)"}` }}
     >
-      <span className="w-1.5 h-1.5 rounded-full" style={{ background: displayOn ? "#5ef0a0" : "rgba(243,233,210,0.3)", boxShadow: displayOn ? "0 0 8px #5ef0a0" : "none" }} />
+      <span className="w-1.5 h-1.5 rounded-full" style={{ background: displayOn ? "#5ef0a0" : "rgba(234,243,251,0.3)", boxShadow: displayOn ? "0 0 8px #5ef0a0" : "none" }} />
       📺 ҮЗЭГЧИД
     </button>
   );
@@ -667,8 +667,8 @@ function PlayGame({ gameId }: { gameId: string }) {
     <button
       onClick={() => setShowScores(true)}
       title="Онооны удирдлага"
-      className="rounded-lg px-3 py-1.5 mono text-[0.6rem] flex items-center gap-1.5 transition-colors hover:bg-[rgba(111,177,200,0.18)]"
-      style={{ color: "var(--gold)", background: "rgba(111,177,200,0.08)", border: "1px solid rgba(169,220,236,0.4)" }}
+      className="rounded-lg px-3 py-1.5 mono text-[0.6rem] flex items-center gap-1.5 transition-colors hover:bg-[rgba(127,214,240,0.18)]"
+      style={{ color: "var(--gold)", background: "rgba(127,214,240,0.08)", border: "1px solid rgba(201,238,250,0.4)" }}
     >
       ± ОНОО
     </button>
@@ -685,13 +685,13 @@ function PlayGame({ gameId }: { gameId: string }) {
   if (phase === "setup") {
     return (
       <div
-        className="h-dvh w-full overflow-y-auto grid grid-cols-1 lg:grid-cols-2 items-center content-center gap-8 lg:gap-16 px-4 sm:px-10 py-8 max-w-7xl mx-auto"
+        className="h-dvh w-full overflow-y-auto grid grid-cols-1 lg:grid-cols-2 items-center [align-content:safe_center] gap-8 lg:gap-16 px-4 sm:px-10 py-8 max-w-7xl mx-auto"
       >
         <div className="orbit-ring" />
         {showRules && <RulesModal onClose={() => setShowRules(false)} />}
         <div className="flex flex-col items-center text-center gap-4">
           <div className="relative floaty drop-in">
-            <div className="absolute inset-0 rounded-full blur-3xl" style={{ background: "radial-gradient(circle, rgba(185,166,224,0.35), transparent 65%)" }} />
+            <div className="absolute inset-0 rounded-full blur-3xl" style={{ background: "radial-gradient(circle, rgba(156,196,242,0.35), transparent 65%)" }} />
             <div className="logo-orbit" />
             <div className="logo-orbit reverse" />
             <Image src="/astro-nots.png" width={480} height={480} priority alt="Astro-Nots"
@@ -701,7 +701,7 @@ function PlayGame({ gameId }: { gameId: string }) {
             {game.title}
           </h1>
           <div className="star-divider w-64 sm:w-80 max-w-full" />
-          <p className="mono text-xs" style={{ color: "rgba(243,233,210,0.6)" }}>JEOPARDY · QUIZ CHALLENGE</p>
+          <p className="mono text-xs" style={{ color: "rgba(234,243,251,0.6)" }}>JEOPARDY · QUIZ CHALLENGE</p>
         </div>
 
         <div className="retro-panel rise-in rounded-3xl p-5 sm:p-8 w-full max-w-lg mx-auto lg:mx-0" style={{ animationDelay: "150ms" }}>
@@ -735,7 +735,7 @@ function PlayGame({ gameId }: { gameId: string }) {
 
           {players.length > 0 && (
             <div className="space-y-2 mb-6">
-              <p className="mono text-[0.6rem] text-right pr-1" style={{ color: "rgba(243,233,210,0.5)" }}>
+              <p className="mono text-[0.6rem] text-right pr-1" style={{ color: "rgba(234,243,251,0.5)" }}>
                 ЭХЛЭХ ОНОО · өмнөх round-оос авчирсан оноо (заавал биш)
               </p>
               {players.map((p, i) => (
@@ -744,7 +744,7 @@ function PlayGame({ gameId }: { gameId: string }) {
                   className="flex items-center justify-between px-4 py-2 rounded"
                   style={{
                     background: "rgba(255,255,255,0.05)",
-                    border: "1px solid rgba(185,166,224,0.4)",
+                    border: "1px solid rgba(156,196,242,0.4)",
                   }}
                 >
                   <div className="flex items-center gap-3">
@@ -800,7 +800,7 @@ function PlayGame({ gameId }: { gameId: string }) {
           </button>
 
           {/* screen mode */}
-          <p className="mono text-[0.6rem] mt-5 mb-2 text-center" style={{ color: "rgba(243,233,210,0.5)" }}>ТОГЛОХ ГОРИМ</p>
+          <p className="mono text-[0.6rem] mt-5 mb-2 text-center" style={{ color: "rgba(234,243,251,0.5)" }}>ТОГЛОХ ГОРИМ</p>
           <div className="grid grid-cols-2 gap-2">
             {([
               { m: "single", icon: "🖥", title: "Нэг дэлгэц", desc: "Хөтлөгч, үзэгчид нэг дэлгэц харна. Хариулт нуугдана." },
@@ -813,14 +813,14 @@ function PlayGame({ gameId }: { gameId: string }) {
                   onClick={() => setScreenMode(o.m)}
                   className="rounded-xl p-3 text-left transition-all"
                   style={{
-                    background: on ? "linear-gradient(160deg,rgba(111,177,200,0.18),rgba(255,255,255,0.03))" : "rgba(255,255,255,0.03)",
-                    border: `1px solid ${on ? "rgba(169,220,236,0.7)" : "var(--glass-border)"}`,
-                    boxShadow: on ? "0 0 20px rgba(111,177,200,0.2)" : "none",
+                    background: on ? "linear-gradient(160deg,rgba(127,214,240,0.18),rgba(255,255,255,0.03))" : "rgba(255,255,255,0.03)",
+                    border: `1px solid ${on ? "rgba(201,238,250,0.7)" : "var(--glass-border)"}`,
+                    boxShadow: on ? "0 0 20px rgba(127,214,240,0.2)" : "none",
                   }}
                 >
                   <span className="text-lg">{o.icon}</span>
                   <p className="title-mixed text-sm mt-1" style={{ color: on ? "var(--gold)" : "var(--cream)" }}>{o.title}</p>
-                  <p className="text-[0.7rem] mt-0.5 leading-snug" style={{ color: "rgba(243,233,210,0.55)" }}>{o.desc}</p>
+                  <p className="text-[0.7rem] mt-0.5 leading-snug" style={{ color: "rgba(234,243,251,0.55)" }}>{o.desc}</p>
                 </button>
               );
             })}
@@ -830,7 +830,7 @@ function PlayGame({ gameId }: { gameId: string }) {
               onClick={openDisplay}
               className="btn-blue w-full mt-2 py-2.5 rounded-xl text-sm flex items-center justify-center gap-2"
             >
-              <span className="w-2 h-2 rounded-full" style={{ background: displayOn ? "#5ef0a0" : "rgba(243,233,210,0.3)", boxShadow: displayOn ? "0 0 8px #5ef0a0" : "none" }} />
+              <span className="w-2 h-2 rounded-full" style={{ background: displayOn ? "#5ef0a0" : "rgba(234,243,251,0.3)", boxShadow: displayOn ? "0 0 8px #5ef0a0" : "none" }} />
               📺 ҮЗЭГЧДИЙН ДЭЛГЭЦ {displayOn ? "· ХОЛБОГДСОН" : "НЭЭХ"}
             </button>
           )}
@@ -840,9 +840,9 @@ function PlayGame({ gameId }: { gameId: string }) {
             className="w-full mt-3 py-2 rounded-full text-sm tracking-widest transition-all hover:opacity-80"
             style={{
               fontFamily: "var(--font-mono)",
-              border: "1px solid rgba(185,166,224,0.4)",
-              color: "rgba(243,233,210,0.7)",
-              background: "rgba(185,166,224,0.06)",
+              border: "1px solid rgba(156,196,242,0.4)",
+              color: "rgba(234,243,251,0.7)",
+              background: "rgba(156,196,242,0.06)",
               letterSpacing: "0.15em",
               fontSize: "0.7rem",
             }}
@@ -855,7 +855,7 @@ function PlayGame({ gameId }: { gameId: string }) {
             className="block text-center mt-3"
             style={{
               fontFamily: "var(--font-mono)",
-              color: "rgba(243,233,210,0.5)",
+              color: "rgba(234,243,251,0.5)",
               fontSize: "0.7rem",
               letterSpacing: "0.15em",
               textDecoration: "none",
@@ -934,13 +934,13 @@ function PlayGame({ gameId }: { gameId: string }) {
           >
             {game.categories.map((cat, colIdx) => (
               <div key={cat.id}
-                className={`cat-header rounded-lg sm:rounded-xl flex items-center justify-center gap-1.5 px-1 sm:px-2 py-1 sm:py-2 text-center leading-tight break-words hyphens-auto min-w-0 ${boardIntro ? "drop-in" : ""}`}
+                className={`cat-header rounded-lg sm:rounded-xl flex items-center justify-center gap-1 sm:gap-1.5 px-0.5 sm:px-2 py-1 sm:py-2 text-center leading-tight [overflow-wrap:anywhere] min-w-0 ${boardIntro ? "drop-in" : ""}`}
                 style={{
                   animationDelay: `${colIdx * 60}ms`,
-                  fontSize: "clamp(0.55rem, 1.35vw, 1.5rem)",
+                  fontSize: "clamp(0.68rem, min(1.8vw, 3.2vh), 2.4rem)",
                   ...(isConnectCategory(cat) && {
                     borderBottomColor: "var(--teal)",
-                    background: "linear-gradient(180deg, rgba(185,166,224,0.22), rgba(255,255,255,0.03))",
+                    background: "linear-gradient(180deg, rgba(156,196,242,0.22), rgba(255,255,255,0.03))",
                   }),
                 }}>
                 {isConnectCategory(cat) && <span style={{ color: "var(--teal)" }}>✦</span>}
@@ -961,16 +961,16 @@ function PlayGame({ gameId }: { gameId: string }) {
                   >
                     {isConnectCategory(cat) ? (
                       <span className="flex flex-col items-center leading-none gap-1" style={{ opacity: q.answered ? 0 : 1 }}>
-                        <span className="retro-title font-black" style={{ fontSize: "clamp(1.1rem, min(3vw, 5.5vh), 3.2rem)", color: "var(--teal)" }}>
+                        <span className="retro-title font-black" style={{ fontSize: "clamp(1.3rem, min(4vw, 7.5vh), 5.5rem)", color: "var(--teal)" }}>
                           ✦{rowIdx + 1}
                         </span>
-                        <span className="mono" style={{ fontSize: "clamp(0.5rem, 0.8vw, 0.75rem)", color: "rgba(243,233,210,0.55)" }}>
+                        <span className="mono" style={{ fontSize: "clamp(0.55rem, 1vw, 1.1rem)", color: "rgba(234,243,251,0.75)" }}>
                           CONNECT
                         </span>
                       </span>
                     ) : (
                       <span className="retro-title font-black"
-                        style={{ fontSize: "clamp(1.1rem, min(3.4vw, 6vh), 3.6rem)", color: "var(--gold)", visibility: q.answered ? "hidden" : "visible" }}>
+                        style={{ fontSize: "clamp(1.4rem, min(4.8vw, 9vh), 7rem)", color: "var(--value)", visibility: q.answered ? "hidden" : "visible" }}>
                         {q.value}
                       </span>
                     )}
@@ -999,15 +999,15 @@ function PlayGame({ gameId }: { gameId: string }) {
             style={{ "--cols": `repeat(${Math.max(players.length, 1)}, minmax(0, 1fr))` } as CSSProperties}>
             {players.map((p) => (
               <button key={p.id} onClick={() => setShowScores(true)} title="Оноо засах"
-                className="score-chip rounded-xl px-3 py-1.5 flex items-center justify-between gap-2 min-w-0 text-left transition-colors hover:border-[rgba(169,220,236,0.5)]">
-                <span className="truncate text-xs sm:text-sm font-semibold" style={{ color: "var(--cream)", fontFamily: "var(--font-body)" }}>
+                className="score-chip rounded-xl px-3 xl:px-5 py-1.5 xl:py-2.5 flex items-center justify-between gap-2 min-w-0 text-left transition-colors hover:border-[rgba(201,238,250,0.5)]">
+                <span className="truncate text-xs sm:text-sm lg:text-xl xl:text-2xl font-extrabold" style={{ color: "var(--cream)", fontFamily: "var(--font-body)" }}>
                   {p.name}
                 </span>
                 <AnimatedScore
                   id={p.id}
                   value={p.score}
-                  className="retro-title text-base sm:text-2xl shrink-0"
-                  style={{ color: p.score < 0 ? "#ff6a62" : "var(--gold)" }}
+                  className="retro-title text-base sm:text-2xl lg:text-4xl xl:text-5xl shrink-0"
+                  style={{ color: p.score < 0 ? "#ff6a62" : "var(--value)" }}
                 />
               </button>
             ))}
@@ -1062,7 +1062,7 @@ function PlayGame({ gameId }: { gameId: string }) {
         {scorePanel}
         {/* header */}
         <div className="glass-bar drop-in flex items-center justify-between gap-2 px-3 sm:px-6 py-2.5 sm:py-3 shrink-0">
-          <span className="retro-title text-base sm:text-2xl text-[var(--sp-blue-glow)] tracking-wider truncate min-w-0">
+          <span className="retro-title text-base sm:text-2xl lg:text-4xl text-[var(--sp-blue-glow)] tracking-wider truncate min-w-0">
             {catName.toUpperCase()}
           </span>
 
@@ -1079,11 +1079,11 @@ function PlayGame({ gameId }: { gameId: string }) {
           <button
             onClick={toggleTimer}
             title="Цаг эхлүүлэх / зогсоох (Space)"
-            className={`relative flex items-center justify-center shrink-0 ${timerState === "running" && timeLeft > 0 && timeLeft <= 10 ? "urgent" : ""}`}
-            style={{ width: 44, height: 44, opacity: timerState === "idle" ? 0.7 : 1 }}
+            className={`relative flex items-center justify-center shrink-0 w-11 h-11 lg:w-20 lg:h-20 ${timerState === "running" && timeLeft > 0 && timeLeft <= 10 ? "urgent" : ""}`}
+            style={{ opacity: timerState === "idle" ? 0.7 : 1 }}
           >
-            <svg width="44" height="44" viewBox="0 0 64 64" style={{ position: "absolute", top: 0, left: 0, transform: "rotate(-90deg)" }}>
-              <circle cx="32" cy="32" r="28" fill="none" stroke="rgba(185,166,224,0.2)" strokeWidth="4" />
+            <svg width="100%" height="100%" viewBox="0 0 64 64" style={{ position: "absolute", top: 0, left: 0, transform: "rotate(-90deg)" }}>
+              <circle cx="32" cy="32" r="28" fill="none" stroke="rgba(156,196,242,0.2)" strokeWidth="4" />
               <circle
                 cx="32" cy="32" r="28" fill="none"
                 stroke={timeLeft <= 10 ? "#ff4422" : timeLeft <= 20 ? "#ffaa00" : "var(--sp-blue)"}
@@ -1094,7 +1094,7 @@ function PlayGame({ gameId }: { gameId: string }) {
                 style={{ transition: "stroke-dashoffset 0.9s linear, stroke 0.3s" }}
               />
             </svg>
-            <span className="retro-title text-sm sm:text-xl z-10"
+            <span className="retro-title text-sm sm:text-xl lg:text-4xl z-10"
               style={{ color: timeLeft <= 10 ? "#ff4422" : timeLeft <= 20 ? "#ffaa00" : "var(--gold)" }}>
               {timeLeft}
             </span>
@@ -1103,12 +1103,12 @@ function PlayGame({ gameId }: { gameId: string }) {
 
           <div className="flex items-center gap-2 sm:gap-4 shrink-0">
             {scoreButton}
-            <span className="retro-title text-lg sm:text-2xl text-[var(--gold)]">${q.value}</span>
+            <span className="retro-title text-lg sm:text-2xl lg:text-5xl text-[var(--value)]">${q.value}</span>
             <button
               onClick={skipQuestion}
               style={{
                 fontFamily: "var(--font-mono)",
-                color: "rgba(243,233,210,0.5)",
+                color: "rgba(234,243,251,0.5)",
                 fontSize: "0.7rem",
                 letterSpacing: "0.15em",
               }}
@@ -1121,12 +1121,12 @@ function PlayGame({ gameId }: { gameId: string }) {
         {/* clue / answer display */}
         {/* text starts at a length-based size (textSize) and auto-shrinks to fit (see --fit); the card scrolls only as a last resort */}
         <div className="flex-1 min-h-0 flex flex-col items-center px-2 sm:px-6 text-center py-3 sm:py-5 short:py-2">
-          <div ref={clueCardRef} className="glass zoom-in rounded-3xl w-full max-w-[1800px] flex-1 min-h-0 overflow-y-auto flex flex-col items-center justify-center gap-4 sm:gap-6 px-4 sm:px-10 py-5 sm:py-8 short:py-3">
+          <div ref={clueCardRef} className="glass zoom-in rounded-3xl w-full max-w-[1800px] flex-1 min-h-0 overflow-y-auto flex flex-col items-center justify-center-safe gap-4 sm:gap-6 px-4 sm:px-10 py-5 sm:py-8 short:py-3">
           {!showAnswer ? (
             <>
               {q.clue && (
                 <p
-                  className="flip-in font-bold text-[var(--cream)] leading-relaxed"
+                  className="flip-in font-extrabold text-[var(--cream)] leading-relaxed"
                   style={{
                     fontFamily: "var(--font-body)",
                     fontSize: `calc(${textSize(q.clue, getClueImages(q).length > 0)} * var(--fit, 1))`, lineHeight: 1.2,
@@ -1138,7 +1138,7 @@ function PlayGame({ gameId }: { gameId: string }) {
               <ImageRow
                 images={getClueImages(q)}
                 borderColor="var(--sp-blue)"
-                glowColor="rgba(185,166,224,0.4)"
+                glowColor="rgba(156,196,242,0.4)"
               />
               {q.clueAudio && (
                 <div className="w-full max-w-sm">
@@ -1166,8 +1166,8 @@ function PlayGame({ gameId }: { gameId: string }) {
                   style={{
                     fontFamily: "var(--font-body)",
                     fontSize: `calc(${textSize(q.answer, getAnswerImages(q).length > 0)} * var(--fit, 1))`, lineHeight: 1.2,
-                    color: "var(--gold)",
-                    textShadow: "0 0 20px rgba(111,177,200,0.4)",
+                    color: "var(--value)",
+                    textShadow: "0 3px 0 rgba(2,8,20,0.6)",
                   }}
                 >
                   {q.answer}
@@ -1176,7 +1176,7 @@ function PlayGame({ gameId }: { gameId: string }) {
               <ImageRow
                 images={getAnswerImages(q)}
                 borderColor="var(--gold)"
-                glowColor="rgba(111,177,200,0.3)"
+                glowColor="rgba(127,214,240,0.3)"
               />
               {q.answerAudio && (
                 <div className="w-full max-w-sm">
@@ -1194,8 +1194,9 @@ function PlayGame({ gameId }: { gameId: string }) {
                   className="flip-in max-w-4xl"
                   style={{
                     fontFamily: "var(--font-body)",
-                    fontSize: "calc(clamp(0.95rem,min(2.6vw,3vh),1.6rem) * var(--fit, 1))", lineHeight: 1.4,
-                    color: "rgba(243,233,210,0.85)",
+                    fontSize: "calc(clamp(1.05rem,min(3vw,3.8vh),2.4rem) * var(--fit, 1))", lineHeight: 1.4,
+                    fontWeight: 600,
+                    color: "rgba(234,243,251,0.95)",
                   }}
                 >
                   <span className="mono" style={{ color: "var(--teal)", marginRight: "0.5em" }}>ЯАГААД?</span>
@@ -1207,7 +1208,7 @@ function PlayGame({ gameId }: { gameId: string }) {
                 !q.answerAudio && (
                   <p
                     className="retro-title text-3xl tracking-widest"
-                    style={{ color: "rgba(111,177,200,0.3)" }}
+                    style={{ color: "rgba(127,214,240,0.3)" }}
                   >
                     (NO ANSWER SET)
                   </p>
@@ -1255,7 +1256,7 @@ function PlayGame({ gameId }: { gameId: string }) {
           {/* winner badge */}
           {winner && (
             <div className="flex justify-center">
-              <span className="rise-in rounded-2xl px-5 py-2 title-mixed text-lg" style={{ background: "rgba(80,220,150,0.18)", border: "1px solid rgba(120,240,180,0.55)", color: "#bff8da" }}>
+              <span className="rise-in rounded-2xl px-5 py-2 title-mixed text-lg lg:text-3xl" style={{ background: "rgba(80,220,150,0.18)", border: "1px solid rgba(120,240,180,0.55)", color: "#bff8da" }}>
                 🏆 {players.find((p) => p.id === winner)?.name} +{q.value}
               </span>
             </div>
@@ -1265,11 +1266,10 @@ function PlayGame({ gameId }: { gameId: string }) {
           {!winner && players.filter((p) => !wrongPlayers.has(p.id)).length > 0 && (
             <div>
               <p
-                className="text-center mb-2 short:hidden"
+                className="text-center mb-2 short:hidden text-[0.7rem] lg:text-base font-extrabold"
                 style={{
                   fontFamily: "var(--font-mono)",
-                  color: "rgba(243,233,210,0.6)",
-                  fontSize: "0.7rem",
+                  color: "rgba(234,243,251,0.75)",
                   letterSpacing: "0.15em",
                 }}
               >
@@ -1287,25 +1287,24 @@ function PlayGame({ gameId }: { gameId: string }) {
                         pauseTimer(); // a team answers → stop the clock
                         sfx.buzz();
                       }}
-                      className="px-5 py-2 rounded-xl transition-all"
+                      className="px-5 py-2 lg:px-7 lg:py-3 rounded-xl transition-all text-base lg:text-2xl"
                       style={{
                         fontFamily: "var(--font-body)",
-                        fontWeight: 700,
-                        letterSpacing: "0.08em",
-                        fontSize: "1rem",
+                        fontWeight: 800,
+                        letterSpacing: "0.04em",
                         background:
                           buzzed === p.id
                             ? "var(--gold)"
-                            : "rgba(185,166,224,0.14)",
+                            : "rgba(156,196,242,0.14)",
                         color: buzzed === p.id ? "#0b1a22" : "white",
                         border:
                           buzzed === p.id
                             ? "1px solid rgba(200,230,242,0.7)"
-                            : "1px solid rgba(185,166,224,0.45)",
+                            : "1px solid rgba(156,196,242,0.45)",
                         boxShadow:
                           buzzed === p.id
-                            ? "0 0 16px rgba(111,177,200,0.5)"
-                            : "0 0 8px rgba(185,166,224,0.3)",
+                            ? "0 0 16px rgba(127,214,240,0.5)"
+                            : "0 0 8px rgba(156,196,242,0.3)",
                       }}
                     >
                       {p.name}
@@ -1452,7 +1451,7 @@ function PlayGame({ gameId }: { gameId: string }) {
                 className="w-full px-4 py-2 rounded text-[var(--cream)]  focus:outline-none"
                 style={{
                   background: "rgba(255,255,255,0.05)",
-                  border: "2px solid rgba(111,177,200,0.5)",
+                  border: "2px solid rgba(127,214,240,0.5)",
                   fontFamily: "var(--font-body)",
                   fontSize: "1rem",
                 }}
@@ -1495,7 +1494,7 @@ function PlayGame({ gameId }: { gameId: string }) {
                     className="flex-1 min-w-0 px-3 py-2 rounded text-[var(--cream)] focus:outline-none"
                     style={{
                       background: "rgba(255,255,255,0.05)",
-                      border: "2px solid rgba(185,166,224,0.4)",
+                      border: "2px solid rgba(156,196,242,0.4)",
                       fontFamily: "var(--font-mono)",
                     }}
                   />
@@ -1562,8 +1561,8 @@ function PlayGame({ gameId }: { gameId: string }) {
             style={{
               fontFamily: "var(--font-body)",
               fontSize: "clamp(2rem,5vw,4rem)",
-              color: "var(--gold)",
-              textShadow: "0 0 24px rgba(111,177,200,0.4)",
+              color: "var(--value)",
+              textShadow: "0 3px 0 rgba(2,8,20,0.6)",
             }}
           >
             {finalAnswer}
@@ -1680,7 +1679,7 @@ function PlayGame({ gameId }: { gameId: string }) {
                 animationDelay: i === 0 ? `${(sorted.length - 1) * 0.35 + 0.3}s, ${(sorted.length - 1) * 0.35 + 0.8}s` : `${(sorted.length - 1 - i) * 0.35}s`,
                 background:
                   i === 0
-                    ? "linear-gradient(90deg,rgba(185,166,224,0.12),rgba(111,177,200,0.14))"
+                    ? "linear-gradient(90deg,rgba(156,196,242,0.12),rgba(127,214,240,0.14))"
                     : "var(--bg-card)",
                 border:
                   i === 0
@@ -1688,14 +1687,14 @@ function PlayGame({ gameId }: { gameId: string }) {
                     : "1px solid var(--sp-blue)",
                 boxShadow:
                   i === 0
-                    ? "0 0 24px rgba(111,177,200,0.2), 0 0 8px rgba(185,166,224,0.3)"
-                    : "0 0 8px rgba(185,166,224,0.15)",
+                    ? "0 0 24px rgba(127,214,240,0.2), 0 0 8px rgba(156,196,242,0.3)"
+                    : "0 0 8px rgba(156,196,242,0.15)",
               }}
             >
               <span
                 className="retro-title text-3xl w-10 text-center"
                 style={{
-                  color: i === 0 ? "var(--gold)" : "rgba(243,233,210,0.6)",
+                  color: i === 0 ? "var(--gold)" : "rgba(234,243,251,0.6)",
                 }}
               >
                 {i + 1}
@@ -1708,7 +1707,7 @@ function PlayGame({ gameId }: { gameId: string }) {
               </span>
               <span
                 className="retro-title text-2xl"
-                style={{ color: p.score < 0 ? "#ff6a62" : "var(--gold)" }}
+                style={{ color: p.score < 0 ? "#ff6a62" : "var(--value)" }}
               >
                 {p.score < 0 ? `-$${Math.abs(p.score)}` : `$${p.score}`}
               </span>
@@ -1735,16 +1734,17 @@ function PlayGame({ gameId }: { gameId: string }) {
 /* ── renders 1 image large, 2+ side-by-side in a row ── */
 /** Clue / answer text size: as large as the screen allows, smaller for long text or when images share the card */
 function textSize(text: string, withImages: boolean): string {
+  // projector-sized starting points; the clue card's --fit shrinks them if they overflow
   const len = text.length;
   if (withImages) {
-    if (len <= 60) return "clamp(1.9rem, min(5vw, 8vh), 6rem)";
-    if (len <= 160) return "clamp(1.6rem, min(3.6vw, 6vh), 4.5rem)";
-    return "clamp(1.3rem, min(2.7vw, 4.6vh), 3.4rem)";
+    if (len <= 60) return "clamp(2rem, min(5.8vw, 9.5vh), 7rem)";
+    if (len <= 160) return "clamp(1.7rem, min(4.2vw, 7vh), 5.2rem)";
+    return "clamp(1.4rem, min(3.1vw, 5.4vh), 4rem)";
   }
-  if (len <= 40) return "clamp(2.4rem, min(7vw, 13vh), 9rem)";
-  if (len <= 120) return "clamp(2rem, min(5.2vw, 9.5vh), 6.5rem)";
-  if (len <= 260) return "clamp(1.7rem, min(4vw, 7vh), 5rem)";
-  return "clamp(1.5rem, min(3.2vw, 5.6vh), 4rem)";
+  if (len <= 40) return "clamp(2.6rem, min(8vw, 15vh), 10rem)";
+  if (len <= 120) return "clamp(2.1rem, min(6vw, 11vh), 7.5rem)";
+  if (len <= 260) return "clamp(1.8rem, min(4.6vw, 8.2vh), 5.8rem)";
+  return "clamp(1.6rem, min(3.7vw, 6.5vh), 4.6rem)";
 }
 
 function ImageRow({

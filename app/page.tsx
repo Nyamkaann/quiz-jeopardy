@@ -36,11 +36,11 @@ function RulesModal({ onClose }: { onClose: () => void }) {
         <div className="p-6 space-y-4 overflow-y-auto" style={{ maxHeight: "70vh" }}>
           {RULES.map((r, i) => (
             <div key={i} className="flex gap-4 rounded-xl px-4 py-3"
-              style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(185,166,224,0.25)" }}>
+              style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(156,196,242,0.25)" }}>
               <span className="text-2xl shrink-0 mt-0.5">{r.icon}</span>
               <div>
                 <p className="retro-title title-mixed text-base text-[var(--gold)] tracking-wide mb-1">{r.title}</p>
-                <p style={{ fontFamily: "var(--font-body)", color: "rgba(243,233,210,0.85)", fontSize: "0.95rem", lineHeight: "1.5" }}>
+                <p style={{ fontFamily: "var(--font-body)", color: "rgba(234,243,251,0.85)", fontSize: "0.95rem", lineHeight: "1.5" }}>
                   {r.body}
                 </p>
               </div>
@@ -48,8 +48,8 @@ function RulesModal({ onClose }: { onClose: () => void }) {
           ))}
 
           <div className="mt-2 rounded-xl px-4 py-3 text-center"
-            style={{ background: "linear-gradient(90deg,rgba(185,166,224,0.1),rgba(111,177,200,0.08))", border: "1px solid rgba(111,177,200,0.2)" }}>
-            <p style={{ fontFamily: "var(--font-mono)", color: "rgba(243,233,210,0.5)", fontSize: "0.7rem", letterSpacing: "0.15em" }}>
+            style={{ background: "linear-gradient(90deg,rgba(156,196,242,0.1),rgba(127,214,240,0.08))", border: "1px solid rgba(127,214,240,0.2)" }}>
+            <p style={{ fontFamily: "var(--font-mono)", color: "rgba(234,243,251,0.5)", fontSize: "0.7rem", letterSpacing: "0.15em" }}>
               ASTRO JEOPARDY — ШИЛДЭГ БАГИЙГ ТОДРУУЛЪЯ!
             </p>
           </div>
@@ -78,7 +78,7 @@ export default function HomePage() {
         {/* ── HERO ── */}
         <section className="relative flex flex-col items-center justify-center text-center gap-4 lg:gap-6 py-4">
           <div className="relative floaty drop-in">
-            <div className="absolute inset-0 rounded-full blur-3xl" style={{ background: "radial-gradient(circle, rgba(185,166,224,0.35), transparent 65%)" }} />
+            <div className="absolute inset-0 rounded-full blur-3xl" style={{ background: "radial-gradient(circle, rgba(156,196,242,0.35), transparent 65%)" }} />
             <div className="logo-orbit" />
             <div className="logo-orbit reverse" />
             <Image src="/astro-nots.png" width={520} height={520} priority alt="Astro-Nots"
@@ -87,7 +87,7 @@ export default function HomePage() {
           <div className="flex flex-col items-center gap-3 rise-in" style={{ animationDelay: "150ms" }}>
             <h1 className="retro-title text-gradient text-4xl sm:text-5xl xl:text-7xl font-black">JEOPARDY</h1>
             <div className="star-divider w-56 sm:w-80 max-w-full" />
-            <p className="mono text-[0.7rem] sm:text-xs" style={{ color: "rgba(243,233,210,0.6)" }}>
+            <p className="mono text-[0.7rem] sm:text-xs" style={{ color: "rgba(234,243,251,0.6)" }}>
               THE ULTIMATE QUIZ CHALLENGE
             </p>
           </div>

@@ -2844,5 +2844,1144 @@
     "createdAt": "2026-10-30T07:30:17.997Z",
     "updatedAt": "2026-10-30T08:32:01.904066Z",
     "timerSeconds": 45
+  },
+  {
+    "id": "2bbf1dc8-99ee-4ee3-8619-32015e05dbdc",
+    "title": "Round_1",
+    "categories": [
+      {
+        "id": "9129d8e6-efd0-490f-aca3-6fb42614fad7",
+        "name": "Мөр",
+        "questions": [
+          {
+            "id": "946a258c-3589-4932-ac47-e05df70038d7",
+            "value": 100,
+            "clue": "Зурагт харагдаж буй цасан дээрх мөр ямар гуталнийх эсвэл пүүзнийх вэ ?",
+            "answer": "Converse",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "/uploads/227482a5-fead-46c2-b936-05f9e86d2fc4.png"
+            ]
+          },
+          {
+            "id": "00dd3f9f-2cef-440a-95db-6ab65442b2b6",
+            "value": 200,
+            "clue": "Зурагт харагдаж буй цасан дээрх мөр ямар гуталнийх эсвэл пүүзнийх вэ ?",
+            "answer": "Nike Air Jordan 1",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "/uploads/d18bd2df-a688-40d7-a923-71028fe95c55.png"
+            ]
+          },
+          {
+            "id": "4a9da5fc-b322-4050-9ad6-9f2de9887234",
+            "value": 300,
+            "clue": "Зурагт харагдаж буй цасан дээрх мөр ямар гуталнийх эсвэл пүүзнийх вэ ?",
+            "answer": "UGG",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "/uploads/9ae6760f-d0cb-416a-985a-d11fe47b9e63.png"
+            ]
+          },
+          {
+            "id": "ac0eff04-951d-4825-b4fa-5188380fc981",
+            "value": 400,
+            "clue": "Зурагт харагдаж буй цасан дээрх мөр ямар гуталнийх эсвэл пүүзнийх вэ ?",
+            "answer": "Dr Martens 1460",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "/uploads/8d8f7e31-a608-4c68-9510-76eb8566460d.png"
+            ]
+          },
+          {
+            "id": "f8822473-56a8-4301-8008-5ca34964c253",
+            "value": 500,
+            "clue": "Зурагт харагдаж буй цасан дээрх мөр ямар гуталнийх эсвэл пүүзнийх вэ ?",
+            "answer": "Timberland",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "/uploads/e30bf563-a34f-4a8d-abdd-8aee4a46e8cd.png"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "90184090-43fe-4d29-aaeb-15ae7617994c",
+        "name": "Early 2010's",
+        "questions": [
+          {
+            "id": "b5a4cbc2-13ad-4462-943a-125c1f127759",
+            "value": 100,
+            "clue": "2013 онд гарсан энэхүү гар утасны тоглоом маш энгийн дүрэмтэй байсан ч дэлхий даяар асар хурдан тархсан. Тоглогч зөвхөн нэг товшилтоор дүрийн хөдөлгөөнийг удирддаг ба энэ ямар тоглоом вэ ?",
+            "answer": "Flappy Bird",
+            "isDailyDouble": false,
+            "answered": false,
+            "answerImages": [
+              "https://i.pcmag.com/imagery/reviews/06fbcc3ypdfj7i0vvkwsptj-2-hero-image-gallery.fit_scale.size_1028x578.v1569482478.png"
+            ]
+          },
+          {
+            "id": "e8c9418a-4e10-4cff-8d51-d314f0b0b44d",
+            "value": 200,
+            "clue": "2010 онд гарсан дуунуудаас Spotify платформ дээр одоогийн байдлаар хамгийн олон удаа сонсогдсон дуу юу вэ ?",
+            "answer": "Bruno Mars - Just The Way You Are",
+            "isDailyDouble": false,
+            "answered": false,
+            "answerImages": []
+          },
+          {
+            "id": "c27877cf-8596-4fda-9404-f70cd163cc8b",
+            "value": 300,
+            "clue": "Facebook дээрх Tetris Battle тоглоомын 2P Battle mode дээрх хамгийн өндөр rank хэд вэ ?",
+            "answer": "110",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "9854637a-99e9-40cd-86e0-bcd65f4118dd",
+            "value": 400,
+            "clue": "2011 онд АНУ-ын тусгай хүчнийхэн Osama Bin Laden-ыг устгасны дараа ямар нууц үг ашиглан бэ ?",
+            "answer": "Geronimo EKIA",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "explanation": "Geronimo: Усама бен Ладенд өгсөн тусгай ажиллагааны нууц нэр.\nEKIA : \"Enemy Killed In Action\" гэсэн товчлол."
+          },
+          {
+            "id": "52b2a753-d0f6-4ece-9d9e-ee4f2d4ef7b7",
+            "value": 500,
+            "clue": "2010 аад оны эхээр Sir Cartier гэх нэртэй уран бүтээлч soundcloud дээр өөрийн бүтээлээ туурвидаг байжээ.  Өнөө цаг үеийн hip hop-ийн том төлөөллүүдийн нэг тэрээр Atlanta хотоос гаралтай ба уг artist хэн бэ ?",
+            "answer": "Playboy Carti",
+            "isDailyDouble": false,
+            "answered": false
+          }
+        ]
+      },
+      {
+        "id": "94f35f37-b861-4595-ba4b-ff1e91182cf7",
+        "name": "Crypto",
+        "questions": [
+          {
+            "id": "b880c001-c2a1-470c-8bc3-c10ceb376152",
+            "value": 100,
+            "clue": "2015 онд Виталик Бутерин ий бүтээсэн, ухаалаг гэрээ ашиглах боломжийг олгодог Биткойны дараах хоёр дахь том криптовалют юу вэ?",
+            "answer": "Ethereum",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "c1a6be4e-38dd-4d3b-a114-a4709102478e",
+            "value": 200,
+            "clue": "2021 оны 9-р сард дэлхийн түүхэнд анх удаа ямар улс орон Биткойныг үндэсний албан ёсны хууль ёсны мөнгөн тэмдэгт (Legal tender) болгон албан ёсоор хүлээн зөвшөөрсөн бэ?",
+            "answer": "El Salvador",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "d8ce5bc1-bb99-490b-bbd5-1e80f29656b7",
+            "value": 300,
+            "clue": "2013 онд хоёр программ хангамжийн инженер зохиогч Жексон Палмер, Билли Маркус нар алдартай инээдмийн меем дээр үндэслэн ямар нэгэн ноцтой зорилгогүйгээр шоглоом болгон бүтээсэн боловч хожим нь алдартнууд дэмжиж үнэ нь тэнгэрт хадсан, нохойн зурагтай алдартай криптовалют юу нь вэ?",
+            "answer": "Doge-Coin",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "2d542e76-8330-4646-8705-81d763315b74",
+            "value": 400,
+            "clue": "АНУ-ын доллар эсвэл бусад бодит мөнгөн тэмдэгттэй ханш нь 1:1 харьцаатай тогтвортой уягдсан, үнийн хэлбэлзэл багатай байхаар бүтээгдсэн криптовалютын төрлийг юу гэж нэрлэдэг вэ?",
+            "answer": "Stable Coin",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "d161a0b8-73e8-473b-a804-7a871abe9824",
+            "value": 500,
+            "clue": "Монгол Улсад виртуал хөрөнгийн зах зээл хөгжиж, Санхүүгийн Зохицуулах Хорооноос албан ёсны зөвшөөрөл авсан дотоодын биржүүдээс хамгийн сүүлд шинээр үүсгэн байгуулагдсан бирж юу вэ ?",
+            "answer": "Corex",
+            "isDailyDouble": false,
+            "answered": false,
+            "answerImages": [
+              "https://www.corex.mn/static/media/logo.ba76b4b7.png"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "37991829-eb92-4158-b6b4-fd9edc7a8808",
+        "name": "Computer-TEch",
+        "questions": [
+          {
+            "id": "59e6bb2b-448b-4e67-ac2a-d0cebf2574d1",
+            "value": 100,
+            "clue": "1972 онд Dennis Ritchie UNIX үйлдлийн системийг хөгжүүлэх зорилгоор ямар алдартай програмчлалын хэлийг зохиосон бэ?",
+            "answer": "C",
+            "isDailyDouble": false,
+            "answered": false,
+            "answerImages": [
+              "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1280px-C_Programming_Language.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail"
+            ]
+          },
+          {
+            "id": "34915dc1-7ad8-4cbe-8d2a-2497e734b5b0",
+            "value": 200,
+            "clue": "1843 онд Charles Babbage ийн аналитик машинд зориулж дэлхийн хамгийн анхны компьютерийн алгоритмыг бичсэн гэж үздэг 'анхны программист' хэн бэ ?",
+            "answer": "Ada Lovelace",
+            "isDailyDouble": false,
+            "answered": false,
+            "answerImages": [
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRFwycigkcwcT9EZHOPsudUj0emFhZDVDt8ofl431rzJhzOhKbC_Ikkk3wj7UyeHte_DAaWqfSDm4snrVRwLi9-uD5LRxR0Met5FRRjhU&s=10"
+            ]
+          },
+          {
+            "id": "92ccaa4d-4f21-448a-a2f5-40ac43c1771b",
+            "value": 300,
+            "clue": "\"Dell компани тоглоомын gaming компьютертоо 'Alienware', Lenovo компани 'Legion' гэх sub brand ашигладаг бол HP компани ямар нэртэй тоглоомын брэндийг хөгжүүлдэг вэ?",
+            "answer": "OMEN",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5czOTPsiKhxZ_VtZiOyr_Bext0CDaBhnEhwEnwEQdwg&s"
+            ]
+          },
+          {
+            "id": "363c2232-49bf-4e91-8dbc-dd340f4c7766",
+            "value": 400,
+            "clue": "1964 онд Douglas Engelbart зохион бүтээсэн дэлхийн хамгийн анхны компьютерийн хулганы их биеийг ямар материалаар хийж байсан бэ?",
+            "answer": "Мод",
+            "isDailyDouble": false,
+            "answered": false,
+            "answerImages": [
+              "https://cdn.britannica.com/44/27144-050-95ED4BEF/computer-mouse-Douglas-Engelbart-way-experiment-part.jpg"
+            ]
+          },
+          {
+            "id": "5650b603-8016-4e24-bc11-91f6d30632a0",
+            "value": 500,
+            "clue": "1996 онд Intel-ийн инженер Жим Кардах өөр өөр төрлийн компьютер болон гар утасны холболтыг нэгтгэх технологийнхоо түр нэрийг ямар викинг хааны нэрээс сэдэвлэн 'Bluetooth' гэж өгсөн бэ? ",
+            "answer": "Harald \"Bluetooth\" Gormsson",
+            "isDailyDouble": false,
+            "answered": false,
+            "answerImages": [
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ76kobSGflWaP46gt1Qy4era3qJkvez52WkfmGiyaNbkQKGo-c48NJROI45Xi25MVa_t9BDQ9_96hF8O_UnLYfCTDE7eVqvGWpj4w1Yg&s=10"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "7b53c663-2c8c-4fda-8aa9-cba50a7304ae",
+        "name": "Wild Outlaws",
+        "questions": [
+          {
+            "id": "835b1656-f2e6-4ea7-8ac2-b71fee11159c",
+            "value": 100,
+            "clue": "Нэгэн алдартай барын тухай түүхэнд 1902–1907 оны хооронд 436 хүний аминд хүрсэн гэж тэмдэглэгдсэн байдаг. Гэвч энэ амьтан аль улсын нутаг дэвсгэрт хүн рүү дайрч байсан бэ?",
+            "answer": "Энэтхэг",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "e4d92fe8-a59d-4c79-8167-1b4bd7e0b348",
+            "value": 200,
+            "clue": "1898 онд Британийн эзэнт гүрний бүтээн байгуулалтыг есөн сарын турш зогсоож, Энэтхэгээс ирсэн олон зуун ажилчдыг зугтахад хүргэсэн 'Сүнс ба Харанхуй' хэмээн хочлогдсон тэрхүү аймшигт амьтадын түүхэнд үлдсэн нэр юу вэ?",
+            "answer": "Цавогийн хүн идэгч хоёр арслан",
+            "isDailyDouble": false,
+            "answered": false,
+            "explanation": ""
+          },
+          {
+            "id": "3af30aba-d352-44a8-b1ad-9b17a61141e8",
+            "value": 300,
+            "clue": "Steven Spielberg 1975 онд бүтээсэн алдарт 'Jaws' киноны санааг 1916 оны зун АНУ-ын аль мужийн эрэг дээр болсон, 12 хоногийн дотор 4 хүний аминд хүрсэн аварга загасны бодит дайралтаас сэдэвлэсэн бэ?",
+            "answer": "New Jersey",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "ebcba77f-f997-48e7-8eb0-e9e5ac874b83",
+            "value": 400,
+            "clue": "Хүн рүү дайрсан гэж бүртгэгдсэн акулын дайралтын дийлэнхийг бусад зүйлээсээ илүү олон удаа дайрсан гэж үздэг гурван төрлийн акул байдаг. Эдгээр гурван төрлийг бүгдийг нь нэрлэнэ үү.",
+            "answer": "Great white shark, Tiger shark, Bull shark",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "b675c292-48cc-480e-8e94-ee104204e36c",
+            "value": 500,
+            "clue": "1956 онд Бразилийн лабораториос санамсаргүй алдагдаж, 1,000 гаруй хүний аминд хүрсэн Африк-Европын эрлийз энэ амьтан нь  'Наруто' анимэгийн kumogakure тосгоны нэгэн шинобигийн нэрээр нэрлэдэг бөгөөд юу гэж хочилдог вэ эсвэл ямар амьтан бэ?",
+            "answer": "Killer Bee",
+            "isDailyDouble": false,
+            "answered": false,
+            "answerImages": [
+              "https://i.redd.it/zsjisrmt8m281.jpg"
+            ],
+            "explanation": "also known Africanized honey bees"
+          }
+        ]
+      },
+      {
+        "id": "254f1955-4557-4c63-8bc2-71e2012065fd",
+        "name": "What If They Said Yes?",
+        "questions": [
+          {
+            "id": "4263c202-9e11-4237-88fa-1e18ca0b2f5c",
+            "value": 100,
+            "clue": "2009 онд 'Facebook' компанид ажилд орохоор ярилцлага өгөөд тэнцээгүй хоёр программист залуу өөрсдийн мессенжер аппликейшнийг бүтээжээ. Тэд 5 жилийн дараа буюу 2014 онд уг аппликейшнээ өөрсдийг нь голоод аваагүй тэрхүү 'Facebook' компанид 19 тэрбум ам.доллараар зарсан юм. Энэ ямар аппликейшн бэ?",
+            "answer": "WhatsApp",
+            "isDailyDouble": false,
+            "answered": false,
+            "explanation": ""
+          },
+          {
+            "id": "e45a9c57-a8d9-43c7-86b7-e4717d010b2f",
+            "value": 200,
+            "clue": "Decca Records компани The Beatles-ээс татгалзсаныхаа дараа тухайн үеийн нэгэн алдартай хөгжмийн зохиолчийн зөвлөгөөг сонсоод өөр нэгэн залуу хамтлагийг \"Тэдний хөгжим хэнд ч хэрэггүй, дуучин нь хэтэрхий царай муутай\" гэдэг шалтгаанаар шоолон буцаажээ. Хожим рок хөгжмийн амьд домог болсон энэ хамтлаг аль нь вэ?",
+            "answer": "The Rolling Stones",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "7e39c02f-f7f9-42c5-8e59-1b2f8abbff47",
+            "value": 300,
+            "clue": "\"Найруулагч Жорж Лукас 1977 онд 'Оддын дайн' киноны найруулагчийн цалингаасаа татгалзаж, оронд нь киноныхоо ямар эрхийг өөртөө авч үлдсэн нь хожим түүнд 30 гаруй тэрбум долларын орлого авчирсан бэ?\"",
+            "answer": "Тоглоом, бэлэг дурсгал борлуулах эрх (Merchandising rights)",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "f020d1ac-6290-4606-861d-460a6beeb4ce",
+            "value": 400,
+            "clue": "Олон хэвлэлийн газар 'хэтэрхий зузаан' гэдэг шалтгаанаар хэвлэхээс татгалзаж байсан ч захирлынх нь охин шимтэн уншсаны хүчинд хэвлэгдэж, дэлхийг байлдан дагуулсан 'Харри Поттер' цувралын эхний номыг анх хүлээн авч гаргасан Британийн хэвлэлийн газар юу вэ ?",
+            "answer": "Bloomsbury",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "63df5a56-f9aa-49f1-8068-93c13cafe1dd",
+            "value": 500,
+            "clue": "\"Хүмүүс байшин, газраа зараад нэг ширхэг цэцгийн булцуу худалдаж авч байгаад хоромхон зуур хоосорч байсан, түүхэн дэх хамгийн анхны хөөсөрсөн эдийн засгийн хямрал болох '....... Mania' 17-р зуунд болсон бол цэгийн оронд юу байгаа вэ ?\" Exact хариу авна",
+            "answer": "Tulip",
+            "isDailyDouble": false,
+            "answered": false,
+            "answerImages": [
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqI3iSVsWpOKurzTaPDhe0eqJZrd2s1Xqrp7aLhlmSaF-UBth87JaeP4es&s=10"
+            ]
+          }
+        ]
+      }
+    ],
+    "folderId": "dd4a3c46-95a9-4483-90be-f24a7937a55d",
+    "createdAt": "2026-11-17T02:57:05.502Z",
+    "updatedAt": "2026-11-17T12:03:02.898Z",
+    "timerSeconds": 45
+  },
+  {
+    "id": "235d973e-3e01-4532-8dd8-d3f298e14057",
+    "title": "Round_2",
+    "categories": [
+      {
+        "id": "1a54ad54-d9d7-4466-9f40-080ede187b96",
+        "name": "Кино ба хүн",
+        "questions": [
+          {
+            "id": "d1838c5d-ea71-40eb-b5a3-97d79c976931",
+            "value": 100,
+            "clue": "Dead Poets Society кинонд гардаг “O Captain! My Captain!” нь хэний бичсэн шүлэг вэ?",
+            "answer": "Walt Whitman",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "b3725b64-aac2-4dcd-acd7-7e1812ffe8cd",
+            "value": 200,
+            "clue": "Титаник кинонд гардаг уг хүн хэн бэ?",
+            "answer": "Benjamin Guggenheim",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "/uploads/b883d8ba-887f-471f-9323-4b6e752db1d8.png"
+            ]
+          },
+          {
+            "id": "2c3364ad-5da1-459b-865b-b5321c80a39a",
+            "value": 300,
+            "clue": "Green Book кинонд тус алдартай хүнийг Алабама мужид 4000 гаруй цагаан арьст хүмүүсийн өмнө тоглолт хийж байхдаа балбуулсан гэж дурддаг. Хэн бэ?",
+            "answer": "Nat King Cole",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "f30612ab-d2bd-4f29-aed2-ec1cee73f1a7",
+            "value": 400,
+            "clue": "Once Upon a Time... in Hollywood кинонд гардаг уг дүр нь 1975 онд АНУ-ын ерөнхийлөгч Gerald Ford-г алахыг завдсан байдаг. Хэн бэ?",
+            "answer": "Lynette \"Squeaky\" Fromme",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "/uploads/9adc26b6-d3d6-4107-88df-ff90f34fbc35.png"
+            ]
+          },
+          {
+            "id": "71ee179c-ec8e-4a7f-97cf-351f6bf3f4d7",
+            "value": 500,
+            "clue": "Pulp Fiction кинонд Vincent энэхүү зөөгчийг хэнийг муу зөөгч байна гэдэг вэ?",
+            "answer": "Buddy Holly",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "/uploads/41a38275-f7a5-4204-9c48-ceebde28bd62.png"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fc081ff2-2f3f-4ccb-997a-349442a4173e",
+        "name": "Fashion",
+        "questions": [
+          {
+            "id": "ea2b4d86-9b4a-4979-a2eb-1ad6f44b29fb",
+            "value": 100,
+            "clue": "Maison Margiela 3 юу вэ ?",
+            "answer": "Үнэртэй ус",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "/uploads/adf443c4-1a68-4bdb-a9e5-5e6d86d9d234.png"
+            ]
+          },
+          {
+            "id": "8cadeebe-ba44-4366-a5b9-d3a9678c4ad4",
+            "value": 200,
+            "clue": "Миучиа Прада 1984 онд агаарын цэргийн шүхрийн нилон материалаар хийж гаргасан цүнх тухайн үедээ fail-дсэн ч хэдэн жилийн дараа цөм хийж тухайн үеийнхээ Прадагийн түүхэнд хамгийн их орлого олсон энэ цүнхний нэр?",
+            "answer": "Prada Vela Backpack",
+            "isDailyDouble": false,
+            "answered": false,
+            "answerImages": [],
+            "clueImages": [
+              "/uploads/ad8786b2-9fb1-4731-9a2f-9533eb514ada.png"
+            ]
+          },
+          {
+            "id": "c30c0b68-e8e6-4dd3-88dd-dd72ec5e5722",
+            "value": 300,
+            "clue": "Нэгэн цагт Gucci-гийн давхар G логог хамтран зохиолцож, толгой дизайнер, дэд захирал хүртэл хийж явсан ч хожим нь өлбөрч насан эцэслэсэн Гүччи хэн бэ?",
+            "answer": "Paolo Gucci",
+            "isDailyDouble": false,
+            "answered": false,
+            "explanation": "",
+            "answerImages": [],
+            "clueImages": [
+              "/uploads/5ddcf470-85c1-4ac9-90d0-311754c3951f.png"
+            ]
+          },
+          {
+            "id": "6d4b2e3a-6a81-470d-bc3a-a1caa53d2955",
+            "value": 400,
+            "clue": "Асуулт: Supermodel гэх нэршлийг бий болгож Naomi Campbell, Cindy Crawford зэрэг бүсгүйчүүдийг зүгээр ч модел бус сүпер од болгох хэмжээнд алдаршуулсан дизайнер хэн бэ? 200 оноо\nМөн ………. Fall 1991 шоуны төгсгөлд болсон алдартай “алхалтын” үеэр явдаг George\nMichael-н дууны нэр? 200 оноо",
+            "answer": "Gianni Versace, Freedom! ‘90",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [],
+            "answerImages": [
+              "/uploads/6edcaf29-fa84-4d3d-bd9f-4b34e9943b4f.png"
+            ]
+          },
+          {
+            "id": "dbe9cb64-3af5-4f5e-bfb4-7b3f915cdaf2",
+            "value": 500,
+            "clue": "элхийн загварын ертөнцөд хувьсгал хийж, эмэгтэйчүүдийн хувцаслалтын хэв маягийг үндсээр нь өөрчилсөн, XX зууны хамгийн нөлөө бүхий загвар зохион бүтээгчдийн\nнэг болох Yves Saint Laurent нь эмэгтэйчүүдэд зориулсан алдарт “Le Smoking” зэргийг бүтээж, тансаг зэрэглэлийн загварын түүхэнд арилшгүй мөрөө үлдээсэн тэрээр Франц биш\nАлжир улсад төрснийг хүн бүр мэднэ. Аль хотод төрсөн бэ?\nA.Oran, B.Algiers, C.Constantine, D.Annaba",
+            "answer": "A. Oran",
+            "isDailyDouble": false,
+            "answered": false,
+            "explanation": ""
+          }
+        ]
+      },
+      {
+        "id": "39634c83-fc5f-4850-a103-d771a5ba739b",
+        "name": "Italia ",
+        "questions": [
+          {
+            "id": "83b34d14-bb3a-4569-bfe0-1c883535090b",
+            "value": 100,
+            "clue": "Итали улстай хамгийн урт хиллэдэгээрээ гуравт орох улс юу вэ?",
+            "answer": "Австри 430км, Франц 515км, Швейцар 740км",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "8496a5bd-4d64-4568-bfe4-41759f1cdaba",
+            "value": 200,
+            "clue": "Lambrusco vino аль аймгийнх вэ?",
+            "answer": "Emilia-Romagna",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "579227e7-e903-4234-a16f-5b816ab0d48e",
+            "value": 300,
+            "clue": "Юнескогийн Дэлхийн өвд 1996 онд бүртгэгдсэн энэхүү газар нь аль аймгийнх вэ? ",
+            "answer": "Puglia",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "/uploads/748b097f-3515-46d5-b8b1-cc38d05b6d9d.jpeg"
+            ]
+          },
+          {
+            "id": "82a42f7b-1111-4140-af49-b39b9fd59b1a",
+            "value": 400,
+            "clue": "Элба, Монтекристо арлууд нь ямар архипелогт хамаарагдах вэ?",
+            "answer": "Arcipelago Toscano",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "ef8c2273-cb30-4cda-99a9-c665093bd72c",
+            "value": 500,
+            "clue": "Италийн олимпоос хамгийн их алтан медал авсан/авдаг төрөл. Нийт алтан медалын тоо - +3.",
+            "answer": "Fencing, 50",
+            "isDailyDouble": false,
+            "answered": false
+          }
+        ]
+      },
+      {
+        "id": "20b997e3-b05e-4ed0-9e2d-eb6f9595f053",
+        "name": "Хэн ямар дуу",
+        "questions": [
+          {
+            "id": "07a50f33-d29b-43b5-8860-7192c9e5cc57",
+            "value": 300,
+            "clue": "Хэний ямар дуу вэ ?",
+            "answer": "Andy Gibb - I Just Want to Be Your Everything",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueAudio": "/uploads/173669f6-7247-4fda-b31f-e102b9539e24.mp3"
+          },
+          {
+            "id": "d2882421-c93a-4fae-8d72-9b8d19e62b4f",
+            "value": 300,
+            "clue": "Хэний ямар дуу вэ ?",
+            "answer": "Brigitte Bardot - La Madrague",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueAudio": "/uploads/3b0dd603-3083-4e32-a749-0b0b033b6bb3.mp3"
+          },
+          {
+            "id": "7fb6a47b-5604-45f9-bc0c-2e0ad047afe2",
+            "value": 300,
+            "clue": "Хэний ямар дуу вэ ?",
+            "answer": "F.R. David - Words",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueAudio": "/uploads/12b4168b-66b8-4fe9-94e6-a8c1275fcba1.mp3"
+          },
+          {
+            "id": "8d52418f-cdd7-46da-a270-61a2e4a38ea0",
+            "value": 300,
+            "clue": "Хэний ямар дуу вэ ?",
+            "answer": "Faye Wong - Dreamer (Official Music Video)",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueAudio": "/uploads/c1e74486-fbe2-4864-b931-7c4b1cf0f4e7.mp3",
+            "explanation": ""
+          },
+          {
+            "id": "e648b845-e6df-4cbb-b271-211d4c10722a",
+            "value": 300,
+            "clue": "Хэний ямар дуу вэ ?",
+            "answer": "Luis Miguel - Sabor A Mi",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueAudio": "/uploads/d3524398-ab1c-49a0-8495-b10798350aa7.mp3"
+          }
+        ]
+      },
+      {
+        "id": "b557bae7-0076-4f90-aeeb-abb3b391801b",
+        "name": "Хэдэн он бэ ?",
+        "questions": [
+          {
+            "id": "170ffbcb-5eb4-4200-ac29-6896afed56c9",
+            "value": 300,
+            "clue": "ХЭДЭН ОН БЭ ?",
+            "answer": "1999",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "/uploads/0899a237-f809-49ba-949e-c56aa8702e79.jpeg"
+            ]
+          },
+          {
+            "id": "f96d2ab3-c8f5-4949-b358-75edc0f05fa8",
+            "value": 300,
+            "clue": "ХЭДЭН ОН БЭ ?",
+            "answer": "2003",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "/uploads/7fb0d73f-ddb9-4500-90b8-af078ee60412.jpeg"
+            ]
+          },
+          {
+            "id": "1d244f57-672d-413d-9cff-9f29afae2e8c",
+            "value": 300,
+            "clue": "ХЭДЭН ОН БЭ ?",
+            "answer": "2000",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "/uploads/fd431682-4255-42a1-9afa-fa23be5af4a9.jpeg"
+            ]
+          },
+          {
+            "id": "98b4e980-5248-4dcc-8def-a65af3a1a8b2",
+            "value": 300,
+            "clue": "ХЭДЭН ОН БЭ ?",
+            "answer": "2002",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "/uploads/440686be-d9ec-4723-a040-6cdf71a4ccab.jpeg"
+            ]
+          },
+          {
+            "id": "f72920ef-b778-4665-9b2f-c3781daa3ef2",
+            "value": 300,
+            "clue": "ХЭДЭН ОН БЭ ?",
+            "answer": "2001",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "/uploads/c881c80c-1025-46cd-9da4-8f185e5e2252.jpeg"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "350b5307-d311-4c9d-99ab-61ef290e2c1c",
+        "name": "History",
+        "questions": [
+          {
+            "id": "90e29ea4-c76e-4401-bfd7-bbf77c0db9ae",
+            "value": 100,
+            "clue": "1295 онд Ил хаант улсын төрийн шашин ислам болоход нөлөөлсөн Монгол хаан хэн байсан бэ?",
+            "answer": "Газаан хаан",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "dd171709-e60e-4ffe-ae4c-99296b7882d3",
+            "value": 200,
+            "clue": "1529 онд Испани, Португал хоёр Молуккийн арлуудын эзэмшлийн маргаанаа зохицуулсан гэрээг юу гэж нэрлэдэг вэ?",
+            "answer": "Сарагосагийн гэрээ",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "568461a9-29f2-48aa-a188-876f70216de2",
+            "value": 300,
+            "clue": "1689 онд Оросын хаант улс болон Манж Чин улсын хооронд байгуулсан Нэрчүүгийн гэрээний хэлэлцээг Оросын талаас удирдсан дипломатч хэн байсан бэ?",
+            "answer": "Фёдор Алексеевич Головин",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "8008529d-4d69-4466-bc29-5210355807f2",
+            "value": 400,
+            "clue": "1204 онд Загалмайтны IV аян дайны дараа Константинопольд байгуулагдсан Латин эзэнт гүрний анхны эзэн хаан хэн байсан бэ?",
+            "answer": "Фландрын I Балдуин",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "c5ab2d78-3568-43e6-9d91-609b91c3a55f",
+            "value": 500,
+            "clue": "Аргун ханыг төлөөлөн Европын хаадтай уулзсан, Дорнодоос гаралтай энэ христийн шашны лам, дипломатч хэн байсан бэ?",
+            "answer": "Раббан Бар Саума",
+            "isDailyDouble": false,
+            "answered": false
+          }
+        ]
+      }
+    ],
+    "folderId": "dd4a3c46-95a9-4483-90be-f24a7937a55d",
+    "createdAt": "2026-11-17T03:47:27.261Z",
+    "updatedAt": "2026-11-17T12:12:48.790Z"
+  },
+  {
+    "id": "44096edb-8fdc-4538-bb35-a31459313fc9",
+    "title": "Round_3",
+    "categories": [
+      {
+        "id": "79342d2e-87f6-40bb-b345-84248ef74e61",
+        "name": "Seppuku",
+        "questions": [
+          {
+            "id": "57dcfaaf-47b0-4d29-b440-d40b1c7af019",
+            "value": 500,
+            "clue": "1996 онд энэ тамирчин Францын нээлттэй тэмцээнд ганцаарчилсан төрөлд түрүүлж, мөн хосын төрөлд аваргалсан нь тухайн үед маш ховор амжилт байв.\nТэрээр 1999 онд Австралийн нээлттэй тэмцээнд түрүүлж, мөн оны 5-р сард дэлхийн №1 теннисчин болсон бөгөөд энэ байр суурийг 6 долоо хоног хадгалжээ.\n2000 оны Сиднейн Олимпын наадамд эрэгтэйчүүдийн ганцаарчилсан төрөлд алтан медаль хүртсэн.\n\nМөн карьерынхаа турш 26 ATP ганцаарчилсан тэмцээнд түрүүлж, 2002 онд эх орныхоо багтай хамт Davis Cup-ийн аварга болсон.",
+            "answer": "Yevgeny Kafelnikov",
+            "isDailyDouble": false,
+            "answered": false,
+            "answerImages": [
+              "https://upload.wikimedia.org/wikipedia/commons/6/63/Yevgeny_Kafelnikov_in_2023_-_01_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original"
+            ]
+          },
+          {
+            "id": "a001ef66-8ee9-4db9-a9f5-639f3bf449ef",
+            "value": 500,
+            "clue": "Mechanical Keyboard-ний switch нь үндсэн 3 төрөл байдаг ба Linear нь дуу багатай зөөлөн гэж явдаг , Clicky нь харин эсрэгээрээ дуу чимээ ихтэй ба энэ хоёрын яаг дунд байрлах үлдсэн нэг switch ний нэр юу вэ ?",
+            "answer": "Tactile",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "b0a7a477-9143-4687-9b09-9619f84563e2",
+            "value": 500,
+            "clue": "Charles Leclerc одоогоор хэдэн оноотой 5 дугаар байрт бичигдэж байгаа вэ?",
+            "answer": "249",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "ec1bf8cb-8928-440c-a57c-b19df07618f1",
+            "value": 500,
+            "clue": "Дартсын спортын шинэ үеийн супер одод болох Английн алдарт 2 Luke байдаг ба нэг нь  Luke Littler бол нөгөө  Luke ..... нь хэн бэ ?",
+            "answer": "Luke Humphries",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "0fb6b78b-6bcb-47ff-8ef5-1164e8eb808c",
+            "value": 500,
+            "clue": "Би Английн Уилтшир мужид төрсөн. Бристолийн их сургуульд нийгмийн ухааны чиглэлээр суралцсан бөгөөд төгсөөд Британийн армид офицероор алба хаасан. 1999 онд Косовод НАТО-гийн ажиллагаанд оролцож, тэр туршлагаасаа \"No Bravery\" дууг бичсэн. Дараа нь цэргээсээ гарч хөгжмийн замаар явсан ба 2004 онд гаргасан Album аараа дэлхийн од болсон.",
+            "answer": "James Blunt",
+            "isDailyDouble": false,
+            "answered": false,
+            "answerImages": [
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPYsVotT7KydKUz6K93hy_dIJb5yHmUq8g7npthfGkeCvwdvQBcUraB0A_&s=10"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "63f71ea4-cb9c-4104-8acd-630c1575f149",
+        "name": "Fine Dining",
+        "questions": [
+          {
+            "id": "cb23aafb-b536-4562-83f5-c1580cc37edb",
+            "value": 100,
+            "clue": "45 ml Vodka\n90 ml Tomato Juice\n15 ml Fresh Lemon Juice\n2 dashes Worcestershire Sauce\nTabasco, Celery Salt, Pepper (Up to taste)",
+            "answer": "Bloody Mary",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "cc37067b-9d00-460d-bd24-f88b8f9f39f5",
+            "value": 200,
+            "clue": "Зөвхөн Каспийн болон Хар тэнгисийн эрэг орчмын хязгаарлагдмал бүс нутагт амьдардаг ховор загасны давсалсан түрс бөгөөд дэлхийн тансаг зоогийн хамгийн үнэтэй амттан бол ямар загас  вэ?",
+            "answer": "Beluga ",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "b077398c-c2b4-41c3-b2c8-4ca1ce677c50",
+            "value": 300,
+            "clue": "Michelin 3 star тай restaurant ий тоогоороо France \"20\" тэргүүлдэг бол 2т нь ямар улс ордог вэ ? hint \"16\" ",
+            "answer": "Japan",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "c7f7954d-acf5-48c0-9c98-f1eab20d1b3e",
+            "value": 400,
+            "clue": "Хоол хүнсний бүтээгдэхүүний физик болон химийн бүтцийг өөрчлөх замаар шинэ хэлбэр, бүтэц, амт гаргаж авдаг орчин үеийн гастрономын шинжлэх ухааныг юу гэж нэрлэдэг вэ?",
+            "answer": "Молекул гастрономи",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "ba7151d1-d00a-4501-9229-f743182ddc75",
+            "value": 500,
+            "clue": "1912 онд алдартай \"Титаник\" хөлөг онгоцны нэгдүгээр зэрэглэлийн зорчигчдод зориулсан хамгийн сүүлийн тансаг зоогийн үдэшлэг хэдэн төрлийн хоол амттнаас бүрдэж байсан бэ?",
+            "answer": "11-course meal",
+            "isDailyDouble": false,
+            "answered": false
+          }
+        ]
+      },
+      {
+        "id": "1a5b332f-003f-45c8-bb3f-a64ab2737b9e",
+        "name": "Absurd Statues",
+        "questions": [
+          {
+            "id": "3e3b0646-852f-42ea-ba91-b17a267b76bc",
+            "value": 300,
+            "clue": "Дэлхийн томоохон олон улсын байгууллагын төв байрны гадаа байрладаг, хүчирхийллийг үгүйсгэж зэвсгийн гол төмрийг эвдэж зангидсан энэхүү алдартай баримал ямар хотод байдаг вэ?",
+            "answer": "New York",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "https://www.wermac.org/relax/sculptures/knotted_gun.jpg"
+            ]
+          },
+          {
+            "id": "307a8694-f81c-443f-9c11-3fb800e7e277",
+            "value": 300,
+            "clue": "Гудамжинд зөрж өнгөрөх энгийн нэгэн иргэн цагдааг хөлөөрөө тээглүүлж унагаж буй хошин дүр төрхийг харуулсан энэхүү баримал аль улсын ямар хотод байдаг вэ?",
+            "answer": "Брюссель",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "https://www.wermac.org/relax/sculptures/vaartkapoen.jpg"
+            ]
+          },
+          {
+            "id": "7862b1c8-b883-44e9-9624-3dc90ab248d8",
+            "value": 300,
+            "clue": "Нэгэн мөрөн-ий эрэг дагуу төмрөөр цутгаж үлдээсэн энэхүү сэтгэл эмзэглүүлэм гутлуудын дурсгал нь Европын аль  хотод байрладаг вэ ?",
+            "answer": "Budaphest",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "https://www.wermac.org/relax/sculptures/shoes_danube_embankment.jpg"
+            ]
+          },
+          {
+            "id": "5a62f43e-eafe-41a4-9533-29597dab7e3a",
+            "value": 300,
+            "clue": "Улс орныхоо түүхэн суурийг тавьсан анхны хүмүүсийн амьдралыг голын эрэг дээр бодитоор нь мөнхөлсөн хүрэл баримлуудын цогцолбор аль улсад байрладаг вэ?",
+            "answer": "Singapore",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "https://www.wermac.org/relax/sculptures/people_of_the_river.jpg"
+            ]
+          },
+          {
+            "id": "0fc16804-1d85-4777-9a1a-7fcb580b8082",
+            "value": 300,
+            "clue": "Худалдааны төвийн таазнаас доошоо харсан байдлаар дүүжлэгдсэн, түүхэн хааны морь унасан хөшөөг шоглож хийсэн энэхүү гаж бүтээл аль улсын ямар хотод байрладаг вэ?",
+            "answer": "Czech Prague",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "https://www.wermac.org/relax/sculptures/wenceslas.jpg"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "15f1a512-9135-447c-a63a-225e077ea3ea",
+        "name": "Early 2000's",
+        "questions": [
+          {
+            "id": "331e57f9-4c69-4fc5-99c6-665da9fd89fc",
+            "value": 100,
+            "clue": "2001 оны 9 дүгээр сарын 11-ний өдөр болсон террорист халдлагын улмаас 19 алан хядагчийг оруулахгүйгээр хэдэн хүн нас барсан бэ \"+ - 20\"",
+            "answer": "2977",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "d09ebeaa-dbae-4b92-9c0c-75f7e841319d",
+            "value": 200,
+            "clue": "Зурагт харагдаж буй тоглоом юу вэ ? ",
+            "answer": "Neighbour from the hell",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "https://m.media-amazon.com/images/M/MV5BMmYyZDcyOTEtNzZhZS00ZmNjLWFhOWEtOTNlNGNhMjYwMTMwXkEyXkFqcGc@._V1_.jpg"
+            ]
+          },
+          {
+            "id": "af139194-fa17-4d21-aac7-13da135a956e",
+            "value": 300,
+            "clue": "2002 онд гарсан Ноён Солиот кинон дээр жүжигчин Бямбацогт ямар нэртэй дүрд тоглодог вэ ?",
+            "answer": "Цог",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "/uploads/98cbe3b5-3baa-49c5-8ef0-02cffeaa5268.jpeg"
+            ]
+          },
+          {
+            "id": "7d63c2ea-6fac-4a13-9cdd-7fe705cf90e5",
+            "value": 400,
+            "clue": "2001 онд 399$ оор худалдаанд гарсан анхны ipod-ийн багтаамж хэд байсан бэ ?  ",
+            "answer": "5GB",
+            "isDailyDouble": false,
+            "answered": false,
+            "clueImages": [
+              "https://res.cloudinary.com/aenetworks/image/upload/c_fill,w_1200,h_630,g_auto/dpr_auto/f_auto/q_auto:eco/v1/first_ipod_pdcq7n"
+            ]
+          },
+          {
+            "id": "eab30b17-6ac3-4707-ae5a-d18c7b2d6197",
+            "value": 500,
+            "clue": "2004 онд худалдаанд гарч, 2000-аад оны залуучуудын соёлыг тодорхойлсон энэхүү тоглоомын хөгжмийн soundtrack-ийг rapper  Snoop Dogg 1960–1970-аад оны нэг хамтлагын бүтээлийг ремикс хийж оруулсан байдаг.",
+            "answer": "Need For Speed : Underground 2",
+            "isDailyDouble": false,
+            "answered": false
+          }
+        ]
+      },
+      {
+        "id": "1f45a274-330c-4fc9-8bbc-20cda7d2a455",
+        "name": "Sequence",
+        "questions": [
+          {
+            "id": "144b4c86-37d0-49d0-b4c4-9a6d9b181821",
+            "value": 400,
+            "clue": "Cristiano Ronaldo , Zlatan Ibrahimovic , ? , Robert Lewandowski",
+            "answer": "Luis Suarez ",
+            "isDailyDouble": false,
+            "answered": false,
+            "explanation": "1 ээс 90 минут хүртэлх бүх минутанд GOAL оруулсан тоглогчид"
+          },
+          {
+            "id": "2444a6ec-c9fd-4e3b-a7a8-59b48e5fbd75",
+            "value": 400,
+            "clue": "? , 2-т АНУ , 3-т Бразил, 4-т Монгол",
+            "answer": "Mexico",
+            "isDailyDouble": false,
+            "answered": false,
+            "explanation": "Horse Population\n"
+          },
+          {
+            "id": "730b9983-376a-4e66-9339-0470ba6083aa",
+            "value": 400,
+            "clue": "Эверест - К2 - Канченжунга - ?",
+            "answer": "Lhotse",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "3738c223-b5fc-4f9a-b77d-d1b5f30d8f0a",
+            "value": 400,
+            "clue": "Самбуугийн гудамж - Энхтайвны өргөн чөлөө - Их сургуулийн гудамж - ?",
+            "answer": "Чингисийн өргөн чөлөө",
+            "isDailyDouble": false,
+            "answered": false
+          },
+          {
+            "id": "7e52d69d-d9a0-4a86-9330-a2cef4485fff",
+            "value": 500,
+            "clue": "Түмэн - Модун - Лаошан -?",
+            "answer": "Гюнчэнь ",
+            "isDailyDouble": false,
+            "answered": false
+          }
+        ]
+      },
+      {
+        "id": "7e0f1637-aa10-4b7b-8762-a8140d810d6c",
+        "name": "CONNECT",
+        "questions": [
+          {
+            "id": "38059623-ed52-4e97-83b1-cfe9afef22b7",
+            "value": 100,
+            "clue": "",
+            "answer": "",
+            "isDailyDouble": false,
+            "answered": false,
+            "connect": {
+              "clues": [
+                {
+                  "id": "2ad9f103-77a5-4dfe-b8b8-ba106b35bc9a",
+                  "text": "",
+                  "note": "Lisa \"Blackpink\"",
+                  "image": "/uploads/75986e09-214f-4465-ad1f-e918f1866179.webp"
+                },
+                {
+                  "id": "dfc218fb-da40-4305-9b11-df2902873aba",
+                  "text": "",
+                  "note": "Dinah Jane \"Fifth Harmony\"",
+                  "image": "/uploads/750adec7-8c9c-4ca8-8bed-58f982c9fac5.jpg"
+                },
+                {
+                  "id": "b2716a20-75f2-4da1-ac71-f759b5a4f86d",
+                  "text": "",
+                  "note": "Emma Bunton \"Spice Girls\"",
+                  "image": "/uploads/49fab139-ccdb-4fb8-955e-82ab8e2e61df.webp"
+                },
+                {
+                  "id": "a5b0bc0c-27db-48d9-a666-6a234b9fb34e",
+                  "text": "",
+                  "note": "Harry Styles \"One Direction\"",
+                  "image": "/uploads/3639ed0e-94b3-40a0-9f67-498ec12b88de.jpg"
+                },
+                {
+                  "id": "d66685a8-dfa7-43fd-aac1-d4b3c18d7f17",
+                  "text": "",
+                  "note": "George Harrison \"Beatles\"",
+                  "image": "/uploads/aa897d22-a50e-4bd0-adab-a81e2f1ceeec.webp"
+                }
+              ],
+              "answer": "Хамтлагынхаа хамгийн залуу гишүүд"
+            }
+          },
+          {
+            "id": "9d88f26f-a6d2-463e-9d69-3bedf8d3eee5",
+            "value": 200,
+            "clue": "",
+            "answer": "",
+            "isDailyDouble": false,
+            "answered": false,
+            "connect": {
+              "clues": [
+                {
+                  "id": "9fff8065-0b72-4880-9845-1b0c785835d4",
+                  "text": "",
+                  "image": "/uploads/70880d9a-ed55-49c1-9726-4121457592d3.webp",
+                  "note": "Jimmy Buffet \"Jurassic World\""
+                },
+                {
+                  "id": "34549436-c698-4f69-bfe6-4c63ec1191b3",
+                  "text": "",
+                  "image": "/uploads/5a5abf11-55e3-4459-9942-0772388a9a33.webp",
+                  "note": "Huey Lewis \"Back to the Future\"\""
+                },
+                {
+                  "id": "a44d10e9-4a63-4448-8263-ea1abd0e126b",
+                  "text": "",
+                  "image": "/uploads/66897894-aa6f-422e-9f2b-420b348358bd.webp",
+                  "note": "Arnold Schwarzenegger \"Rundown\"\""
+                },
+                {
+                  "id": "00b6227d-2fc2-4978-a013-4cf6ad59bd23",
+                  "text": "",
+                  "image": "/uploads/0a26fa37-26d8-468e-b53d-b2adece7b34a.webp",
+                  "note": "Martin Scorsese \"Taxi Driver\""
+                },
+                {
+                  "id": "8394917a-9870-43bf-9602-7cac313bc4bb",
+                  "text": "",
+                  "image": "/uploads/a9d9c861-a724-4d41-ad61-dcfe28c890db.webp",
+                  "note": "Brad Pitt \"Deadpool 2\""
+                }
+              ],
+              "answer": "Cameo"
+            }
+          },
+          {
+            "id": "25840991-0605-4507-934c-ae47b8fc972b",
+            "value": 300,
+            "clue": "",
+            "answer": "",
+            "isDailyDouble": false,
+            "answered": false,
+            "connect": {
+              "clues": [
+                {
+                  "id": "45337d8e-bac9-46c0-8090-957b2fd939db",
+                  "text": "Columbia"
+                },
+                {
+                  "id": "61d03103-d127-4d83-91ff-77977940061d",
+                  "text": "Ecuador"
+                },
+                {
+                  "id": "61c930e9-4488-4400-87c3-9d111f0cd02b",
+                  "text": "Brazil"
+                },
+                {
+                  "id": "a66dd84d-2526-49fc-ae2e-eba14c34cdc4",
+                  "text": "Gabon"
+                },
+                {
+                  "id": "169047aa-9978-486f-9f4d-fda1ba4bc0fc",
+                  "text": "DRC"
+                }
+              ],
+              "answer": "Equator дээр байдаг улсууд",
+              "answerImage": "/uploads/ad7eb5fb-678d-479e-8351-32d8ed34ec9e.jpeg"
+            }
+          },
+          {
+            "id": "96901cbc-7efa-486a-be0a-c6df5fa5b2a2",
+            "value": 400,
+            "clue": "",
+            "answer": "",
+            "isDailyDouble": false,
+            "answered": false,
+            "connect": {
+              "clues": [
+                {
+                  "id": "e3f904b2-ad7b-404e-8b63-030a4fddfebd",
+                  "text": "uneco"
+                },
+                {
+                  "id": "c997ecac-1b1b-4b32-bbfe-9241657ad515",
+                  "text": "ctrasic"
+                },
+                {
+                  "id": "244eec7f-8b90-470d-bdcf-96c6c1f95df1",
+                  "text": "nizibar"
+                },
+                {
+                  "id": "7a609207-53e6-4093-add8-dbb46f5fb29c",
+                  "text": "talitgata"
+                },
+                {
+                  "id": "1e4ed527-ddaa-4af6-bd89-d2609daa6383",
+                  "text": "onecorel"
+                }
+              ],
+              "answer": "Godfather"
+            }
+          },
+          {
+            "id": "da73f509-6109-4522-ba11-cd01263a1b44",
+            "value": 500,
+            "clue": "",
+            "answer": "",
+            "isDailyDouble": false,
+            "answered": false,
+            "connect": {
+              "clues": [
+                {
+                  "id": "3d72d07f-6a6f-4928-828c-f6104aacfb75",
+                  "text": "Молибден",
+                  "note": "Атомын дугаар нь 42"
+                },
+                {
+                  "id": "75847621-6cbf-40d8-b25a-72fe4e4f8206",
+                  "text": "Гутенбергийн Библи",
+                  "note": "\"42 мөрт Библи\" гэж нэрлэгддэг, хуудас бүр 42 мөртэй"
+                },
+                {
+                  "id": "574c8595-6108-44d8-b192-ba7df1be7c12",
+                  "text": "Жеки Робинсон",
+                  "note": "Түүний 42 дугаарыг MLB-гийн бүх багт бүрмөсөн хорьсон"
+                },
+                {
+                  "id": "35333d32-df31-4cdf-932b-4ea380332eb8",
+                  "text": "Дуглас Адамс",
+                  "note": "\"Амьдрал, орчлон ертөнц, бүх юмны хариулт\" нь 42"
+                },
+                {
+                  "id": "9be22f26-aa95-445e-8871-261aa5edf34f",
+                  "text": "",
+                  "image": "/uploads/3a4cd4e8-dff4-4efa-b9ed-f2f60bfc3b9b.jpg"
+                }
+              ],
+              "answer": "42"
+            }
+          }
+        ],
+        "type": "connect"
+      }
+    ],
+    "folderId": "dd4a3c46-95a9-4483-90be-f24a7937a55d",
+    "createdAt": "2026-11-17T03:47:31.026Z",
+    "updatedAt": "2026-11-17T14:01:27.816Z"
   }
 ]

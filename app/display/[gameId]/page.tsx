@@ -87,7 +87,7 @@ export default function DisplayPage({ params }: { params: Promise<{ gameId: stri
             <Image src="/astro-nots.png" width={260} height={260} alt="" priority className="relative" />
           </div>
           <h1 className="retro-title title-mixed text-gradient text-4xl">Үзэгчдийн дэлгэц</h1>
-          <p className="mono text-xs max-w-md leading-relaxed" style={{ color: "rgba(243,233,210,0.6)" }}>
+          <p className="mono text-xs max-w-md leading-relaxed" style={{ color: "rgba(234,243,251,0.6)" }}>
             ХӨТЛӨГЧИЙН ЦОНХТОЙ ХОЛБОГДОЖ БАЙНА…<br />
             ТОГЛООМЫГ ЭНЭ BROWSER-Т НЭЭЛТТЭЙ БАЙЛГААРАЙ.
           </p>

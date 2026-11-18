@@ -61,7 +61,7 @@ export default function PasswordModal({ onSuccess, onCancel, action = "continue"
         </div>
 
         <div className="p-6 space-y-4">
-          <p style={{ fontFamily: "var(--font-mono)", color: "rgba(243,233,210,0.7)", fontSize: "0.75rem", letterSpacing: "0.1em" }}>
+          <p style={{ fontFamily: "var(--font-mono)", color: "rgba(234,243,251,0.7)", fontSize: "0.75rem", letterSpacing: "0.1em" }}>
             ENTER PASSWORD TO {action.toUpperCase()}
           </p>
 
@@ -77,7 +77,7 @@ export default function PasswordModal({ onSuccess, onCancel, action = "continue"
               background: "rgba(255,255,255,0.05)",
               border: `2px solid ${error ? "#cc2200" : "var(--sp-blue)"}`,
               fontFamily: "var(--font-mono)",
-              boxShadow: error ? "0 0 12px rgba(204,34,0,0.4)" : "0 0 8px rgba(185,166,224,0.2)",
+              boxShadow: error ? "0 0 12px rgba(204,34,0,0.4)" : "0 0 8px rgba(156,196,242,0.2)",
             }}
           />
 

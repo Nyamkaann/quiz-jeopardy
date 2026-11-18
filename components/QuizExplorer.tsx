@@ -336,10 +336,10 @@ export default function QuizExplorer() {
             </h2>
           </div>
           <div className="flex gap-2 shrink-0">
-            <button onClick={() => guard({ type: "new-folder" })} className="btn-blue px-4 py-2.5 rounded-xl text-sm flex-1 sm:flex-none">
+            <button onClick={() => guard({ type: "new-folder" })} className="btn-blue px-3 sm:px-4 py-2.5 rounded-xl text-sm whitespace-nowrap flex-1 sm:flex-none">
               + FOLDER
             </button>
-            <button onClick={() => guard({ type: "new-game" })} className="btn-gold px-5 py-2.5 rounded-xl text-sm flex-1 sm:flex-none">
+            <button onClick={() => guard({ type: "new-game" })} className="btn-gold px-3 sm:px-5 py-2.5 rounded-xl text-sm whitespace-nowrap flex-1 sm:flex-none">
               + NEW GAME
             </button>
           </div>
@@ -357,7 +357,7 @@ export default function QuizExplorer() {
             />
             {crumbs.map((f) => (
               <span key={f.id} className="flex items-center gap-1 min-w-0">
-                <span style={{ color: "rgba(243,233,210,0.3)" }}>›</span>
+                <span style={{ color: "rgba(234,243,251,0.3)" }}>›</span>
                 <Crumb
                   label={f.name}
                   active={f.id === currentId && !q}
@@ -387,7 +387,7 @@ export default function QuizExplorer() {
       {/* inline create */}
       {creating && (
         <div className="drop-in mx-5 sm:mx-7 mt-4 rounded-2xl p-3 sm:p-4 flex flex-col sm:flex-row gap-3"
-          style={{ background: "rgba(185,166,224,0.08)", border: "1px solid rgba(185,166,224,0.3)" }}>
+          style={{ background: "rgba(156,196,242,0.08)", border: "1px solid rgba(156,196,242,0.3)" }}>
           <span className="self-center text-xl hidden sm:block">{creating === "folder" ? "📁" : "🪐"}</span>
           <input
             autoFocus
@@ -428,7 +428,7 @@ export default function QuizExplorer() {
               {q ? "Юу ч олдсонгүй" : current ? "Энэ folder хоосон байна" : "Одоогоор quiz алга"}
             </p>
             {!q && (
-              <p className="mono text-xs mt-2" style={{ color: "rgba(243,233,210,0.45)" }}>
+              <p className="mono text-xs mt-2" style={{ color: "rgba(234,243,251,0.45)" }}>
                 + FOLDER ЭСВЭЛ + NEW GAME ДАРЖ ЭХЛЭЭРЭЙ
               </p>
             )}
@@ -452,10 +452,10 @@ export default function QuizExplorer() {
                       style={{
                         ...delay(),
                         background: hot
-                          ? "linear-gradient(160deg,rgba(111,177,200,0.22),rgba(255,255,255,0.04))"
-                          : "linear-gradient(160deg,rgba(185,166,224,0.12),rgba(255,255,255,0.02))",
-                        border: `1px solid ${hot ? "rgba(169,220,236,0.8)" : "rgba(185,166,224,0.3)"}`,
-                        boxShadow: hot ? "0 0 30px rgba(111,177,200,0.3)" : undefined,
+                          ? "linear-gradient(160deg,rgba(127,214,240,0.22),rgba(255,255,255,0.04))"
+                          : "linear-gradient(160deg,rgba(156,196,242,0.12),rgba(255,255,255,0.02))",
+                        border: `1px solid ${hot ? "rgba(201,238,250,0.8)" : "rgba(156,196,242,0.3)"}`,
+                        boxShadow: hot ? "0 0 30px rgba(127,214,240,0.3)" : undefined,
                       }}
                     >
                       <FolderIcon open={hot} />
@@ -476,7 +476,7 @@ export default function QuizExplorer() {
                       ) : (
                         <p className="mt-3 title-mixed text-base text-[var(--cream)] truncate">{f.name}</p>
                       )}
-                      <p className="mono text-[0.6rem] mt-1 truncate" style={{ color: "rgba(243,233,210,0.5)" }}>
+                      <p className="mono text-[0.6rem] mt-1 truncate" style={{ color: "rgba(234,243,251,0.5)" }}>
                         {q && f.parentId ? `${pathOf(f.parentId).map((p) => p.name).join(" › ")} · ` : ""}
                         {subs > 0 ? `${subs} FOLDER · ` : ""}{n} QUIZ
                       </p>
@@ -509,12 +509,12 @@ export default function QuizExplorer() {
                   >
                     <div className="flex items-center gap-4 min-w-0">
                       <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0 text-xl"
-                        style={{ background: "linear-gradient(135deg,rgba(185,166,224,0.25),rgba(111,177,200,0.2))", border: "1px solid var(--glass-border-hi)" }}>
+                        style={{ background: "linear-gradient(135deg,rgba(156,196,242,0.25),rgba(127,214,240,0.2))", border: "1px solid var(--glass-border-hi)" }}>
                         🪐
                       </div>
                       <div className="flex-1 min-w-0">
                         <p className="retro-title title-mixed text-lg sm:text-xl text-[var(--cream)] truncate">{game.title}</p>
-                        <p className="mono text-[0.65rem] mt-1 truncate" style={{ color: "rgba(243,233,210,0.5)" }}>
+                        <p className="mono text-[0.65rem] mt-1 truncate" style={{ color: "rgba(234,243,251,0.5)" }}>
                           {q ? `${["HOME", ...pathOf(game.folderId).map((p) => p.name)].join(" › ")} · ` : ""}
                           {game.categories.length} CATEGORIES · {new Date(game.createdAt).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }).toUpperCase()}
                         </p>
@@ -545,7 +545,7 @@ export default function QuizExplorer() {
       </div>
 
       <div className="px-7 py-3 flex items-center justify-between gap-3 mono text-[0.6rem]"
-        style={{ borderTop: "1px solid var(--glass-border)", color: "rgba(243,233,210,0.35)" }}>
+        style={{ borderTop: "1px solid var(--glass-border)", color: "rgba(234,243,251,0.35)" }}>
         <span>ASTRO-NOTS © {new Date().getFullYear()}</span>
         <span className="hidden md:inline">ЧИРЧ FOLDER РУУ ЗӨӨЖ БОЛНО</span>
         <span className="flex items-center gap-3">
@@ -588,9 +588,9 @@ function Crumb({
       onClick={onClick}
       className="rounded-lg px-2 py-1 transition-colors truncate max-w-[12rem]"
       style={{
-        color: active ? "var(--gold)" : "rgba(243,233,210,0.7)",
-        background: hot ? "rgba(111,177,200,0.25)" : active ? "rgba(111,177,200,0.08)" : "transparent",
-        border: `1px solid ${hot ? "rgba(169,220,236,0.8)" : "transparent"}`,
+        color: active ? "var(--gold)" : "rgba(234,243,251,0.7)",
+        background: hot ? "rgba(127,214,240,0.25)" : active ? "rgba(127,214,240,0.08)" : "transparent",
+        border: `1px solid ${hot ? "rgba(201,238,250,0.8)" : "transparent"}`,
       }}
     >
       {label}
@@ -628,7 +628,7 @@ function FolderIcon({ open }: { open?: boolean }) {
         </linearGradient>
       </defs>
       <path d="M2 6a4 4 0 0 1 4-4h10l4 4h18a4 4 0 0 1 4 4v20a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z" fill="url(#fold)" opacity="0.9" />
-      <path d={open ? "M2 14h40l-3 16a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z" : "M2 12h40v18a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"} fill="#ded4f2" opacity="0.35" />
+      <path d={open ? "M2 14h40l-3 16a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z" : "M2 12h40v18a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"} fill="#d4e6fb" opacity="0.35" />
       <circle cx="34" cy="22" r="3" fill="#6fb1c8" />
     </svg>
   );
@@ -675,7 +675,7 @@ function MoveDialog({
         key={id ?? "root"}
         disabled={disabled}
         onClick={() => onPick(id)}
-        className="w-full text-left rounded-xl px-3 py-2.5 flex items-center gap-2 transition-colors hover:bg-[rgba(185,166,224,0.12)] disabled:opacity-30 disabled:hover:bg-transparent"
+        className="w-full text-left rounded-xl px-3 py-2.5 flex items-center gap-2 transition-colors hover:bg-[rgba(156,196,242,0.12)] disabled:opacity-30 disabled:hover:bg-transparent"
         style={{ paddingLeft: 12 + depth * 20, color: "var(--cream)" }}
       >
         <span>{id ? "📁" : "🏠"}</span>
@@ -771,20 +771,20 @@ function BackupDialog({ onClose }: { onClose: () => void }) {
             </button>
           ))}
         </div>
-        <p className="mono text-[0.6rem] px-5 pt-2" style={{ color: "rgba(243,233,210,0.45)" }}>
+        <p className="mono text-[0.6rem] px-5 pt-2" style={{ color: "rgba(234,243,251,0.45)" }}>
           ХАДГАЛАХ БҮРТ ӨМНӨХ ХУВИЛБАР АВТОМАТААР НӨӨЦЛӨГДӨНӨ · СҮҮЛИЙН 100
         </p>
         <div className="p-3 overflow-y-auto flex-1">
-          {list === null && <p className="mono text-xs p-4 text-center" style={{ color: "rgba(243,233,210,0.5)" }}>...</p>}
+          {list === null && <p className="mono text-xs p-4 text-center" style={{ color: "rgba(234,243,251,0.5)" }}>...</p>}
           {list !== null && rows.length === 0 && (
-            <p className="mono text-xs p-6 text-center" style={{ color: "rgba(243,233,210,0.45)" }}>ОДООГООР НӨӨЦ АЛГА</p>
+            <p className="mono text-xs p-6 text-center" style={{ color: "rgba(234,243,251,0.45)" }}>ОДООГООР НӨӨЦ АЛГА</p>
           )}
           {rows.map((b) => (
             <div key={b.file} className="flex items-center gap-3 rounded-xl px-3 py-2.5 hover:bg-[rgba(255,255,255,0.04)]">
               <span className="text-lg">🗂</span>
               <div className="flex-1 min-w-0">
                 <p className="text-sm text-[var(--cream)] title-mixed">{new Date(b.at).toLocaleString()}</p>
-                <p className="mono text-[0.6rem]" style={{ color: "rgba(243,233,210,0.45)" }}>
+                <p className="mono text-[0.6rem]" style={{ color: "rgba(234,243,251,0.45)" }}>
                   {b.items ?? "?"} {kind === "games" ? "QUIZ" : "FOLDER"} · {(b.bytes / 1024).toFixed(1)} KB
                 </p>
               </div>

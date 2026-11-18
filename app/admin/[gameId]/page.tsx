@@ -227,16 +227,16 @@ export default function AdminPage({ params }: { params: Promise<{ gameId: string
   return (
     <div className="min-h-screen" style={{ background: "transparent" }}>
       {/* ── HEADER ── */}
-      <header style={{ background: "rgba(8,12,20,0.55)", borderBottom: "1px solid var(--sp-blue)", boxShadow: "0 0 24px rgba(185,166,224,0.4)" }}>
+      <header style={{ background: "rgba(8,12,20,0.55)", borderBottom: "1px solid var(--sp-blue)", boxShadow: "0 0 24px rgba(156,196,242,0.4)" }}>
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 px-4 sm:px-6 py-3 sm:py-4">
           <div className="flex items-center gap-3 sm:gap-4 min-w-0">
             <Link href={game.folderId ? `/?f=${game.folderId}` : "/"} className="flex items-center gap-2 transition-opacity hover:opacity-70 shrink-0">
               <Image src="/astro-nots.png" width={28} height={28} alt="Astro" />
-              <span style={{ fontFamily: "var(--font-mono)", color: "rgba(243,233,210,0.7)", fontSize: "0.75rem", letterSpacing: "0.15em" }}>
+              <span style={{ fontFamily: "var(--font-mono)", color: "rgba(234,243,251,0.7)", fontSize: "0.75rem", letterSpacing: "0.15em" }}>
                 ← HOME
               </span>
             </Link>
-            <div className="hidden sm:block shrink-0" style={{ width: 1, height: 24, background: "rgba(185,166,224,0.4)" }} />
+            <div className="hidden sm:block shrink-0" style={{ width: 1, height: 24, background: "rgba(156,196,242,0.4)" }} />
             <h1 className="retro-title text-lg sm:text-2xl text-[var(--gold)] tracking-widest truncate">GAME EDITOR</h1>
           </div>
 
@@ -265,7 +265,7 @@ export default function AdminPage({ params }: { params: Promise<{ gameId: string
             value={game.title}
             onChange={(e) => updateTitle(e.target.value)}
             className="text-[var(--cream)] text-2xl font-bold w-full max-w-lg px-4 py-3 rounded focus:outline-none retro-title title-mixed tracking-wide"
-            style={{ background: "rgba(255,255,255,0.05)", border: "1px solid var(--sp-blue)", boxShadow: "0 0 10px rgba(185,166,224,0.2)" }}
+            style={{ background: "rgba(255,255,255,0.05)", border: "1px solid var(--sp-blue)", boxShadow: "0 0 10px rgba(156,196,242,0.2)" }}
           />
         </div>
 
@@ -301,7 +301,7 @@ export default function AdminPage({ params }: { params: Promise<{ gameId: string
             <label className="retro-title text-sm tracking-widest text-[var(--teal)] block mb-2">ЦАГНЫ ХӨГЖИМ</label>
             <MediaPick kind="audio" label="ДУУ ОРУУЛАХ" url={game.timerMusic}
               onSet={(url) => setGame({ ...game, timerMusic: url })} />
-            <p className="mono text-[0.6rem] mt-2" style={{ color: "rgba(243,233,210,0.45)" }}>
+            <p className="mono text-[0.6rem] mt-2" style={{ color: "rgba(234,243,251,0.45)" }}>
               ХООСОН БОЛ ДОТООД «THINKING» АЯ ТОГЛОНО · ЦАГ ЭХЛҮҮЛЭХЭД ЭХЭЛЖ, БАГ ХАРИУЛАХАД ЗОГСОНО
             </p>
           </div>
@@ -309,8 +309,9 @@ export default function AdminPage({ params }: { params: Promise<{ gameId: string
 
         {/* Board grid */}
         <div className="overflow-x-auto pb-4">
-          <div className="grid gap-3 min-w-max"
-            style={{ gridTemplateColumns: `repeat(${game.categories.length}, 180px)` }}>
+          {/* fills the width on big screens; on phones columns shrink to 120px and the row scrolls */}
+          <div className="grid gap-2 sm:gap-3 min-w-max lg:min-w-0"
+            style={{ gridTemplateColumns: `repeat(${game.categories.length}, minmax(clamp(120px, 22vw, 180px), 1fr))` }}>
 
             {/* Category header inputs */}
             {game.categories.map((cat) => (
@@ -328,8 +329,8 @@ export default function AdminPage({ params }: { params: Promise<{ gameId: string
                   className="mt-1 w-full rounded-md py-1 mono text-[0.55rem] transition-colors"
                   style={
                     isConnectCategory(cat)
-                      ? { color: "#0b1a22", background: "linear-gradient(135deg,var(--teal),#ded4f2)", border: "1px solid var(--teal)" }
-                      : { color: "rgba(243,233,210,0.45)", background: "transparent", border: "1px dashed var(--glass-border-hi)" }
+                      ? { color: "#0b1a22", background: "linear-gradient(135deg,var(--teal),#d4e6fb)", border: "1px solid var(--teal)" }
+                      : { color: "rgba(234,243,251,0.45)", background: "transparent", border: "1px dashed var(--glass-border-hi)" }
                   }
                 >
                   {isConnectCategory(cat) ? "✦ CONNECT" : "+ CONNECT БОЛГОХ"}
@@ -355,12 +356,12 @@ export default function AdminPage({ params }: { params: Promise<{ gameId: string
                       key={`${cat.id}-${q.id}`}
                       onClick={() => setEditingConnect({ catId: cat.id, qId: q.id })}
                       className="board-tile h-20 rounded flex flex-col items-center justify-center gap-0.5"
-                      style={{ opacity: empty ? 0.5 : 1, borderColor: "rgba(185,166,224,0.55)" }}
+                      style={{ opacity: empty ? 0.5 : 1, borderColor: "rgba(156,196,242,0.55)" }}
                     >
-                      <span className="retro-title text-xl" style={{ color: empty ? "rgba(243,233,210,0.5)" : "var(--teal)" }}>
+                      <span className="retro-title text-xl" style={{ color: empty ? "rgba(234,243,251,0.5)" : "var(--teal)" }}>
                         ✦ #{rowIdx + 1}
                       </span>
-                      <span className="mono text-[0.55rem]" style={{ color: "rgba(243,233,210,0.5)" }}>
+                      <span className="mono text-[0.55rem]" style={{ color: "rgba(234,243,251,0.5)" }}>
                         {empty ? "ХООСОН" : (q.connect?.answer || "ХАРИУЛТГҮЙ")}
                       </span>
                     </button>
@@ -375,7 +376,7 @@ export default function AdminPage({ params }: { params: Promise<{ gameId: string
                     className="board-tile h-20 rounded flex flex-col items-center justify-center relative"
                     style={{ opacity: isEmpty ? 0.5 : 1 }}
                   >
-                    <span className="retro-title text-2xl" style={{ color: isEmpty ? "rgba(243,233,210,0.5)" : "var(--gold)" }}>
+                    <span className="retro-title text-2xl" style={{ color: isEmpty ? "rgba(234,243,251,0.5)" : "var(--gold)" }}>
                       {isEmpty ? "?" : `$${q.value}`}
                     </span>
                     {hasMedia && (
@@ -398,7 +399,7 @@ export default function AdminPage({ params }: { params: Promise<{ gameId: string
           <button onClick={addConnectCategory} className="btn-gold px-5 py-2 rounded text-base">
             + ✦ CONNECT
           </button>
-          <p style={{ fontFamily: "var(--font-mono)", color: "rgba(243,233,210,0.5)", fontSize: "0.7rem", letterSpacing: "0.1em" }}>
+          <p style={{ fontFamily: "var(--font-mono)", color: "rgba(234,243,251,0.5)", fontSize: "0.7rem", letterSpacing: "0.1em" }}>
             CLICK A TILE TO EDIT · ? = EMPTY · 🖼 IMAGE · 🔊 AUDIO
           </p>
         </div>
@@ -424,7 +425,7 @@ export default function AdminPage({ params }: { params: Promise<{ gameId: string
       {/* ── QUESTION EDIT MODAL ── */}
       {editing && editingQ && (
         <div
-          className="fixed inset-0 flex items-center justify-center z-50 p-4 overflow-y-auto"
+          className="fixed inset-0 flex items-center-safe justify-center z-50 p-4 overflow-y-auto"
           style={{ background: "rgba(4,5,26,0.92)" }}
           onClick={(e) => e.target === e.currentTarget && setEditing(null)}
         >
@@ -457,10 +458,10 @@ export default function AdminPage({ params }: { params: Promise<{ gameId: string
                       if (!isNaN(v) && v >= 0) updateQuestion(editing.catId, editing.qId, { value: v });
                     }}
                     className="w-32 px-3 py-2 rounded text-[var(--cream)] focus:outline-none retro-title text-xl"
-                    style={{ background: "rgba(255,255,255,0.05)", border: "2px solid rgba(111,177,200,0.6)", color: "var(--gold)" }}
+                    style={{ background: "rgba(255,255,255,0.05)", border: "2px solid rgba(127,214,240,0.6)", color: "var(--gold)" }}
                   />
                 </div>
-                <p style={{ fontFamily: "var(--font-mono)", color: "rgba(243,233,210,0.5)", fontSize: "0.65rem", letterSpacing: "0.1em" }}>
+                <p style={{ fontFamily: "var(--font-mono)", color: "rgba(234,243,251,0.5)", fontSize: "0.65rem", letterSpacing: "0.1em" }}>
                   SET ANY AMOUNT
                 </p>
               </div>
@@ -473,14 +474,14 @@ export default function AdminPage({ params }: { params: Promise<{ gameId: string
                   <div className="h-px flex-1" style={{ background: "var(--sp-blue)", opacity: 0.4 }} />
                 </div>
 
-                <label className="block text-xs tracking-widest mb-1" style={{ fontFamily: "var(--font-mono)", color: "rgba(243,233,210,0.6)" }}>TEXT</label>
+                <label className="block text-xs tracking-widest mb-1" style={{ fontFamily: "var(--font-mono)", color: "rgba(234,243,251,0.6)" }}>TEXT</label>
                 <textarea
                   rows={2}
                   placeholder="Enter the clue..."
                   value={editingQ.clue}
                   onChange={(e) => updateQuestion(editing.catId, editing.qId, { clue: e.target.value })}
                   className="w-full px-4 py-2 rounded text-[var(--cream)]  focus:outline-none resize-none mb-3"
-                  style={{ background: "rgba(255,255,255,0.05)", border: "2px solid rgba(185,166,224,0.5)", fontFamily: "var(--font-body)", fontSize: "1rem" }}
+                  style={{ background: "rgba(255,255,255,0.05)", border: "2px solid rgba(156,196,242,0.5)", fontFamily: "var(--font-body)", fontSize: "1rem" }}
                 />
 
                 <MultiImageUpload
@@ -515,24 +516,24 @@ export default function AdminPage({ params }: { params: Promise<{ gameId: string
                   <div className="h-px flex-1" style={{ background: "var(--gold)", opacity: 0.4 }} />
                 </div>
 
-                <label className="block text-xs tracking-widest mb-1" style={{ fontFamily: "var(--font-mono)", color: "rgba(243,233,210,0.6)" }}>TEXT</label>
+                <label className="block text-xs tracking-widest mb-1" style={{ fontFamily: "var(--font-mono)", color: "rgba(234,243,251,0.6)" }}>TEXT</label>
                 <input
                   type="text"
                   placeholder='e.g. "What is the Sun?"'
                   value={editingQ.answer}
                   onChange={(e) => updateQuestion(editing.catId, editing.qId, { answer: e.target.value })}
                   className="w-full px-4 py-2 rounded text-[var(--cream)]  focus:outline-none mb-3"
-                  style={{ background: "rgba(255,255,255,0.05)", border: "2px solid rgba(111,177,200,0.4)", fontFamily: "var(--font-body)", fontSize: "1rem" }}
+                  style={{ background: "rgba(255,255,255,0.05)", border: "2px solid rgba(127,214,240,0.4)", fontFamily: "var(--font-body)", fontSize: "1rem" }}
                 />
 
-                <label className="block text-xs tracking-widest mb-1" style={{ fontFamily: "var(--font-mono)", color: "rgba(243,233,210,0.6)" }}>ЯАГААД? (тайлбар)</label>
+                <label className="block text-xs tracking-widest mb-1" style={{ fontFamily: "var(--font-mono)", color: "rgba(234,243,251,0.6)" }}>ЯАГААД? (тайлбар)</label>
                 <textarea
                   rows={2}
                   placeholder="Хариулт яагаад зөв болохыг товч тайлбарлана"
                   value={editingQ.explanation ?? ""}
                   onChange={(e) => updateQuestion(editing.catId, editing.qId, { explanation: e.target.value })}
                   className="w-full px-4 py-2 rounded text-[var(--cream)] focus:outline-none mb-3 resize-y"
-                  style={{ background: "rgba(255,255,255,0.05)", border: "2px solid rgba(111,177,200,0.4)", fontFamily: "var(--font-body)", fontSize: "0.95rem" }}
+                  style={{ background: "rgba(255,255,255,0.05)", border: "2px solid rgba(127,214,240,0.4)", fontFamily: "var(--font-body)", fontSize: "0.95rem" }}
                 />
 
                 <MultiImageUpload
@@ -598,13 +599,13 @@ function MediaUpload({
 
   return (
     <div>
-      <label className="block text-xs tracking-widest mb-1" style={{ fontFamily: "var(--font-mono)", color: "rgba(243,233,210,0.6)" }}>
+      <label className="block text-xs tracking-widest mb-1" style={{ fontFamily: "var(--font-mono)", color: "rgba(234,243,251,0.6)" }}>
         {label}
       </label>
 
       {url ? (
         /* ── preview ── */
-        <div className="relative group rounded overflow-hidden" style={{ border: "2px solid rgba(185,166,224,0.4)", minHeight: 80 }}>
+        <div className="relative group rounded overflow-hidden" style={{ border: "2px solid rgba(156,196,242,0.4)", minHeight: 80 }}>
           {isImage ? (
             <div className="relative h-20">
               <Image src={url} alt={label} fill className="object-contain" unoptimized />
@@ -623,9 +624,9 @@ function MediaUpload({
         </div>
       ) : (
         /* ── input panel ── */
-        <div className="rounded overflow-hidden" style={{ border: "2px solid rgba(185,166,224,0.3)", background: "rgba(255,255,255,0.05)" }}>
+        <div className="rounded overflow-hidden" style={{ border: "2px solid rgba(156,196,242,0.3)", background: "rgba(255,255,255,0.05)" }}>
           {/* tab bar */}
-          <div className="flex" style={{ borderBottom: "1px solid rgba(185,166,224,0.2)" }}>
+          <div className="flex" style={{ borderBottom: "1px solid rgba(156,196,242,0.2)" }}>
             {(["upload", "url"] as const).map((t) => (
               <button
                 key={t}
@@ -633,8 +634,8 @@ function MediaUpload({
                 className="flex-1 py-1 text-xs tracking-widest transition-colors"
                 style={{
                   fontFamily: "var(--font-mono)",
-                  background: tab === t ? "rgba(185,166,224,0.2)" : "transparent",
-                  color: tab === t ? "rgba(243,233,210,0.9)" : "rgba(243,233,210,0.4)",
+                  background: tab === t ? "rgba(156,196,242,0.2)" : "transparent",
+                  color: tab === t ? "rgba(234,243,251,0.9)" : "rgba(234,243,251,0.4)",
                   borderBottom: tab === t ? "1px solid var(--sp-blue)" : "2px solid transparent",
                 }}
               >
@@ -651,7 +652,7 @@ function MediaUpload({
                 onClick={() => fileRef.current?.click()}
                 disabled={uploading === field}
                 className="w-full py-4 flex flex-col items-center justify-center gap-1 transition-all"
-                style={{ color: "rgba(243,233,210,0.5)" }}
+                style={{ color: "rgba(234,243,251,0.5)" }}
               >
                 <span className="text-xl">{isImage ? "🖼" : "🔊"}</span>
                 <span className="text-xs tracking-widest" style={{ fontFamily: "var(--font-mono)" }}>
@@ -668,7 +669,7 @@ function MediaUpload({
                 onChange={(e) => setUrlInput(e.target.value)}
                 onKeyDown={(e) => e.key === "Enter" && applyUrl()}
                 className="flex-1 px-2 py-1 rounded text-[var(--cream)] text-xs focus:outline-none"
-                style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(185,166,224,0.3)", fontFamily: "var(--font-mono)" }}
+                style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(156,196,242,0.3)", fontFamily: "var(--font-mono)" }}
               />
               <button
                 onClick={applyUrl}
@@ -711,7 +712,7 @@ function MultiImageUpload({
   return (
     <div>
       <label className="block text-xs tracking-widest mb-2"
-        style={{ fontFamily: "var(--font-mono)", color: "rgba(243,233,210,0.6)" }}>
+        style={{ fontFamily: "var(--font-mono)", color: "rgba(234,243,251,0.6)" }}>
         {label} {images.length > 0 && <span style={{ color: "var(--gold)" }}>({images.length})</span>}
       </label>
 
@@ -720,14 +721,14 @@ function MultiImageUpload({
         <div className="flex gap-2 flex-wrap mb-2">
           {images.map((url, i) => (
             <div key={i} className="relative group rounded overflow-hidden shrink-0"
-              style={{ width: 72, height: 72, border: "2px solid rgba(185,166,224,0.4)" }}>
+              style={{ width: 72, height: 72, border: "2px solid rgba(156,196,242,0.4)" }}>
               <Image src={url} alt={`img-${i}`} fill className="object-cover" unoptimized />
               <button
                 onClick={() => onRemove(i)}
                 className="absolute inset-0 hidden group-hover:flex items-center justify-center text-[var(--cream)] text-lg font-black"
                 style={{ background: "rgba(180,0,0,0.7)" }}>×</button>
               <span className="absolute bottom-0 left-0 right-0 text-center"
-                style={{ background: "rgba(0,0,0,0.6)", fontFamily: "var(--font-mono)", color: "rgba(243,233,210,0.8)", fontSize: "0.55rem" }}>
+                style={{ background: "rgba(0,0,0,0.6)", fontFamily: "var(--font-mono)", color: "rgba(234,243,251,0.8)", fontSize: "0.55rem" }}>
                 {i + 1}
               </span>
             </div>
@@ -736,15 +737,15 @@ function MultiImageUpload({
       )}
 
       {/* add input */}
-      <div className="rounded overflow-hidden" style={{ border: "2px solid rgba(185,166,224,0.3)", background: "rgba(255,255,255,0.05)" }}>
-        <div className="flex" style={{ borderBottom: "1px solid rgba(185,166,224,0.2)" }}>
+      <div className="rounded overflow-hidden" style={{ border: "2px solid rgba(156,196,242,0.3)", background: "rgba(255,255,255,0.05)" }}>
+        <div className="flex" style={{ borderBottom: "1px solid rgba(156,196,242,0.2)" }}>
           {(["upload", "url"] as const).map((t) => (
             <button key={t} onClick={() => setTab(t)}
               className="flex-1 py-1 text-xs tracking-widest transition-colors"
               style={{
                 fontFamily: "var(--font-mono)",
-                background: tab === t ? "rgba(185,166,224,0.2)" : "transparent",
-                color: tab === t ? "rgba(243,233,210,0.9)" : "rgba(243,233,210,0.4)",
+                background: tab === t ? "rgba(156,196,242,0.2)" : "transparent",
+                color: tab === t ? "rgba(234,243,251,0.9)" : "rgba(234,243,251,0.4)",
                 borderBottom: tab === t ? "1px solid var(--sp-blue)" : "2px solid transparent",
               }}>
               {t === "upload" ? "📁 FILE" : "🔗 URL"}
@@ -761,7 +762,7 @@ function MultiImageUpload({
               }} />
             <button onClick={() => fileRef.current?.click()} disabled={uploading}
               className="w-full py-3 flex flex-col items-center justify-center gap-1"
-              style={{ color: "rgba(243,233,210,0.5)" }}>
+              style={{ color: "rgba(234,243,251,0.5)" }}>
               <span className="text-lg">🖼</span>
               <span className="text-xs tracking-widest" style={{ fontFamily: "var(--font-mono)" }}>
                 {uploading ? "UPLOADING..." : images.length > 0 ? "+ ADD MORE" : "CHOOSE FILES"}
@@ -775,7 +776,7 @@ function MultiImageUpload({
               onChange={(e) => setUrlInput(e.target.value)}
               onKeyDown={(e) => e.key === "Enter" && applyUrl()}
               className="flex-1 px-2 py-1 rounded text-[var(--cream)] text-xs focus:outline-none"
-              style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(185,166,224,0.3)", fontFamily: "var(--font-mono)" }}
+              style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(156,196,242,0.3)", fontFamily: "var(--font-mono)" }}
             />
             <button onClick={applyUrl} disabled={!urlInput.trim()}
               className="px-3 py-1 rounded text-xs font-black disabled:opacity-30"
